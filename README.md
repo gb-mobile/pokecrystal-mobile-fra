@@ -18,6 +18,8 @@ https://github.com/gb-mobile/pokecrystal-mobile-fra/wiki/Potentially-misplaced-o
 - Check for any untranslated menus missed by the find/replace script.
 - Translate any of mobile features. (Anything under /mobile/, /maps/GoldenrodPokecenter1F.asm and maps/PokecomCenterAdminOfficeMobile.asm).
 - Also refer to the English build for 'Text_BattleReceptionistIntro:', 'Text_TradeReceptionistIntro:' and 'Text_TimeCapsuleReceptionistIntro:' for proper mobile translations of the PokeCOM Club reception dialogue.
+- Determine the value of 'REGION CODE' in engine/link/mystery_gift.asm
+- Determine the ComposeMailMessage function for this language in engine/pokemon/mon_menu.asm
 - Fix the known issues.
 
 
