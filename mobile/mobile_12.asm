@@ -599,17 +599,17 @@ DEF N = ZIPCODE_LENGTH - 1
 DEF S EQUS STRCAT("LOW(Zipcode_CharPoolsLength - Zipcode_CharPoolForStringIndex", STRSUB("01234567", N+1, 1))
 	db S ) / 1
 
-MobileProfileString:         db "  Mobile Profile@"
-MobileString_Gender:         db "Gender@"
-MobileString_Age:            db "Age@"
-MobileString_Address:        db "Address@"
-MobileString_ZipCode:        db "Zip Code@"
+MobileProfileString:         db "  Profile Mobile@"
+MobileString_Gender:         db "Sexe@"
+MobileString_Age:            db "Aage@"
+MobileString_Address:        db "Addresse@"
+MobileString_ZipCode:        db "Code Postal@"
 MobileString_OK:             db "OK@"
-MobileString_ProfileChanged: db "Profile Changed@"
-MobileDesc_Gender:           db "Boy or girl?@"
-MobileDesc_Age:              db "How old are you?@"
-MobileDesc_Address:          db "Where do you live?@"
-MobileDesc_ZipCode:          db "Your zip code?@"
+MobileString_ProfileChanged: db "Profile modifié.@"
+MobileDesc_Gender:           db "Garçon ou fille?@"
+MobileDesc_Age:              db "Quel âge as-tu?@"
+MobileDesc_Address:          db "Où habites-tu?@"
+MobileDesc_ZipCode:          db "Ton code postal?@"
 
 MenuHeader_0x484f1:
 	db MENU_BACKUP_TILES ; flags

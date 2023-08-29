@@ -221,29 +221,28 @@ _ThereIsNothingConnectedText:: ; unreferenced
 	done
 
 _CheckCellPhoneAdapterText:: ; unreferenced
-	text "Check cell phone"
-	line "adapter."
+	text "Adaptateur mobile"
+	line "connecté."
 	done
 
 _CheckCDMAAdapterText:: ; unreferenced
-	text "Check CDMA"
-	line "adapter."
+	text "Adaptateur modèle"
+	line "CDMA."
 	done
 
 _CheckDOCOMOPHSAdapterText:: ; unreferenced
-	text "Check DOCOMO PHS"
-	line "adapter."
+	text "Adaptateur modèle"
+	line "DOCOMO PHS."
 	done
 
 _CheckDDIPHSAdapterText:: ; unreferenced
-	text "Check DDI PHS"
-	line "adapter."
+	text "Adaptateur modèle"
+	line "DDI PHS."
 	done
 
 _CheckMobileAdapterText:: ; unreferenced
-	text "Check unlimited"
-	line "battle mobile"
-	cont "adapter."
+	text "Adaptateur mobile"
+	line "illimité."
 	done
 
 ; Mobile Adapter End
@@ -1224,15 +1223,16 @@ _TheBoxIsFullText:: ; unreferenced
 ; Mobile Adapter
 
 _NewCardArrivedText::
-	text "A new CARD arrived"
-	line "from @"
+	text "Nouvelle CARTE"
+	line"reçue de la part"
+	line"de @"
 	text_ram wStringBuffer2
 	text "."
 	done
 
 _PutCardInCardFolderText::
-	text "Put this CARD in"
-	line "the CARD FOLDER?"
+	text "Ranger cette CARTE"
+	line "dans le DOSSIER?"
 	done
 
 _CardWasListedText::
@@ -1244,30 +1244,33 @@ _CardWasListedText::
 	prompt
 
 _StartingLinkText::
-	text "Starting link."
+	text "Début de la"
+	line "communication."
 	done
 
 _LinkTerminatedText::
-	text "Link terminated."
+	text "Communication"
+	line "interrompue."
 	done
 
 _ClosingLinkText::
-	text "Closing link."
+	text "Fin de la"
+	line "communication."
 	done
 
 _ClearTimeLimitText:: ; unreferenced
-	text "Clear the time"
-	line "limit?"
+	text "Retirer la limite"
+	line "de temps?"
 	done
 
 _TimeLimitWasClearedText:: ; unreferenced
-	text "The time limit was"
-	line "cleared."
+	text "Limite de temps"
+	line "retirée."
 	done
 
 _PickErrorPacketText:: ; unreferenced
-	text "Pick which packet"
-	line "as an error?"
+	text "Quel paquet pose"
+	line "problème?"
 	done
 
 _TradingMonForOTMonText::

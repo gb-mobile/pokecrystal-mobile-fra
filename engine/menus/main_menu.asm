@@ -70,7 +70,7 @@ MainMenu:
 	db "OPTIONS@"
 	db "CADEAU MYSTERE@"
 	db "MOBILE@"
-	db "MOBILE STADIUM@"
+	db "STADE MOBILE@"
 if DEF(_DEBUG)
 	db "DEBUG ROOM@"
 endc

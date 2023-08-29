@@ -288,7 +288,8 @@ OlivineLighthouseSignText:
 	done
 	
 OlivineCityBattleTowerSignPreMobileText:
-	text "BATTLE TOWER AHEAD"
+	text "TOUR DE COMBAT"
+	line "Tout droit..."
 	done	
 
 OlivineCityBattleTowerSignMobileText:

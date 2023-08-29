@@ -1133,6 +1133,6 @@ BattleText_LinkErrorBattleCanceled:
 	prompt
 
 BattleText_NoTimeLeftToday: ; unreferenced
-	text "There is no time"
-	line "left today!"
+	text "A court de temps"
+	line "pour aujourd'hui!"
 	done
