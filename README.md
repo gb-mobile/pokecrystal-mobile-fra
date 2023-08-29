@@ -1,33 +1,24 @@
-## Information 
+# NOTE
+## This repository is a work in progress, you may experience bugs, glitches and general oddities. Should these occur please report them as issues. It is not actively being worked on and will require community assistance to finish.
 
-A fork of pokecrystal designed to restore and localize Mobile Adapter functionality such as online battles and trades to Crystal using disassembled code from the Japanese ROM designed for use with Mobile System recreation projects like the REON Project.
+# Information
+A French translation of https://github.com/gb-mobile/pokecrystal-mobile-eng
+This translation was performed via text dumps and a (somewhat) sophisticated find/replace script.
+It is possible that some menus were missed by the find/replace script, and need translating manually.
 
-The intention of this project is to create a build of pokecrystal with all of the content that was featured in the Japanese version of the game and was cut from the international release(s).
-We've been very strict on ensuring that any decisions made on the localization or presentation of this content match the standards of a hypothetical scenario in which the Mobile Adapter was released outside of Japan and Crystal received a complete English release back in 2001.
 
-This repository is built upon a substantial amount of work done by Sudel-Matze.
+## TO-DO
 
-A link to Matze’s repository can be found here:
-https://github.com/Sudel-Matze/pokecrystal
+Due to this translation being performed using a find/replace script, several lines which are duplicated in English but have differences between them in other languages get skipped over.
+To complete the translation of non-mobile features into French, the following lines need to be identified and placed accordingly:
+https://github.com/gb-mobile/pokecrystal-mobile-fra/wiki/Potentially-misplaced-or-Missing-lines
 
-## Screenshots
 
-![image](https://user-images.githubusercontent.com/110418063/188284868-5d25cf63-ec57-4780-b6d0-8b7ff90e3826.png)
-![image](https://user-images.githubusercontent.com/110418063/188284842-21fb8827-cb15-4ab4-8b58-d7d58f648b27.png)
-![image](https://user-images.githubusercontent.com/110418063/196016480-a2fd8c6c-ea9b-4b8b-92a1-1bc5af47a2c0.png)
-![image](https://user-images.githubusercontent.com/110418063/188298896-8d03b589-8ab1-4d5f-b205-b163e4f616b9.png)
-![image](https://user-images.githubusercontent.com/110418063/188284899-85bfa620-4cf2-4dc3-aac1-e950737ee2aa.png)
-![image](https://user-images.githubusercontent.com/110418063/196643701-a3aea578-940b-463f-8d51-c1025cc5c5a7.png)
-![image](https://user-images.githubusercontent.com/110418063/196290251-dc54e329-4924-4ab9-9366-d1e167ca9ca3.png)
-![image](https://user-images.githubusercontent.com/110418063/205540332-b49b9482-e121-4ba0-a2df-3630c04cdc1c.png)
-![image](https://user-images.githubusercontent.com/110418063/226153593-93985569-7682-43f9-91d1-e33f9478643d.png)
-![image](https://user-images.githubusercontent.com/110418063/188287387-5cd5514c-267c-4fe6-b66f-0a0e36e712e6.png)
-![image](https://user-images.githubusercontent.com/110418063/188287421-ff2eedad-1569-4512-8224-d1ee2c5622da.png)
-![image](https://user-images.githubusercontent.com/110418063/222832067-ce1ac5ba-c725-4311-b6f1-b033b55cca93.png)
-![image](https://user-images.githubusercontent.com/110418063/188331912-d862a3c6-a7d2-4636-b152-8ecd74e5250b.png)
-![image](https://user-images.githubusercontent.com/110418063/196129175-eebdad9e-f4a0-44ae-8432-7aa538b3c722.png)
-![image](https://user-images.githubusercontent.com/110418063/188289401-f0b79296-f4eb-4463-a8d6-6fb8c605adc1.png)
-
+- Adjust any menus to match those of the original French games (currently set to English sizing and formatting)
+- Check for any untranslated menus missed by the find/replace script.
+- Translate any of mobile features. (Anything under /mobile/, /maps/GoldenrodPokecenter1F.asm and maps/PokecomCenterAdminOfficeMobile.asm).
+- Also refer to the English build for 'Text_BattleReceptionistIntro:', 'Text_TradeReceptionistIntro:' and 'Text_TimeCapsuleReceptionistIntro:' for proper mobile translations of the PokeCOM Club reception dialogue.
+- Fix the known issues.
 
 
 ## Setup [![Build Status][ci-badge]][ci]
@@ -35,21 +26,10 @@ https://github.com/Sudel-Matze/pokecrystal
 For more information, please see [INSTALL.md](INSTALL.md)
 
 After setup has been completed, you can choose which version you wish to build.
-To build a specific version, run one of these commands inside the repository directory in cygwin64:
+To build a specific version, run this command inside the repository directory in cygwin64:
 
-- US Version:   `make`
+`make`
 
-- EUR Version:	`make crystal_eu` 
-
-- AUS Version:	`make crystal_au`
-
-For a more accurate experience, we advising picking the build version based on where you live as this will make different 'address' options available to you which are selectable for personal information.
-
-The US Version covers the United States and Canada.
-
-The EUR Version covers all countries in Europe (as of 2001).
-
-The AUS Version covers Australia and New Zealand.
 
 Other languages are being worked on, but are not complete and still require a lot of polish.
 
