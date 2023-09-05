@@ -168,7 +168,7 @@ _OakTimeWhatTimeIsItText::
 	done
 
 _OakTimeWhatHoursText::
-	text "What?@"
+	text "Quoi?@"
 	text_end
 
 _OakTimeHoursQuestionMarkText::
