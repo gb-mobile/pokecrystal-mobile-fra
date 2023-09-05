@@ -45,7 +45,7 @@ InitGender:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 6, 4, 12, 9
+	menu_coords 6, 4, 14, 9
 	dw .MenuData
 	db 1 ; default option
 
