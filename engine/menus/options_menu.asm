@@ -266,7 +266,7 @@ Options_BattleStyle:
 	ret
 
 .Shift: db "CHOIX @"
-.Set:   db "WECHSEL@"
+.Set:   db "DEFINI@"
 
 Options_Sound:
 	ld hl, wOptions
