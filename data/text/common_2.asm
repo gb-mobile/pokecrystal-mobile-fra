@@ -694,7 +694,7 @@ _BattleStatWentWayUpText::
 	prompt
 
 _BattleStatWentUpText::
-
+	text_start
 	cont "augmente!"
 	prompt
 
@@ -712,7 +712,7 @@ _BattleStatSharplyFellText::
 	prompt
 
 _BattleStatFellText::
-
+	text_start
 	cont "diminue!"
 	prompt
 
