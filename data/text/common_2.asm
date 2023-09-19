@@ -683,7 +683,7 @@ _AreYouABoyOrAreYouAGirlText::
 Text_BattleEffectActivate::
 	text_ram wStringBuffer2
 	text " de"
-	line "<USER>"
+	line "<USER>@"
 	text_end
 
 	text_end ; unreferenced
@@ -694,14 +694,14 @@ _BattleStatWentWayUpText::
 	prompt
 
 _BattleStatWentUpText::
-
+	text_start
 	cont "augmente!"
 	prompt
 
 Text_BattleFoeEffectActivate::
 	text_ram wStringBuffer2
 	text " de"
-	line "<TARGET>"
+	line "<TARGET>@"
 	text_end
 
 	text_end ; unreferenced
@@ -712,7 +712,7 @@ _BattleStatSharplyFellText::
 	prompt
 
 _BattleStatFellText::
-
+	text_start
 	cont "diminue!"
 	prompt
 
