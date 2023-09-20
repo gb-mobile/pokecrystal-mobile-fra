@@ -286,8 +286,8 @@ _NameCardListedCardText::
 	prompt
 
 _NameCardNotRegisteredCardText::
-	text "The CARD was not"
-	line "registered."
+	text "Cette CARTE n'a pas"
+	line "été enregistrée."
 	prompt
 
 _NameCardLinkCancelledText::
