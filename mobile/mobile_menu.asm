@@ -250,6 +250,7 @@ Function4a13b:
 	call DelayFrames
 
 MobileSettingsMenu:
+	call LoadTilesAndDisplayMobileMenuBackground
 	hlcoord 1, 2
 	ld b, $6
 	ld c, $10
