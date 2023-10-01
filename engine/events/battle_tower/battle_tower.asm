@@ -1353,7 +1353,7 @@ endr
 String_MysteryJP:
 	;db "なぞナゾ@@" ; MYSTERY
 ; localization: mind above remark
-	db "ODD@@@@@"
+	db "Bizar@@@"
 
 BattleTowerAction_0F:
 	ldh a, [rSVBK]
