@@ -561,13 +561,13 @@ PlacePartyMonMobileBattleSelection:
 ;.String_Banme:
 ;	db "@";"　ばんめ　　@" ; Place
 .String_Able:
-	db "ABLE@";"さんかしない@" ; Cancel
+	db "APTE@";"さんかしない@" ; Cancel
 .String_NotAble:
-	db "NOT ABLE@"
+	db "PAS APTE@"
 .String_Kettei_Yameru:
-	db "OK  CANCEL@";"けってい　　やめる@" ; Quit
+	db "OK  RETOUR@";"けってい　　やめる@" ; Quit
 .Strings_1_2_3:
-	db "FIRST@", "SECOND@", "THIRD@" ; 1st, 2nd, 3rd
+	db "PREMIER@", "DEUXIEME@", "TROISIEME@" ; 1st, 2nd, 3rd
 
 PartyMenuCheckEgg:
 	ld a, LOW(wPartySpecies)
