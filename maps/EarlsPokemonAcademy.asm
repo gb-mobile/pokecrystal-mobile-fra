@@ -116,10 +116,10 @@ AcademyBlackboard:
 .Text:
 	db "PSN@"
 	db "PAR@"
-	db "SLP@"
-	db "BRN@"
-	db "FRZ@"
-	db "QUIT@"
+	db "SOM@"
+	db "BRU@"
+	db "GEL@"
+	db "RET@"
 
 AcademyNotebook:
 	opentext
