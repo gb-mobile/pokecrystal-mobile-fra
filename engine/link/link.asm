@@ -592,7 +592,7 @@ ExchangeBytes:
 	ret
 
 String_PleaseWait:
-	db "PLEASE WAIT!@"
+	db "UN MOMENT…@"
 
 ClearLinkData:
 	ld hl, wLinkData
@@ -1554,7 +1554,7 @@ LinkTrade_TradeStatsMenu:
 	text_end
 
 .String_Stats_Trade:
-	db "STATS     TRADE@"
+	db "STATS     ECHANGE@"
 
 .LinkAbnormalMonText:
 	text_far _LinkAbnormalMonText
