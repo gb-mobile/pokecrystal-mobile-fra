@@ -185,14 +185,14 @@
 
 	charmap "c'",        $d4
 	charmap "d'",        $d5
-	charmap "i'",        $d6
+	charmap "j'",        $d6
 
 	charmap "l'",         $d7
 	charmap "m'",         $d8
 	charmap "n'",         $d9
 	charmap "p'",         $da
-	charmap "s''",        $db
-	charmap "s'",         $dc
+	charmap "s'",        $db
+	charmap "'s",         $dc
 	charmap "t'",         $dd
 	charmap "u'",         $de
 	charmap "y'",         $df

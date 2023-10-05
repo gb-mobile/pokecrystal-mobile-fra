@@ -54,7 +54,7 @@ ConvertFrenchGermanMailToEnglish:
 .check_intermediate_chars
 	sub "c'"
 	jr c, .dont_replace
-	cp "i'" - "c'" + 1
+	cp "j'" - "c'" + 1
 	jr nc, .dont_replace
 	add $cd
 
@@ -83,7 +83,7 @@ ConvertEnglishMailToFrenchGerman:
 .check_intermediate_chars
 	sub $cd
 	jr c, .dont_replace
-	cp "i'" - "c'" + 1
+	cp "j'" - "c'" + 1
 	jr nc, .dont_replace
 	add "c'"
 
