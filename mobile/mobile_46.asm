@@ -6712,57 +6712,34 @@ Function11b022:
 	ret
 
 Function11b03d:
-	push hl
 	push af
 	ld c, $1
 .loop
 	ld a, [hli]
 	cp "♂"
-	jr z, .gender
+	jr z, .done
 	cp "♀"
-	jr z, .gender
+	jr z, .done
 	cp "@"
 	jr z, .done
 	inc c
 	jr .loop
 
-.gender
-	dec hl
-	ld a, "@"
-	ld [hli], a
-
 .done
 	dec hl
-	push hl
-	ld e, 2
-	ld d, 0
-	add hl, de
 	ld e, l
 	ld d, h
-	pop hl
-.loop2
-	ld a, [hld]
-	ld [de], a
-	dec de
-	dec c
-	jr nz, .loop2
 	pop af
-	pop de
-	cp $1
-	jr nz, .female
-	ld hl, .MaleString
-	jr .got_string
-
-.female
+	dec a
 	ld hl, .FemaleString
-
+	jr nz, .got_string
+	ld hl, .MaleString
 .got_string
 	ld bc, 2 ; string length
-	call CopyBytes
-	ret
+	jp CopyBytes
 
-.MaleString: db "♂　"
-.FemaleString: db "♀　"
+.MaleString: db "♂@"
+.FemaleString: db "♀@"
 
 Function11b082:
 	call Function11b242
