@@ -161,10 +161,10 @@
 	
 	charmap "à",         $ba
 	charmap "è",         $bb
-	charmap "<é>",         $bc
+	charmap "<é>",       $bc
 	charmap "ù",         $bd
 	charmap "ß",         $be
-	charmap "ç",         $bf	
+	charmap "ç",         $bf
 
 	charmap "Ä",         $c0
 	charmap "Ö",         $c1
@@ -191,7 +191,7 @@
 	charmap "m'",         $d8
 	charmap "n'",         $d9
 	charmap "p'",         $da
-	charmap "s'",        $db
+	charmap "s'",         $db
 	charmap "'s",         $dc
 	charmap "t'",         $dd
 	charmap "u'",         $de
@@ -201,7 +201,7 @@
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
 	charmap "-",         $e3
-	charmap "+",         $e4	
+	charmap "+",         $e4
 
 	charmap "?",         $e6
 	charmap "!",         $e7
