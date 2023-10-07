@@ -932,3 +932,223 @@ Function4adf7:
 	res 0, a
 	ld [wd019], a
 	ret
+
+Function11a0ca:
+	xor a
+	ld [wMenuBorderLeftCoord], a
+	ld [wMenuBorderTopCoord], a
+	ld a, $13
+	ld [wMenuBorderRightCoord], a
+	ld a, $11
+	ld [wMenuBorderBottomCoord], a
+	call PushWindow
+	farcall Function11765d
+	farcall Function17d3f6
+	farcall Stubbed_Function106462
+	farcall Function106464
+	call ExitMenu
+	farcall ReloadMapPart
+	farcall Function115d99
+	ld c, $0
+	farcall Function115e18
+	ld a, $1
+	ld [wc305], a
+	ret
+	
+
+Function11a88c:
+	ld a, [bc]
+	sla a
+	ld c, a
+	xor a
+	ld b, a
+	add hl, bc
+	ld a, [hli]
+	ld [de], a
+	inc de
+	ld a, [hl]
+	ld [de], a
+	inc de
+	ret
+	
+
+Function11acb7: ; mobile phone animation?
+	ld hl, TilemapPack_11ba44
+	ld a, [wcd49]
+	ld c, a
+	ld b, 0
+	sla c
+	rl b
+	sla c
+	rl b
+	sla c
+	rl b
+	add hl, bc
+	decoord 5, 12 ;6, 6
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 6 ;0, 7
+	;ld bc, 7
+	;call CopyBytes
+
+	; vertical
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 7
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 8
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 9
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 10
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 11
+	ld a, [hli]
+	ld [de], a
+	decoord 4, 12
+	ld a, [hli]
+	ld [de], a
+
+
+	ld a, [wcd49]
+	inc a
+	ld [wcd49], a
+	ld a, [hl]
+	cp $ff
+	jr nz, .get_the_other
+	xor a
+	ld [wcd49], a
+.get_the_other
+	ld hl, TilemapPack_11bb7d
+	ld a, [wcd4a]
+	ld c, a
+	ld b, 0
+	sla c
+	rl b
+	sla c
+	rl b
+	sla c
+	rl b
+	add hl, bc
+	decoord 2, 8 ;3, 9 ; wanted pokemon animation coordinates
+	;ld bc, 7
+	;call CopyBytes
+
+	; vertical
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 9
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 10
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 11
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 12
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 13
+	ld a, [hli]
+	ld [de], a
+	decoord 2, 14
+	ld a, [hli]
+	ld [de], a
+
+
+	ld a, [wcd4a]
+	inc a
+	ld [wcd4a], a
+	inc hl
+	ld a, [hl]
+	cp $ff
+	ret nz
+	xor a
+	ld [wcd4a], a
+	ret
+	
+TilemapPack_11ba44:
+	db $47, $30, $0a, $0a, $0a, $0a, $0a, $56 ; 00
+	db $46, $2f, $0a, $0a, $0a, $0a, $0a, $55 ; 01
+	db $45, $3d, $0a, $0a, $0a, $0a, $0a, $54 ; 02
+	db $44, $30, $0a, $0a, $0a, $0a, $0a, $53 ; 03
+	db $43, $2f, $0a, $0a, $0a, $0a, $0a, $52 ; 04
+	db $4a, $3d, $0a, $0a, $0a, $0a, $0a, $51 ; 05
+	db $4a, $30, $0a, $0a, $0a, $0a, $0a, $50 ; 06
+	db $4a, $2f, $0a, $0a, $0a, $0a, $0a, $4f ; 07
+	db $4a, $3d, $0a, $0a, $0a, $0a, $0a, $4e ; 08
+	db $4a, $30, $0a, $0a, $0a, $0a, $4d, $42 ; 09
+	db $4a, $2f, $0a, $0a, $0a, $0a, $6b, $58 ; 0a
+	db $4a, $3d, $0a, $0a, $0a, $0a, $6a, $58 ; 0b
+	db $4a, $30, $0a, $0a, $0a, $0a, $69, $58 ; 0c
+	db $4a, $2f, $0a, $0a, $0a, $0a, $68, $58 ; 0d
+	db $4a, $3d, $0a, $0a, $0a, $66, $67, $58 ; 0e
+	db $4a, $30, $0a, $0a, $0a, $65, $0a, $58 ; 0f
+	db $4a, $2f, $0a, $0a, $0a, $64, $0a, $58 ; 10
+	db $4a, $3d, $0a, $0a, $0a, $63, $0a, $58 ; 11
+	db $4a, $30, $0a, $0a, $61, $62, $0a, $58 ; 12
+	db $4a, $2f, $0a, $0a, $5f, $60, $0a, $58 ; 13
+	db $4a, $3d, $0a, $61, $62, $0a, $0a, $58 ; 14
+	db $4a, $30, $0a, $63, $0a, $0a, $0a, $58 ; 15
+	db $4a, $2f, $69, $0a, $0a, $0a, $0a, $58 ; 16
+	db $4a, $3d, $81, $0a, $0a, $0a, $0a, $58 ; 17
+	db $4a, $30, $80, $0a, $0a, $0a, $0a, $58 ; 18
+	db $4a, $2f, $7f, $0a, $0a, $0a, $0a, $58 ; 19
+	db $4a, $3d, $0a, $0a, $0a, $0a, $0a, $58 ; 1a
+	db $4a, $30, $0a, $0a, $0a, $0a, $0a, $58 ; 1b
+	db $4a, $2f, $68, $87, $88, $89, $0a, $58 ; 1c
+	db $4a, $3d, $6e, $6f, $70, $75, $76, $58 ; 1d
+	db $4a, $30, $75, $76, $5c, $5d, $5e, $58 ; 1e
+	db $4a, $2f, $71, $72, $73, $74, $6d, $58 ; 1f
+	db $4a, $3d, $75, $76, $77, $8a, $8b, $58 ; 20
+	db $4a, $30, $66, $67, $65, $0a, $6a, $58 ; 21
+	db $4a, $2f, $83, $84, $0a, $83, $84, $58 ; 22
+	db $4a, $3d, $0a, $85, $82, $84, $0a, $58 ; 23
+	db $4a, $30, $41, $80, $40, $0a, $0a, $58 ; 24
+	db $4a, $2f, $83, $0a, $0a, $0a, $0a, $58 ; 25
+	db $4a, $3d, $40, $0a, $0a, $0a, $0a, $58 ; 26
+	db -1
+
+TilemapPack_11bb7d:
+	db $0a, $0a, $0a, $0a, $0a, $0a, $16, $00 ; 00
+	db $78, $0a, $0a, $0a, $0a, $0a, $8c, $00 ; 01
+	db $79, $0a, $0a, $0a, $0a, $0a, $8d, $00 ; 02
+	db $7a, $0a, $0a, $0a, $0a, $0a, $8e, $00 ; 03
+	db $7b, $0a, $0a, $0a, $0a, $0a, $8c, $00 ; 04
+	db $7c, $0a, $0a, $0a, $0a, $0a, $8d, $00 ; 05
+	db $7d, $0a, $0a, $0a, $0a, $0a, $8e, $00 ; 06
+	db $2e, $7e, $0a, $0a, $0a, $0a, $8c, $00 ; 07
+	db $2e, $80, $0a, $0a, $0a, $0a, $8d, $00 ; 08
+	db $2e, $81, $0a, $0a, $0a, $0a, $8e, $00 ; 09
+	db $2e, $82, $0a, $0a, $0a, $0a, $8c, $00 ; 0a
+	db $2e, $69, $0a, $0a, $0a, $0a, $8d, $00 ; 0b
+	db $2e, $6a, $0a, $0a, $0a, $0a, $8e, $00 ; 0c
+	db $2e, $6b, $0a, $0a, $0a, $0a, $8c, $00 ; 0d
+	db $2e, $0a, $68, $0a, $0a, $0a, $8d, $00 ; 0e
+	db $2e, $0a, $69, $0a, $0a, $0a, $8e, $00 ; 0f
+	db $2e, $0a, $0a, $6a, $0a, $0a, $8c, $00 ; 10
+	db $2e, $0a, $0a, $6b, $0a, $0a, $8d, $00 ; 11
+	db $2e, $0a, $0a, $0a, $80, $0a, $8e, $00 ; 12
+	db $2e, $0a, $0a, $0a, $82, $0a, $8c, $00 ; 13
+	db $2e, $0a, $0a, $0a, $6c, $0a, $8d, $00 ; 14
+	db $2e, $0a, $0a, $0a, $0a, $83, $8e, $00 ; 15
+	db $2e, $0a, $6b, $0a, $0a, $0a, $8c, $00 ; 16
+	db $2e, $0a, $0a, $69, $0a, $0a, $8d, $00 ; 17
+	db $2e, $0a, $0a, $6a, $0a, $0a, $8e, $00 ; 18
+	db $2e, $0a, $0a, $0a, $68, $0a, $8c, $00 ; 19
+	db $2e, $0a, $0a, $0a, $63, $0a, $8d, $00 ; 1a
+	db $2e, $0a, $0a, $61, $62, $0a, $8e, $00 ; 1b
+	db $2e, $0a, $0a, $0a, $5f, $60, $8c, $00 ; 1c
+	db $2e, $0a, $0a, $0a, $63, $0a, $8d, $00 ; 1d
+	db $2e, $0a, $0a, $0a, $0a, $69, $8c, $00 ; 1e
+	db $2e, $0a, $0a, $0a, $0a, $6b, $8d, $00 ; 1f
+	db $2e, $0a, $0a, $0a, $0a, $83, $8e, $00 ; 20
+	db $2e, $0a, $0a, $0a, $0a, $86, $8c, $00 ; 21
+	db $2e, $0a, $85, $0a, $0a, $0a, $8d, $00 ; 22
+	db $2e, $0a, $0a, $84, $0a, $0a, $8e, $00 ; 23
+	db -1	
