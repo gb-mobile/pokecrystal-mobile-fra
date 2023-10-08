@@ -106,7 +106,7 @@ DisplayMoneyAndCoinBalance:
 MoneyString:
 	db "ARG.@"
 CoinString:
-	db "COIN@"
+	db "JETON@"
 ShowMoney_TerminatorString:
 	db "@"
 
