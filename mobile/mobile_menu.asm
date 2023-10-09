@@ -102,11 +102,11 @@ Function49f16:
 	jp .joy_loop
 
 MobileString1:
-	db   "CARD FOLDER"
-	next "MESSAGES"
-	next "PROFILE"
-	next "SETTINGS"
-	next "CANCEL"
+	db   "Card Folder"
+	next "Messages"
+	next "Profile"
+	next "Option"
+	next "Cancel"
 	db   "@"
 
 MobileStrings2:
@@ -332,9 +332,9 @@ asm_4a19d:
 	jp Function4a195
 
 String_4a1ef:
-	db   "MOBILE CENTER";"モバイルセンター¯えらぶ"
-	next "LOG-IN PASSWORD";"ログインパスワード¯いれる"
-	next "CANCEL@";"もどる@"
+	db   "Mobile Center";"モバイルセンター¯えらぶ"
+	next "Log-in Password";"ログインパスワード¯いれる"
+	next "Cancel@";"もどる@"
 
 Function4a20e:
 	ld a, $1
@@ -459,9 +459,9 @@ MenuHeader_0x4a346: ; unreferenced
 	menu_coords 11, 0, SCREEN_WIDTH - 1, 6;12, 0, SCREEN_WIDTH - 1, 6
 
 String_4a34b:
-	db   "CHANGE";"いれなおす"
-	next "DELETE";"けす"
-	next "CANCEL@";"もどる@"
+	db   "Change";"いれなおす"
+	next "Delete";"けす"
+	next "Cancel@";"もどる@"
 
 DeleteSavedLoginPasswordText:
 	text_far _DeleteSavedLoginPasswordText
@@ -763,15 +763,15 @@ Function4a5b0:
 	jp Function4a545
 
 String_4a5c5:
-	db "INTRODUCTION@";"じこしょうかい@"
+	db "Introduction@";"じこしょうかい@"
 String_4a5cd:
-	db "BEGIN BATTLE@";"たいせん　<GA>はじまるとき@"
+	db "Begin Battle@";"たいせん　<GA>はじまるとき@"
 String_4a5da:
-	db "WIN BATTLE@";"たいせん　<NI>かったとき@"
+	db "Win Battle@";"たいせん　<NI>かったとき@"
 String_4a5e6:
-	db "LOSE BATTLE@";"たいせん　<NI>まけたとき@"
+	db "Lose Battle@";"たいせん　<NI>まけたとき@"
 String_4a5f2:
-	db "CANCEL@";"もどる@"
+	db "Cancel@";"もどる@"
 
 Strings_4a5f6:
 	db "Shown on your@";"めいし　や　ニュース　<NI>のせる@"
