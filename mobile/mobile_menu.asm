@@ -117,7 +117,7 @@ String_0x49fe9:
 
 String_0x4a004:
 	db   "Compose CARD and";"モバイルたいせんや　じぶんのめいしで"
-	next "battle messages.@";"つかう　あいさつ¯つくります@"
+	next "battle greetings.@";"つかう　あいさつ¯つくります@"
 
 String_0x4a026:
 	db   "Change your age";"あなた<NO>じゅうしょや　ねんれいの"

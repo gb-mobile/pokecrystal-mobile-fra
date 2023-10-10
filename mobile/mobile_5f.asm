@@ -513,7 +513,7 @@ MenuData_17d272:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 4
 	db "Receive News@" 	; "ニュース¯よみこむ@"
-	db "Read News@" 	; "ニュース¯みる@"
+	db "View News@" 	; "ニュース¯みる@"
 	db "Explanation@" 	; "せつめい@"
 	db "Cancel@" 		; "やめる@"
 
