@@ -613,15 +613,15 @@ Function8b677:
 Function8b690:
 	ld hl, GFX_friend_cards + $514
 	ld de, vTiles2
-	ld bc, $22 tiles
+	ld bc, $28 tiles
 	ld a, BANK(GFX_friend_cards)
 	call FarCopyBytes
-	ld hl, GFX_friend_cards + $514 + $1c0 - $10
+	ld hl, GFX_friend_cards + $514 + $220 - $10
 	ld de, vTiles2 tile $61
 	ld bc, 1 tiles
 	ld a, BANK(GFX_friend_cards)
 	call FarCopyBytes
-	ld hl, GFX_friend_cards + $514 + $1c0
+	ld hl, GFX_friend_cards + $514 + $220
 	ld de, vTiles0 tile $ee
 	ld bc, 1 tiles
 	ld a, BANK(GFX_friend_cards)
@@ -670,7 +670,7 @@ Function8b6ed:
 Function8b703:
 	call Mobile22_SetBGMapMode0
 	push hl
-	ld a, $12
+	ld a, $18
 	ld [hli], a
 	inc a
 	call Mobile22_Fill_HL_with_A_C_Times
@@ -683,11 +683,11 @@ Function8b703:
 	add hl, de
 .asm_8b717
 	push hl
-	ld a, $15
+	ld a, $1b
 	ld [hli], a
 	ld a, $7f
 	call Mobile22_Fill_HL_with_A_C_Times
-	ld a, $17
+	ld a, $1d
 	ld [hl], a
 	pop hl
 	ld de, SCREEN_WIDTH
@@ -700,11 +700,11 @@ Function8b703:
 	jr Function8b744
 
 DisplayDottedFrameTopLine:
-	ld a, $18 ; Dotted frame top-left corner in VRAM.
+	ld a, $1e ; Dotted frame top-left corner in VRAM.
 	ld [hli], a
-	ld a, $19
+	ld a, $1f
 	call Mobile22_Fill_HL_with_A_C_Times
-	ld a, $1a
+	ld a, $20
 	ld [hl], a
 	ret
 
@@ -753,7 +753,7 @@ Function8b75d:
 	call Function8b788
 	hlcoord 1, 1
 	ld a, $4
-	ld e, $c
+	ld e, $12
 .asm_8b780
 	ld [hli], a
 	inc a
@@ -774,7 +774,7 @@ Function8b788:
 	ld [hli], a
 	dec c
 	ret z
-	ld a, $3
+	ld a, $2
 	ld [hli], a
 	dec c
 	ret z
@@ -788,8 +788,8 @@ Function8b79e:
 	hlcoord 0, 1, wAttrmap
 	ld a, $1
 	ld [hli], a
-	hlcoord 13, 1, wAttrmap
-	ld e, $8
+	hlcoord 19, 1, wAttrmap
+	ld e, $2
 .asm_8b7a9
 	ld a, $2
 	ld [hli], a
@@ -996,12 +996,12 @@ Mobile22_DisplayCardListBottomTextBox:
 
 	; Displays the leftmost vertical dotted line just above the textbox (why though?).
 	hlcoord 0, 13
-	ld a, $15
+	ld a, $1b
 	ld [hl], a
 
 	; Displays the rightmost vertical dotted line just above the textbox (why though?).
 	hlcoord 19, 13
-	ld a, $17
+	ld a, $1d
 	ld [hl], a
 
 	ld a, [wMenuScrollPosition]
@@ -1149,4 +1149,5 @@ Unknown_8ba1c:
 	db 2, 4, -1
 
 Unknown_8ba1f:
+
 	db 1, 2, 4, 3, -1
