@@ -218,7 +218,7 @@ Function48187:
 	ret
 
 .String_TellLater:
-	db "Tell Later@"
+	db "Dire Ultér@"
 
 MobileProfileOptionPressed:
 	call PlaceHollowCursor
@@ -275,7 +275,7 @@ Function48272:
 	jp ReturnToMobileProfileMenu
 
 MobileString_PersonalInfo:
-	db "Personal Info@"
+	db "Infos Personnelles@"
 
 ClearMobileProfileBottomTextBox:
 	lb bc, 2, 18
@@ -601,7 +601,7 @@ DEF S EQUS STRCAT("LOW(Zipcode_CharPoolsLength - Zipcode_CharPoolForStringIndex"
 
 MobileProfileString:         db "  Profile Mobile@"
 MobileString_Gender:         db "Sexe@"
-MobileString_Age:            db "Aage@"
+MobileString_Age:            db "Age@"
 MobileString_Address:        db "Addresse@"
 MobileString_ZipCode:        db "Code Postal@"
 MobileString_OK:             db "OK@"
@@ -1414,8 +1414,8 @@ MenuHeader_0x48a9c:
 	menu_coords 5, 8, SCREEN_WIDTH - 1, 13 ; For clearing the 'Tell Later' 'Tell Now' Box
 
 TellNowLaterStrings:
-	db   "Tell Now"
-	next "Tell Later@"
+	db   "Dire Maint"
+	next "Dire Ultér@"
 
 InputZipcodeCharacters: ; Function48ab5. Zip code menu controls.
 	ldh a, [hJoyPressed]

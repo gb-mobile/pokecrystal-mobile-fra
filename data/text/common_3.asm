@@ -119,66 +119,67 @@ _MobileBattleRulesText::
 	done
 
 _WouldYouLikeToMobileBattleText::
-	text "Today's remaining"
-	line "time is @"
+	text "Il reste @"
 	text_decimal wStringBuffer2, 1, 2
 	text " min."
+	line "aujourd'hui."
 
-	para "Would you like to"
-	line "battle?"
+	para "Voulez-vous"
+	line "combattre?"
 	done
 
 _WantAQuickMobileBattleText::
-	text "There are only @"
+	text "Il ne reste que @"
 	text_decimal wStringBuffer2, 1, 2
 	text_start
-	line "min. left today."
+	line "min. aujourd'hui."
 
-	para "Want a quick"
-	line "battle?"
+	para "Voulez-vous un"
+	line "combat rapide?"
 	done
 
 _WantToRushThroughAMobileBattleText::
-	text "There is only"
-	line "1 min. left today!"
+	text "Il ne reste que 1"
+	line "min. aujourd'hui!"
 
-	para "Want to rush"
-	line "through a battle?"
+	para "Voulez-vous hâter"
+	line "par un combat?"
 	done
 
 _PleaseTryAgainTomorrowText::
-	text "There is less than"
-	line "1 min. left today!"
+	text "Il ne reste pas 1"
+	line "min. aujourd'hui!"
 
-	para "Please try again"
-	line "tomorrow."
+	para "Réessayez demain"
+	line "s.v.p."
 	done
 
 _TryAgainUsingSameSettingsText::
-	text "Try again using"
-	line "the same settings?"
+	text "Réessayer avec les"
+	line "mêmes paramètres?"
 	done
 
 _MobileBattleLessThanOneMinuteLeftText::
-	text "There is less than"
-	line "1 min. left today!"
+	text "Il ne reste pas 1"
+	line "min. aujourd'hui!"
 	done
 
 _MobileBattleNoTimeLeftForLinkingText::
-	text "No time left for"
-	line "linking today."
+	text "Pas de temps rest-"
+	line "ant pour un lien."
 	done
 
 _PickThreeMonForMobileBattleText::
-	text "Pick three #MON"
-	line "for battle."
+	text "Choisir trois"
+	line "#MON pour le"
+	cont "combat."
 	done
 
 _MobileBattleRemainingTimeText::
-	text "Today's remaining"
-	line "time is @"
+	text "Il reste @"
 	text_decimal wStringBuffer2, 1, 2
 	text " min."
+	line "aujourd'hui."
 	done
 
 _WouldYouLikeToSaveTheGameText::
@@ -738,18 +739,19 @@ _MainMenuTimeUnknownText::
 	done
 
 _DeleteSavedLoginPasswordText::
-	text "Delete the saved"
-	line "LOG-IN PASSWORD?"
+	text "Effacer le MOT DE"
+	line "PASSE sauvegardé?"
 	done
 
 _DeletedTheLoginPasswordText::
-	text "Deleted the LOG-IN"
-	line "PASSWORD."
+	text "MOT DE PASSE"
+	line "effacé."
 	done
 
 _MobilePickThreeMonForBattleText::
-	text "Pick three #MON"
-	line "for battle."
+	text "Choisir trois"
+	line "#MON pour le"
+	cont "combat."
 	prompt
 
 _MobileUseTheseThreeMonText::
@@ -757,17 +759,17 @@ _MobileUseTheseThreeMonText::
 	text ","
 	line "@"
 	text_ram wMobileParticipant2Nickname
-	text " and"
+	text " et"
 	cont "@"
 	text_ram wMobileParticipant3Nickname
 	text "."
 
-	para "Use these three?"
+	para "Utiliser ces trois?"
 	done
 
 _MobileOnlyThreeMonMayEnterText::
-	text "Only three #MON"
-	line "may enter."
+	text "Ne choisir que"
+	line "trois #MON."
 	prompt
 
 _MobileCardFolderIntro1Text::

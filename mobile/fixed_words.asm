@@ -951,14 +951,14 @@ EZChatDrawBKG_ChatWords:
 	ret
 
 EZChatString_ChatExplanation: ; Explanation string
-	db   "Combine four words";"６つのことば¯くみあわせます"
-	next "or phrases.";"かえたいところ¯えらぶと　でてくる"
-	next "Select a space";"ことばのグループから　いれかえたい"
-	next "and choose a word.";"たんご¯えらんでください"
+	db   "Combiner quatre";"６つのことば¯くみあわせます"
+	next "mots ou phrases.";"かえたいところ¯えらぶと　でてくる"
+	next "Choisir les es-";"ことばのグループから　いれかえたい"
+	next "paces et les mots.";"たんご¯えらんでください"
 	db   "@"
 
 EZChatString_ChatExplanationBottom: ; Explanation commands string
-	db "RESET　QUIT  　OK@";"ぜんぶけす　やめる　　　けってい@"
+	db "REINI　 RET  　OK@";"ぜんぶけす　やめる　　　けってい@"
 
 EZChatDraw_CategoryMenu: ; Open category menu
 ; might need no change here
@@ -1148,7 +1148,7 @@ EZChat_SortMenuBackground:
 	ret
 
 EZChatString_Stop_Mode_Cancel:
-	db "DEL  　MODE　　QUIT@";"けす　　　　モード　　　やめる@"
+	db "EFFAC　MODE　　RET@";"けす　　　　モード　　　やめる@"
 
 EZChatCoord_Categories: ; Category Coordinates
 	dwcoord  1,  7 ; PKMN
@@ -2071,12 +2071,12 @@ Function11ca19:
 	ret
 
 EZChatString_EraseMenu: ; Erase words string, accessed from erase command on entry menu for EZ chat
-	db   "All words will";"とうろくちゅう<NO>あいさつ¯ぜんぶ"
-	next "be erased. OK?@";"けしても　よろしいですか？@"
+	db   "Tous les mots ser-";"とうろくちゅう<NO>あいさつ¯ぜんぶ"
+	next "ont effacés. OK?@";"けしても　よろしいですか？@"
 
 EZChatString_EraseConfirmation: ; Erase words confirmation string
-	db   "YES";"はい"
-	next "NO@";"いいえ@"
+	db   "OUI";"はい"
+	next "NON@";"いいえ@"
 
 EZChatMenu_EraseWordsAccept:
 	xor a
@@ -2198,12 +2198,12 @@ EZChatMenu_ExitSubmenu: ; Exit Message menu
 	ret
 
 EZChatString_ExitPrompt: ; Exit menu string
-	db   "Want to stop";"あいさつ<NO>とうろく¯ちゅうし"
-	next "setting a message?@";"しますか？@"
+	db   "Voulez-vous arrê-";"あいさつ<NO>とうろく¯ちゅうし"
+	next "ter de régler?@";"しますか？@"
 
 EZChatString_ExitConfirmation: ; Exit menu confirmation string
-	db   "Quit without";"とうろくちゅう<NO>あいさつ<WA>ほぞん"
-	next "saving a message? @";"されません<GA>よろしい　ですか？@"
+	db   "Quitter sans sau-";"とうろくちゅう<NO>あいさつ<WA>ほぞん"
+	next "ver un message? @";"されません<GA>よろしい　ですか？@"
 
 EZChatDraw_MessageTypeMenu: ; Message Type Menu Drawing (Intro/Battle Start/Win/Lose menu)
 	ld hl, EZChatString_MessageDescription
@@ -2383,8 +2383,8 @@ Function11cd04:
 	ret
 
 EZChatString_EnterSomeWords:
-	db 	 "Please enter a";"なにか　ことば¯いれてください@"
-	next "phrase or word.@"
+	db 	 "Entrez un mot ou";"なにか　ことば¯いれてください@"
+	next "un phrase s.v.p.@"
 
 EZChatDraw_SortByMenu: ; Draws/Opens Sort By Menu
 	call EZChat_ClearBottom12Rows
@@ -2490,17 +2490,17 @@ Function11cdaa:
 
 EZChatString_SortByCategory:
 ; Words will be displayed by category
-	db   "Display words";"ことば¯しゅるいべつに"
-	next "by category@";"えらべます@"
+	db   "Mots listés";"ことば¯しゅるいべつに"
+	next "par catégorie@";"えらべます@"
 
 EZChatString_SortByAlphabetical:
 ; Words will be displayed in alphabetical order
-	db   "Display words in";"ことば¯アイウエオ　の"
-	next "alphabetical order@";"じゅんばんで　ひょうじ　します@"
+	db   "Mots listés";"ことば¯アイウエオ　の"
+	next "alphabétiquement@";"じゅんばんで　ひょうじ　します@"
 
 EZChatString_SortByMenu:
-	db   "GROUP MODE";"しゅるいべつ　モード"  ; Category mode
-	next "ABC MODE@";"アイウエオ　　モード@" ; ABC mode
+	db   "MODE GROUPE";"しゅるいべつ　モード"  ; Category mode
+	next "MODE ABC@";"アイウエオ　　モード@" ; ABC mode
 
 EZChatDraw_SortByCharacter: ; Sort by Character Menu
 	call EZChat_ClearBottom12Rows

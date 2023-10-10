@@ -801,24 +801,24 @@ Pokecenter2FMovementData_ReceptionistStepsRightLooksLeft_2:
 	step_end
 
 Text_BattleReceptionistMobile:
-	text "Would you like to"
-	line "battle over a GAME"
+	text "Voulez-vous com-"
+	line "battre par CABLE"
 
-	para "LINK cable or by"
-	line "mobile phone?"
+	para "LINK ou par télé-"
+	line "phone mobile?"
 	done
 
 Text_TradeReceptionistMobile:
-	text "Would you like to"
-	line "trade over a GAME"
+	text "Voulez-vous éch-"
+	line "anger par CABLE"
 
-	para "LINK cable or by"
-	line "mobile phone?"
+	para "LINK ou par télé-"
+	line "phone mobile?"
 	done
 
 Text_ThisWayToMobileRoom: ; unreferenced
-	text "This way to the"
-	line "MOBILE ROOM."
+	text "Par ici, la SALLE"
+	line "MOBILE."
 	done
 
 Text_BattleReceptionistIntro:

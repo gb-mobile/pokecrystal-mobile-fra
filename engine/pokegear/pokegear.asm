@@ -310,7 +310,7 @@ InitPokegearTilemap:
 .Clock:
 	ld de, ClockTilemapRLE
 	call Pokegear_LoadTilemapRLE
-	hlcoord 12, 1
+	hlcoord 10, 1
 	ld de, .switch
 	call PlaceString
 	hlcoord 0, 12

@@ -605,20 +605,20 @@ MenuHeader_1179bd:
 	db 0 ; default option
 
 YessNoString_1179c5:
-	db "OUI@";"はい@"
-	db "NON@";"いいえ@"
+	db   "OUI";"はい"
+	next "NON@";"いいえ@"
 
 AskSavePasswordString:
-	db   "Save this";"こ<NO>パスワード¯ほぞんして"
-	line "PASSWORD?@";"おきますか？@"
+	db   "Sauvegarder ce";"こ<NO>パスワード¯ほぞんして"
+	line "MOT DE PASSE?@";"おきますか？@"
 
 NotAPokemonPasswordString:
-	db   "Invalid PASSWORD!@";"パスワード<WO>にゅうりょく"
-	;line "PASSWORD!@";"されていません！@"
+	db   "MOT DE PASSE@";"パスワード<WO>にゅうりょく"
+	line "invalide!@";"されていません！@"
 
 SavedPasswordString:
-	db   "Saved the LOG-IN";"ログインパスワード¯ほぞん"
-	line "PASSWORD.@";"しました@"
+	db   "MOT DE PASSE";"ログインパスワード¯ほぞん"
+	line "sauvegardé.@";"しました@"
 
 MobilePassword_IncrementJumptable:
 	ld hl, wcd49

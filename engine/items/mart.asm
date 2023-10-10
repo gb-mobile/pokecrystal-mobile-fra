@@ -814,7 +814,7 @@ MartWelcomeText:
 
 MenuHeader_BuySell:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 7, 8
+	menu_coords 0, 0, 9, 8
 	dw .MenuData
 	db 1 ; default option
 

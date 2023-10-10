@@ -567,7 +567,7 @@ PlacePartyMonMobileBattleSelection:
 .String_Kettei_Yameru:
 	db "OK  RETOUR@";"けってい　　やめる@" ; Quit
 .Strings_1_2_3:
-	db "1er@", "2e@", "3e@" ; 1st, 2nd, 3rd
+	db "1er @", "2e  @", "3e  @" ; 1st, 2nd, 3rd
 
 PartyMenuCheckEgg:
 	ld a, LOW(wPartySpecies)

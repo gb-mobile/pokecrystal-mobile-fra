@@ -1263,7 +1263,7 @@ MobileTradeAnim_DisplayEggData:
 	ret
 
 .EggTemplate:
-	db   "EGG";"タマゴ"
+	db   "OEUF";"タマゴ"
 	next "OT/?????";"おや/？？？？？"
 	next "<ID>№.?????";"<ID>№<DOT>？？？？？"
 	db   "@"

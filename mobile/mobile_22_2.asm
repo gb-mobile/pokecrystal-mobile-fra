@@ -1020,10 +1020,10 @@ Unknown_8b903:
 	dw String_8b92a
 	dw String_8b938
 
-String_8b90b: db "Choose a CARD.@"        ; Please select a noun.
-String_8b919: db "Move to where?@"    ; OK to swap with any noun?
-String_8b92a: db "Choose a friend.@"        ; Please select an opponent.
-String_8b938: db "Place it where?@" ; Please select a location.
+String_8b90b: db "Choisir une CARTE.@"        ; Please select a noun.
+String_8b919: db "Déplacer où?@"    ; OK to swap with any noun?
+String_8b92a: db "Choisir un ami.@"        ; Please select an opponent.
+String_8b938: db "Le mettre où?@" ; Please select a location.
 
 Mobile22_SetCardListNavigationAction:
 	ld [wd033], a
@@ -1094,9 +1094,9 @@ MenuHeader_CardListEmptyEntry:
 MenuData_CardListEmptyEntry:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 3 ; items
-	db "EDIT@" ; EDIT
-	db "SWITCH@"   ; REPLACE
-	db "CANCEL@"     ; QUIT
+	db "EDITER@" ; EDIT
+	db "CHANGER@"   ; REPLACE
+	db "RETOUR@"     ; QUIT
 
 MenuHeader_CardListExistingEntry:
 	db MENU_BACKUP_TILES ; flags
@@ -1107,11 +1107,11 @@ MenuHeader_CardListExistingEntry:
 MenuData_CardListExistingEntry:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 5 ; items
-	db "VIEW@"       ; VIEW
-	db "EDIT@" ; EDIT
-	db "SWITCH@"   ; REPLACE
-	db "DELETE@"       ; ERASE
-	db "CANCEL@"     ; QUIT
+	db "VOIR@"       ; VIEW
+	db "EDITER@" ; EDIT
+	db "CHANGER@"   ; REPLACE
+	db "EFFACER@"       ; ERASE
+	db "RETOUR@"     ; QUIT
 
 ; Returns carry is entry exists/is filled.
 Mobile22_CheckIfCardEntryIsFilled: ; check if entry is filled out?

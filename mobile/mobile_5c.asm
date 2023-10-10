@@ -399,9 +399,9 @@ Function171a95:
 	jp Function171c66
 
 String_171aa7:
-	db   "Connecting to";"モバイルアダプタに"
-	next "MOBILE ADAPTER…";"せつぞく　しています"
-	;next "しばらく　おまちください"
+	db   "Connexion à";"モバイルアダプタに"
+	next "l'ADAPTATEUR";"せつぞく　しています"
+	next "MOBILE…";"しばらく　おまちください"
 	db   "@"
 
 Function171ac9:
@@ -774,16 +774,16 @@ PasswordSlowpokeLZ:
 INCBIN "gfx/pokedex/slowpoke_mobile.2bpp.lz"
 
 String_172e31:
-	db "Enter PASSWORD@";"パスワード<WO>いれてください@"
+	db " MOT DE PASSE@";"パスワード<WO>いれてください@"
 String_172e3f:
-	db " SWAP QUIT  OK @";"きりかえ　やめる　　けってい@"
+	db " CHANG RET  OK @";"きりかえ　やめる　　けってい@"
 String_172e4e:
-	db " SWAP QUIT  OK @";"きりかえ　やめる　　"
+	db " CHANG RET  OK @";"きりかえ　やめる　　"
 String_172e58:
 	db "OK@";"けってい@"
 String_172e5d:
-	db   "Connect to a";"せつぞくする　モバイルセンターを"
-	next "MOBILE CENTER@";"えらんで　ください@"
+	db   "Connecter à un";"せつぞくする　モバイルセンターを"
+	next "CENTRE MOBILE@";"えらんで　ください@"
 
 Function172e78:
 	ld a, $7f

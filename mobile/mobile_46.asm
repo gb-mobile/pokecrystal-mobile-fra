@@ -5652,77 +5652,77 @@ Function11a63c:
 	ret
 
 String_11a661:
-	db   "Dialing the"
-	next "MOBILE CENTER…@"
+	db   "Appelation au"
+	next "CENTRE MOBILE…@"
 
 String_11a679:
-	db   "Is the MOBILE"
-	next "ADAPTER ready?@"
+	db   "L'ADAPT. MOBILE"
+	next "est-il prêt?@"
 
 String_11a692:
-	db   "Please wait"
-	next "a moment…@"
+	db   "Un moment,"
+	next "s.v.p.…@"
 
 String_11a6aa:
-	db   "Charges will"
-	next "apply.@"
+	db   "Frais"
+	next "s'applique.@"
 
 String_11a6c8:
-	db   "Connected.@";"せつぞく　しました@"
+	db   "Connecté.@";"せつぞく　しました@"
 
 String_11a6d2:
-	db   "Communicating…@";"つうしん　ちゅう@"
+	db   "Communication…@";"つうしん　ちゅう@"
 
 String_11a6db:
 	db   "Communication";"つうしん　ちゅう"
-	next "canceled.@";"セレクト　エーでちゅうし@"
+	next "annulé.@";"セレクト　エーでちゅうし@"
 
 String_11a6f1:
-	db   "This is a";"この　サービスには"
-	next "paid service.@";"つうわりょう<NO>ほかに@"
+	db   "Ce service";"この　サービスには"
+	next "est payant.@";"つうわりょう<NO>ほかに@"
 
 String_11a706:
-	db   "Cost:@";"おかね<GA>@"
+	db   "Coût:@";"おかね<GA>@"
 
 String_11a71e:
 	db   "Communication";"つうしん　しゅうりょう@" ; ???
-	next "ended.@"
+	next "terminée.@"
 
 String_11a72a:
-	db   "CALL TIME";"つないだ　じかん"
+	db   "DUREE APPEL";"つないだ　じかん"
 	next "   min.    sec.@"
 
 String_11a743:
-    db   "There is no";"もっていない　データが"
-    next "stored data!@";"あります！@"
+    db   "Il n'y a aucunes";"もっていない　データが"
+    next "données!@";"あります！@"
 	
 String_11a755:
-    db   "Read the";"データ<WO>よみこみますか？@"
-    next "data?@"
+    db   "Lire les données?@";"データ<WO>よみこみますか？@"
+    ;next "data?@"
 	
 String_11a762:
-    db   "Read the";"おなじ　データ<WO>よみこんだ"
-    next "same data.@";"こと<GA>ありますが@"
+    db   "Lu les mêmes";"おなじ　データ<WO>よみこんだ"
+    next "données.@";"こと<GA>ありますが@"
 	
 String_11a779:
-    db   "The data is";"そのデータ<WA>なくなっているか"
-    next "corrupted.@";"こわれて　います@"
+    db   "Les données sont";"そのデータ<WA>なくなっているか"
+    next "corrompues.@";"こわれて　います@"
 	
 String_11a791:
-    db   "This data";"もっている　データと"
-    next "already exists!@";"おなじデータしか　ありません！@"
+    db   "Ces données";"もっている　データと"
+    next "existent déjà!@";"おなじデータしか　ありません！@"
 	
 String_11a7ac:
-    db   "Quit reading";"データの よみこみを"
-    next "data?@";"ちゅうし しますか？""
+    db   "Arrêter de lire";"データの よみこみを"
+    next "les données?@";"ちゅうし しますか？""
 
 String_11a7c1:
-	db   "There was no"
-	next "more NEWS.@"
+	db   "Il n'y avait"
+	next "plus des INFOS.@"
 
 String_11a7d7:
-	db   "Receive the"
-	next "latest NEWS?@"
+	db   "Recevoir les"
+	next "INFOS récents?@"
 
 String_11a7f4:
 	db   "　　　　　　　　　　　　　　　@"
@@ -5977,40 +5977,41 @@ Function11a9f4: ; unreferenced
 	ret
 
 Text_SaveFileWillBeSent:
-	text "SAVE FILE will be"
-	line "sent."
+	text "La SAUVEGARDE"
+	line "sera envoyée."
 	done
 
 Text_SentSaveFileReadingNews:
-	text "Sent SAVE FILE."
-	line "Reading NEWS…"
+	text "Envoyée."
+	line "Lecture des INFOS…"
 	done
 
 Text_ReadingNews:
-	text "Reading NEWS…"
+	text "Lecture des INFOS…"
 	done
 
 Text_ReceivedNews:
-	text "Received NEWS!"
+	text "Reçu les INFOS!"
 	done
 
 Text_QuitReadingNews:
-	text "Quit reading NEWS?"
+	text "Arrêter de lire"
+	line "les INFOS?"
 	done
 
 Text_CanceledSendingSaveFile: ; unreferenced
-	text "Canceled sending"
-	line "SAVE FILE."
+	text "Annulé d'envoyer"
+	line "la SAUVEGARDE."
 	done
 
 Text_ReceivedOddEgg: ; unreferenced
-	text "ODD EGG"
-	line "was received!"
+	text "OEUF BIZARRE"
+	line "reçu!"
 	done
 
 Text_RegisteringRecord:
-	text "Registering your"
-	line "record…"
+	text "Enregistrement"
+	line "du record…"
 	done
 
 Text_BattleRoomVisitLimit: ; unreferenced
@@ -6040,13 +6041,13 @@ Text_CancelBattleRoomChallenge:
 	done
 
 Text_ExitGymLeaderHonorRoll:
-	text "Exit ROOM LEADER" ; text "Exit GYM LEADER" (Official text was mistranslated in context)
-	line "HONOR ROLL?"
+	text "Sortir du ROLE" ; text "Exit GYM LEADER" (Official text was mistranslated in context)
+	line "d'HONNEUR?"
 	done
 
 Text_LinkingWithCenter: ; unreferenced
-	text "Linking with the"
-	line "CENTER…"
+	text "Connexion au"
+	line "CENTRE…"
 	done
 
 Text_WhatLevelDoYouWantToChallenge:
@@ -6055,17 +6056,18 @@ Text_WhatLevelDoYouWantToChallenge:
 	done
 
 Text_CheckBattleRoomListByMaxLevel:
-	text "Check BATTLE ROOM"
-	line "list by max level?"
+	text "Voir la liste des"
+	line "SALLES de COMBAT?"
 	done
 
 Text_EnterWhichBattleRoom: ; unreferenced
-	text "Enter which"
-	line "BATTLE ROOM?"
+	text "Entrez quelle"
+	line "SALLE de COMBAT?"
 	done
 
 Text_WhichBattleRoom: ; unreferenced
-	text "Which BATTLE ROOM?"
+	text "Quelle SALLE de"
+	line "COMBAT?"
 	done
 
 Text_ThisBattleRoomPleaseWait:
@@ -6078,11 +6080,12 @@ Text_ThisBattleRoomPleaseWait:
 ;	done
 
 	; less awkward
-	text_ram wStringBuffer3
-	text "'s ROOM "
+	text "La SALLE "
 	text_ram wStringBuffer4
+	text " de "
+	text_ram wStringBuffer3
 	text "?"
-	line "Please wait…"
+	line "Un moment…"
 	done
 
 Function11ac3e:
