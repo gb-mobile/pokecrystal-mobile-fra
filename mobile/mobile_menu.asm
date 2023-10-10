@@ -103,7 +103,7 @@ Function49f16:
 
 MobileString1:
 	db   "Card Folder"
-	next "Messages"
+	next "Greetings"
 	next "Profile"
 	next "Option"
 	next "Cancel"
