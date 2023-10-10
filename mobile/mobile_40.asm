@@ -4553,7 +4553,7 @@ String_101f69:
 
 String_101f81:
 	db   "Utiliser le"			; "めいしフォルダーを"
-	next "DOSSIER CARTE?@"	; "つかいますか？@"
+	next "FICHIER CARTE?@"	; "つかいますか？@"
 
 String_101f93:
 	db   "Entrez un"	; "でんわばんごうを　にゅうりょく"

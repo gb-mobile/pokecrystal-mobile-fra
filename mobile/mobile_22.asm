@@ -2768,11 +2768,11 @@ Function8a1b0:
 
 Strings_8a1cc:
 	db   "Ouvrir le" ;"めいし<NO>せいりと　へんしゅうを"
-	next "DOSSIER CARTE." ;"おこないます"
+	next "FICHIER CARTE." ;"おこないます"
 	db   "@"
 
 	db   "Effacer le" ;"めいしフォルダー<NO>めいしと"
-	next "DOSSIER CARTE." ;"あんしょうばんごう<WO>けします"
+	next "FICHIER CARTE." ;"あんしょうばんごう<WO>けします"
 	db   "@"
 
 	db   "Retour à l'écran";"まえ<NO>がめん<NI>もどります@"

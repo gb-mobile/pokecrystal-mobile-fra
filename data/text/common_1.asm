@@ -127,7 +127,7 @@ _PasscodeSetText::
 	para "Entrez ce No. la"
 	line "prochaine fois"
 	cont "pour ouvrir le"
-	cont "DOSSIER CARTE."
+	cont "FICHIER CARTE."
 
 	para ""
 	done
@@ -138,7 +138,7 @@ _FourZerosInvalidText::
 
 _EnterPasscodeText::
 	text "Entrez le CODE du"
-	next "DOSSIER CARTE."
+	next "FICHIER CARTE."
 	done
 
 _IncorrectPasscodeText::
@@ -147,7 +147,7 @@ _IncorrectPasscodeText::
 	done
 
 _CardFolderOpenText::
-	text "DOSSIER CARTE"
+	text "FICHIER CARTE"
 	line "ouvert.@"
 	text_end
 
@@ -1232,7 +1232,7 @@ _NewCardArrivedText::
 
 _PutCardInCardFolderText::
 	text "Ranger cette CARTE"
-	line "dans le DOSSIER?"
+	line "dans le FICHIER?"
 	done
 
 _CardWasListedText::
