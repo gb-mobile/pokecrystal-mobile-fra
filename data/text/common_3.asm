@@ -764,7 +764,8 @@ _MobileUseTheseThreeMonText::
 	text_ram wMobileParticipant3Nickname
 	text "."
 
-	para "Utiliser ces trois?"
+	para "Utiliser ces"
+	line "trois?"
 	done
 
 _MobileOnlyThreeMonMayEnterText::
