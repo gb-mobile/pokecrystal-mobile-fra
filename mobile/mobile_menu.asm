@@ -13,11 +13,11 @@ Function49f16:
 	call MobileMenu_InitMenuBuffers
 	ld c, 12
 	call DelayFrames
-	hlcoord 3, 0 ;4, 0
+	hlcoord 2, 0 ;4, 0
 	ld b, 10 ; menu height
-	ld c, 12 ;10 ; menu width
+	ld c, 14 ;10 ; menu width
 	call DisplayBlankGoldenBox
-	hlcoord 5, 2 ;6, 2 ; menu text position
+	hlcoord 4, 2 ;6, 2 ; menu text position
 	ld de, MobileString1
 	call PlaceString
 	hlcoord 0, 12
@@ -102,7 +102,7 @@ Function49f16:
 	jp .joy_loop
 
 MobileString1:
-	db   "Doss. Carte"
+	db   "Fichier Carte"
 	next "Salutations"
 	next "Profil"
 	next "Options"
@@ -135,7 +135,7 @@ MobileMenu_InitMenuBuffers:
 	ld hl, w2DMenuCursorInitY
 	ld a, 2
 	ld [hli], a
-	ld a, 4 ;5 ; w2DMenuCursorInitX
+	ld a, 3 ;5 ; w2DMenuCursorInitX
 	ld [hli], a
 	ld a, 5 ; w2DMenuNumRows
 	ld [hli], a
@@ -221,7 +221,7 @@ Function4a118:
 	ld hl, w2DMenuCursorInitY
 	ld a, $1
 	ld [hli], a
-	ld a, $c;$d
+	ld a, $b
 	ld [hli], a
 	ld a, $3
 	ld [hli], a
@@ -391,11 +391,11 @@ Function4a28a:
 	call CloseSRAM
 	and a
 	jr z, .asm_4a2df
-	hlcoord 11, 0;12, 0
+	hlcoord 10, 0;12, 0
 	ld b, $5
-	ld c, $7;$6
+	ld c, $8;$6
 	call DisplayBlankGoldenBox
-	hlcoord 13, 1;14, 1
+	hlcoord 12, 1;14, 1
 	ld de, String_4a34b
 	call PlaceString
 	farcall Mobile_OpenAndCloseMenu_HDMATransferTilemapAndAttrmap
@@ -765,11 +765,11 @@ Function4a5b0:
 String_4a5c5:
 	db "Présentation@";"じこしょうかい@"
 String_4a5cd:
-	db "Départ Bat.@";"たいせん　<GA>はじまるとき@"
+	db "Départ Combat@";"たいせん　<GA>はじまるとき@"
 String_4a5da:
-	db "Gangé Bat.@";"たいせん　<NI>かったとき@"
+	db "Combat Gangé@";"たいせん　<NI>かったとき@"
 String_4a5e6:
-	db "Perdu Bat.@";"たいせん　<NI>まけたとき@"
+	db "Combat Perdu@";"たいせん　<NI>まけたとき@"
 String_4a5f2:
 	db "Retour@";"もどる@"
 

@@ -2721,12 +2721,12 @@ Function8a116:
 
 MenuHeader_0x8a176:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 11, 0, SCREEN_WIDTH - 1, 6
+	menu_coords 10, 0, SCREEN_WIDTH - 1, 6
 
 Function8a17b:
-	decoord 11, 0
+	decoord 10, 0
 	ld b, $5
-	ld c, $7
+	ld c, $8
 	call SetBGAndDisplayBlankGoldenBox_DE
 	ld hl, MenuHeader_0x8a19a
 	ld a, [wd030]

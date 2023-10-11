@@ -2327,20 +2327,20 @@ EZChatString_MessageDescription: ; Message usage strings
 	dw EZChatString_MessageBattleLoseDescription
 
 EZChatString_MessageIntroDescription:
-	db   "Shown as an";"じこしょうかい　は"
-	next "introduction. OK?@";"この　あいさつで　いいですか？@"
+	db   "Affiché comme";"じこしょうかい　は"
+	next "présentation. OK?@";"この　あいさつで　いいですか？@"
 
 EZChatString_MessageBattleStartDescription:
-	db   "Shown when a";"たいせん　<GA>はじまるとき　は"
-	next "battle starts. OK?@";"この　あいさつで　いいですか？@"
+	db   "Affiché au départ";"たいせん　<GA>はじまるとき　は"
+	next "d'un combat. OK?@";"この　あいさつで　いいですか？@"
 
 EZChatString_MessageBattleWinDescription:
-	db   "Shown if you";"たいせん　<NI>かったとき　は"
-	next "win a battle. OK?@";"この　あいさつで　いいですか？@"
+	db   "Affiché quand vous";"たいせん　<NI>かったとき　は"
+	next "gagnez. OK?@";"この　あいさつで　いいですか？@"
 
 EZChatString_MessageBattleLoseDescription:
-	db   "Shown if you";"たいせん　<NI>まけたとき　は"
-	next "lose a battle. OK?@";"この　あいさつで　いいですか？@"
+	db   "Affiché quand vous";"たいせん　<NI>まけたとき　は"
+	next "perdez. OK?@";"この　あいさつで　いいですか？@"
 
 EZChatString_MessageSet: ; message accept strings, one for each type of message.
 	dw EZChatString_MessageIntroSet
@@ -2349,20 +2349,20 @@ EZChatString_MessageSet: ; message accept strings, one for each type of message.
 	dw EZChatString_MessageBattleLoseSet
 
 EZChatString_MessageIntroSet:
-	db   "INTRODUCTION"		;"じこしょうかい　の"
-	next "message set!@"	;next "あいさつ¯とうろくした！@"
+	db   "Message de PRE-"		;"じこしょうかい　の"
+	next "SENTATION réglé!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatString_MessageBattleStartSet:
-	db   "BEGIN BATTLE"		;"たいせん　<GA>はじまるとき　の"
-	next "message set!@"	;next "あいさつ¯とうろくした！@"
+	db   "Message du DEPART"		;"たいせん　<GA>はじまるとき　の"
+	next "de COMBAT réglé!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatString_MessageBattleWinSet:
-	db   "WIN BATTLE"		;"たいせん　<NI>かったとき　の"
-	next "message set!@"	;next "あいさつ¯とうろくした！@"
+	db   "Message du COMBAT"		;"たいせん　<NI>かったとき　の"
+	next "GAGNE réglé!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatString_MessageBattleLoseSet:
-	db   "LOSE BATTLE"		;"たいせん　<NI>まけたとき　の"
-	next "message set!@"	;next "あいさつ¯とうろくした！@"
+	db   "Message du COMBAT"		;"たいせん　<NI>まけたとき　の"
+	next "PERDU réglé!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatMenu_WarnEmptyMessage:
 	ld de, EZChatBKG_SortBy

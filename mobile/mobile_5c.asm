@@ -645,8 +645,8 @@ MenuHeader_171c6b:
 	db 0 ; default option
 
 String_171c73:
-	db   "MOBILE CENTER";"モバイルセンターを　けってい"
-	next "set.@";"しました@"
+	db   "CENTRE MOBILE";"モバイルセンターを　けってい"
+	next "choisi.@";"しました@"
 
 Function171c87:
 	call DisableLCD
@@ -776,9 +776,9 @@ INCBIN "gfx/pokedex/slowpoke_mobile.2bpp.lz"
 String_172e31:
 	db " MOT DE PASSE@";"パスワード<WO>いれてください@"
 String_172e3f:
-	db " CHANG RET  OK @";"きりかえ　やめる　　けってい@"
+	db "CHANG  RET  OK @";"きりかえ　やめる　　けってい@"
 String_172e4e:
-	db " CHANG RET  OK @";"きりかえ　やめる　　"
+	db "CHANG  RET  OK @";"きりかえ　やめる　　"
 String_172e58:
 	db "OK@";"けってい@"
 String_172e5d:
