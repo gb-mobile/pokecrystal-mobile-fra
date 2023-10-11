@@ -167,7 +167,7 @@ PrintWaitingTextAndSyncAndExchangeNybble:
 .PrintWaitingText:
 	hlcoord 4, 10
 	ld b, 1
-	ld c, 10
+	ld c, 11
 	predef LinkTextboxAtHL
 	hlcoord 5, 11
 	ld de, .Waiting

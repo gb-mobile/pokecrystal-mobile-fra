@@ -3777,13 +3777,13 @@ Jumptable_8a9c5:
 
 MenuHeader_0x8a9c9:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 11, 4, 18, TEXTBOX_Y - 1
+	menu_coords 11, 4, 19, TEXTBOX_Y - 1
 
 Function8a9ce:
 	push bc
 	decoord 11, 4
 	ld b, $6
-	ld c, $6
+	ld c, $7
 	call SetBGAndDisplayBlankGoldenBox_DE
 	pop bc
 	ld a, c
@@ -3804,7 +3804,7 @@ Function8a9ce:
 
 MenuHeader_0x8a9f2:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 4, 18, TEXTBOX_Y - 1
+	menu_coords 11, 4, 19, TEXTBOX_Y - 1
 	dw MenuData_0x8a9fa
 	db 1 ; default option
 
