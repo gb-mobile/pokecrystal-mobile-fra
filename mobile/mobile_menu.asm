@@ -83,7 +83,7 @@ Function49f16:
 	ld d, h
 	ld e, l
 	hlcoord 1, 13
-	ld b, 4
+	ld b, 3
 	ld c, SCREEN_HEIGHT
 	call ClearBox
 	hlcoord 1, 14
@@ -97,7 +97,7 @@ Function49f16:
 	ld [hl], b
 	ld b, $a
 	ld c, $1
-	hlcoord 4, 1
+	hlcoord 3, 1
 	call ClearBox
 	jp .joy_loop
 
