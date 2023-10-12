@@ -3813,7 +3813,7 @@ MenuData_0x8a9fa:
 	db 3 ; items
 	db "Editer@"
 	db "Voir@"
-	db "Ret@"
+	db "Retour@"
 
 Function8aa09:
 	ret

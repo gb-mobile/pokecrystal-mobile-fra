@@ -1048,11 +1048,11 @@ GoldenrodPokecenter1FMobileOffGrampsText:
 	done
 
 GoldenrodPokecenter1FMobileOnGrampsText:
-	text "Just seeing all"
-	line "these new things"
+	text "Juste voir les"
+	line "nouveaux choses"
 
-	para "here makes me feel"
-	line "younger!"
+	para "ici me fait sentir"
+	line "plus jeune!"
 	done
 
 GoldenrodPokecenter1FLassText:
@@ -1090,25 +1090,25 @@ GoldenrodPokeCenter1FLinkReceptionistPleaseDoComeAgainText:
 	done
 
 GoldenrodPokecomCenterSignText:
-	text "#COM CENTER"
-	line "1F INFORMATION"
+	text "CENTRE #COM"
+	line "A PROPOS DU RDC"
 
-	para "Left:"
+	para "Gauche:"
 	line "ADMINISTRATION"
 
-	para "Center:"
-	line "TRADE CORNER"
+	para "Centre:"
+	line "COIN D'ECHANGE"
 
-	para "Right:"
-	line "#MON NEWS"
+	para "Droite:"
+	line "INFOS #MON"
 	done
 
 GoldenrodPokecomCenterNewsMachineNotYetText:
-	text "It's a #MON"
-	line "NEWS MACHINE!"
+	text "C'est une machine"
+	line "d'INFOS #MON!"
 
-	para "It's not in"
-	line "operation yet…"
+	para "Elle ne marche"
+	line "pas maintenant…"
 	done
 
 GoldenrodPokecenter1FPokefanFDoYouHaveEonMailText:

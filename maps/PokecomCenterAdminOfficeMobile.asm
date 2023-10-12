@@ -55,9 +55,9 @@ PokecomCenterAdminOfficeMobileComputer1:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "#COM CLUB@" ; # COM CLUB
-	db "MOBILE CENTER@" ; MOBILE CENTER
-	db "CANCEL@" ; QUIT
+	db "CLUB #COM@" ; # COM CLUB
+	db "CENTRE MOBILE@" ; MOBILE CENTER
+	db "ANNULER@" ; QUIT
 
 PokecomCenterAdminOfficeMobileComputer2:
 	opentext
@@ -97,9 +97,9 @@ PokecomCenterAdminOfficeMobileComputer2:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "PHONE GUIDE@" ; Use phone
-	db "PHONE ISSUES@" ; Don't use phone
-	db "CANCEL@" ; QUIT
+	db "MODE D'EMPLOI@" ; Use phone
+	db "PROBLEMES@" ; Don't use phone
+	db "ANNULER@" ; QUIT
 
 PokecomCenterAdminOfficeMobileComputer3:
 	jumptext PokecomCenterAdminOfficeMobileComputer3Text
