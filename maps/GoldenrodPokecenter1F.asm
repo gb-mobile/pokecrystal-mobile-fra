@@ -1097,7 +1097,7 @@ GoldenrodPokecomCenterSignText:
 	line "ADMINISTRATION"
 
 	para "Centre:"
-	line "COIN D'ECHANGE"
+	line "COIN TROC"
 
 	para "Droite:"
 	line "INFOS #MON"
