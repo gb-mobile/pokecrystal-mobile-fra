@@ -586,8 +586,8 @@ Route36NationalParkGateOfficer1FirstMonCantBattleText:
 	para "Change-le avec le"
 	line "#MON de ton"
 
-	para "choix et viens me"
-	line "voir."
+	para "choix et reviens"
+	line "me voir."
 	done
 
 Route36NationalParkGateOfficer1MakeRoomText:
@@ -615,15 +615,15 @@ Route36NationalParkGateOfficer1EggAsFirstMonText:
 	para "Change-le avec le"
 	line "#MON de ton"
 
-	para "choix et viens me"
-	line "voir."
+	para "choix et reviens"
+	line "me voir."
 	done
 
 Route36NationalParkGateOfficer1WantToFinishText:
 	text "Tu as encore @"
 	text_ram wStringBuffer3
 	text_start
-	line "minute(s)."
+	line "Minute(s)."
 
 	para "Veux-tu t'arrêter"
 	line "maintenant?"

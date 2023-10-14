@@ -229,13 +229,13 @@ BlackthornGymClairText_DescribeTM24:
 	text "Elle contient"
 	line "DRACOSOUFFLE."
 
-	para "Quoi? Non, ça n'a"
-	line "rien à voir avec"
-	cont "mon haleine."
+	para "Non, cela n'a rien"
+	line "à voir avec mon"
+	cont "haleine..."
 
-	para "Ecoute: si tu la"
-	line "veux pas, t'as"
-	cont "qu'à la laisser."
+	para "Si tu n'en veux"
+	line "pas, c'est pas"
+	cont "la peine."
 	done
 
 BlackthornGymClairText_BagFull:
