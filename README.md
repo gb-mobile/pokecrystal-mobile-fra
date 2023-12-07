@@ -57,6 +57,7 @@ https://github.com/gb-mobile/pokecrystal-mobile-en/wiki/Pok%C3%A9mon-Crystal-Mob
 - Damien         : Code
 - DS             : GFX & Code
 - Ryuzac         : Code & Japanese Translation
+- Wit            : Mobile French Translation
 - Zumilsawhat?   : Code (Large amounts of work on the EZ Chat system)
 - REON Community : Support and Assistance
 
