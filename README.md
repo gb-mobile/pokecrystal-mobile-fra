@@ -9,11 +9,6 @@ It is possible that some menus were missed by the find/replace script, and need 
 
 ## TO-DO
 
-Due to this translation being performed using a find/replace script, several lines which are duplicated in English but have differences between them in other languages get skipped over.
-To complete the translation of non-mobile features into French, the following lines need to be identified and placed accordingly:
-https://github.com/gb-mobile/pokecrystal-mobile-fra/wiki/Potentially-misplaced-or-Missing-lines
-
-
 - Adjust any menus to match those of the original French games (currently set to English sizing and formatting)
 - Check for any untranslated menus missed by the find/replace script.
 - Translate any of mobile features. (Anything English under /mobile/, /maps/GoldenrodPokecenter1F.asm, maps/PokecomCenterAdminOfficeMobile.asm, data/text/common_1.asmm data/text/common_3.asm and data/text/battle.asm).
