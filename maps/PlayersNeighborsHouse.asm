@@ -87,7 +87,7 @@ PlayerNeighborRadioText2:
 	done
 
 PlayerNeighborRadioText3:
-	text "Ici DJ LULA, la"
+	text "Ici DJ LULA, votre"
 	line "co-présentatrice!"
 	done
 

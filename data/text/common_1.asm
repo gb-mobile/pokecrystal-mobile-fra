@@ -469,7 +469,7 @@ _MobilePlayersMonTradeText::
 	text_start
 	line "de @"
 	text_ram wPlayerTrademonSenderName
-	text "..........."
+	text "…"
 	done
 
 _MobileTakeGoodCareOfMonText::
@@ -485,7 +485,7 @@ _MobilePlayersMonTrade2Text::
 	text_start
 	line "de @"
 	text_ram wPlayerTrademonSenderName
-	text "..........."
+	text "…"
 	done
 
 _MobileTakeGoodCareOfText::
@@ -1089,12 +1089,15 @@ _BuenaRadioMidnightText8::
 	done
 
 _BuenaRadioMidnightText9::
-	text "Au revoir!"
+	text_start
+	line "Au revoir!"
 	done
 
 _BuenaRadioMidnightText10::
-	text "...."
+	text_start
+	line "…"
 	done
+
 
 _BuenaOffTheAirText::
 	text_start
@@ -1310,10 +1313,10 @@ _RepelWoreOffText::
 	done
 
 _PlayerFoundItemText::
-	text "<PLAYER> trouve:"
+	text "<PLAYER> trouve"
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text "."
 	done
 
 _ButNoSpaceText::
@@ -1821,8 +1824,8 @@ _HaveNoRoomText::
 	prompt
 
 _NotEnoughMoneyText::
-	text "Vous n'avez pas"
-	line "assez de sous."
+	text "Tu n'as pas assez"
+	line "d'argent."
 	prompt
 
 _OhFineThenText::

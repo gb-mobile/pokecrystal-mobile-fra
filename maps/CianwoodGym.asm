@@ -296,7 +296,7 @@ BlackbeltNobSeenText:
 	done
 
 BlackbeltNobBeatenText:
-	text "...."
+	text "..."
 	done
 
 BlackbeltNobAfterText:

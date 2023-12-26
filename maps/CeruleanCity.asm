@@ -196,7 +196,7 @@ CeruleanCityCooltrainerFText2:
 	done
 
 CeruleanCityCooltrainerFText3:
-	text "...."
+	text "......."
 	done
 
 CeruleanCityFisherText:

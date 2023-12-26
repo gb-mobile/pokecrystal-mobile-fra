@@ -1647,7 +1647,7 @@ GSPlaceTradeScreenFooter: ; unreferenced
 	jp PlaceString
 
 .CancelString:
-	db "RETOUR@"
+	db "ANNULER@"
 
 LinkTradePlaceArrow:
 	ld a, [wOtherPlayerLinkMode]

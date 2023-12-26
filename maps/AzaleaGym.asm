@@ -332,7 +332,7 @@ TwinsAmyandmay2SeenText:
 
 TwinsAmyandmay2BeatenText:
 	text "PIM & PAM: Oh,"
-	line "double zut!"
+	line "mince et re-mince!"
 	done
 
 TwinsAmyandmay2AfterBattleText:

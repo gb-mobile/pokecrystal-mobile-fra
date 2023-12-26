@@ -39,7 +39,7 @@ _ClockSetWithControlPadText::
 	done
 
 _ClockIsThisOKText::
-	text "OK?"
+	text "Est-ce correct?"
 	done
 
 _ClockHasResetText::
@@ -644,8 +644,8 @@ _MartThanksText::
 	done
 
 _MartNoMoneyText::
-	text "Vous n'avez pas"
-	line "assez de sous."
+	text "Tu n'as pas assez"
+	line "d'argent."
 	done
 
 _MartPackFullText::
@@ -682,7 +682,7 @@ _SlotsBetHowManyCoinsText::
 	done
 
 _SlotsStartText::
-	text "C'est parti!"
+	text "GO!"
 	done
 
 _SlotsNotEnoughCoinsText::
@@ -1093,17 +1093,17 @@ _BuenaIsThatRightText::
 
 _BuenaHereYouGoText::
 	text "Voilà!"
-	done
+	prompt
 
 _BuenaNotEnoughPointsText::
 	text "Vous n'avez pas"
 	line "assez de points."
-	done
+	prompt
 
 _BuenaNoRoomText::
 	text "Vous n'avez pas"
 	line "de place."
-	done
+	prompt
 
 _BuenaComeAgainText::
 	text "Oh. Revenez"

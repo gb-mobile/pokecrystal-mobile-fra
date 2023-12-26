@@ -77,7 +77,7 @@ YoungsterWarrenSeenText:
 	done
 
 YoungsterWarrenBeatenText:
-	text "Perdu j'ai?"
+	text "Pfff...perdu."
 	done
 
 YoungsterWarrenAfterBattleText:

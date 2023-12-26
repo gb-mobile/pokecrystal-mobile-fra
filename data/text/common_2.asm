@@ -425,9 +425,8 @@ _BouldersMoveText::
 	done
 
 _BouldersMayMoveText::
-	text "Un #MON"
-	line "pourrait sûrement"
-	cont "déplacer ça."
+	text "Un #MON peut"
+	line "déplacer ceci."
 	done
 
 _UseWhirlpoolText::
@@ -477,9 +476,8 @@ _UseRockSmashText::
 	prompt
 
 _MaySmashText::
-	text "Un #MON"
-	line "pourrait peut-être"
-	cont "casser ça."
+	text "Un #MON peut"
+	line "le briser."
 	done
 
 _AskRockSmashText::
@@ -536,7 +534,7 @@ _CanCutText::
 	done
 
 _FoundItemText::
-	text "<PLAYER> trouve:"
+	text "<PLAYER> trouve"
 	line "@"
 	text_ram wStringBuffer3
 	text "!"
@@ -545,7 +543,7 @@ _FoundItemText::
 _CantCarryItemText::
 	text "Mais <PLAYER> ne"
 	line "peut plus rien"
-	cont "porter."
+	cont "porter!"
 	done
 
 _WhitedOutText::
@@ -944,7 +942,7 @@ _PCGottaHavePokemonText::
 	prompt
 
 _PCWhatText::
-	text "Quoi?"
+	text "Que faire?"
 	done
 
 _PCMonHoldingMailText::
@@ -1132,7 +1130,7 @@ _PlayersPCTurnOnText::
 	prompt
 
 _PlayersPCAskWhatDoText::
-	text "Que veux-tu"
+	text "Que voulez-vous"
 	line "faire?"
 	done
 

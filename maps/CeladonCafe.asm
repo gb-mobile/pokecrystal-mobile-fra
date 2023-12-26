@@ -200,7 +200,7 @@ FoundLeftoversText:
 	text "<PLAYER> trouve:"
 	line "@"
 	text_ram wStringBuffer3
-	text "!"
+	text "."
 	done
 
 NoRoomForLeftoversText:

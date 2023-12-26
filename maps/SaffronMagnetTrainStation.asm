@@ -153,8 +153,8 @@ SaffronMagnetTrainStationOfficerYouDontHaveAPassText:
 	done
 
 SaffronMagnetTrainStationOfficerHopeToSeeYouAgainText:
-	text "Encore merci et"
-	line "à bientôt!"
+	text "Allez..."
+	line "Au revoir."
 	done
 
 SaffronMagnetTrainStationOfficerArrivedInSaffronText:

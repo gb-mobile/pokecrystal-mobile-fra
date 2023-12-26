@@ -249,8 +249,8 @@ RadioTower1FLuckyNumberManCheckIfMatchText:
 	done
 
 RadioTower1FLuckyNumberManDotDotDotText:
-	text "..........."
-	line "…"
+	text "<……>"
+	line "<……>"
 	done
 
 RadioTower1FLuckyNumberManComeAgainText:

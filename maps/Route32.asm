@@ -732,7 +732,7 @@ YoungsterAlbertSeenText:
 	done
 
 YoungsterAlbertBeatenText:
-	text "T'es balèze!"
+	text "Oulààà!"
 	done
 
 YoungsterAlbertAfterText:

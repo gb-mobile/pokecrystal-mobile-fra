@@ -35,16 +35,16 @@ Red:
 	end
 
 RedSeenText:
-	text "..........."
+	text "…"
 	line "…"
 	done
 
 RedWinLossText:
-	text "...."
+	text "…"
 	done
 
 RedLeavesText:
-	text "..........."
+	text "…"
 	line "…"
 	done
 

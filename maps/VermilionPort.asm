@@ -228,8 +228,8 @@ VermilionPortApproachFastShipRightMovement:
 
 VermilionPortDepartingText:
 	text "Le départ est"
-	line "proche. Tout le"
-	cont "monde à bord."
+	line "proche. Montez à"
+	cont "bord s.v.p."
 	done
 
 VermilionPortCantBoardText:
@@ -252,7 +252,7 @@ VermilionPortAskTicketText:
 	done
 
 VermilionPortComeAgainText:
-	text "A bientôt!"
+	text "A bientot!"
 	done
 
 VermilionPortSSTicketText:

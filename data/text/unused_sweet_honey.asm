@@ -61,5 +61,5 @@ UnusedSweetHoneyAfterText3: ; unreferenced
 	done
 
 UnusedSweetHoneyButterfreeText: ; unreferenced
-	text "PAPILUSION: Piiii!"
+	text "PAPILUSION: Piii!"
 	done

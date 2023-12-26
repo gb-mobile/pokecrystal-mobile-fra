@@ -576,7 +576,7 @@ Text_CongratulationsYouveBeatenAllTheTrainers:
 
 	para "ont été vaincus! "
 	line "Et hop! Cadeau!"
-	done
+	prompt
 
 Text_AskRegisterRecord_Mobile: ; unreferenced
 	text "Voulez-vous enre-"
@@ -732,7 +732,8 @@ Text_SaveBeforeReentry:
 
 Text_CancelYourBattleRoomChallenge:
 	text "Annuler le défi"
-	line "SALLE DE COMBAT?"
+	line "des SALLES DE"
+	cont "COMBAT?"
 	done
 
 Text_RegisterRecordOnFile_Mobile: ; unreferenced

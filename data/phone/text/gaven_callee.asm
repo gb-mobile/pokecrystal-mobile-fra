@@ -2,7 +2,7 @@ GavenAnswerPhoneText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Salut <PLAY_G>!"
 	done
@@ -11,7 +11,7 @@ GavenAnswerPhoneDayText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "..........."
+	text "…"
 
 	para "Salut <PLAY_G>!"
 	done
@@ -20,7 +20,7 @@ GavenAnswerPhoneNiteText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonsoir <PLAY_G>!"
 	done

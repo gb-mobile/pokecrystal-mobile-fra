@@ -100,7 +100,7 @@ GameFreakGameDesignerCompletedPokedexText:
 	done
 
 GameFreakGameDesignerPauseForDiplomaText:
-	text "...."
+	text "......."
 	done
 
 GameFreakGameDesignerAfterDiplomaText:

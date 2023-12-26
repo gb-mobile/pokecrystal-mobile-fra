@@ -328,7 +328,8 @@ GoldenrodGameCornerPrizeVendorIntroText:
 	done
 
 GoldenrodGameCornerPrizeVendorWhichPrizeText:
-	text "Quel prix?"
+	text "Quel prix désires-"
+	line "tu?"
 	done
 
 GoldenrodGameCornerPrizeVendorConfirmPrizeText:
@@ -338,7 +339,7 @@ GoldenrodGameCornerPrizeVendorConfirmPrizeText:
 	done
 
 GoldenrodGameCornerPrizeVendorHereYouGoText:
-	text "Voilà!"
+	text "Allez hop!"
 	done
 
 GoldenrodGameCornerPrizeVendorNeedMoreCoinsText:
@@ -359,8 +360,8 @@ GoldenrodGameCornerPrizeVendorQuitText:
 	done
 
 GoldenrodGameCornerPrizeVendorNoCoinCaseText:
-	text "Oh? Pas de"
-	line "BOITE JETON!"
+	text "Oh? Tu n'as pas"
+	line "de BOITE JETON."
 	done
 
 GoldenrodGameCornerPharmacistText:

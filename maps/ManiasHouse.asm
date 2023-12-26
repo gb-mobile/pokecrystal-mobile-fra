@@ -161,7 +161,7 @@ ManiaText_CanIHaveMyMonBack:
 	done
 
 ManiaText_ThankYou:
-	text "Merci!"
+	text "Merci mon petit!"
 	done
 
 ManiaText_ShuckleNotThere:

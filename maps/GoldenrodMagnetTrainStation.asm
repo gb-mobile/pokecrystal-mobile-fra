@@ -143,7 +143,8 @@ GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:
 	done
 
 GoldenrodMagnetTrainStationOfficerHopeToSeeYouAgainText:
-	text "A bientôt!"
+	text "En espérant vous"
+	line "revoir bientôt!"
 	done
 
 GoldenrodMagnetTrainStationOfficerArrivedInGoldenrodText:

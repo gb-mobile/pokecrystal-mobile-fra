@@ -225,8 +225,7 @@ OaksLabPoster2Text:
 	done
 
 OaksLabTrashcanText:
-	text "Il n'y a rien"
-	line "là-dedans…"
+	text "Il n'y a rien ici."
 	done
 
 OaksLabPCText:

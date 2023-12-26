@@ -572,8 +572,8 @@ Route36NationalParkGateOfficer1ChooseMonAndComeBackText:
 	done
 
 Route36NationalParkGateOfficer1TakePartInFutureText:
-	text "OK. Et bien"
-	line "à la prochaine."
+	text "OK."
+	line "A la prochaine."
 	done
 
 Route36NationalParkGateOfficer1FirstMonCantBattleText:

@@ -65,8 +65,8 @@ BethHangUpText:
 	done
 
 BethLetsBattleAgainSometimeText:
-	text "On se refait ça"
-	line "quand tu veux!"
+	text "Faisons un match"
+	line "un de ces jours!"
 	done
 
 BethReminderText:

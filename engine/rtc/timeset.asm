@@ -516,12 +516,12 @@ SetDayOfWeek:
 	dw .Saturday
 	dw .Sunday
 
-.Sunday:    db " DIMANCHE@"
-.Monday:    db " LUNDI@"
-.Tuesday:   db " MARDI@"
+.Sunday:    db "DIMANCHE@"
+.Monday:    db "LUNDI@"
+.Tuesday:   db "MARDI@"
 .Wednesday: db "MERCREDI@"
 .Thursday:  db "JEUDI@"
-.Friday:    db " VENDREDI@"
+.Friday:    db "VENDREDI@"
 .Saturday:  db "SAMEDI@"
 
 .OakTimeWhatDayIsItText:

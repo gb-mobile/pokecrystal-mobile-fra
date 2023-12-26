@@ -244,7 +244,7 @@ CeladonPrizeRoom_ConfirmPurchaseText:
 	done
 
 CeladonPrizeRoom_HereYouGoText:
-	text "Voilà!"
+	text "Et voilà!"
 	done
 
 CeladonPrizeRoom_NotEnoughCoinsText:
@@ -253,8 +253,7 @@ CeladonPrizeRoom_NotEnoughCoinsText:
 	done
 
 CeladonPrizeRoom_NotEnoughRoomText:
-	text "Tu n'as pas de"
-	line "place."
+	text "Pas de place."
 	done
 
 CeladonPrizeRoom_ComeAgainText:

@@ -222,7 +222,7 @@ BlackthornGymClairText_YouKeptMeWaiting:
 
 BlackthornGymText_ReceivedTM24:
 	text "<PLAYER> reçoit"
-	line "CT24."
+	line "la CT24."
 	done
 
 BlackthornGymClairText_DescribeTM24:

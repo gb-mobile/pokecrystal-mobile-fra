@@ -580,8 +580,8 @@ StunSporeDescription:
 	next "paralyser.@"
 
 SleepPowderDescription:
-	db   "Peut endormir la"
-	next "cible.@"
+	db   "Capacité pouvant"
+	next "endormir.@"
 
 PetalDanceDescription:
 	db   "Dure 2 à 3 tours."
@@ -830,8 +830,8 @@ LeechLifeDescription:
 	next "gâts infligés.@"
 
 LovelyKissDescription:
-	db   "Peut endormir la"
-	next "cible.@"
+	db   "Peut endormir"
+	next "la cible.@"
 
 SkyAttackDescription:
 	db   "Tour 1: Prépare"
@@ -1002,12 +1002,12 @@ ScaryFaceDescription:
 	next "cible énormément.@"
 
 FaintAttackDescription:
-	db   "Attaque qui ne"
+	db   "Une attaque qui ne"
 	next "rate jamais.@"
 
 SweetKissDescription:
-	db   "Une capacité ren-"
-	next "dant confus.@"
+	db   "Capacité rendant"
+	next "confus.@"
 
 BellyDrumDescription:
 	db   "Baisse les PV pour"
@@ -1062,8 +1062,8 @@ LockOnDescription:
 	next "touche à coup sûr.@"
 
 OutrageDescription:
-	db   "Dure 2 à 3 tours."
-	next "Lanceur confus.@"
+	db   "Pdt 2 à 3 tours"
+	next "et rend confus.@"
 
 SandstormDescription:
 	db   "Inflige des dégâts"
@@ -1122,8 +1122,8 @@ SleepTalkDescription:
 	next "pdt le sommeil.@"
 
 HealBellDescription:
-	db   "Contre tout chan-"
-	next "gement de statut.@"
+	db   "Annule changement"
+	next "de statut.@"
 
 ReturnDescription:
 	db   "Attaque basée sur"
@@ -1146,8 +1146,8 @@ PainSplitDescription:
 	next "cible et lanceur.@"
 
 SacredFireDescription:
-	db   "Peut infliger"
-	next "une brûlure.@"
+	db   "Attaque pouvant"
+	next "brûler.@"
 
 MagnitudeDescription:
 	db   "Attaque au sol."
@@ -1258,11 +1258,11 @@ FutureSightDescription:
 	next "au 3ème tour.@"
 
 RockSmashDescription:
-	db   "Peut baisser"
-	next "la DEFENSE.@"
+	db   "Attaque pouvant"
+	next "baisser DEFENSE.@"
 
 WhirlpoolDescription:
-	db   "Piège la cible de"
+	db   "Piège la cible pdt"
 	next "2 à 5 tours.@"
 
 BeatUpDescription:

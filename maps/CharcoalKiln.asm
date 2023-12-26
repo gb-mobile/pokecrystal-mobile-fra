@@ -149,7 +149,7 @@ CharcoalKilnApprenticeText3:
 	done
 
 FarfetchdText:
-	text "CANARTICHO: Kwaa!"
+	text "CANARTICHO: Ticho!"
 	done
 
 CharcoalKiln_MapEvents:

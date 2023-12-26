@@ -159,8 +159,8 @@ RageCandyBarMerchantSavorItText:
 	done
 
 RageCandyBarMerchantNotEnoughMoneyText:
-	text "Vous n'avez pas"
-	line "assez de sous."
+	text "Tu n'as pas assez"
+	line "d'argent."
 	done
 
 RageCandyBarMerchantRefusedText:
