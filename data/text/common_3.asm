@@ -1239,8 +1239,8 @@ _NewDexDataText::
 	text_end ; unreferenced
 
 _AskGiveNicknameText::
-	text "Donner un surnom"
-	line "à @"
+	text "Donner un surnom à"
+	line "@"
 	text_ram wStringBuffer1
 	text "?"
 	done

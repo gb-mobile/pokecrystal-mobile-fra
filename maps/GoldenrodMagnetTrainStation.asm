@@ -126,11 +126,12 @@ GoldenrodMagnetTrainStationOfficerAreYouComingAboardText:
 	done
 
 GoldenrodMagnetTrainStationOfficerRightThisWayText:
-	text "Puis-je voir"
-	line "ton PASSE?"
+	text "Puis-je voir votre"
+	line "PASSE train, s'il"
+	cont "vous plaît?"
 
-	para "OK. Ca marche."
-	line "Par ici."
+	para "Merci, c'est par"
+	line "là..."
 	done
 
 GoldenrodMagnetTrainStationOfficerYouDontHaveARailPassText:

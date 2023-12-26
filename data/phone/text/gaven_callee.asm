@@ -32,7 +32,7 @@ GavenGreetText:
 	para "C'est @"
 	text_ram wStringBuffer3
 	text "."
-	line "Ca va bien?"
+	line "Ca va?"
 	done
 
 GavenGreetDayText:

@@ -28,10 +28,9 @@ PokemonFellFromTreeText:
 	prompt
 
 WildCelebiAppearedText:
-	text "Un @"
 	text_ram wEnemyMonNickname
-	text_start
-	line "sauvage apparaît!"
+	text " sauvage"
+	line "apparaît!"
 	prompt
 
 WantsToBattleText::

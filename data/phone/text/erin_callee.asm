@@ -19,12 +19,13 @@ ErinAnswerPhoneDayText:
 	done
 
 ErinAnswerPhoneNiteText:
-	text "Yes, this is"
+	text "Oui, c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
-	para "Oh, hi, <PLAY_G>!"
+	para "Oh. <PLAY_G>!"
+	line "Salut!"
 	done
 
 ErinGreetText:

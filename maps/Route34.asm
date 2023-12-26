@@ -572,11 +572,11 @@ CamperTodd1AfterText:
 	done
 
 CamperToddSaleText:
-	text "Du shopping sous"
-	line "le ciel!"
+	text "Faire des courses"
+	line "sous le ciel!"
 
-	para "Etre sur le toit,"
-	line "c'est top."
+	para "Ca c'est la super"
+	line "classe."
 	done
 
 PicnickerGina1SeenText:

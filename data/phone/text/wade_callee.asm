@@ -39,12 +39,13 @@ WadeGreetText:
 	done
 
 WadeGreetDayText:
-	text "<PLAY_G>, salut!"
+	text "<PLAY_G>!"
+	line "Bonjour!"
 
 	para "C'est @"
 	text_ram wStringBuffer3
 	text "."
-	line "Il fait beau, non?"
+	line "Il fait beau!"
 	done
 
 WadeGreetNiteText:

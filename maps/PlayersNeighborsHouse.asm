@@ -78,8 +78,8 @@ PlayersNeighborText:
 PlayerNeighborRadioText1:
 	text "La CHRONIQUE PKMN"
 	line "du PROF.CHEN!"
-	cont "Ecoutez-nous la"
-	cont "prochaine fois!"
+	cont "Bientôt de retour"
+	cont "sur les ondes!"
 	done
 
 PlayerNeighborRadioText2:
