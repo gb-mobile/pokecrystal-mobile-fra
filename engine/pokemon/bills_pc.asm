@@ -1008,7 +1008,7 @@ BillsPC_BoxName:
 	ret
 
 .PartyPKMN:
-	db "EQUIPE <PK><MN>@"
+	db "EQUIPE<PK><MN>@"
 
 PCMonInfo:
 ; Display a monster's pic and
@@ -1793,14 +1793,12 @@ DepositPokemon:
 	call Textbox
 	call WaitBGMap
 	hlcoord 1, 16
-	ld de, PCString_Stored
+	ld de, wStringBuffer1
 	call PlaceString
 	ld l, c
 	ld h, b
-	ld de, wStringBuffer1
+	ld de, PCString_Stored
 	call PlaceString
-	ld a, "!"
-	ld [bc], a
 	ld c, 50
 	call DelayFrames
 	and a
@@ -1848,14 +1846,12 @@ TryWithdrawPokemon:
 	call Textbox
 	call WaitBGMap
 	hlcoord 1, 16
-	ld de, PCString_Got
+	ld de, wStringBuffer1
 	call PlaceString
 	ld l, c
 	ld h, b
-	ld de, wStringBuffer1
+	ld de, PCString_Got
 	call PlaceString
-	ld a, "!"
-	ld [bc], a
 	ld c, 50
 	call DelayFrames
 	and a
@@ -1908,7 +1904,6 @@ ReleasePKMN_ByePKMN:
 	call PlaceString
 	ld l, c
 	ld h, b
-	inc hl
 	ld de, wStringBuffer1
 	call PlaceString
 	ld l, c
@@ -1967,7 +1962,7 @@ MovePKMNWithoutMail_InsertMon:
 	ret
 
 .Saving_LeaveOn:
-	db "Sauv. : patientez.@"
+	db "Sauv.:patientez.@"
 
 .Jumptable:
 	dw .BoxToBox
