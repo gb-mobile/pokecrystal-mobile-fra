@@ -771,7 +771,7 @@ WhichPKMNString:
 	db "Quel <PK><MN>?@"
 
 TeachWhichPKMNString:
-	db "Former quel <PK><MN>?@"
+	db "Former quel<PK><MN>?@"
 
 MoveToWhereString:
 	db "Déplacer où?@"

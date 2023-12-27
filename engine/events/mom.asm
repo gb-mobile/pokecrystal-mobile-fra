@@ -460,7 +460,7 @@ Mom_WithdrawDepositMenuJoypad:
 	xor a
 	ldh [hBGMapMode], a
 	hlcoord 12, 6
-	ld bc, 7
+	ld bc, 6
 	ld a, " "
 	call ByteFill
 	hlcoord 12, 6
@@ -470,7 +470,7 @@ Mom_WithdrawDepositMenuJoypad:
 	ldh a, [hVBlankCounter]
 	and $10
 	jr nz, .skip
-	hlcoord 13, 6
+	hlcoord 12, 6
 	ld a, [wMomBankDigitCursorPosition]
 	ld c, a
 	ld b, 0

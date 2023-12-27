@@ -76,19 +76,19 @@ _Option:
 
 StringOptions:
 	db "VIT.TEXTE<LF>"
-	db "        :<LF>"
+	db "         :<LF>"
 	db "ANIMATION COMBAT<LF>"
-	db "        :<LF>"
+	db "         :<LF>"
 	db "STYLE COMBAT<LF>"
-	db "        :<LF>"
+	db "         :<LF>"
 	db "SON<LF>"
-	db "        :<LF>"
+	db "         :<LF>"
 	db "IMPRIMER<LF>"
-	db "        :<LF>"
-	db "COMPTE MENU<LF>" 
-	db "        :<LF>"
+	db "         :<LF>"
+	db "COMPTE MENU<LF>"
+	db "         :<LF>"
 	db "FENETRE<LF>"
-	db "        :TYPE<LF>"
+	db "         :TYPE<LF>"
 	db "RETOUR@"
 
 GetOptionPointer:
@@ -152,7 +152,7 @@ Options_TextSpeed:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 11, 3
+	hlcoord 12, 3
 	call PlaceString
 	and a
 	ret
@@ -222,7 +222,7 @@ Options_BattleScene:
 	ld de, .Off
 
 .Display:
-	hlcoord 11, 5
+	hlcoord 12, 5
 	call PlaceString
 	and a
 	ret
@@ -260,13 +260,13 @@ Options_BattleStyle:
 	ld de, .Set
 
 .Display:
-	hlcoord 11, 7
+	hlcoord 12, 7
 	call PlaceString
 	and a
 	ret
 
 .Shift: db "CHOIX @"
-.Set:   db "WECHSEL@"
+.Set:   db "DEFINI@"
 
 Options_Sound:
 	ld hl, wOptions
@@ -305,7 +305,7 @@ Options_Sound:
 	ld de, .Stereo
 
 .Display:
-	hlcoord 11, 9
+	hlcoord 12, 9
 	call PlaceString
 	and a
 	ret
@@ -359,7 +359,7 @@ Options_Print:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	hlcoord 11, 11
+	hlcoord 12, 11
 	call PlaceString
 	and a
 	ret
@@ -374,7 +374,7 @@ Options_Print:
 
 .Lightest: db "CLAIR+ @"
 .Lighter:  db "CLAIR  @"
-.Normal:   db "NORMAL  @"
+.Normal:   db "NORMAL @"
 .Darker:   db "SOMBRE @"
 .Darkest:  db "SOMBRE+@"
 
@@ -445,7 +445,7 @@ Options_MenuAccount:
 	ld de, .On
 
 .Display:
-	hlcoord 11, 13
+	hlcoord 12, 13
 	call PlaceString
 	and a
 	ret
@@ -477,7 +477,7 @@ Options_Frame:
 	ld [hl], a
 UpdateFrame:
 	ld a, [wTextboxFrame]
-	hlcoord 16, 15 ; where on the screen the number is drawn
+	hlcoord 17, 15 ; where on the screen the number is drawn
 	add "1"
 	ld [hl], a
 	call LoadFontsExtra

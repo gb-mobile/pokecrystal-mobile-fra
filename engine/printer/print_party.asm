@@ -108,26 +108,26 @@ GBPrinterString_Printing: next "   IMPRESSION...@"
 GBPrinterString_PrinterError1:
 	db   " ERREUR PRINTER 1"
 	next ""
-	next "Voir le manuel"
-	next "du Game Boy Printer."
+	next "Voir le manuel du"
+	next "Game Boy Printer."
 	db   "@"
 GBPrinterString_PrinterError2:
 	db   " ERREUR PRINTER 2"
 	next ""
-	next "Voir le manuel"
-	next "du Game Boy Printer."
+	next "Voir le manuel du"
+	next "Game Boy Printer."
 	db   "@"
 GBPrinterString_PrinterError3:
 	db   " ERREUR PRINTER 3"
 	next ""
-	next "Voir le manuel"
-	next "du Game Boy Printer."
+	next "Voir le manuel du"
+	next "Game Boy Printer."
 	db   "@"
 GBPrinterString_PrinterError4:
 	db   " ERREUR PRINTER 4"
 	next ""
-	next "Voir le manuel"
-	next "du Game Boy Printer."
+	next "Voir le manuel du"
+	next "Game Boy Printer."
 	db   "@"
 
 PrintPartyMonPage1:
@@ -199,11 +199,11 @@ PrintPartyMonPage1:
 	hlcoord 1, 11
 	ld de, PrintParty_IDNoString
 	call PlaceString
-	hlcoord 4, 11
+	hlcoord 5, 11
 	ld de, wTempMonID
 	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
 	call PrintNum
-	hlcoord 1, 14
+	hlcoord 1, 13
 	ld de, PrintParty_MoveString
 	call PlaceString
 	hlcoord 7, 14
@@ -339,8 +339,8 @@ PrintParty_StatsString:
 	next "DEFENSE"
 	next "ATQ.SPE."
 	next "DEF.SPE."
-	next "VITESSE@"
-	db "@"
+	next "VITESSE"
+	db   "@"
 
 PrintParty_NoMoveString:
 	db "------------@"

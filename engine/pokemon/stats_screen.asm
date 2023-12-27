@@ -430,7 +430,7 @@ StatsScreen_InitUpperHalf:
 	hlcoord 14, 0
 	call PrintLevel
 	ld hl, .NicknamePointers
-	call GetNicknamenamePointer
+	call GetNicknamePointer
 	call CopyNickname
 	hlcoord 8, 2
 	call PlaceString
@@ -704,7 +704,7 @@ LoadPinkPage:
 	next "TYPE/@"
 
 .OK_str:
-	db "OK @"
+	db "OK@"
 
 .ExpPointStr:
 	db "PTS EXP.@"
@@ -726,7 +726,7 @@ LoadGreenPage:
 	hlcoord 8, 8
 	call PlaceString
 	ld de, .Move
-	hlcoord 0, 10
+	hlcoord 0, 9
 	call PlaceString
 	ld hl, wTempMonMoves
 	ld de, wListMoves_MoveIndicesBuffer
@@ -755,13 +755,13 @@ LoadGreenPage:
 	ret
 
 .Item:
-	db "OBJET@"
+	db "OBJET/@"
 
 .ThreeDashes:
 	db "---@"
 
 .Move:
-	db "CAPACITE@"
+	db "CAPACITE/@"
 
 LoadBluePage:
 	call .PlaceOTInfo
@@ -791,7 +791,7 @@ LoadBluePage:
 	ld de, wTempMonID
 	call PrintNum
 	ld hl, .OTNamePointers
-	call GetNicknamenamePointer
+	call GetNicknamePointer
 	call CopyNickname
 	farcall CorrectNickErrors
 	hlcoord 2, 13
@@ -818,7 +818,7 @@ LoadBluePage:
 	dw wBufferMonOT
 
 IDNoString:
-	db "№<ID>@"
+	db "№.<ID>@"
 
 OTString:
 	db "DO/@"
@@ -1071,7 +1071,7 @@ EggCloseString:
 EggMoreTimeString:
 	db   "Qu'y a-t-il à"
 	next "l'intérieur?"
-	next "Il faut attendre."
+	next "Il faut attendre"
 	next "encore un peu.@"
 
 EggALotMoreTimeString:
@@ -1159,7 +1159,7 @@ CopyNickname:
 	pop de
 	ret
 
-GetNicknamenamePointer:
+GetNicknamePointer:
 	ld a, [wMonType]
 	add a
 	ld c, a

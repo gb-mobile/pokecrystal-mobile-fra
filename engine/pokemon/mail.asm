@@ -554,7 +554,7 @@ MailboxPC:
 
 .SubMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 13, 9
+	menu_coords 0, 0, 17, 9
 	dw .SubMenuData
 	db 1 ; default option
 

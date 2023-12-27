@@ -1776,7 +1776,7 @@ Slots_AskBet:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 14, 10, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 15, 6, SCREEN_WIDTH - 1, 13
 	dw .MenuData
 	db 1 ; default option
 
@@ -1786,7 +1786,6 @@ Slots_AskBet:
 	db "3@"
 	db "2@"
 	db "1@"
-
 
 Slots_AskPlayAgain:
 	ld hl, wCoins

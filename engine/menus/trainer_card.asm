@@ -234,7 +234,7 @@ TrainerCard_PrintTopHalfOfCard:
 	hlcoord 2, 4
 	ld de, .ID_No
 	call TrainerCardSetup_PlaceTilemapString
-	hlcoord 7, 2
+	hlcoord 2, 2
 	ld de, wPlayerName
 	call PlaceString
 	hlcoord 5, 4
@@ -256,7 +256,7 @@ TrainerCard_PrintTopHalfOfCard:
 	ret
 
 .Name_Money:
-	db   "NAME/"
+	db   ""
 	next ""
 	next "ARG.@"
 

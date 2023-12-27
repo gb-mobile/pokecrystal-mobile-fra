@@ -310,17 +310,28 @@ InitPokegearTilemap:
 .Clock:
 	ld de, ClockTilemapRLE
 	call Pokegear_LoadTilemapRLE
-	hlcoord 10, 1
+	hlcoord 12, 1
 	ld de, .switch
 	call PlaceString
+	hlcoord 11, 0
+	ld [hl], $30
+	inc hl
+	ld [hl], " "
+	hlcoord 11, 1
+	ld [hl], " "
+	hlcoord 11, 2
+	ld [hl], $32
+	inc hl
+	ld [hl], " "
 	hlcoord 0, 12
 	lb bc, 4, 18
 	call Textbox
 	call Pokegear_UpdateClock
 	ret
 
+
 .switch
-	db " CHANGER▶@"
+	db "CHANGER▶@"
 
 .Map:
 	ld a, [wPokegearMapPlayerIconLandmark]
@@ -1743,7 +1754,7 @@ NoRadioName:
 	call Textbox
 	ret
 
-OaksPKMNTalkName:     db "CHRONIQUE <PK><MN> CHEN@"
+OaksPKMNTalkName:     db "CHRONIQUE<PKMN> CHEN@"
 PokedexShowName:      db "Show #DEX@"
 PokemonMusicName:     db "Musique #MON@"
 LuckyChannelName:     db "Antenne Chance@"
@@ -2459,12 +2470,12 @@ Pokedex_GetArea:
 	ld a, $07
 	call ByteFill
 	ld [hl], $17
-	call GetPokemonName
 	hlcoord 2, 0
-	call PlaceString
-	ld h, b
-	ld l, c
 	ld de, .String_SNest
+	call PlaceString
+	push bc
+	call GetPokemonName
+	pop hl
 	call PlaceString
 	ret
 

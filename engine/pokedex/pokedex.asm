@@ -1172,10 +1172,11 @@ Pokedex_DrawDexEntryScreenBG:
 .Number: ; unreferenced
 	db $5c, $5d, -1 ; No.
 .Height:
-	db "TAI  ???m", -1 ; HT  ?'??"
+	db "TAI  ???m", -1
 .Weight:
 	db "PDS  ???kg", -1
-.MenuItems: db $3b, " PAGE ZONE CRI IMPR", -1
+.MenuItems:
+	db $3b, " PAGE ZONE CRI IMPR", -1
 
 Pokedex_DrawOptionScreenBG:
 	call Pokedex_FillBackgroundColor2
@@ -1234,7 +1235,7 @@ Pokedex_DrawSearchScreenBG:
 	ret
 
 .Title:
-	db $3b, " CHERCHER ", $3c, -2
+	db $3b, " CHERCHER ", $3c, -1
 
 .TypeLeftRightArrows:
 	db $3d, "        ", $3e, -1
@@ -1281,7 +1282,7 @@ Pokedex_DrawSearchResultsScreenBG:
 
 .BottomWindowText:
 	db   "RESULTAT RECHERCHE"
-	next "TYPE:"	
+	next "TYPE:"
 	next "    TROUVE(S)!"
 	db   "@"
 
@@ -1732,15 +1733,15 @@ Pokedex_DisplayModeDescription:
 	dw .UnownMode
 
 .NewMode:
-	db   "<PK><MN> listés par"
+	db   "<PKMN> listés par"
 	next "type d'évolution.@"
 
 .OldMode:
-	db   "<PK><MN> listés de"
+	db   "<PKMN> listés de"
 	next "façon officielle.@"
 
 .ABCMode:
-	db   "<PK><MN> listés"
+	db   "<PKMN> listés"
 	next "alphabétiquement.@"
 
 .UnownMode:
@@ -1967,8 +1968,8 @@ Pokedex_DisplayTypeNotFoundMessage:
 	ret
 
 .TypeNotFound:
-	db   "The specified type"
-	next "was not found.@"
+	db   "Le type mentionné"
+	next "n'a pas été trouvé.@"
 
 Pokedex_UpdateCursorOAM:
 	ld a, [wCurDexMode]

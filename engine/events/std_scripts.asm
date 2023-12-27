@@ -276,17 +276,17 @@ DayToTextScript:
 	getstring STRING_BUFFER_3, .SaturdayText
 	end
 .SundayText:
-	db " DIMANCHE@"
+	db "DIMANCHE@"
 .MondayText:
-	db " LUNDI@"
+	db "LUNDI@"
 .TuesdayText:
-	db " MARDI@"
+	db "MARDI@"
 .WednesdayText:
-	db "WEDNESDAY@"
+	db "MERCREDI@"
 .ThursdayText:
 	db "JEUDI@"
 .FridayText:
-	db " VENDREDI@"
+	db "VENDREDI@"
 .SaturdayText:
 	db "SAMEDI@"
 

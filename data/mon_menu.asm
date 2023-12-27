@@ -15,7 +15,7 @@ MonMenuOptionStrings:
 	li "STATS"
 	li "ORDRE"
 	li "OBJET"
-	li "RETOUR"	
+	li "RETOUR"
 	li "CAPACITE"
 	li "LETTRE"
 	li "ERREUR!"

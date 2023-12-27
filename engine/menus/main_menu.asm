@@ -407,6 +407,7 @@ MainMenu_PrintCurrentTimeAndDay:
 	db "LUNDI@"
 	db "MARDI@"
 	db "MERCREDI@"
+	db "JEUDI@"
 	db "VENDREDI@"
 	db "SAMEDI@"
 .Day:

@@ -161,7 +161,7 @@ Elevator_GetCurrentFloorText:
 	ret
 
 Elevator_CurrentFloorText:
-	db "Now on:@"
+	db "Etage:@"
 
 Elevator_GetCurrentFloorString:
 	push hl

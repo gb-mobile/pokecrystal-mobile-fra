@@ -376,7 +376,7 @@ TakePartyItem:
 
 GiveTakeItemMenuData:
 	db MENU_SPRITE_ANIMS | MENU_BACKUP_TILES ; flags
-	menu_coords 12, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 9, 12, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .Items
 	db 1 ; default option
 
@@ -449,7 +449,30 @@ ComposeMailMessage:
 	ld de, wTempMailAuthor
 	ld bc, NAME_LENGTH - 1
 	call CopyBytes
+	ld b, $ff
+	ld hl, wTempMailAuthor
+
+.loop:
+	inc b
+	ld a, b
+	cp $8
+	jr nc, .cont
+
+	ld a, [hli]
+	cp "@"
+	jr nz, .loop
+
+	ld a, b
+	cp $8
+	jr nc, .cont
+
+	ld hl, wTempMailNationality
+	ld a, "E"
+	ld [hli], a
 	ld a, "F"
+	ld [hl], a
+
+.cont:
 	ld hl, wPlayerID
 	ld bc, 2
 	call CopyBytes
@@ -546,7 +569,7 @@ MonMailAction:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 12, 10, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 9, 10, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .MenuData
 	db 1 ; default option
 

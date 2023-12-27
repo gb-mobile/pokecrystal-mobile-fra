@@ -27,11 +27,11 @@ DisplayCaughtContestMonStats:
 	ld de, .This
 	call PlaceString
 
-	hlcoord 5, 4
+	hlcoord 4, 4
 	ld de, .Health
 	call PlaceString
 
-	hlcoord 5, 10
+	hlcoord 4, 10
 	ld de, .Health
 	call PlaceString
 
@@ -58,12 +58,12 @@ DisplayCaughtContestMonStats:
 	ld [wTempMonLevel], a
 	call PrintLevel
 
-	hlcoord 11, 4
+	hlcoord 10, 4
 	ld de, wContestMonMaxHP
 	lb bc, 2, 3
 	call PrintNum
 
-	hlcoord 11, 10
+	hlcoord 10, 10
 	ld de, wEnemyMonMaxHP
 	call PrintNum
 
@@ -79,12 +79,12 @@ DisplayCaughtContestMonStats:
 	call SetPalettes
 	ret
 
-.Health:	
-db "VIE@"
+.Health:
+	db "   VIE@"
 .Stock:
 	db " STOCKER <PKMN> @"
 .This:
-	db " CE <PKMN>  @"
+	db " CE <PKMN> @"
 
 ContestAskSwitchText:
 	text_far _ContestAskSwitchText

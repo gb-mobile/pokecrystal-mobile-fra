@@ -64,7 +64,7 @@ PokemonCenterPC:
 .String_PlayersPC:  db "PC DE <PLAYER>@"
 .String_BillsPC:    db "PC DE LEO@"
 .String_OaksPC:     db "PC DE CHEN@"
-.String_HallOfFame: db "CELEBRITE&lt;@"
+.String_HallOfFame: db "CELEBRITE@"
 .String_TurnOff:    db "DECONNEXION@"
 
 .WhichPC:
@@ -260,7 +260,7 @@ _PlayersPC:
 
 PlayersPCMenuData:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 12
+	menu_coords 0, 0, 17, 12
 	dw .PlayersPCMenuData
 	db 1 ; default selected option
 

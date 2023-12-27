@@ -699,7 +699,7 @@ _MovePKMNWithoutMail:
 	db 3 ; items
 	db "ORDRE@"
 	db "STATS@"
-	db "CANCEL@"
+	db "RETOUR@"
 
 .PrepInsertCursor:
 	xor a

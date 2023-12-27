@@ -8394,7 +8394,7 @@ DisplayLinkBattleResult:
 	jr .store_result
 
 .store_result
-	hlcoord 6, 8
+	hlcoord 3, 8
 	call PlaceString
 	farcall BackupMobileEventIndex
 	ld c, 200
@@ -8421,11 +8421,11 @@ DisplayLinkBattleResult:
 	ret
 
 .YouWin:
-	db "GAGNE@"
+	db "    GAGNE     @"
 .YouLose:
-	db "PERDU@"
+	db "    PERDU     @"
 .Draw:
-	db "  MATCH NUL@"
+	db "  MATCH NUL   @"
 
 .Mobile_InvalidBattle:
 	hlcoord 6, 8

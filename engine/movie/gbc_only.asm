@@ -126,8 +126,8 @@ DrawGBCOnlyGraphic:
 GBCOnlyString:
 	db   "Cette cartouche"
 	next "ne fonctionne"
-	next "qu", "'avec le"
+	next "qu"
+	db   "'avec le" ; uses char "'" instead of char "u'"
 	next "Game Boy Color.@"
-
 GBCOnlyGFX:
 INCBIN "gfx/sgb/gbc_only.2bpp.lz"

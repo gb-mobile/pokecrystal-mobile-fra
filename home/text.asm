@@ -338,11 +338,11 @@ PlaceBattlersName:
 	jr PlaceCommandCharacter
 
 .enemy
-	ld de, EnemyText
+	ld de, wEnemyMonNickname
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, wEnemyMonNickname
+	ld de, EnemyText
 	jr PlaceCommandCharacter
 
 PlaceEnemysName::
@@ -358,16 +358,18 @@ PlaceEnemysName::
 	cp RIVAL2
 	jr z, .rival
 
-	ld de, wOTClassName
-	call PlaceString
-	ld h, b
-	ld l, c
-	ld de, String_Space
-	call PlaceString
-	push bc
+	push hl
+
 	callfar Battle_GetTrainerName
 	pop hl
 	ld de, wStringBuffer1
+	call PlaceString
+	ld h, b
+	ld l, c
+	ld a, " "
+	ld [hli], a
+
+	ld de, wOTClassName
 	jr PlaceCommandCharacter
 
 .rival
@@ -398,14 +400,14 @@ PlaceCommandCharacter::
 	pop de
 	jp NextChar
 
-TMCharText::      db "TM@"
-TrainerCharText:: db "TRAINER@"
+TMCharText::      db "CT@"
+TrainerCharText:: db "DRESSEUR@"
 PCCharText::      db "PC@"
 RocketCharText::  db "ROCKET@"
 PlacePOKeText::   db "POKé@"
 KougekiText::     db "こうげき@"
 SixDotsCharText:: db "……@"
-EnemyText::       db "Enemy @"
+EnemyText::       db " ennemi@"
 PlacePKMNText::   db "<PK><MN>@"
 PlacePOKEText::   db "<PO><KE>@"
 String_Space::    db " @"
@@ -1050,11 +1052,11 @@ TextCommand_DAY::
 	dw .Fri
 	dw .Satur
 
-.Sun:    db "SUN@"
-.Mon:    db "MON@"
-.Tues:   db "TUES@"
-.Wednes: db "WEDNES@"
-.Thurs:  db "THURS@"
-.Fri:    db "FRI@"
-.Satur:  db "SATUR@"
-.Day:    db "DAY@"
+.Sun:    db "DIMANCHE@"
+.Mon:    db "LUNDI@"
+.Tues:   db "MARDI@"
+.Wednes: db "MERCREDI@"
+.Thurs:  db "JEUDI@"
+.Fri:    db "VENDREDI@"
+.Satur:  db "SAMEDI@"
+.Day:    db "@"
