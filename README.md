@@ -9,8 +9,6 @@ It is possible that some menus were missed by the find/replace script, and need 
 
 ## TO-DO
 
-- Adjust any menus to match those of the original French games (currently set to English sizing and formatting)
-- Check for any untranslated menus missed by the find/replace script.
 - Translate any of mobile features. (Anything English under /mobile/, /maps/GoldenrodPokecenter1F.asm, maps/PokecomCenterAdminOfficeMobile.asm, data/text/common_1.asmm data/text/common_3.asm and data/text/battle.asm).
 - Also refer to the English build for 'Text_BattleReceptionistIntro:', 'Text_TradeReceptionistIntro:' and 'Text_TimeCapsuleReceptionistIntro:' for proper mobile translations of the PokeCOM Club reception dialogue.
 - Fix the known issues.
@@ -53,6 +51,8 @@ https://github.com/gb-mobile/pokecrystal-mobile-en/wiki/Pok%C3%A9mon-Crystal-Mob
 - DS             : GFX & Code
 - Ryuzac         : Code & Japanese Translation
 - Wit            : Mobile French Translation
+- qwilvove       : FR disassembly reference https://github.com/Guigui1993/pokecrystal-fr
+- Guigui1993     : FR disassembly reference https://github.com/Guigui1993/pokecrystal-fr
 - Zumilsawhat?   : Code (Large amounts of work on the EZ Chat system)
 - REON Community : Support and Assistance
 
