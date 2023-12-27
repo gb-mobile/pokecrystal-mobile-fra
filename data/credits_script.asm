@@ -206,30 +206,30 @@ CreditsScript:
 ; Update the banner.
 	db CREDITS_SCENE, 3 ; Igglybuff
 
-	db     US_VERSION_STAFF, 2
+	db        EQUIPE_FRANCE, 2
 
 	db CREDITS_WAIT, 9
 
-	db      US_COORDINATION, 1
+	db  COORDINATION_EUROPE, 1
 	db              KAI_ZEH, 2
 	db      HIROYUKI_UESUGI, 3
 
 	db CREDITS_WAIT, 12
 
-	db      US_COORDINATION, 1
+	db  COORDINATION_EUROPE, 1
 	db       JUNICHI_MASUDA, 2
 	db        KOHJI_NISHINO, 3
 	db      KUNIMI_KAWAMURA, 4
 
 	db CREDITS_WAIT, 12
 
-	db      US_COORDINATION, 1
+	db  COORDINATION_EUROPE, 1
 	db           TANJA_BAAR, 2
 	db          KAI_NEUMANN, 3
 
 	db CREDITS_WAIT, 12
 
-	db     TEXT_TRANSLATION, 1
+	db      TEXTES_FRANCAIS, 1
 	db     JULIEN_BARDAKOFF, 2
 	db       NICOLAS_ROBERT, 3
 
@@ -241,7 +241,7 @@ CreditsScript:
 
 	db CREDITS_WAIT, 12
 
-	db      PRODUCT_TESTING, 0
+	db         TEST_PRODUIT, 0
 	db      MAURICE_TISDALE, 1
 	db      PATRICK_THIERET, 2
 	db  FRENCH_TESTING_TEAM, 3
@@ -269,7 +269,7 @@ CreditsScript:
 
 	db CREDITS_WAIT, 12
 
-	db         PAAD_TESTING, 1
+	db            RELECTURE, 1
 	db     KIMIKO_NAKAMICHI, 2
 
 	db CREDITS_WAIT, 12
