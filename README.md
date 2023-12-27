@@ -1,6 +1,3 @@
-# NOTE
-## This repository is a work in progress, you may experience bugs, glitches and general oddities. Should these occur please report them as issues. It is not actively being worked on and will require community assistance to finish.
-
 # Information
 A French translation of https://github.com/gb-mobile/pokecrystal-mobile-eng
 This translation was performed via text dumps and a (somewhat) sophisticated find/replace script.
