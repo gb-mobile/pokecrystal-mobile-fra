@@ -134,7 +134,7 @@ _PasscodeSetText::
 
 _FourZerosInvalidText::
 	text "0000 invalide!"
-	done
+	prompt
 
 _EnterPasscodeText::
 	text "Entrez le CODE du"
@@ -144,7 +144,7 @@ _EnterPasscodeText::
 _IncorrectPasscodeText::
 	text "CODE SECRET"
 	line "incorrect!"
-	done
+	prompt
 
 _CardFolderOpenText::
 	text "FICHIER CARTE"
@@ -168,7 +168,7 @@ _OakTimeWhatTimeIsItText::
 	done
 
 _OakTimeWhatHoursText::
-	text "What?@"
+	text "Quoi?@"
 	text_end
 
 _OakTimeHoursQuestionMarkText::

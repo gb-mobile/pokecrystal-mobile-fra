@@ -144,8 +144,7 @@ _YourFoesWeakGetmMonText::
 	text_end
 
 _BattleMonNicknameText::
-	text_ram wBattleMonNickname
-	text "!"
+	text_start
 	done
 
 _BattleMonNickCommaText::
@@ -154,19 +153,23 @@ _BattleMonNickCommaText::
 	text_end
 
 _ThatsEnoughComeBackText::
-	text "reviens!@"
+	text_start
+	line "reviens!@"
 	text_end
 
 _OKComeBackText::
-	text "ça suffit!@"
+	text_start
+	line "ça suffit!@"
 	text_end
 
 _GoodComeBackText::
-	text "reviens!@"
+	text_start
+	line "reviens!@"
 	text_end
 
 _ComeBackText::
-	text "reviens!"
+	text_start
+	line "reviens!"
 	done
 
 _BootedTMText::
@@ -390,7 +393,7 @@ _TeleportReturnText::
 _CantUseTeleportText::
 	text "Impossible d'uti-"
 	line "liser ça ici."
-	done
+	prompt
 
 _AlreadyUsingStrengthText::
 	text "Un #MON utilise"
@@ -706,7 +709,7 @@ Text_BattleFoeEffectActivate::
 
 _BattleStatSharplyFellText::
 	text_pause
-	text "<SCROLL>diminue à fond!@"
+	text "<SCROLL>diminue à fond!"
 	prompt
 
 _BattleStatFellText::
@@ -754,12 +757,14 @@ _ActorNameText::
 
 _UsedMove1Text::
 	text_start
-	line "lance@"
+	line "lance"
+	cont "@"
 	text_end
 
 _UsedMove2Text::
 	text_start
-	line "lance@"
+	line "lance"
+	cont "@"
 	text_end
 
 _UsedInsteadText::
@@ -1067,18 +1072,10 @@ _MagikarpGuruMeasureText::
 
 _KarpGuruRecordText::
 	text "RECORD ACTUEL"
-	
-	para "@"
-	text_ram wStringBuffer3
-	text_start
-	line "a été attrapé par"
-	cont "@"
-	text_ram wStringBuffer4
-	text_end
 
 	para "@"
 	text_ram wStringBuffer1
-	text " caught by"
+	text "cm par"
 	line "@"
 	text_ram wMagikarpRecordHoldersName
 	text_promptbutton

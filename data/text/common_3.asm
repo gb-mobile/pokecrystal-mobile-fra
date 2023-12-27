@@ -1112,7 +1112,7 @@ _BuenaComeAgainText::
 
 _BTExcuseMeText::
 	text "Excusez-moi!"
-	done
+	prompt
 
 _ExcuseMeYoureNotReadyText::
 	text "Pardon mais..."
@@ -1130,12 +1130,12 @@ _BattleTowerReturnWhenReadyText::
 _NeedAtLeastThreeMonText::
 	text "Il vous faut au"
 	line "moins 3 #MON."
-	done
+	prompt
 
 _EggDoesNotQualifyText::
 	text "Un OEUF ne peut"
 	line "être inscrit."
-	done
+	prompt
 
 _OnlyThreeMonMayBeEnteredText::
 	text "Seuls 3 #MON"
@@ -1169,7 +1169,7 @@ _TheMonMustNotHoldTheSameItemsText::
 _YouCantTakeAnEggText::
 	text "On ne peut pas"
 	line "prendre d'OEUF!"
-	done
+	prompt
 
 _BallDodgedText::
 	text "Il a évité la"
@@ -1398,23 +1398,23 @@ _BallBoxFullText::
 	prompt
 
 _ItemUsedText::
-	text "<PLAYER> utilise:@"
-	text_low
+	text "<PLAYER> utilise:"
+	line "@"
 	text_ram wStringBuffer2
 	text "."
 	done
 
 _ItemGotOnText::
-	text "<PLAYER> got on the@"
+	text "<PLAYER> monte sur:@"
 	text_low
 	text_ram wStringBuffer2
 	text "."
 	prompt
 
 _ItemGotOffText::
-	text "<PLAYER> got off@"
+	text "<PLAYER> descend@"
 	text_low
-	text "the @"
+	text "de: @"
 	text_ram wStringBuffer2
 	text "."
 	prompt
