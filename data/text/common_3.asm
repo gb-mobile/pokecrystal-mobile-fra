@@ -77,45 +77,45 @@ _LinkAskTradeForText::
 	done
 
 _MobileBattleMustPickThreeMonText::
-	text "To enter a mobile"
-	line "battle, you must"
-
-	para "pick a team of"
-	line "three #MON."
-
-	para "Is that OK?"
+	text "Un combat mobile,"
+	line "requiert que votre"
+	
+	para "équipe ne comporte"
+	line "que trois #MON."
+	
+	para "Vous comprenez?"
 	done
 
 _MobileBattleMoreInfoText::
-	text "Need more info on"
-	line "mobile battles?"
+	text "Vous voulez tout"
+	line "savoir sur les"
+	cont "combats mobile?"
 	done
 
 _MobileBattleRulesText::
-	text "For a mobile"
-	line "battle, choose"
-	cont "three #MON."
+	text "Pour un combat"
+	line "mobile, choisissez"
+	cont "trois #MON."
 
-	para "The maximum daily"
-	line "play time is ten"
+	para "Dix minutes sont"
+	line "réservées par jour"
+	cont "pour vous battre."
 
-	para "minutes for each"
-	line "linked player."
+	para "Si un combat n'est"
+	line "pas terminé avant"
 
-	para "If a battle isn't"
-	line "finished within"
+	para "que cette limite"
+	line "soit atteinte,"
 
-	para "the time limit,"
-	line "the player with"
+	para "alors celui avec"
+	line "le moins de #-"
+	cont "MON K.O. gagnera."
 
-	para "the fewest fainted"
-	line "#MON wins."
+	para "Si un match est"
+	line "nul, celui qui a"
 
-	para "If tied, the team"
-	line "that lost the"
-
-	para "least amount of HP"
-	line "wins."
+	para "perdu le moins de"
+	line "PV gagnera."
 	done
 
 _WouldYouLikeToMobileBattleText::
@@ -711,26 +711,26 @@ _SlotsDarnText::
 	done
 
 _MobileStadiumEntryText::
-	text "Data for use in"
-	line "the MOBILE STADIUM"
-
-	para "of the N64 #MON"
-	line "STADIUM 2 can be"
-	cont "read here."
-
-	para "Read the data?"
+	text "Ici, les données"
+	line "du STADE MOBILE"
+	
+	para "sont envoyées vers"
+	line "le jeu Nintendo 64"
+	cont "#MON STADIUM 2."
+	
+	para "Lire les données?"
 	done
 
 _MobileStadiumSuccessText::
-	text "Data transfer is"
-	line "complete."
-
-	para "We hope you enjoy"
-	line "MOBILE STADIUM"
-
-	para "battles in the N64"
-	line "#MON STADIUM 2."
-
+	text "Envoi des données"
+	line "terminé. Allez"
+	
+	para "voir vos combats"
+	line "STADE MOBILE sur"
+	
+	para "#MON STADIUM  2"
+	line "(jeu Nintendo 64)."
+	
 	para ""
 	done
 
@@ -774,105 +774,110 @@ _MobileOnlyThreeMonMayEnterText::
 	prompt
 
 _MobileCardFolderIntro1Text::
-	text "The CARD FOLDER"
-	line "stores your and"
-
-	para "your friends'"
-	line "CARDS."
-
-	para "A CARD contains"
-	line "information like"
-
-	para "the person's name,"
-	line "phone number and"
-	cont "profile."
+	text "Le DOSSIER CARTE"
+	line "est là où vous"
+	
+	cont "rangez votre CARTE"
+	
+	para "et celles de vos"
+	line "amis. Une CARTE"
+	
+	para "vous informe sur"
+	line "le nom, le numéro"
+	
+	para "de téléphone, et"
+	line "le profile d'une"
+	cont "personne."
 
 	para ""
 	done
 
 _MobileCardFolderIntro2Text::
-	text "This is your CARD."
-
-	para "Once you've"
-	line "entered your phone"
-
-	para "number, you can"
-	line "trade CARDS with"
-	cont "your friends."
-
+	text "Voici votre CARTE."
+	line "Après avoir ajouté"
+	
+	para "votre numéro de"
+	line "téléphone, vous"
+	
+	para "pouvez échanger"
+	line "votre CARTE avec"
+	cont "vos amis."
+	
 	para ""
 	done
 
 _MobileCardFolderIntro3Text::
-	text "If you have your"
-	line "friend's CARD, you"
-
-	para "can use it to make"
-	line "a call from a"
-
-	para "mobile phone on"
-	line "the 2nd floor of a"
-	cont "#MON CENTER."
-
+	text "Avec la CARTE d'un"
+	line "de vos amis, vous"
+	
+	para "pouvez les appeler "
+	line "via votre portable"
+	
+	para "depuis le premier"
+	line "étage de tous les"
+	
+	cont "CENTRES #MON."
+	
 	para ""
 	done
 
 _MobileCardFolderIntro4Text::
-	text "To safely store"
-	line "your collection of"
-
-	para "CARDS, you must"
-	line "set a PASSCODE for"
-	cont "your CARD FOLDER."
-
+	text "Pour que votre"
+	line "collection de"
+	
+	para "CARTES soit en"
+	line "sécurité, il faut"
+	cont "un MOT DE PASSE."
+	
 	para ""
 	done
 
 _MobileCardFolderAskDeleteText::
-	text "If the CARD FOLDER"
-	line "is deleted, all"
-
-	para "its CARDS and the"
-	line "PASSCODE will also"
-	cont "be deleted."
-
-	para "Beware--a deleted"
-	line "CARD FOLDER can't"
-	cont "be restored."
-
-	para "Want to delete"
-	line "your CARD FOLDER?"
+	text "Le DOSSIER CARTE,"
+	line "une fois jeté, ne"
+	
+	para "pourra pas être"
+	line "récupéré. Cela"
+	cont "inclut le DOSSIER,"
+	
+	para "les CARTES qu'il"
+	line "contient, et son"
+	cont "MOT DE PASSE."
 	done
 
 _MobileCardFolderDeleteAreYouSureText::
-	text "Are you sure you"
-	line "want to delete it?"
+	text "Etes vous sûrs que"
+	line "vous voulez le"
+	
+	para "supprimer?"
 	done
 
 _MobileCardFolderDeletedText::
-	text "The CARD FOLDER"
-	line "has been deleted."
-
+	text "Le DOSSIER CARTE"
+	line "a bien été jeté."
+	
 	para ""
 	done
 
 _MobileCardFolderAskOpenOldText::
-	text "There is an older"
-	line "CARD FOLDER from a"
-	cont "previous journey."
-
-	para "Do you want to"
-	line "open it?"
+	text "Le DOSSIER CARTE"
+	line "de votre dernière"
+	cont "aventure existe"
+	
+	para "toujours."
+	line "Souhaitez-vous"
+	
+	para "l'ouvrir?"
 	done
 
 _MobileCardFolderAskDeleteOldText::
-	text "Delete the old"
-	line "CARD FOLDER?"
+	text "Jeter l'ancien"
+	line "DOSSIER CARTE?"
 	done
 
 _MobileCardFolderFinishRegisteringCardsText::
-	text "Finish registering"
-	line "CARDS?"
+	text "Finir d'enregistrer"
+	line "vos CARTES?"
 	done
 
 _PhoneWrongNumberText::

@@ -863,18 +863,18 @@ Function4ad68:
 
 String_4ad88:
 	db   "STATS";"つよさをみる"
-	next "MOVE";"つかえるわざ"
-	next "CANCEL@";"もどる@"
+	next "CAPACITE";"つかえるわざ"
+	next "RETOUR@";"もどる@"
 
 String_4ad9a:
-	db   "ENTER@";"さんかする@"
+	db   "INSCRIRE@";"さんかする@"
 
 String_4ada0:
-	db   "WITHDRAW@";"さんかしない@"
+	db   "RETIRER@";"さんかしない@"
 
 String_4ada7:
 	db   "STATS";"つよさをみる"
-	next "CANCEL@";"もどる@" ; BACK
+	next "RETOUR@";"もどる@" ; BACK
 
 Function4adb2:
 	ld hl, wd002

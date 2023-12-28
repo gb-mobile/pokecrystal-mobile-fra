@@ -1239,9 +1239,10 @@ _PutCardInCardFolderText::
 	done
 
 _CardWasListedText::
+	text "La CARTE venant de"
 	text_ram wStringBuffer2
-	text "'s CARD was"
-	line "listed as no.@"
+	line " a été"
+	cont "classée au no.@"
 	text_decimal wStringBuffer1, 1, 2
 	text "."
 	prompt

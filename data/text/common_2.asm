@@ -274,19 +274,21 @@ _MysteryGiftSentHomeText::
 	prompt
 
 _NameCardReceivedCardText::
-	text "Received"
+	text "La CARTE venant de"
 	line "@"
 	text_ram wMysteryGiftCardHolderName
-	text "'s CARD."
+	text " a bien été"
+	line "reçue!"
 	prompt
 
 _NameCardListedCardText::
+	text "La CARTE venant de"
 	text_ram wMysteryGiftCardHolderName
-	text "'s CARD was"
-	line "listed as no.@"
+	line " a été"
+	cont "classée au no.@"
 	text_decimal wTextDecimalByte, 1, 2
 	text "."
-	prompt
+	prompt	
 
 _NameCardNotRegisteredCardText::
 	text "Cette CARTE n'a pas"
@@ -1381,22 +1383,26 @@ _OakPCText4::
 	done
 
 _TrainerRankingExplanationText:: ; unreferenced
-	text "Triple-theme"
-	line "trainer ranking!"
-
-	para "The SAVE file you"
-	line "just sent might"
-	cont "make the rankings!"
+	text "Classement des"
+	line "dresseurs!"
+	
+	para "La SAUVEGARDE qui"
+	line "a été envoyée"
+	cont "pourrait finir au"
+	
+	para "classement!"
 
 	para ""
 	done
 
 _TrainerRankingNoDataText:: ; unreferenced
-	text "There is no"
-	line "ranking data."
-
-	para "Link to obtain"
-	line "ranking data."
+	text "Aucune donnée de"
+	line "classement."
+	para "Connectez-vous"
+	line "pour obtenir les."
+	
+	para "données de"
+	line "classement."
 
 	para ""
 	done
