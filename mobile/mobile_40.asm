@@ -935,7 +935,7 @@ Mobile_CommunicationStandby:
 	ret
 
 .String:
-	db "PLEASE WAIT!@"	; "つうしんたいきちゅう！@"
+	db "UN MOMENT…@"	; "つうしんたいきちゅう！@"
 
 AdvanceMobileInactivityTimerAndCheckExpired:
 	push bc
@@ -2032,9 +2032,9 @@ Function100d67:
 .MenuData:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 3
-	db "SWITCH@"	; "いれかえる@"  ; TRADE
+	db "CHANGER@"	; "いれかえる@"  ; TRADE
 	db "STATS@"		; "つよさをみる@" ; STATS
-	db "CANCEL@"	; "キャンセル@"  ; CANCEL
+	db "RETOUR@"	; "キャンセル@"  ; CANCEL
 
 Function100da5:
 	ld hl, wcd2a
@@ -6032,8 +6032,8 @@ Function1029fe:
 	ret
 
 String_102a26:
-	db   "TRADE"
-	next "CANCEL"
+	db   "ECHANGE"
+	next "ROUTER"
 	db   "@"
 
 MenuData3_102a33:
@@ -6540,7 +6540,7 @@ Function102e07:
 	ret
 
 .waiting
-	db "Waiting...!@"
+	db "UN MOMENT…!@"
 
 Function102e3e:
 	ld de, .CancelString
@@ -6637,8 +6637,8 @@ Function102ee7:
 	ret
 
 String_102ef4:
-	db   "Too bad! The trade"
-	next "was canceled!"
+	db   "Dommage! L'échange"
+	next "est annulé!"
 	db   "@"
 
 Function102f15:
@@ -6661,7 +6661,7 @@ Function102f32:
 	ret
 
 .TradeCompleted:
-	db "Trade completed!@"
+	db "ECHANGE TERMINE!@"
 
 Function102f50:
 	call Function102dc3
@@ -6671,8 +6671,8 @@ Function102f50:
 	ret
 
 .PleaseWait:
-	db   "Please wait a"		; "しょうしょう　おまち　ください@"
-	next "moment...@"
+	db "Einen Moment,"
+	next "bitte…@"
 
 Function102f6d:
 	call Function102dc3

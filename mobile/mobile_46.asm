@@ -6304,9 +6304,9 @@ MenuHeader_11ae38:
 	db 0 ; default option
 
 String_11ae40:
-	db   "EITHER"
-	next "♂" ; male
-	next "♀" ; female
+	db   "PEU IMPORTE"
+	next "♂MALE" ; male
+	next "♀FEMEL." ; female
 	db   "@"
 
 Function11ae4e:

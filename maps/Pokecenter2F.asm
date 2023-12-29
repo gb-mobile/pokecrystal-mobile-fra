@@ -835,7 +835,7 @@ Text_BattleReceptionistIntro:
 	done
 
 Text_TradeReceptionistIntro:
-		text "Bienvenue au"
+	text "Bienvenue au"
 	line "CENTRE TROC."
 
 	para "Vous pouvez y"
