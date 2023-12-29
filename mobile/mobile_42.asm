@@ -1273,18 +1273,18 @@ Function108a33:
 	call MobileTradeAnim_ClearTilemap
 	ld a, HIGH(vBGMap1)
 	ldh [hBGMapAddress + 1], a
-	hlcoord 4, 0;5, 0
+	hlcoord 2, 0;5, 0
 	ld b, 6
-	ld c, 10;9
+	ld c, 14;9
 	call Textbox
-	hlcoord 6, 4;7, 4
+	hlcoord 4, 4;7, 4
 	ld de, .OddEgg
 	call PlaceString
 	call MobileTradeAnim_MonDisplay_UpdateBGMap
 	ret
 
 .OddEgg:
-	db "ODD EGG@";"なぞのタマゴ@"
+	db "OEUF BIZARRE@";"なぞのタマゴ@"
 
 MobileTradeAnim_LoadMonTemplate:
 	call WaitTop
