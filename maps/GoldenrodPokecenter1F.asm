@@ -532,6 +532,7 @@ GoldenrodPokecomCenterWhatMonDoYouWantText:
 	text "Quel #MON"
 	line "voulez-vous en"
 	cont "échange?"
+	done
 
 GoldenrodPokecomCenterWeWillTradeYourMonForMonText:
 	text "Bien, nous allons"
