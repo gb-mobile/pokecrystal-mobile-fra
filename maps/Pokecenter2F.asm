@@ -824,7 +824,7 @@ Text_ThisWayToMobileRoom: ; unreferenced
 Text_BattleReceptionistIntro:
 	text "Bienvenue au"
 	line "COLISEE du CLUB"
-	cont "LINK."
+	cont "#COM."
 	
 	para "Vous pouvez y"
 	line "affronter un(e)"
@@ -836,7 +836,8 @@ Text_BattleReceptionistIntro:
 
 Text_TradeReceptionistIntro:
 	text "Bienvenue au"
-	line "CENTRE TROC."
+	line "CENTRE TROC du"
+	cont "CLUB #COM."
 
 	para "Vous pouvez y"
 	line "faire des échanges"
@@ -849,7 +850,8 @@ Text_TradeReceptionistIntro:
 
 Text_TimeCapsuleReceptionistIntro:
 	text "Bienvenue au"
-	line "BLOC TEMPOREL."
+	line "BLOC TEMPOREL du"
+	cont "CLUB #COM."
 
 	para "Vous pouvez voya-"
 	line "ger dans le temps"
