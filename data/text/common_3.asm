@@ -810,7 +810,7 @@ _MobileCardFolderIntro3Text::
 	text "Avec la CARTE d'un"
 	line "de vos amis, vous"
 	
-	para "pouvez les appeler "
+	para "pouvez les appeler"
 	line "via votre portable"
 	
 	para "depuis le premier"
