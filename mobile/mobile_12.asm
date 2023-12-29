@@ -109,7 +109,7 @@ InitMobileProfile:
 	call GetNthString
 	ld d, h
 	ld e, l
-	hlcoord 19 - REGION_CODE_STRING_LENGTH, 9 ; Default Prefectures position in MOBILE menu
+	hlcoord 18 - REGION_CODE_STRING_LENGTH, 9 ; Default Prefectures position in MOBILE menu
 	call PlaceString
 	hlcoord 18 - ZIPCODE_LENGTH, 11 ; Zip Code Position in MOBILE menu
 	call DisplayZipCodeRightAlign
