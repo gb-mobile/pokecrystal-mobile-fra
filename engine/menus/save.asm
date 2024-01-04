@@ -419,7 +419,7 @@ InitDefaultEZChatMsgs:
 .Data:
 ; introduction
 	dw $020d, $0500 ; `HELLO` `!`
-	dw $020e, $0501 ; `GOOD-BYE` `!!`
+	dw $0223, $0501 ; `WELCOME` `!!`
 ; begin battle
 	dw $0629, $0503 ; `READY` `?`
 	dw $0d0d, $0401 ; `LET'S` `GO!`
