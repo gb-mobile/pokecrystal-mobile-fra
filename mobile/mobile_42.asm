@@ -1265,7 +1265,7 @@ MobileTradeAnim_DisplayEggData:
 .EggTemplate:
 	db   "OEUF";"タマゴ"
 	next "DO/?????";"おや/？？？？？"
-	next "№<ID>?????";"<ID>№<DOT>？？？？？"
+	next "№.<ID>?????";"<ID>№<DOT>？？？？？"
 	db   "@"
 
 Function108a33:
@@ -1304,7 +1304,7 @@ MobileTradeAnim_LoadMonTemplate:
 	db   "─── №.";"─　№<DOT>"
 	next ""
 	next "DO/";"おや／"
-	next "№<ID>";"<ID>№<DOT>"
+	next "№.<ID>";"<ID>№<DOT>"
 	db   "@"
 
 MobileTradeAnim_MonDisplay_UpdateBGMap:
