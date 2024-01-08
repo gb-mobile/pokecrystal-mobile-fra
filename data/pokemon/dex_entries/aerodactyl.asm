@@ -1,5 +1,6 @@
 	db "FOSSILE@" ; species name
-	dw 18, 590 ; height, weight
+	db 18
+	dw 590 ; height, weight
 
 	db   "A la préhistoire,"
 	next "ce #MON volait"

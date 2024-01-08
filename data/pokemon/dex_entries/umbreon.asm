@@ -1,5 +1,6 @@
 	db "LUNE@" ; species name
-	dw 10, 270 ; height, weight
+	db 10
+	dw 270 ; height, weight
 
 	db   "Les nuits de plei-"
 	next "ne lune, ou s'il"

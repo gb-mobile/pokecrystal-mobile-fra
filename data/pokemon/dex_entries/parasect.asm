@@ -1,5 +1,6 @@
 	db "CHAMPIGNON@" ; species name
-	dw 10, 295 ; height, weight
+	db 10
+	dw 295 ; height, weight
 
 	db   "Lorsque le champi-"
 	next "gnon parasite n'a"

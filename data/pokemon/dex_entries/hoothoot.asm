@@ -1,5 +1,6 @@
 	db "HIBOU@" ; species name
-	dw 7, 212 ; height, weight
+	db 7
+	dw 212 ; height, weight
 
 	db   "Il hulule à la"
 	next "même heure chaque"

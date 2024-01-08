@@ -1,5 +1,6 @@
 	db "SPIRALE@" ; species name
-	dw 10, 350 ; height, weight
+	db 10
+	dw 350 ; height, weight
 
 	db   "Sa grosse carapace"
 	next "ne lui permettait"

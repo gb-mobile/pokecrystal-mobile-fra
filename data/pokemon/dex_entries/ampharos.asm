@@ -1,5 +1,6 @@
 	db "LUMIERE@" ; species name
-	dw 14, 615 ; height, weight
+	db 14
+	dw 615 ; height, weight
 
 	db   "Le bout de sa"
 	next "queue brille si"

@@ -1,5 +1,6 @@
 	db "PAPILLON@" ; species name
-	dw 11 ; height, weight weight="320 ; height, weight
+		db 11
+	dw 320 ; height, weight
 
 	db   "Il vole de fleur"
 	next "en fleur en récol-"

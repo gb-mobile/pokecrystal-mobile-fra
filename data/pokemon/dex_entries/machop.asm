@@ -1,5 +1,6 @@
 	db "COLOSSE@" ; species name
-	dw 8, 195 ; height, weight
+	db 8
+	dw 195 ; height, weight
 
 	db   "Il s'entraîne en"
 	next "soulevant des ro-"

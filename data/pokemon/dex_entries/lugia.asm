@@ -1,5 +1,6 @@
 	db "PLONGEON@" ; species name
-	dw 52, 2160 ; height, weight
+	db 52
+	dw 2160 ; height, weight
 
 	db   "Il peut calmer les"
 	next "mers agitées. On"

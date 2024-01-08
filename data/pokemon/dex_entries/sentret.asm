@@ -1,5 +1,6 @@
 	db "ESPION@" ; species name
-	dw 8, 60 ; height, weight
+	db 8
+	dw 60 ; height, weight
 
 	db   "S'il fait le guet,"
 	next "il prévient les"

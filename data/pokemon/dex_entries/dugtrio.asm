@@ -1,5 +1,6 @@
 	db "TAUPE@" ; species name
-	dw 7, 333 ; height, weight
+	db 7
+	dw 333 ; height, weight
 
 	db   "Ces triplés de"
 	next "TAUPIQUEUR creu-"

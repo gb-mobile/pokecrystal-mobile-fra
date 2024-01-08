@@ -1,5 +1,6 @@
 	db "ROYAL@" ; species name
-	dw 20, 795 ; height, weight
+	db 20
+	dw 795 ; height, weight
 
 	db   "A chaque bâille-"
 	next "ment, le KOKIYAS"

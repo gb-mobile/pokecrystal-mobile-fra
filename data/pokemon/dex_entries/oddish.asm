@@ -1,5 +1,6 @@
 	db "RACINE@" ; species name
-	dw 5, 54 ; height, weight
+	db 5
+	dw 54 ; height, weight
 
 	db   "Le jour, il reste"
 	next "en sous-sol et"

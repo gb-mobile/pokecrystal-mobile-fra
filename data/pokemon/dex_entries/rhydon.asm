@@ -1,5 +1,6 @@
 	db "PERCEUR@" ; species name
-	dw 19, 1200 ; height, weight
+	db 19
+	dw 1200 ; height, weight
 
 	db   "En faisant tourner"
 	next "sa corne comme"

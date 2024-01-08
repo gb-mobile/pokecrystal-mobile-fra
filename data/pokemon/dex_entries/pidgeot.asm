@@ -1,5 +1,6 @@
 	db "OISEAU@" ; species name
-	dw 15, 395 ; height, weight
+	db 15
+	dw 395 ; height, weight
 
 	db   "Son incroyable vue"
 	next "lui permet de"

@@ -1,5 +1,6 @@
 	db "PISSENLIT@" ; species name
-	dw 8, 30 ; height, weight
+	db 8
+	dw 30 ; height, weight
 
 	db   "Même sous un vent"
 	next "très violent, il"

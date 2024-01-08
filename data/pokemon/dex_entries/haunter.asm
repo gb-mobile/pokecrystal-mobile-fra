@@ -1,5 +1,6 @@
 	db "GAZ@" ; species name
-	dw 16, 1 ; height, weight
+	db 16
+	dw 1 ; height, weight
 
 	db   "Il se cache dans"
 	next "le noir, cherchant"

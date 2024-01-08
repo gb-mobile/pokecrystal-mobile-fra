@@ -1,5 +1,6 @@
 	db "HERBE@" ; species name
-	dw 18, 1005 ; height, weight
+	db 18
+	dw 1005 ; height, weight
 
 	db   "Toute personne se"
 	next "tenant près de lui"

@@ -1,5 +1,6 @@
 	db "MAGNETIQUE@" ; species name
-	dw 10, 600 ; height, weight
+	db 10
+	dw 600 ; height, weight
 
 	db   "Quand plusieurs"
 	next "MAGNETON se ras-"

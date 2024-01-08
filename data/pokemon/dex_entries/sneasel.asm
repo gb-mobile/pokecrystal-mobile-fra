@@ -1,5 +1,6 @@
 	db "GRIFACEREE@" ; species name
-	dw 9, 280 ; height, weight
+	db 9
+	dw 280 ; height, weight
 
 	db   "Ce #MON rusé se"
 	next "cache dans l'ombre"

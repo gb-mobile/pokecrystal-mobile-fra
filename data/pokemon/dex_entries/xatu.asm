@@ -1,5 +1,6 @@
 	db "MYSTIQUE@" ; species name
-	dw 15, 150 ; height, weight
+	db 15
+	dw 150 ; height, weight
 
 	db   "Il peut rester"
 	next "à méditer sans"

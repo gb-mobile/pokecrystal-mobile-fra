@@ -1,5 +1,6 @@
 	db "SOMBRE@" ; species name
-	dw 6, 108 ; height, weight
+	db 6
+	dw 108 ; height, weight
 
 	db   "Il hurle dès l'au-"
 	next "be pour délimiter"

@@ -1,5 +1,6 @@
 	db "CHEVAL FEU@" ; species name
-	dw 10, 300 ; height, weight
+	db 10
+	dw 300 ; height, weight
 
 	db   "Il est devenu un"
 	next "excellent sauteur"

@@ -1,5 +1,6 @@
 	db "MITE@" ; species name
-	dw 15, 125 ; height, weight
+	db 15
+	dw 125 ; height, weight
 
 	db   "Les écailles qu'il"
 	next "sème ont le pou-"

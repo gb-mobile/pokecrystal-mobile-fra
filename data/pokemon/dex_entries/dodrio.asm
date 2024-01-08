@@ -1,5 +1,6 @@
 	db "TROISEAU@" ; species name
-	dw 18, 852 ; height, weight
+	db 18
+	dw 852 ; height, weight
 
 	db   "Un ennemi ne fai-"
 	next "sant pas attention"

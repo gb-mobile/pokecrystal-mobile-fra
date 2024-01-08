@@ -1,5 +1,6 @@
 	db "GAZ@" ; species name
-	dw 13, 1 ; height, weight
+	db 13
+	dw 1 ; height, weight
 
 	db   "Il enferme ses"
 	next "proies dans un"

@@ -1,5 +1,6 @@
 	db "DRAGON@" ; species name
-	dw 4, 80 ; height, weight
+	db 4
+	dw 80 ; height, weight
 
 	db   "S'ils se retrou-"
 	next "vent en milieu"

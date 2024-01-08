@@ -1,5 +1,6 @@
 	db "GLACIAIRE@" ; species name
-	dw 17, 554 ; height, weight
+	db 17
+	dw 554 ; height, weight
 
 	db   "#MON oiseau"
 	next "légendaire. Pen-"

@@ -1,5 +1,6 @@
 	db "ELECTRIQUE@" ; species name
-	dw 6, 235 ; height, weight
+	db 6
+	dw 235 ; height, weight
 
 	db   "Il aime les vio-"
 	next "lents éclairs."

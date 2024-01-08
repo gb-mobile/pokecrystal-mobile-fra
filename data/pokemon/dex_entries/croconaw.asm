@@ -1,5 +1,6 @@
 	db "MACHOIRE@" ; species name
-	dw 11, 250 ; height, weight
+	db 11
+	dw 250 ; height, weight
 
 	db   "Ses crocs sont"
 	next "inclinés vers"

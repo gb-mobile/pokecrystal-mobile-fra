@@ -1,5 +1,6 @@
 	db "ALLONGE@" ; species name
-	dw 18, 325 ; height, weight
+	db 18
+	dw 325 ; height, weight
 
 	db   "Il fabrique un nid"
 	next "souterrain très"

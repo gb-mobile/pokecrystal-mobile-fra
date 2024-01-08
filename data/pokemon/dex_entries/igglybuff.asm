@@ -1,5 +1,6 @@
 	db "BOUBOULE@" ; species name
-	dw 3, 10 ; height, weight
+	db 3
+	dw 10 ; height, weight
 
 	db   "Plutôt que de se"
 	next "déplacer avec ses"

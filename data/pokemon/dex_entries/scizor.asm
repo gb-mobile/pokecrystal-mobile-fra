@@ -1,5 +1,6 @@
 	db "CISEAUX@" ; species name
-	dw 18, 1180 ; height, weight
+	db 18
+	dw 1180 ; height, weight
 
 	db   "Les pinces de ce"
 	next "#MON contien-"

@@ -1,5 +1,6 @@
 	db "BLOQUEUR@" ; species name
-	dw 13, 545 ; height, weight
+	db 13
+	dw 545 ; height, weight
 
 	db   "Il utilise un cu-"
 	next "rieux pouvoir con-"

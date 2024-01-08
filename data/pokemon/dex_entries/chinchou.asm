@@ -1,5 +1,6 @@
 	db "POISSON@" ; species name
-	dw 5, 120 ; height, weight
+	db 5
+	dw 120 ; height, weight
 
 	db   "Ses antennes pro-"
 	next "viennent d'ancien-"

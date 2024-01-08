@@ -1,5 +1,6 @@
 	db "LEGENDAIRE@" ; species name
-	dw 19, 1550 ; height, weight
+	db 19
+	dw 1550 ; height, weight
 
 	db   "Une vieille estam-"
 	next "pe montre que les"

@@ -1,5 +1,6 @@
 	db "DEGUEU@" ; species name
-	dw 12, 300 ; height, weight
+	db 12
+	dw 300 ; height, weight
 
 	db   "En bougeant, il"
 	next "laisse un puissant"

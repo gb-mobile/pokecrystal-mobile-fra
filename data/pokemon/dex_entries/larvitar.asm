@@ -1,5 +1,6 @@
 	db "PEAUPIERRE@" ; species name
-	dw 6, 720 ; height, weight
+	db 6
+	dw 720 ; height, weight
 
 	db   "Né sous la terre,"
 	next "il devient une"

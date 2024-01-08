@@ -1,5 +1,6 @@
 	db "FEUILLE@" ; species name
-	dw 9, 64 ; height, weight
+	db 9
+	dw 64 ; height, weight
 
 	db   "Il aime prendre"
 	next "des bains de"

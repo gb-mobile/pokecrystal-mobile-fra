@@ -1,5 +1,6 @@
 	db "SERPENROC@" ; species name
-	dw 88, 2100 ; height, weight
+	db 88
+	dw 2100 ; height, weight
 
 	db   "En creusant le sol"
 	next "il absorbe des"

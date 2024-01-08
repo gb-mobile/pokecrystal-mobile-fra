@@ -1,5 +1,6 @@
 	db "BOUBOULE@" ; species name
-	dw 10, 120 ; height, weight
+	db 10
+	dw 120 ; height, weight
 
 	db   "Sa fourrure est si"
 	next "douce et riche que"

@@ -1,5 +1,6 @@
 	db "CHOVSOURIS@" ; species name
-	dw 18, 750 ; height, weight
+	db 18
+	dw 750 ; height, weight
 
 	db   "En volant plus"
 	next "vite et discrète-"

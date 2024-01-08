@@ -1,5 +1,6 @@
 	db "GUEPOISON@" ; species name
-	dw 10, 295 ; height, weight
+	db 10
+	dw 295 ; height, weight
 
 	db   "Il utilise ses"
 	next "aiguillons pour"

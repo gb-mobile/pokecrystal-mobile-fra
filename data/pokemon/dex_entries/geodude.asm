@@ -1,5 +1,6 @@
 	db "ROCHE@" ; species name
-	dw 4, 200 ; height, weight
+	db 4
+	dw 200 ; height, weight
 
 	db   "Fiers de leur"
 	next "corps résistant,"

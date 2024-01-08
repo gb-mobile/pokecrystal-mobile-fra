@@ -1,5 +1,6 @@
 	db "SERPENT@" ; species name
-	dw 20, 69 ; height, weight
+	db 20
+	dw 69 ; height, weight
 
 	db   "Il agite le bout"
 	next "de sa langue pour"

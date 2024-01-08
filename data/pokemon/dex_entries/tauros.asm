@@ -1,5 +1,6 @@
 	db "BUFFLE@" ; species name
-	dw 14, 884 ; height, weight
+	db 14
+	dw 884 ; height, weight
 
 	db   "Ces créatures très"
 	next "violentes s'af-"

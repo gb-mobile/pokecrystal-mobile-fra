@@ -1,5 +1,6 @@
 	db "PATIENT@" ; species name
-	dw 13, 285 ; height, weight
+	db 13
+	dw 285 ; height, weight
 
 	db   "Pour cacher sa"
 	next "queue noire, il"

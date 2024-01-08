@@ -1,5 +1,6 @@
 	db "PIQUANT@" ; species name
-	dw 10, 1150 ; height, weight
+	db 10
+	dw 1150 ; height, weight
 
 	db   "Il ne peut se sou-"
 	next "venir que d'une"

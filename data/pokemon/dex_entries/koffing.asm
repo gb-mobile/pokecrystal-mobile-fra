@@ -1,5 +1,6 @@
 	db "GAZ MORTEL@" ; species name
-	dw 6, 10 ; height, weight
+	db 6
+	dw 10 ; height, weight
 
 	db   "Si l'on s'approche"
 	next "suffisamment quand"

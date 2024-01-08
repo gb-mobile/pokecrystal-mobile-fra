@@ -1,5 +1,6 @@
 	db "PORSINGE@" ; species name
-	dw 10, 320 ; height, weight
+	db 10
+	dw 320 ; height, weight
 
 	db   "Il cherchera à"
 	next "castagner celui"

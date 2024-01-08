@@ -1,5 +1,6 @@
 	db "ARMOISEAU@" ; species name
-	dw 17, 505 ; height, weight
+	db 17
+	dw 505 ; height, weight
 
 	db   "Les plumes qu'il"
 	next "perd sont très"

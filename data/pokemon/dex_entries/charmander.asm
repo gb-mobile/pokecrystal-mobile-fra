@@ -1,5 +1,6 @@
 	db "LEZARD@" ; species name
-	dw 6, 85 ; height, weight
+	db 6
+	dw 85 ; height, weight
 
 	db   "S'il est en bonne"
 	next "santé, la flamme"

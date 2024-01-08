@@ -1,5 +1,6 @@
 	db "CARNIVORE@" ; species name
-	dw 10, 64 ; height, weight
+	db 10
+	dw 64 ; height, weight
 
 	db   "Affamé, il remue"
 	next "ses feuilles acé-"

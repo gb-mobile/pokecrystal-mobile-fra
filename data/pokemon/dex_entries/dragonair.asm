@@ -1,5 +1,6 @@
 	db "DRAGON@" ; species name
-	dw 40, 165 ; height, weight
+	db 40
+	dw 165 ; height, weight
 
 	db   "On l'appelle le"
 	next "#MON divin."

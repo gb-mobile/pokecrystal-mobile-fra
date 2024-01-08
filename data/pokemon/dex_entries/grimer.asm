@@ -1,5 +1,6 @@
 	db "DEGUEU@" ; species name
-	dw 9, 300 ; height, weight
+	db 9
+	dw 300 ; height, weight
 
 	db   "Quand les corps de"
 	next "2 TADMORV se com-"

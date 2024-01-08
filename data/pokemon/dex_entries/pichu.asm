@@ -1,5 +1,6 @@
 	db "MINISOURIS@" ; species name
-	dw 3, 20 ; height, weight
+	db 3
+	dw 20 ; height, weight
 
 	db   "Il ne sait pas"
 	next "encore stocker"

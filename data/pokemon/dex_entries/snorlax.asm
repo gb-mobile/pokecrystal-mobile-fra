@@ -1,5 +1,6 @@
 	db "PIONCEUR@" ; species name
-	dw 21, 4600 ; height, weight
+	db 21
+	dw 4600 ; height, weight
 
 	db   "L'estomac de ce"
 	next "#MON est si"

@@ -1,5 +1,6 @@
 	db "COLOSSE@" ; species name
-	dw 15, 705 ; height, weight
+	db 15
+	dw 705 ; height, weight
 
 	db   "Il se donne tou-"
 	next "jours à fond."

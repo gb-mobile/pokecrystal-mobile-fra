@@ -1,5 +1,6 @@
 	db "GENETIQUE@" ; species name
-	dw 20, 1220 ; height, weight
+	db 20
+	dw 1220 ; height, weight
 
 	db   "On dit qu'il se"
 	next "repose dans une"

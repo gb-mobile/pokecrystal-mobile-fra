@@ -1,5 +1,6 @@
 	db "BALLE@" ; species name
-	dw 12, 666 ; height, weight
+	db 12
+	dw 666 ; height, weight
 
 	db   "Plus il charge"
 	next "d'énergie, plus il"

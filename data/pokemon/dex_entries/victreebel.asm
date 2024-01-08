@@ -1,5 +1,6 @@
 	db "CARNIVORE@" ; species name
-	dw 17, 155 ; height, weight
+	db 17
+	dw 155 ; height, weight
 
 	db   "Tout corps ingéré"
 	next "par ce #MON est"

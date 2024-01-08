@@ -1,5 +1,6 @@
 	db "ARCENCIEL@" ; species name
-	dw 38, 1990 ; height, weight
+	db 38
+	dw 1990 ; height, weight
 
 	db   "Il ne se montre"
 	next "qu'à un dresseur"

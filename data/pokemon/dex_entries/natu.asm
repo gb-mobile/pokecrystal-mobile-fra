@@ -1,5 +1,6 @@
 	db "MINOISEAU@" ; species name
-	dw 2, 20 ; height, weight
+	db 2
+	dw 20 ; height, weight
 
 	db   "Il est très doué"
 	next "pour grimper sur"

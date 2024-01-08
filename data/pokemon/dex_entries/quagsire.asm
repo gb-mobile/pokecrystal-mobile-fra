@@ -1,5 +1,6 @@
 	db "POISSON@" ; species name
-	dw 14, 750 ; height, weight
+	db 14
+	dw 750 ; height, weight
 
 	db   "Il est toujours"
 	next "gluant. Il se co-"

@@ -1,5 +1,6 @@
 	db "VIGNE@" ; species name
-	dw 10, 350 ; height, weight
+	db 10
+	dw 350 ; height, weight
 
 	db   "En combat, il gi-"
 	next "gote ses lianes"

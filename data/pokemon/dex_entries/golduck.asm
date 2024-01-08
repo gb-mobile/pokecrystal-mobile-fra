@@ -1,5 +1,6 @@
 	db "CANARD@" ; species name
-	dw 17, 766 ; height, weight
+	db 17
+	dw 766 ; height, weight
 
 	db   "Il nage avec une"
 	next "grande grâce le"

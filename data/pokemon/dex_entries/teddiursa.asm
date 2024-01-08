@@ -1,5 +1,6 @@
 	db "MINI OURS@" ; species name
-	dw 6, 88 ; height, weight
+	db 6
+	dw 88 ; height, weight
 
 	db   "Il aime le miel."
 	next "Ses paumes sont"

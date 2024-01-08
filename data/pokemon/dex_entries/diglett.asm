@@ -1,5 +1,6 @@
 	db "TAUPE@" ; species name
-	dw 2, 8 ; height, weight
+	db 2
+	dw 8 ; height, weight
 
 	db   "Il creuse le sol"
 	next "et mâchouille les"

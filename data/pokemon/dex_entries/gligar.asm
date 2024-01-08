@@ -1,5 +1,6 @@
 	db "SCORPIVOL@" ; species name
-	dw 11, 648 ; height, weight
+	db 11
+	dw 648 ; height, weight
 
 	db   "Il fait son nid"
 	next "sur des corniches."

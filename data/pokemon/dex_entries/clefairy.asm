@@ -1,5 +1,6 @@
 	db "FEE@" ; species name
-	dw 6, 75 ; height, weight
+	db 6
+	dw 75 ; height, weight
 
 	db   "Bien que rarement"
 	next "aperçu, on le"

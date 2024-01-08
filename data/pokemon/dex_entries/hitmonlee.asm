@@ -1,5 +1,6 @@
 	db "LATTEUR@" ; species name
-	dw 15, 498 ; height, weight
+	db 15
+	dw 498 ; height, weight
 
 	db   "On l'appelle aussi"
 	next "le Roi du Coup de"

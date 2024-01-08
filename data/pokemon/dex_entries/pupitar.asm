@@ -1,5 +1,6 @@
 	db "CARAPADURE@" ; species name
-	dw 12, 1520 ; height, weight
+	db 12
+	dw 1520 ; height, weight
 
 	db   "Il ne reste pas"
 	next "immobile. Il pos-"

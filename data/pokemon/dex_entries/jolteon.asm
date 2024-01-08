@@ -1,5 +1,6 @@
 	db "FOUDRE@" ; species name
-	dw 8, 245 ; height, weight
+	db 8
+	dw 245 ; height, weight
 
 	db   "Les ions négatifs"
 	next "contenus dans sa"

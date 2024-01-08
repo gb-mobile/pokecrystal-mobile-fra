@@ -1,5 +1,6 @@
 	db "GARD'OS@" ; species name
-	dw 10, 450 ; height, weight
+	db 10
+	dw 450 ; height, weight
 
 	db   "Il existe un cime-"
 	next "tière pour les"

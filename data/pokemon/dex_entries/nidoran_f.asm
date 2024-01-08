@@ -1,5 +1,6 @@
 	db "VENEPIC@" ; species name
-	dw 4, 70 ; height, weight
+	db 4
+	dw 70 ; height, weight
 
 	db   "Petit et docile,"
 	next "il se protège avec"

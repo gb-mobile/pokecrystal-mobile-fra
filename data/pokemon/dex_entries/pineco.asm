@@ -1,5 +1,6 @@
 	db "VER CACHE@" ; species name
-	dw 6, 72 ; height, weight
+	db 6
+	dw 72 ; height, weight
 
 	db   "Il crache un li-"
 	next "quide gluant pour"

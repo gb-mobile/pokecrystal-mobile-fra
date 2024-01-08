@@ -1,5 +1,6 @@
 	db "POISSON@" ; species name
-	dw 13, 390 ; height, weight
+	db 13
+	dw 390 ; height, weight
 
 	db   "A l'automne, le"
 	next "mâle fait sa ronde"

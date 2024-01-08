@@ -1,5 +1,6 @@
 	db "DRAGON@" ; species name
-	dw 18, 33 ; height, weight
+	db 18
+	dw 33 ; height, weight
 
 	db   "En grandissant, il"
 	next "perd beaucoup de"

@@ -1,5 +1,6 @@
 	db "OEUF@" ; species name
-	dw 4, 25 ; height, weight
+	db 4
+	dw 25 ; height, weight
 
 	db   "Même si l'un d'eux"
 	next "est séparé du"

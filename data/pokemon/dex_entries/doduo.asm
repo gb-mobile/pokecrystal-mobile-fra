@@ -1,5 +1,6 @@
 	db "DUOISEAU@" ; species name
-	dw 14, 392 ; height, weight
+	db 14
+	dw 392 ; height, weight
 
 	db   "Il vit dans les"
 	next "plaines pour une"

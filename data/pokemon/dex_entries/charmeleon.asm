@@ -1,5 +1,6 @@
 	db "FLAMME@" ; species name
-	dw 11, 190 ; height, weight
+	db 11
+	dw 190 ; height, weight
 
 	db   "S'il s'énerve pen-"
 	next "dant un combat,"

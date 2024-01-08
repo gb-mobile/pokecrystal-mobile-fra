@@ -1,5 +1,6 @@
 	db "IMITATION@" ; species name
-	dw 12, 380 ; height, weight
+	db 12
+	dw 380 ; height, weight
 
 	db   "Une branche remue"
 	next "alors qu'il n'y a"

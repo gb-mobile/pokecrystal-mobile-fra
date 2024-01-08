@@ -1,5 +1,6 @@
 	db "HUMANOIDE@" ; species name
-	dw 14, 406 ; height, weight
+	db 14
+	dw 406 ; height, weight
 
 	db   "Il a plusieurs"
 	next "cris différents."

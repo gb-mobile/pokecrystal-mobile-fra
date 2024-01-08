@@ -1,5 +1,6 @@
 	db "PUNCHEUR@" ; species name
-	dw 14, 502 ; height, weight
+	db 14
+	dw 502 ; height, weight
 
 	db   "Pour augmenter la"
 	next "puissance de ses"

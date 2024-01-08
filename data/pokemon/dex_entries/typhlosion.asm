@@ -1,5 +1,6 @@
 	db "VOLCAN@" ; species name
-	dw 17, 795 ; height, weight
+	db 17
+	dw 795 ; height, weight
 
 	db   "Quand la chaleur"
 	next "de son corps fait"

@@ -1,5 +1,6 @@
 	db "MACHOIRE@" ; species name
-	dw 6, 95 ; height, weight
+	db 6
+	dw 95 ; height, weight
 
 	db   "Cet petit teigneux"
 	next "mâchouille tout ce"

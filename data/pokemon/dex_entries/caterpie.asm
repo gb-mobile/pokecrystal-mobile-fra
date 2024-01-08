@@ -1,5 +1,6 @@
 	db "VER@" ; species name
-	dw 3, 29 ; height, weight
+	db 3
+	dw 29 ; height, weight
 
 	db   "Pour se protéger,"
 	next "il s'enfonce dans"

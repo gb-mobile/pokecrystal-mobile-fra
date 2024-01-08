@@ -1,5 +1,6 @@
 	db "CHADEVILLE@" ; species name
-	dw 10, 320 ; height, weight
+	db 10
+	dw 320 ; height, weight
 
 	db   "Derrière une appa-"
 	next "rence calme et"

@@ -1,5 +1,6 @@
 	db "COCHON@" ; species name
-	dw 4, 65 ; height, weight
+	db 4
+	dw 65 ; height, weight
 
 	db   "Il creuse le sol"
 	next "avec le bout de"

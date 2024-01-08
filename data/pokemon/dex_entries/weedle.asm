@@ -1,5 +1,6 @@
 	db "INSECTOPIC@" ; species name
-	dw 3, 32 ; height, weight
+	db 3
+	dw 32 ; height, weight
 
 	db   "Son aiguillon em-"
 	next "poisonné est très"

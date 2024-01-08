@@ -1,5 +1,6 @@
 	db "VER CACHE@" ; species name
-	dw 12, 1258 ; height, weight
+	db 12
+	dw 1258 ; height, weight
 
 	db   "On le trouve ac-"
 	next "croché au tronc"
