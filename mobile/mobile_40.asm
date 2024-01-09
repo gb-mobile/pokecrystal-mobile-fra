@@ -925,12 +925,12 @@ MenuData_100604:
 	db "ATTEND.@"		; "まつ@"
 
 Mobile_CommunicationStandby:
-	hlcoord 3, 10
+	hlcoord 4, 10
 	ld b, 1
-	ld c, 12
+	ld c, 10
 	call Function3eea
 	ld de, .String
-	hlcoord 4, 11
+	hlcoord 5, 11
 	call PlaceString
 	ret
 
