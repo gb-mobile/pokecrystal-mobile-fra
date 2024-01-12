@@ -6033,7 +6033,7 @@ Function1029fe:
 
 String_102a26:
 	db   "ECHANGE"
-	next "ROUTER"
+	next "ANNULER"
 	db   "@"
 
 MenuData3_102a33:
