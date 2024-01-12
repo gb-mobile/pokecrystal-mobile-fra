@@ -1,6 +1,6 @@
 	db "FEUILLE@" ; species name
-	db 12
-	dw 158 ; height, weight
+	db 12 ; height
+	dw 158 ; weight
 
 	db   "L'odeur épicée des"
 	next "feuilles sur son"

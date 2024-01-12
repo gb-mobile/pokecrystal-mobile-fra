@@ -1,6 +1,6 @@
 	db "UNICORNE@" ; species name
-	db 15
-	dw 540 ; height, weight
+	db 15 ; height
+	dw 540 ; weight
 
 	db   "Sa force hercu-"
 	next "léenne lui permet"

@@ -1,6 +1,6 @@
 	db "CRETIN@" ; species name
-	db 12
-	dw 360 ; height, weight
+	db 12 ; height
+	dw 360 ; weight
 
 	db   "Il est tellement"
 	next "paresseux qu'il"

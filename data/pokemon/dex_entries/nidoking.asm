@@ -1,6 +1,6 @@
 	db "PERCEUR@" ; species name
-	db 14
-	dw 620 ; height, weight
+	db 14 ; height
+	dw 620 ; weight
 
 	db   "Il utilise tous"
 	next "ses membres pour"

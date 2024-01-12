@@ -1,6 +1,6 @@
 	db "LAINE@" ; species name
-	db 6
-	dw 78 ; height, weight
+	db 6 ; height
+	dw 78 ; weight
 
 	db   "Il garde une gran-"
 	next "de quantité d'air"

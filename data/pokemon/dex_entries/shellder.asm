@@ -1,6 +1,6 @@
 	db "BIVALVE@" ; species name
-	db 3
-	dw 40 ; height, weight
+	db 3 ; height
+	dw 40 ; weight
 
 	db   "Il se referme sur"
 	next "un ennemi pour at-"

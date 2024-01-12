@@ -1,6 +1,6 @@
 	db "GRENOUILLE@" ; species name
-	db 11
-	dw 339 ; height, weight
+	db 11 ; height
+	dw 339 ; weight
 
 	db   "Si PTITARD et"
 	next "TETARTE entendent"

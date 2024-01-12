@@ -1,6 +1,6 @@
 	db "BALLE PIC@" ; species name
-	db 3
-	dw 15 ; height, weight
+	db 3 ; height
+	dw 15 ; weight
 
 	db   "Il est connu pour"
 	next "être un symbole de"

@@ -62,16 +62,21 @@ RandyScript:
 	closetext
 	end
 
-GiftSpearowMail:
+GGiftSpearowMail:
 	db FLOWER_MAIL
-	db   "DARK CAVE leads"
-	next "to another road@"
+	db   "ANTRE NOIRE    "
+	next "mène autre part@"
 
 GiftSpearowName:
-	db "KENYA@"
+	db "ALFRED@"
 
 GiftSpearowOTName:
-	db "RANDY@"
+	db "BOBBY@"
+
+	db 0 ; unused
+
+UnusedEFText: ; unreferenced
+	db " EF@"
 
 	db 0 ; unused
 

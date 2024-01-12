@@ -1,6 +1,6 @@
 	db "AQUASOURIS@" ; species name
-	db 4
-	dw 85 ; height, weight
+	db 4 ; height
+	dw 85 ; weight
 
 	db   "Sa fourrure est"
 	next "imperméable, si"

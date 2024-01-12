@@ -1,6 +1,6 @@
 	db "CHEVAL FEU@" ; species name
-	db 17
-	dw 950 ; height, weight
+	db 17 ; height
+	dw 950 ; weight
 
 	db   "Il adore galoper."
 	next "Pendant sa course,"

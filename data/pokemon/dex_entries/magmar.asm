@@ -1,6 +1,6 @@
 	db "CRACHE-FEU@" ; species name
-	db 13
-	dw 445 ; height, weight
+	db 13 ; height
+	dw 445 ; weight
 
 	db   "Il aime les mi-"
 	next "lieux chauds."

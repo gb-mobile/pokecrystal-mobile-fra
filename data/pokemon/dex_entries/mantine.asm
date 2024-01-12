@@ -1,6 +1,6 @@
 	db "CERVOLANT@" ; species name
-	db 21
-	dw 2200 ; height, weight
+	db 21 ; height
+	dw 2200 ; weight
 
 	db   "Il nage la bouche"
 	next "ouverte pour ava-"

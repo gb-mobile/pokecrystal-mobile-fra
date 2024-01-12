@@ -1,6 +1,6 @@
 	db "CANARD@" ; species name
-	db 8
-	dw 196 ; height, weight
+	db 8 ; height
+	dw 196 ; weight
 
 	db   "Il ne peut utili-"
 	next "ser ses pouvoirs"

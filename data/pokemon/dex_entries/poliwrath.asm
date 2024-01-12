@@ -1,6 +1,6 @@
 	db "TETARD@" ; species name
-	db 13
-	dw 540 ; height, weight
+	db 13 ; height
+	dw 540 ; weight
 
 	db   "Il peut, grâce à"
 	next "ses puissants mem-"

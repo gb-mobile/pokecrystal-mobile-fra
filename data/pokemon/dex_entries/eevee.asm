@@ -1,6 +1,6 @@
 	db "EVOLUTIF@" ; species name
-	db 3
-	dw 65 ; height, weight
+	db 3 ; height
+	dw 65 ; weight
 
 	db   "Ses multiples évo-"
 	next "lutions lui per-"

@@ -1,6 +1,6 @@
 	db "OTARIE@" ; species name
-	db 11
-	dw 900 ; height, weight
+	db 11 ; height
+	dw 900 ; weight
 
 	db   "Sa fourrure bleue"
 	next "le protège du"

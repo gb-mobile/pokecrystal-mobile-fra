@@ -10,7 +10,7 @@ MomPhoneLandmarkText:
 	text "Oh, tu es vers"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Il y a"
 	line "@"

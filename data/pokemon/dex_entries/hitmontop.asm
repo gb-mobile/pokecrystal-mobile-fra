@@ -1,6 +1,6 @@
 	db "POIRIER@" ; species name
-	db 14
-	dw 480 ; height, weight
+	db 14 ; height
+	dw 480 ; weight
 
 	db   "Après avoir effec-"
 	next "tué un poirier"

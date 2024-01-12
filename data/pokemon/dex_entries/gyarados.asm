@@ -1,6 +1,6 @@
 	db "TERRIFIANT@" ; species name
-	db 65
-	dw 2350 ; height, weight
+	db 65 ; height
+	dw 2350 ; weight
 
 	db   "Il apparaît à cha-"
 	next "que conflit mon-"

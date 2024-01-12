@@ -1,6 +1,6 @@
 	db "5 ETOILES@" ; species name
-	db 14
-	dw 356 ; height, weight
+	db 14 ; height
+	dw 356 ; weight
 
 	db   "Pendant la jour-"
 	next "née, quand il fait"

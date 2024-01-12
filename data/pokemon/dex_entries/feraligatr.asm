@@ -1,6 +1,6 @@
 	db "MACHOIRE@" ; species name
-	db 23
-	dw 888 ; height, weight
+	db 23 ; height
+	dw 888 ; weight
 
 	db   "Bien qu'étant très"
 	next "massif, ses puis-"

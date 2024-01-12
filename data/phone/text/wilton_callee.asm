@@ -11,7 +11,7 @@ WiltonAnswerPhoneDayText:
 	text "Allô..."
 	line "Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Ah, <PLAY_G>."
 	done
@@ -20,7 +20,7 @@ WiltonAnswerPhoneNiteText:
 	text "Allô..."
 	line "Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Ah, <PLAY_G>."
 	done

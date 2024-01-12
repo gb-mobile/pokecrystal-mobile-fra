@@ -1,6 +1,6 @@
 	db "POIGNEUR@" ; species name
-	db 13
-	dw 600 ; height, weight
+	db 13 ; height
+	dw 600 ; weight
 
 	db   "Sa pince gigantes-"
 	next "que est une arme"

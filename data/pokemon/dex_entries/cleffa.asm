@@ -1,6 +1,6 @@
 	db "ETOILE@" ; species name
-	db 3
-	dw 30 ; height, weight
+	db 3 ; height
+	dw 30 ; weight
 
 	db   "Si l'on découvre"
 	next "un cratère de"

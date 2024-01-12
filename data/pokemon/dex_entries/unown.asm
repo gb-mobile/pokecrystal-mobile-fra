@@ -1,6 +1,6 @@
 	db "SYMBOLIQUE@" ; species name
-	db 5
-	dw 50 ; height, weight
+	db 5 ; height
+	dw 50 ; weight
 
 	db   "Comme plusieurs"
 	next "sortes de ZARBI"

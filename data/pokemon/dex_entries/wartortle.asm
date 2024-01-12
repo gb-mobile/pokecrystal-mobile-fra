@@ -1,6 +1,6 @@
 	db "TORTUE@" ; species name
-	db 10
-	dw 225 ; height, weight
+	db 10 ; height
+	dw 225 ; weight
 
 	db   "Sa longue queue"
 	next "est un symbole de"

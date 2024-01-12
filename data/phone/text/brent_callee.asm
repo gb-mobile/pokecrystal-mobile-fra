@@ -11,7 +11,7 @@ BrentAnswerPhoneText:
 BrentAnswerPhoneDayText:
 	text "Oui? Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Ah, <PLAYER>."
 	line "Qu'est-ce que tu"
@@ -21,7 +21,7 @@ BrentAnswerPhoneDayText:
 BrentAnswerPhoneNiteText:
 	text "Oui? Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Ah, <PLAYER>."
 	line "Qu'est-ce que tu"

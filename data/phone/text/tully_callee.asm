@@ -12,7 +12,7 @@ TullyAnswerPhoneDayText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "C'est..."
 	line "<PLAY_G>?"
@@ -42,7 +42,7 @@ TullyGreetDayText:
 	text "Allô!"
 	line "Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour!"
 	line "Vive la pêche!"
@@ -52,7 +52,7 @@ TullyGreetNiteText:
 	text "Allô!"
 	line "Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour!"
 	line "Vive la pêche!"

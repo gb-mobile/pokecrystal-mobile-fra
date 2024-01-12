@@ -1,6 +1,6 @@
 	db "POURRI@" ; species name
-	db 6
-	dw 205 ; height, weight
+	db 6 ; height
+	dw 205 ; weight
 
 	db   "Le fluide sécrété"
 	next "par ses pattes"

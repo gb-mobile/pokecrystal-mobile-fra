@@ -1,6 +1,6 @@
 	db "ARMURE@" ; species name
-	db 11
-	dw 1200 ; height, weight
+	db 11 ; height
+	dw 1200 ; weight
 
 	db   "Sa peau est si"
 	next "épaisse et résis-"

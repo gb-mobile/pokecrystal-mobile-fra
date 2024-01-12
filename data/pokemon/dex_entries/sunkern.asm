@@ -1,6 +1,6 @@
 	db "GRAINE@" ; species name
-	db 3
-	dw 18 ; height, weight
+	db 3 ; height
+	dw 18 ; weight
 
 	db   "Il est très faible"
 	next "et a comme seule"

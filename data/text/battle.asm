@@ -1134,4 +1134,5 @@ BattleText_LinkErrorBattleCanceled:
 BattleText_NoTimeLeftToday: ; unreferenced
 	text "A court de temps"
 	line "pour aujourd'hui!"
+	text_start
 	done

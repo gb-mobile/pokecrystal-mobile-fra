@@ -1,6 +1,6 @@
 	db "CHAMPIGNON@" ; species name
-	db 3
-	dw 54 ; height, weight
+	db 3 ; height
+	dw 54 ; weight
 
 	db   "Le Tochukaso sur"
 	next "son dos l'incite"

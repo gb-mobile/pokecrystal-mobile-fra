@@ -1,6 +1,6 @@
 	db "DRAGON@" ; species name
-	db 18
-	dw 1520 ; height, weight
+	db 18 ; height
+	dw 1520 ; weight
 
 	db   "Il emmagasine de"
 	next "l'énergie en res-"

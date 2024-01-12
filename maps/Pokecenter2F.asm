@@ -977,9 +977,8 @@ Text_MysteryGiftDeliveryGuy_HereYouGo:
 	done
 
 Text_MysteryGiftDeliveryGuy_Outro:
-	text "A bientôt,"
-	line "j'espère."
-	done
+	text "A bientôt."
+	prompt
 
 Text_MysteryGiftDeliveryGuy_NoRoom:
 	text "Oh, tu n'as pas"

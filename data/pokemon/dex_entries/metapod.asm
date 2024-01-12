@@ -1,6 +1,6 @@
 	db "COCON@" ; species name
-	db 7
-	dw 99 ; height, weight
+	db 7 ; height
+	dw 99 ; weight
 
 	db   "A ce niveau de son"
 	next "évolution, il ne"

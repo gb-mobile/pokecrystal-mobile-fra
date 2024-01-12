@@ -1,6 +1,6 @@
 	db "PERCEUR@" ; species name
-	db 13
-	dw 600 ; height, weight
+	db 13 ; height
+	dw 600 ; weight
 
 	db   "Son corps est cou-"
 	next "vert d'écailles le"

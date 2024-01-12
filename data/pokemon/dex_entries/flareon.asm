@@ -1,6 +1,6 @@
 	db "FLAMME@" ; species name
-	db 9
-	dw 250 ; height, weight
+	db 9 ; height
+	dw 250 ; weight
 
 	db   "Après avoir stocké"
 	next "suffisamment de"

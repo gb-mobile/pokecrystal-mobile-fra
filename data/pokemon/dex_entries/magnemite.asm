@@ -1,6 +1,6 @@
 	db "MAGNETIQUE@" ; species name
-	db 3
-	dw 60 ; height, weight
+	db 3 ; height
+	dw 60 ; weight
 
 	db   "Le courant émis"
 	next "par les unités de"

@@ -1,6 +1,6 @@
 	db "TETARD@" ; species name
-	db 10
-	dw 200 ; height, weight
+	db 10 ; height
+	dw 200 ; weight
 
 	db   "Bien qu'il sache"
 	next "parfaitement mar-"

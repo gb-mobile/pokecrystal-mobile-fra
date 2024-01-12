@@ -1,6 +1,6 @@
 	db "PSY@" ; species name
-	db 13
-	dw 565 ; height, weight
+	db 13 ; height
+	dw 565 ; weight
 
 	db   "En fermant les"
 	next "yeux, le double de"

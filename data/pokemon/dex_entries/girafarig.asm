@@ -1,6 +1,6 @@
 	db "LONG-COU@" ; species name
-	db 15
-	dw 415 ; height, weight
+	db 15 ; height
+	dw 415 ; weight
 
 	db   "Lorsqu'il est en"
 	next "danger, sa queue"

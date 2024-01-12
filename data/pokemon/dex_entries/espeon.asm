@@ -1,6 +1,6 @@
 	db "SOLEIL@" ; species name
-	db 9
-	dw 265 ; height, weight
+	db 9 ; height
+	dw 265 ; weight
 
 	db   "Le bout fourchu de"
 	next "sa queue frémit"

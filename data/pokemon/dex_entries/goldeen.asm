@@ -1,6 +1,6 @@
 	db "POISSON@" ; species name
-	db 6
-	dw 150 ; height, weight
+	db 6 ; height
+	dw 150 ; weight
 
 	db   "Pendant la saison"
 	next "des amours, il"

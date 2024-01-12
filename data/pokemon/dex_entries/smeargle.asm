@@ -1,6 +1,6 @@
 	db "PEINTRE@" ; species name
-	db 12
-	dw 580 ; height, weight
+	db 12 ; height
+	dw 580 ; weight
 
 	db   "La couleur du mys-"
 	next "térieux fluide de"

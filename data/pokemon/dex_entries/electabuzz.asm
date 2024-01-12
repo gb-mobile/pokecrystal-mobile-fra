@@ -1,6 +1,6 @@
 	db "ELECTRIQUE@" ; species name
-	db 11
-	dw 300 ; height, weight
+	db 11 ; height
+	dw 300 ; weight
 
 	db   "Quand 2 ELEKTEK se"
 	next "touchent, ils uti-"

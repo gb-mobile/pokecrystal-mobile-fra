@@ -1,6 +1,6 @@
 	db "ROCHE@" ; species name
-	db 10
-	dw 1050 ; height, weight
+	db 10 ; height
+	dw 1050 ; weight
 
 	db   "Il se déplace en"
 	next "roulant sur les"

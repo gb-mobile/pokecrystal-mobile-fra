@@ -1,6 +1,6 @@
 	db "GRAINE@" ; species name
-	db 7
-	dw 69 ; height, weight
+	db 7 ; height
+	dw 69 ; weight
 
 	db   "Jeune, il absorbe"
 	next "les nutriments"

@@ -1,6 +1,6 @@
 	db "CORAIL@" ; species name
-	db 6
-	dw 50 ; height, weight
+	db 6 ; height
+	dw 50 ; weight
 
 	db   "Les pointes sur sa"
 	next "tête absorbent les"

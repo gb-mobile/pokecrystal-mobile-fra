@@ -1,6 +1,6 @@
 	db "SOURIS FEU@" ; species name
-	db 5
-	dw 79 ; height, weight
+	db 5 ; height
+	dw 79 ; weight
 
 	db   "Les flammes éma-"
 	next "nant de son dos"

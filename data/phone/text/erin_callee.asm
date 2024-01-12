@@ -2,7 +2,7 @@ ErinAnswerPhoneText:
 	text "Oui, c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh. <PLAY_G>!"
 	line "Bonjour!"
@@ -12,7 +12,7 @@ ErinAnswerPhoneDayText:
 	text "Oui, c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh. <PLAY_G>!"
 	line "Bonjour!"

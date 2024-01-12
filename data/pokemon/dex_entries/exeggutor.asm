@@ -1,6 +1,6 @@
 	db "FRUITPALME@" ; species name
-	db 20
-	dw 1200 ; height, weight
+	db 20 ; height
+	dw 1200 ; weight
 
 	db   "En grandissant"
 	next "dans un environne-"

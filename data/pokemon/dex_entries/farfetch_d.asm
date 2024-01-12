@@ -1,6 +1,6 @@
 	db "CANARD FOU@" ; species name
-	db 8
-	dw 150 ; height, weight
+	db 8 ; height
+	dw 150 ; weight
 
 	db   "Pour éviter tout"
 	next "risque d'extinc-"

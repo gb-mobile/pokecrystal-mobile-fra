@@ -1,6 +1,6 @@
 	db "CARAPACE@" ; species name
-	db 5
-	dw 115 ; height, weight
+	db 5 ; height
+	dw 115 ; weight
 
 	db   "Il y a trois cents"
 	next "millions d'années,"

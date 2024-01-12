@@ -1,6 +1,6 @@
 	db "CHOVSOURIS@" ; species name
-	db 8
-	dw 75 ; height, weight
+	db 8 ; height
+	dw 75 ; weight
 
 	db   "La journée, il se"
 	next "joint à d'autres"

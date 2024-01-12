@@ -103,11 +103,11 @@ YoungsterJasonAfterBattleText:
 	done
 
 PsychicHermanSeenText:
-	text "...."
+	text "…"
 	done
 
 PsychicHermanBeatenText:
-	text "...."
+	text "…"
 	done
 
 PsychicHermanAfterBattleText:

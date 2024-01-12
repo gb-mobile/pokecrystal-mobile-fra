@@ -250,7 +250,7 @@ VioletCityYoungsterText:
 
 	para "Si on le touche,"
 	line "il gigote et"
-	cont "e en même"
+	cont "smurfe en même"
 	cont "temps! Cool!"
 	done
 

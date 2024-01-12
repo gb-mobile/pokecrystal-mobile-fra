@@ -1,6 +1,6 @@
 	db "SOURIS@" ; species name
-	db 10
-	dw 295 ; height, weight
+	db 10 ; height
+	dw 295 ; weight
 
 	db   "Il grimpe aux"
 	next "arbres et se roule"

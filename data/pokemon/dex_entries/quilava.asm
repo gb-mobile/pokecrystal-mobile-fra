@@ -1,6 +1,6 @@
 	db "VOLCAN@" ; species name
-	db 9
-	dw 190 ; height, weight
+	db 9 ; height
+	dw 190 ; weight
 
 	db   "Avant chaque com-"
 	next "bat, il tourne le"

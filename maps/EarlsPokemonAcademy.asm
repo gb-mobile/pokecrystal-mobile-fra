@@ -102,7 +102,7 @@ AcademyBlackboard:
 
 .BlackboardMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 11, 8
+	menu_coords 0, 0, 12, 8
 	dw .MenuData
 	db 1 ; default option
 

@@ -543,6 +543,8 @@ _OPT_MaryText1::
 	line "LULA: @"
 	text_ram wStringBuffer1
 	text_end
+	
+	text_end ; unreferenced
 
 _OPT_SweetAdorablyText::
 	text_start

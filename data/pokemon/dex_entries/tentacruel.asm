@@ -1,6 +1,6 @@
 	db "MOLLUSQUE@" ; species name
-	db 16
-	dw 550 ; height, weight
+	db 16 ; height
+	dw 550 ; weight
 
 	db   "Ses 80 tentacules"
 	next "absorbent de l'eau"

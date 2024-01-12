@@ -1,6 +1,6 @@
 	db "TRANSPORT@" ; species name
-	db 25
-	dw 2200 ; height, weight
+	db 25 ; height
+	dw 2200 ; weight
 
 	db   "Ils sont d'une"
 	next "nature gentille."

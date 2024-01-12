@@ -1,6 +1,6 @@
 	db "LAINE@" ; species name
-	db 8
-	dw 133 ; height, weight
+	db 8 ; height
+	dw 133 ; weight
 
 	db   "Sa peau étant"
 	next "caoutchouteuse et"

@@ -1,6 +1,6 @@
 	db "PORC@" ; species name
-	db 11
-	dw 558 ; height, weight
+	db 11 ; height
+	dw 558 ; weight
 
 	db   "Bien que pourvu de"
 	next "courtes pattes,"

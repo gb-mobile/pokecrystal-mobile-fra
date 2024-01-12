@@ -1,6 +1,6 @@
 	db "SERPENT@" ; species name
-	db 15
-	dw 140 ; height, weight
+	db 15 ; height
+	dw 140 ; weight
 
 	db   "Il se cache au fin"
 	next "fond des grottes,"

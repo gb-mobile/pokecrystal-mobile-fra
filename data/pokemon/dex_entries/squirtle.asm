@@ -1,6 +1,6 @@
 	db "MINITORTUE@" ; species name
-	db 5
-	dw 90 ; height, weight
+	db 5 ; height
+	dw 90 ; weight
 
 	db   "S'il est menacé,"
 	next "il rétracte ses"

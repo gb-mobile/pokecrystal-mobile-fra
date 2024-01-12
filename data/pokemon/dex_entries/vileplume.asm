@@ -1,6 +1,6 @@
 	db "FLEUR@" ; species name
-	db 12
-	dw 186 ; height, weight
+	db 12 ; height
+	dw 186 ; weight
 
 	db   "En gigotant ses"
 	next "pétales, il émet"

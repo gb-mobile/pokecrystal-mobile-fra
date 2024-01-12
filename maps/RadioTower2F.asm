@@ -322,7 +322,7 @@ RadioTowerBuenaPrizeReceptionist:
 
 .NoCard:
 	writetext RadioTower2FBuenaReceptionistNoCardText
-	promptbutton
+	waitbutton
 	closetext
 	end
 

@@ -1,6 +1,6 @@
 	db "LAVE@" ; species name
-	db 8
-	dw 550 ; height, weight
+	db 8 ; height
+	dw 550 ; weight
 
 	db   "Son corps en ébul-"
 	next "lition est aussi"

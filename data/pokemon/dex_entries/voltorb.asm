@@ -1,6 +1,6 @@
 	db "BALLE@" ; species name
-	db 5
-	dw 104 ; height, weight
+	db 5 ; height
+	dw 104 ; weight
 
 	db   "Lors de l'examen"
 	next "de ce #MON, on"

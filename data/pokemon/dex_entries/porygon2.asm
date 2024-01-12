@@ -1,6 +1,6 @@
 	db "VIRTUEL@" ; species name
-	db 6
-	dw 325 ; height, weight
+	db 6 ; height
+	dw 325 ; weight
 
 	db   "Créé par une tech-"
 	next "nologie humaine,"

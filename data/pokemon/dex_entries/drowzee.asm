@@ -1,6 +1,6 @@
 	db "HYPNOSE@" ; species name
-	db 10
-	dw 324 ; height, weight
+	db 10 ; height
+	dw 324 ; weight
 
 	db   "Quand il remue son"
 	next "nez, il devine où"

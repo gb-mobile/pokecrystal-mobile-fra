@@ -1,6 +1,6 @@
 	db "TETARD@" ; species name
-	db 6
-	dw 124 ; height, weight
+	db 6 ; height
+	dw 124 ; weight
 
 	db   "La spirale sur son"
 	next "ventre est son"

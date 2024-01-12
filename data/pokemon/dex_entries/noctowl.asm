@@ -1,6 +1,6 @@
 	db "HIBOU@" ; species name
-	db 16
-	dw 408 ; height, weight
+	db 16 ; height
+	dw 408 ; weight
 
 	db   "Ses fines plumes"
 	next "lui assurent un"

@@ -1,6 +1,6 @@
 	db "CHIOT@" ; species name
-	db 7
-	dw 190 ; height, weight
+	db 7 ; height
+	dw 190 ; weight
 
 	db   "Il contrôle un"
 	next "grand territoire."

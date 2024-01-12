@@ -1,6 +1,6 @@
 	db "OMBRE@" ; species name
-	db 15
-	dw 405 ; height, weight
+	db 15 ; height
+	dw 405 ; weight
 
 	db   "Il se cache dans"
 	next "l'ombre des pas-"

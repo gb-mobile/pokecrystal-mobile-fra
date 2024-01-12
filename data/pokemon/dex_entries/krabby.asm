@@ -1,6 +1,6 @@
 	db "DOUX CRABE@" ; species name
-	db 4
-	dw 65 ; height, weight
+	db 4 ; height
+	dw 65 ; weight
 
 	db   "S'il ne peut trou-"
 	next "ver de nourriture,"

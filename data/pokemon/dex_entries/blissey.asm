@@ -1,6 +1,6 @@
 	db "BONHEUR@" ; species name
-	db 15
-	dw 468 ; height, weight
+	db 15 ; height
+	dw 468 ; weight
 
 	db   "Celui qui mange"
 	next "un peu de l'oeuf"

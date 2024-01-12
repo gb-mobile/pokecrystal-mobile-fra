@@ -1,6 +1,6 @@
 	db "COLOSSE@" ; species name
-	db 16
-	dw 1300 ; height, weight
+	db 16 ; height
+	dw 1300 ; weight
 
 	db   "Balançant ses 4"
 	next "bras plus vite que"

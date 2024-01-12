@@ -1,6 +1,6 @@
 	db "LIVRAISON@" ; species name
-	db 9
-	dw 160 ; height, weight
+	db 9 ; height
+	dw 160 ; weight
 
 	db   "Il transporte de"
 	next "la nourriture"

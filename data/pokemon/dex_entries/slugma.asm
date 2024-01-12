@@ -1,6 +1,6 @@
 	db "LAVE@" ; species name
-	db 7
-	dw 350 ; height, weight
+	db 7 ; height
+	dw 350 ; weight
 
 	db   "Il vit en groupe"
 	next "dans les endroits"

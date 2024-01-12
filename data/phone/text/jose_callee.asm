@@ -2,7 +2,7 @@ JoseAnswerPhoneText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>?"
 	line "Bonjour!"
@@ -12,7 +12,7 @@ JoseAnswerPhoneDayText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>?"
 	line "Bonjour!"
@@ -22,7 +22,7 @@ JoseAnswerPhoneNiteText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>?"
 	line "Bonsoir!"

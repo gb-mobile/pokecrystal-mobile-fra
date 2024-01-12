@@ -1,6 +1,6 @@
 	db "BOUBOULE@" ; species name
-	db 5
-	dw 55 ; height, weight
+	db 5 ; height
+	dw 55 ; weight
 
 	db   "Il roule des yeux"
 	next "et chante une"

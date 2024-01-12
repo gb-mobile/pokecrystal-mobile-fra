@@ -1,6 +1,6 @@
 	db "VIRTUEL@" ; species name
-	db 8
-	dw 365 ; height, weight
+	db 8 ; height
+	dw 365 ; weight
 
 	db   "Un #MON arti-"
 	next "ficiel créé après"

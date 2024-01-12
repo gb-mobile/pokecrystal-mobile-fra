@@ -1,6 +1,6 @@
 	db "SOURIS@" ; species name
-	db 4
-	dw 60 ; height, weight
+	db 4 ; height
+	dw 60 ; weight
 
 	db   "Enervé, il envoie"
 	next "instantanément"

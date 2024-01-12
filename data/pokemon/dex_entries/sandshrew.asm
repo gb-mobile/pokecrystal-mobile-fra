@@ -1,6 +1,6 @@
 	db "SOURIS@" ; species name
-	db 6
-	dw 120 ; height, weight
+	db 6 ; height
+	dw 120 ; weight
 
 	db   "Il aime les plages"
 	next "et les terrains"

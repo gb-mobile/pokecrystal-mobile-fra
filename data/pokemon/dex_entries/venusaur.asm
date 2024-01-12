@@ -1,6 +1,6 @@
 	db "GRAINE@" ; species name
-	db 20
-	dw 1000 ; height, weight
+	db 20 ; height
+	dw 1000 ; weight
 
 	db   "Sous le soleil,"
 	next "il se réchauffe,"

@@ -1,6 +1,6 @@
 	db "COCON@" ; species name
-	db 6
-	dw 100 ; height, weight
+	db 6 ; height
+	dw 100 ; weight
 
 	db   "Pratiquement inca-"
 	next "pable de bouger,"

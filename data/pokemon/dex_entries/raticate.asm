@@ -1,6 +1,6 @@
 	db "RAT@" ; species name
-	db 7
-	dw 185 ; height, weight
+	db 7 ; height
+	dw 185 ; weight
 
 	db   "Ses pattes arrière"
 	next "lui permettent de"

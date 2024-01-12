@@ -1,6 +1,6 @@
 	db "VENEPIC@" ; species name
-	db 8
-	dw 200 ; height, weight
+	db 8 ; height
+	dw 200 ; weight
 
 	db   "Il est de nature"
 	next "docile. S'il se"

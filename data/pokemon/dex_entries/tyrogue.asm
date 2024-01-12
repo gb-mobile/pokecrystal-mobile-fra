@@ -1,6 +1,6 @@
 	db "BAGARREUR@" ; species name
-	db 7
-	dw 210 ; height, weight
+	db 7 ; height
+	dw 210 ; weight
 
 	db   "Pour augmenter ses"
 	next "capacités, il"

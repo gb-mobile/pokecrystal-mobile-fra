@@ -1,7 +1,7 @@
 KenjiAnswerPhoneText:
 	text "Ici @"
 	text_ram wStringBuffer3
-	text "…"
+	text "..........."
 
 	para "<PLAYER>! Quelle"
 	line "belle journée!"
@@ -10,7 +10,7 @@ KenjiAnswerPhoneText:
 KenjiAnswerPhoneDayText:
 	text "Ici @"
 	text_ram wStringBuffer3
-	text "…"
+	text "..........."
 
 	para "<PLAYER>! Quelle"
 	line "belle journée!"
@@ -19,7 +19,7 @@ KenjiAnswerPhoneDayText:
 KenjiAnswerPhoneNiteText:
 	text "Ici @"
 	text_ram wStringBuffer3
-	text "…"
+	text "...."
 
 	para "<PLAYER>! Quelle"
 	line "belle soirée!"

@@ -1,6 +1,6 @@
 	db "SOLITAIRE@" ; species name
-	db 4
-	dw 65 ; height, weight
+	db 4 ; height
+	dw 65 ; weight
 
 	db   "Il est orphelin à"
 	next "la naissance."

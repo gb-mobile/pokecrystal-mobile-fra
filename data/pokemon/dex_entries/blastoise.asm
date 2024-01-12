@@ -1,6 +1,6 @@
 	db "CARAPACE@" ; species name
-	db 16
-	dw 855 ; height, weight
+	db 16 ; height
+	dw 855 ; weight
 
 	db   "Il enfonce bien"
 	next "ses pattes dans le"

@@ -1,6 +1,6 @@
 	db "RAT@" ; species name
-	db 3
-	dw 35 ; height, weight
+	db 3 ; height
+	dw 35 ; weight
 
 	db   "Son incroyable"
 	next "constitution lui"

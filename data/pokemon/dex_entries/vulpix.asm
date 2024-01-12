@@ -1,6 +1,6 @@
 	db "RENARD@" ; species name
-	db 6
-	dw 99 ; height, weight
+	db 6 ; height
+	dw 99 ; weight
 
 	db   "En grandissant,"
 	next "ses six queues de-"

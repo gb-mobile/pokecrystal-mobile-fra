@@ -1,6 +1,6 @@
 	db "JET@" ; species name
-	db 9
-	dw 285 ; height, weight
+	db 9 ; height
+	dw 285 ; weight
 
 	db   "Il se cache dans"
 	next "des trous. Il lui"

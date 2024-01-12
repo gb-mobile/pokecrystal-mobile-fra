@@ -1,6 +1,6 @@
 	db "SPIRALE@" ; species name
-	db 4
-	dw 75 ; height, weight
+	db 4 ; height
+	dw 75 ; weight
 
 	db   "A la préhistoire,"
 	next "il nageait et se"

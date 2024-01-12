@@ -1,6 +1,6 @@
 	db "MINOISEAU@" ; species name
-	db 3
-	dw 20 ; height, weight
+	db 3 ; height
+	dw 20 ; weight
 
 	db   "Pour protéger son"
 	next "territoire, il"

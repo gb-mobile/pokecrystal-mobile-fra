@@ -1,6 +1,6 @@
 	db "BONHEUR@" ; species name
-	db 6
-	dw 32 ; height, weight
+	db 6 ; height
+	dw 32 ; weight
 
 	db   "Bien qu'il ne bat-"
 	next "te pas beaucoup"

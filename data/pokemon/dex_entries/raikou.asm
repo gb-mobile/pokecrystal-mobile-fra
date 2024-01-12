@@ -1,6 +1,6 @@
 	db "FOUDRE@" ; species name
-	db 19
-	dw 1780 ; height, weight
+	db 19 ; height
+	dw 1780 ; weight
 
 	db   "Ce terrible #-"
 	next "MON emmagasine de"

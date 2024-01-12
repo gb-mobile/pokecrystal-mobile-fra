@@ -1,6 +1,6 @@
 	db "CARAPACE@" ; species name
-	db 13
-	dw 405 ; height, weight
+	db 13 ; height
+	dw 405 ; weight
 
 	db   "Il pouvait nager"
 	next "rapidement en"

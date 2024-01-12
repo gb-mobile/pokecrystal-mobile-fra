@@ -1,6 +1,6 @@
 	db "CHARBON@" ; species name
-	db 7
-	dw 214 ; height, weight
+	db 7 ; height
+	dw 214 ; weight
 
 	db   "Il crache une"
 	next "flamme de 600"

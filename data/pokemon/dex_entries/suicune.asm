@@ -1,6 +1,6 @@
 	db "AURORE@" ; species name
-	db 20
-	dw 1870 ; height, weight
+	db 20 ; height
+	dw 1870 ; weight
 
 	db   "Ce #MON divin"
 	next "file autour du"

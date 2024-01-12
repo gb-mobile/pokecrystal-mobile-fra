@@ -1,6 +1,6 @@
 	db "HIBERNANT@" ; species name
-	db 18
-	dw 1258 ; height, weight
+	db 18 ; height
+	dw 1258 ; weight
 
 	db   "Bien que d'une"
 	next "large corpulence,"

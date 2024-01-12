@@ -1,6 +1,6 @@
 	db "NOUVEAU@" ; species name
-	db 4
-	dw 40 ; height, weight
+	db 4 ; height
+	dw 40 ; weight
 
 	db   "Etant donné qu'il"
 	next "peut apprendre"

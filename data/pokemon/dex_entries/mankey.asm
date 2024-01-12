@@ -1,6 +1,6 @@
 	db "PORSINGE@" ; species name
-	db 5
-	dw 280 ; height, weight
+	db 5 ; height
+	dw 280 ; weight
 
 	db   "Il vit en groupe"
 	next "au sommet des ar-"

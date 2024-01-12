@@ -14,7 +14,7 @@ TiffanyDefeatedMonText:
 	line "contre un"
 	cont "@"
 	text_ram wStringBuffer4
-	text "...."
+	text "…"
 
 	para "Mon MELOFEE a"
 	line "failli être K.O!"
@@ -32,7 +32,7 @@ TiffanyLostAMonText:
 	line "contre un"
 	cont "@"
 	text_ram wStringBuffer4
-	text "...."
+	text "…"
 
 	para "Mon MELOFEE a eu"
 	line "peur alors on"

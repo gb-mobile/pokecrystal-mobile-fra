@@ -1,6 +1,6 @@
 	db "VERMINE@" ; species name
-	db 10
-	dw 300 ; height, weight
+	db 10 ; height
+	dw 300 ; weight
 
 	db   "Ses proies n'appa-"
 	next "raissant que la"

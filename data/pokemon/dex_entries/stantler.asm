@@ -1,6 +1,6 @@
 	db "MAXI CORNE@" ; species name
-	db 14
-	dw 712 ; height, weight
+	db 14 ; height
+	dw 712 ; weight
 
 	db   "Les boules sur ses"
 	next "bois peuvent être"

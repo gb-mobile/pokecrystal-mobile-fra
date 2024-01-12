@@ -1,6 +1,6 @@
 	db "MOLLUSQUE@" ; species name
-	db 9
-	dw 455 ; height, weight
+	db 9 ; height
+	dw 455 ; weight
 
 	db   "En flottant à la"
 	next "surface de l'eau,"

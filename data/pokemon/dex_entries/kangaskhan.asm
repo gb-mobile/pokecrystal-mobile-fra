@@ -1,6 +1,6 @@
 	db "MATERNEL@" ; species name
-	db 22
-	dw 800 ; height, weight
+	db 22 ; height
+	dw 800 ; weight
 
 	db   "Pour ne pas écra-"
 	next "ser le petit qu'il"

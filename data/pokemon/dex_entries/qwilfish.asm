@@ -1,6 +1,6 @@
 	db "BOUBOULE@" ; species name
-	db 5
-	dw 39 ; height, weight
+	db 5 ; height
+	dw 39 ; weight
 
 	db   "Face à un adver-"
 	next "saire plus volumi-"

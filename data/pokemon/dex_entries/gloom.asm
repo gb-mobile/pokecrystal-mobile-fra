@@ -1,6 +1,6 @@
 	db "RACINE@" ; species name
-	db 8
-	dw 86 ; height, weight
+	db 8 ; height
+	dw 86 ; weight
 
 	db   "L'odeur de son si-"
 	next "rop buccal et du"

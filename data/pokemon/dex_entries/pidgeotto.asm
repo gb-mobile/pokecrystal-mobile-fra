@@ -1,6 +1,6 @@
 	db "OISEAU@" ; species name
-	db 11
-	dw 300 ; height, weight
+	db 11 ; height
+	dw 300 ; weight
 
 	db   "Il vole au-dessus"
 	next "d'une zone précise"

@@ -1,6 +1,6 @@
 	db "CRACHE FIL@" ; species name
-	db 5
-	dw 85 ; height, weight
+	db 5 ; height
+	dw 85 ; weight
 
 	db   "Si une proie se"
 	next "fait piéger dans"

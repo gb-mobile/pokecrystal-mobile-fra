@@ -1,6 +1,6 @@
 	db "SCARABEE@" ; species name
-	db 15
-	dw 550 ; height, weight
+	db 15 ; height
+	dw 550 ; weight
 
 	db   "La nuit, quand il"
 	next "fait plus froid,"

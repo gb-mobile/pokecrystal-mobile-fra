@@ -1,6 +1,6 @@
 	db "VOLCAN@" ; species name
-	db 21
-	dw 1980 ; height, weight
+	db 21 ; height
+	dw 1980 ; weight
 
 	db   "Ce puissant #-"
 	next "MON court sans"

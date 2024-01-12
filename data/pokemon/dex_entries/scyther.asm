@@ -1,6 +1,6 @@
 	db "MANTE@" ; species name
-	db 15
-	dw 560 ; height, weight
+	db 15 ; height
+	dw 560 ; weight
 
 	db   "Il est très fier"
 	next "de sa vitesse. Il"

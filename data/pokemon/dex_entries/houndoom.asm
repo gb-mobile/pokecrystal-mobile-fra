@@ -1,6 +1,6 @@
 	db "SOMBRE@" ; species name
-	db 14
-	dw 350 ; height, weight
+	db 14 ; height
+	dw 350 ; weight
 
 	db   "Les flammes malo-"
 	next "dorantes qui éma-"

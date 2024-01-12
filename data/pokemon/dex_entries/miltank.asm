@@ -1,6 +1,6 @@
 	db "VACHALAIT@" ; species name
-	db 12
-	dw 755 ; height, weight
+	db 12 ; height
+	dw 755 ; weight
 
 	db   "Traire un ECREMEUH"
 	next "demande des tré-"

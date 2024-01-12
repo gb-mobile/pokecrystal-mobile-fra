@@ -1,6 +1,6 @@
 	db "TITANESQUE@" ; species name
-	db 14
-	dw 3000 ; height, weight
+	db 14 ; height
+	dw 3000 ; weight
 
 	db   "Sa peau de pierre"
 	next "est si dure que"

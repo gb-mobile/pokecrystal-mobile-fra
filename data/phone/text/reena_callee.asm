@@ -2,7 +2,7 @@ ReenaAnswerPhoneText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour <PLAYER>."
 	line "Ca gaze?"
@@ -12,7 +12,7 @@ ReenaAnswerPhoneDayText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour <PLAYER>."
 	line "Ca gaze?"
@@ -22,7 +22,7 @@ ReenaAnswerPhoneNiteText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour <PLAYER>."
 	line "Ca gaze?"

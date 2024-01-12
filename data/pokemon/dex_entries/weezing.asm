@@ -1,6 +1,6 @@
 	db "GAZ MORTEL@" ; species name
-	db 12
-	dw 95 ; height, weight
+	db 12 ; height
+	dw 95 ; weight
 
 	db   "Il aspire les gaz"
 	next "toxiques des"

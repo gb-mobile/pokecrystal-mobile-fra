@@ -1,6 +1,6 @@
 	db "BULLEUR@" ; species name
-	db 10
-	dw 290 ; height, weight
+	db 10 ; height
+	dw 290 ; weight
 
 	db   "En remuant sa na-"
 	next "geoire caudale, il"

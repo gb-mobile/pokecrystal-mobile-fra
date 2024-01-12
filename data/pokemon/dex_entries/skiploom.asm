@@ -1,6 +1,6 @@
 	db "PISSENLIT@" ; species name
-	db 6
-	dw 10 ; height, weight
+	db 6 ; height
+	dw 10 ; weight
 
 	db   "Pour ne pas être"
 	next "mouillé les jours"

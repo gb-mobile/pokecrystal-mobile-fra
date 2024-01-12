@@ -1,6 +1,6 @@
 	db "MACHOIRE@" ; species name
-	db 6
-	dw 95 ; height, weight
+	db 6 ; height
+	dw 95 ; weight
 
 	db   "Cet petit teigneux"
 	next "mâchouille tout ce"
@@ -8,4 +8,4 @@
 
 	page "le nez. Ne lui"
 	next "tournez jamais le"
-	next "dos!"
+	next "dos!@"

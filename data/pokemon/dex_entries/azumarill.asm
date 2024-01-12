@@ -1,6 +1,6 @@
 	db "AQUALAPIN@" ; species name
-	db 8
-	dw 285 ; height, weight
+	db 8 ; height
+	dw 285 ; weight
 
 	db   "Les motifs sur son"
 	next "ventre lui permet-"

@@ -242,7 +242,7 @@ LizFawningOverMonText:
 
 	para "Mon @"
 	text_ram wStringBuffer4
-	text "...."
+	text "…"
 	line "Il est… si beau…"
 
 	para "Et… Il… Est"

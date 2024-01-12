@@ -1,6 +1,6 @@
 	db "SOURIS@" ; species name
-	db 8
-	dw 300 ; height, weight
+	db 8 ; height
+	dw 300 ; weight
 
 	db   "Si ses joues sont"
 	next "à court d'énergie,"

@@ -1,6 +1,6 @@
 	db "JET@" ; species name
-	db 6
-	dw 120 ; height, weight
+	db 6 ; height
+	dw 120 ; weight
 
 	db   "Il crache de l'eau"
 	next "sur tout prédateur"

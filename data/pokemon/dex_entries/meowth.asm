@@ -1,6 +1,6 @@
 	db "CHADEGOUT@" ; species name
-	db 4
-	dw 42 ; height, weight
+	db 4 ; height
+	dw 42 ; weight
 
 	db   "Il est fasciné par"
 	next "les objets bril-"

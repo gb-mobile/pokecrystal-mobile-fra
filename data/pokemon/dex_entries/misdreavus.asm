@@ -1,6 +1,6 @@
 	db "STRIDENT@" ; species name
-	db 7
-	dw 10 ; height, weight
+	db 7 ; height
+	dw 10 ; weight
 
 	db   "Il aime faire peur"
 	next "en criant ou en"

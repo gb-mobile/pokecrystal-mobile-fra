@@ -1,6 +1,6 @@
 	db "PSY@" ; species name
-	db 15
-	dw 480 ; height, weight
+	db 15 ; height
+	dw 480 ; weight
 
 	db   "Il a un QI de 5000"
 	next "et fait des"

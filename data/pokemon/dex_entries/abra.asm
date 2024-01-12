@@ -1,6 +1,6 @@
 	db "PSY@" ; species name
-	db 9
-	dw 195 ; height, weight
+	db 9 ; height
+	dw 195 ; weight
 
 	db   "Il s'hypnotise et"
 	next "peut lancer"

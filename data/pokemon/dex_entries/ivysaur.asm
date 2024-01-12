@@ -1,6 +1,6 @@
 	db "GRAINE@" ; species name
-	db 10
-	dw 130 ; height, weight
+	db 10 ; height
+	dw 130 ; weight
 
 	db   "Le bulbe sur son"
 	next "dos grandit en"

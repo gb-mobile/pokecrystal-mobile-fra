@@ -1,6 +1,6 @@
 	db "MYSTERIEUX@" ; species name
-	db 11
-	dw 800 ; height, weight
+	db 11 ; height
+	dw 800 ; weight
 
 	db   "On dit qu'il peut"
 	next "envoyer des ondes"

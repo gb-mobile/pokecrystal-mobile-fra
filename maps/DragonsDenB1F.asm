@@ -305,7 +305,7 @@ RivalText_Training1:
 	done
 
 RivalText_Training2:
-	text "...."
+	text "......."
 
 	para "Whew…"
 

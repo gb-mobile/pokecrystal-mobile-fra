@@ -1,6 +1,6 @@
 	db "OBSCURITE@" ; species name
-	db 5
-	dw 21 ; height, weight
+	db 5 ; height
+	dw 21 ; weight
 
 	db   "Il vole tous les"
 	next "objets brillants"

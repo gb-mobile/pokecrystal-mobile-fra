@@ -1,6 +1,6 @@
 	db "FEE@" ; species name
-	db 14
-	dw 487 ; height, weight
+	db 14 ; height
+	dw 487 ; weight
 
 	db   "Il peut faire fuir"
 	next "presque tous les"

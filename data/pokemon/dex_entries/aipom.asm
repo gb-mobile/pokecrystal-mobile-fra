@@ -1,6 +1,6 @@
 	db "LONGQUEUE@" ; species name
-	db 8
-	dw 115 ; height, weight
+	db 8 ; height
+	dw 115 ; weight
 
 	db   "Sa queue est si"
 	next "forte qu'il peut"

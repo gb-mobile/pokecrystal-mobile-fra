@@ -1,6 +1,6 @@
 	db "FLAMME@" ; species name
-	db 17
-	dw 905 ; height, weight
+	db 17 ; height
+	dw 905 ; weight
 
 	db   "Il utilise ses"
 	next "ailes pour s'envo-"

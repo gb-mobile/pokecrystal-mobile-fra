@@ -2,7 +2,7 @@ GinaAnswerPhoneText:
 	text "Allô? C'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>!"
 	line "Bonjour!"
@@ -12,7 +12,7 @@ GinaAnswerPhoneDayText:
 	text "Allô? C'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>!"
 	line "Ca va?"
@@ -22,7 +22,7 @@ GinaAnswerPhoneNiteText:
 	text "Allô? C'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Oh, <PLAY_G>!"
 	line "Bonsoir!"
