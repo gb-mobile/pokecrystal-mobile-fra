@@ -945,7 +945,7 @@ MenuHeader_117cc4:
 
 YesNo117ccc:
 	db "OUI";"はい@"
-	db "NON@";"いいえ@"
+	next "NON@";"いいえ@"
 
 MobileStadiumEntryText:
 	text_far _MobileStadiumEntryText
