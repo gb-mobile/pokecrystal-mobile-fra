@@ -165,20 +165,21 @@ PlaceMapNameCenterAlign:
 	jr z, .stop
 	cp "%"
 	jr z, .loop
-	cp "<¯>"
+	cp "<1E>"
 	jr z, .loop
 	inc c
 	cp " "
-	jr z, .space
+	jr z, .replace_char
 	cp "¯"
-	jr z, .space
+	jr z, .replace_char
 	jr .loop
-.space
-	; place an opaque space
+
+.replace_char:
 	dec hl
-	ld [hl], MAP_NAME_SIGN_START + 13
+	ld [hl], $6d
 	inc hl
 	jr .loop
+
 .stop
 	pop hl
 	ret
