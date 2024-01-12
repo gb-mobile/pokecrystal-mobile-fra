@@ -4461,27 +4461,27 @@ String_119d07:
 	db "   ▼@"
 
 Strings_L10ToL100:
-	db " L:10 @@"
-	db " L:20 @@"
-	db " L:30 @@"
-	db " L:40 @@"
-	db " L:50 @@"
-	db " L:60 @@"
-	db " L:70 @@"
-	db " L:80 @@"
-	db " L:90 @@"
-	db " L:100@@"
-	db "CANCEL@@"
+	db " N:10 @@"
+	db " N:20 @@"
+	db " N:30 @@"
+	db " N:40 @@"
+	db " N:50 @@"
+	db " N:60 @@"
+	db " N:70 @@"
+	db " N:80 @@"
+	db " N:90 @@"
+	db " N:100@@"
+	db "RETOUR@@"
 
 Strings_Ll0ToL40:
-	db " L:10 @@"
-	db " L:20 @@"
-	db " L:30 @@"
-	db " L:40 @@"
-	db "CANCEL@@"
+	db " N:10 @@"
+	db " N:20 @@"
+	db " N:30 @@"
+	db " N:40 @@"
+	db "RETOUR@@"
 
 BattleTowerCancelString:
-	db "CANCEL@"
+	db "RETOUR@"
 
 ; to clear the cancel text, japanese version does not require this
 String_blank:
