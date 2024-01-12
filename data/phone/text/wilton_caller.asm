@@ -12,7 +12,7 @@ WiltonDefeatedMonText:
 	text "On a battu un"
 	line "@"
 	text_ram wStringBuffer4
-	text "...."
+	text "…"
 
 	para "Tu sais, la pêche,"
 	line "je trouve ça plus"
@@ -77,7 +77,7 @@ WiltonNotBitingText:
 	para "Pas comme vers"
 	line "@"
 	text_ram wStringBuffer5
-	text "...."
+	text "…"
 
 	para "Il faut qu'on"
 	line "se batte!"
@@ -92,7 +92,7 @@ WiltonWantThisText:
 
 	para "@"
 	text_ram wStringBuffer5
-	text "...."
+	text "…"
 	line "Va d'ACAJOU vers"
 	cont "EBENELLE!"
 	done

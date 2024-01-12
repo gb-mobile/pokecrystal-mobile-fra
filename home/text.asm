@@ -128,6 +128,10 @@ SpeechTextbox::
 	ld c, TEXTBOX_INNERW
 	jp Textbox
 
+GameFreakText:: ; unreferenced
+	text "ゲームフりーク！" ; "GAMEFREAK!"
+	done
+
 RadioTerminator::
 	ld hl, .stop
 	ret
@@ -193,7 +197,6 @@ MACRO dict
 		; Replace a character with another one
 		jr nz, .not\@
 		ld a, \2
-		jr .place
 	.not\@:
 	elif !STRCMP(STRSUB("\2", 1, 1), ".")
 		; Locals can use a short jump
@@ -234,8 +237,7 @@ ENDM
 	dict "<POKE>",    PlacePOKE
 	dict "%",         NextChar
 	dict "¯",         " "
-	dict "<1E>",      NextChar
-	dict "<1D>",      EndLineWithDash
+	dict "<1D>",      EndLineWithDash	
 	dict "<DEXEND>",  PlaceDexEnd
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
@@ -281,7 +283,7 @@ ENDM
 	add "は" - "ぱ"
 .place_handakuten
 	ld b, "ﾟ" ; handakuten
-	call Diacritic	
+	call Diacritic
 
 .place
 	ld [hli], a
@@ -319,7 +321,7 @@ PlacePOKE:    print_name PlacePOKEText
 EndLineWithDash:
 	ld [hl], "-"
 	jp LineFeedChar
-
+	
 PlaceJPRoute: print_name PlaceJPRouteText
 PlaceWatashi: print_name PlaceWatashiText
 PlaceKokoWa:  print_name PlaceKokoWaText
@@ -342,11 +344,11 @@ PlaceBattlersName:
 	jr PlaceCommandCharacter
 
 .enemy
-	ld de, wEnemyMonNickname
+	ld de, EnemyText
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, EnemyText
+	ld de, wEnemyMonNickname
 	jr PlaceCommandCharacter
 
 PlaceEnemysName::

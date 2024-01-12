@@ -22,7 +22,7 @@ TullyAnswerPhoneNiteText:
 	text "Salut c'est"
 	line "@"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "C'est..."
 	line "<PLAY_G>?"
@@ -32,7 +32,7 @@ TullyGreetText:
 	text "Allô!"
 	line "Ici @"
 	text_ram wStringBuffer3
-	text "...."
+	text "…"
 
 	para "Bonjour!"
 	line "Il fait beau!"
