@@ -62,7 +62,7 @@ RandyScript:
 	closetext
 	end
 
-GGiftSpearowMail:
+GiftSpearowMail:
 	db FLOWER_MAIL
 	db   "ANTRE NOIRE    "
 	next "mène autre part@"
