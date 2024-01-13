@@ -6,7 +6,7 @@
 	charmap "<PLAY_G>",  $14 ; "<PLAYER>くん" or "<PLAYER>ちゃん"; same as "<PLAYER>" in English
 	charmap "<MOBILE>",  $15
 	charmap "<CR>",      $16
-	charmap "<1D>",      $1d
+	charmap "<->",       $1d ; hyphen split, same as "-<LF>"
 	charmap "<¯>",       $1e ; soft hyphen split
 	charmap "¯",         $1f ; soft linebreak
 	charmap "<LF>",      $22
