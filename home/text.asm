@@ -197,6 +197,7 @@ MACRO dict
 		; Replace a character with another one
 		jr nz, .not\@
 		ld a, \2
+		jr .place
 	.not\@:
 	elif !STRCMP(STRSUB("\2", 1, 1), ".")
 		; Locals can use a short jump
@@ -237,7 +238,8 @@ ENDM
 	dict "<POKE>",    PlacePOKE
 	dict "%",         NextChar
 	dict "¯",         " "
-	dict "<1D>",      EndLineWithDash	
+	dict "<¯>",       NextChar
+	dict "<->",       PlaceHyphenSplit
 	dict "<DEXEND>",  PlaceDexEnd
 	dict "<TARGET>",  PlaceMoveTargetsName
 	dict "<USER>",    PlaceMoveUsersName
@@ -318,10 +320,10 @@ SixDotsChar:  print_name SixDotsCharText
 PlacePKMN:    print_name PlacePKMNText
 PlacePOKE:    print_name PlacePOKEText
 
-EndLineWithDash:
+PlaceHyphenSplit:
 	ld [hl], "-"
 	jp LineFeedChar
-	
+
 PlaceJPRoute: print_name PlaceJPRouteText
 PlaceWatashi: print_name PlaceWatashiText
 PlaceKokoWa:  print_name PlaceKokoWaText
