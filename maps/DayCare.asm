@@ -91,14 +91,15 @@ Text_DayCareManTalksAboutEggTicket: ; unreferenced
 
 	para "qui peut être"
 	line "échangé contre un"
-	cont "OEUF BIZARRE."
 
-	para "Mais vu qu'on gère"
-	line "une pension, on en"
+	para "OEUF BIZARRE."
+	line "Mais vu qu'on gère"
 
-	para "a pas besoin."
-	line "Tiens, t'as qu'à"
-	cont "le prendre."
+	para "une pension, on en"
+	line "a pas besoin."
+
+	para "Tiens, t'as qu'à"
+	line "le prendre."
 	done
 
 DayCareManText_GiveOddEgg:
