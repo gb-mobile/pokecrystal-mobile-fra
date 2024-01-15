@@ -79,23 +79,26 @@ Text_DayCareManTalksAboutEggTicket: ; unreferenced
 	text "Je suis le type"
 	line "de la PENSION."
 
-	para "There's something"
-	line "new in GOLDENROD"
+	para "Il y a quelque chose"
+	line "de nouveau"
+	cont "à DOUBLONVILLE."
 
-	para "called the TRADE"
-	line "CORNER."
+	para "Ca s'appelle le"
+	line "COIN TROC!"
+	
+	para "On m'a donné un"
+	line "TICKET OEUF"
 
-	para "I was given an EGG"
-	line "TICKET that can be"
+	para "qui peut être"
+	line "échangé pour un"
+	cont "OEUF BIZARRE."
 
-	para "traded in for a"
-	line "ODD EGG."
+	para "Mais vu qu'on gère"
+	line "une pension, on en"
 
-	para "But since we run a"
-	line "DAY-CARE, we don't"
-
-	para "need it. You may"
-	line "as well have it."
+	para "a pas besoin."
+	line "Tiens, t'as qu'à"
+	cont "le prendre."
 	done
 
 DayCareManText_GiveOddEgg:
