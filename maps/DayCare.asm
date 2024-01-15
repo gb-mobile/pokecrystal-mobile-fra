@@ -90,7 +90,7 @@ Text_DayCareManTalksAboutEggTicket: ; unreferenced
 	line "TICKET OEUF"
 
 	para "qui peut être"
-	line "échangé pour un"
+	line "échangé contre un"
 	cont "OEUF BIZARRE."
 
 	para "Mais vu qu'on gère"
