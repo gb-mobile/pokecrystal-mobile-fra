@@ -76,11 +76,11 @@ Text_GrampsLookingForYou:
 	done
 
 Text_DayCareManTalksAboutEggTicket: ; unreferenced
-	text "Je suis le type"
-	line "de la PENSION."
+	text "Je suis le TYPE de"
+	line "la PENSION."
 
-	para "Il y a quelque chose"
-	line "de nouveau"
+	para "Il y a quelque"
+	line "chose de nouveau"
 	cont "à DOUBLONVILLE."
 
 	para "Ca s'appelle le"
