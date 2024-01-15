@@ -3976,7 +3976,7 @@ ENDM
 	ezchat_word "SERIEUX@", $422
 	ezchat_word "OH NON!@", $382
 	ezchat_word "DEFAITE@", $2f4
-	ezchat_word "SIJPERDS", $5ca ; (SI JE PERDS too long)
+	ezchat_word "SIj'PERDS", $5ca ; to test (SI JE PERDS too long)
 	ezchat_word "PERDU@@@", $2f6
 	ezchat_word "PERDRE@@", $2f2
 	ezchat_word "PRUDENCE", $218 ; (VIGILANCE too long)
@@ -4126,7 +4126,7 @@ ENDM
 	ezchat_word "PLUS@@@@", $330 ; (DAVANTAGE too long)
 	ezchat_word "TROPTARD", $4f0
 	ezchat_word "ENFIN@@@", $1a6 ; (FINALLEMENT too long)
-	ezchat_word "NIMPORTE", $052 ; (PEU IMPORTE too long)
+	ezchat_word "n'IMPORTE", $052 ; to test (PEU IMPORTE too long)
 	ezchat_word "PLUTOT@@", $2a6 ; (AU LIEU DE too long)
 	ezchat_word "EXTRA@@@", $4a0 ; (FANTASTIQUE too long)
 
