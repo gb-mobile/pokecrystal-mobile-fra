@@ -3943,7 +3943,7 @@ ENDM
 	ezchat_word "MANGE!@@", $254 ; ("PRENDS CA!" too long)
 	ezchat_word "ASSURER@", $0e8
 	ezchat_word "ATTAQUER", $06a
-	ezchat_word "CAPITULE", $1e4 ; ("SE RENDRE" too long)
+	ezchat_word "S'RENDRE", $1e4 ; ("SE RENDRE" too long)
 	ezchat_word "CRAN@@@@", $21a
 	ezchat_word "TALENT@@", $490
 	ezchat_word "TACTIQUE", $47a ; ("STRATEGIE" too long)
