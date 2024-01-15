@@ -4363,12 +4363,12 @@ ENDM
 	ezchat_word "MARCHE@@", $54c
 	ezchat_word "ALLE@@@@", $570
 	ezchat_word "ALLEZ@@@", $1ea
-	ezchat_word "DEBOUT!@", $544 ; alt? (REVEILLE-TOI too long)
+	ezchat_word "LEVE-TOI", $544 ; (REVEILLE-TOI too long)
 	ezchat_word "REVEILLE", $546
 	ezchat_word "ENERVER@", $04a
 	ezchat_word "EDUQUER@", $496 ; (ENSEIGNER too long)
 	ezchat_word "ENSEIGNE", $49a
-	ezchat_word "s'TEPLAIT", $3c4 ; to test
+	ezchat_word "S.T.P.", $3c4 ; to test
 	ezchat_word "ETUDIER@", $2d0 ; (APPRENDRE too long)
 	ezchat_word "CHANGE@@", $0ce
 	ezchat_word "CNFIANCE", $50e ; ALT? (CONFIANCE too long)
