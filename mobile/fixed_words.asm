@@ -3992,7 +3992,7 @@ ENDM
 	ezchat_word "CHEF@@@@", $0d4
 	ezchat_word "REGLE@@@", $402
 	ezchat_word "NIVEAU@@", $2dc
-	ezchat_word "MOVE@@@@", $334
+	ezchat_word "CAPACITE", $334
 
 .Exclamations:
 	ezchat_word "!@@@@@@@", $000
