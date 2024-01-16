@@ -2491,12 +2491,12 @@ Function11cdaa:
 EZChatString_SortByCategory:
 ; Words will be displayed by category
 	db   "Mots listés";"ことば¯しゅるいべつに"
-	next "par catégorie@";"えらべます@"
+	next "par catégorie.@";"えらべます@"
 
 EZChatString_SortByAlphabetical:
 ; Words will be displayed in alphabetical order
 	db   "Mots listés";"ことば¯アイウエオ　の"
-	next "alphabétiquement@";"じゅんばんで　ひょうじ　します@"
+	next "alphabétiquement.@";"じゅんばんで　ひょうじ　します@"
 
 EZChatString_SortByMenu:
 	db   "MODE GROUPE";"しゅるいべつ　モード"  ; Category mode
