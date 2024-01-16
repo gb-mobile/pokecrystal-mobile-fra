@@ -774,7 +774,7 @@ _MobileOnlyThreeMonMayEnterText::
 	prompt
 
 _MobileCardFolderIntro1Text::
-	text "Le DOSSIER CARTE"
+	text "Le FICHIER CARTE"
 	line "est là où vous"
 	
 	cont "rangez votre CARTE"
@@ -833,12 +833,12 @@ _MobileCardFolderIntro4Text::
 	done
 
 _MobileCardFolderAskDeleteText::
-	text "Le DOSSIER CARTE,"
+	text "Le FICHIER CARTE,"
 	line "une fois jeté, ne"
 	
 	para "pourra pas être"
 	line "récupéré. Cela"
-	cont "inclut le DOSSIER,"
+	cont "inclut le FICHIER,"
 	
 	para "les CARTES qu'il"
 	line "contient, et son"
@@ -853,14 +853,14 @@ _MobileCardFolderDeleteAreYouSureText::
 	done
 
 _MobileCardFolderDeletedText::
-	text "Le DOSSIER CARTE"
+	text "Le FICHIER CARTE"
 	line "a bien été jeté."
 	
 	para ""
 	done
 
 _MobileCardFolderAskOpenOldText::
-	text "Le DOSSIER CARTE"
+	text "Le FICHIER CARTE"
 	line "de votre dernière"
 	cont "aventure existe"
 	
@@ -872,7 +872,7 @@ _MobileCardFolderAskOpenOldText::
 
 _MobileCardFolderAskDeleteOldText::
 	text "Jeter l'ancien"
-	line "DOSSIER CARTE?"
+	line "FICHIER CARTE?"
 	done
 
 _MobileCardFolderFinishRegisteringCardsText::
