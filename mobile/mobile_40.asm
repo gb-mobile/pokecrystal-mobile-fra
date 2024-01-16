@@ -6649,8 +6649,8 @@ Function102f15:
 	ret
 
 .TooBadTheTradeWasCanceled:
-	db   "Canceling the"		; "こうかんを　キャンセルしました@"
-	next "trade..."
+	db   "L'échange est"
+	next "annulé!"
 	db   "@"
 
 Function102f32:
