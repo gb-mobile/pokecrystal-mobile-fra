@@ -3812,7 +3812,7 @@ ENDM
 	ezchat_word "VOL@@@@@", $1b2
 	ezchat_word "FEU@@@@@", $1a8
 	ezchat_word "EAU@@@@@", $558
-	ezchat_word "INSECTE", $0ae
+	ezchat_word "INSECTE@", $0ae
 
 .Greetings:
 	ezchat_word "MERCI@@@", $4a8
@@ -3926,7 +3926,7 @@ ENDM
 .Battle:
 	ezchat_word "TECHNIK@", $30a ; alt? (TECHNIQUE too long)
 	ezchat_word "ALLEZ!@@", $1f6
-	ezchat_word "Nº 1@@@@", $36a
+	ezchat_word "No 1@@@@", $36a
 	ezchat_word "DECIDER@", $122
 	ezchat_word "TENACITE", $28c
 	ezchat_word "GAGNE@@@", $594
@@ -4209,7 +4209,7 @@ ENDM
 	ezchat_word "PRESSE@@", $282
 	ezchat_word "BON@@@@@", $1fc
 	ezchat_word "LENTEUR@", $2d4
-	ezchat_word "MEGA@@@@", $316 (CA BOUME? and too long and dated)
+	ezchat_word "MEGA@@@@", $316 ; (CA BOUME? and too long and dated)
 	ezchat_word "VITESSE@", $326
 	ezchat_word "FACILITE", $1fa
 	ezchat_word "BIZARRE@", $568
@@ -4368,7 +4368,7 @@ ENDM
 	ezchat_word "ENERVER@", $04a
 	ezchat_word "EDUQUER@", $496 ; (ENSEIGNER too long)
 	ezchat_word "ENSEIGNE", $49a
-	ezchat_word "S.T.P.", $3c4 ; to test
+	ezchat_word "S.T.P.@@", $3c4 ; to test
 	ezchat_word "ETUDIER@", $2d0 ; (APPRENDRE too long)
 	ezchat_word "CHANGE@@", $0ce
 	ezchat_word "CNFIANCE", $50e ; ALT? (CONFIANCE too long)
@@ -4382,7 +4382,7 @@ ENDM
 	ezchat_word "CONNAIT@", $2be
 	ezchat_word "CONNAIS@", $2c0
 	ezchat_word "REFUSE@@", $3f2
-	ezchat_word "STOQUER@", $478 ; ALT? fall back on english (SURPRENDRE and synonyms too long)
+	ezchat_word "RANGE@@@", $478 ; ALT? fall back on english (SURPRENDRE and synonyms too long)
 	ezchat_word "VANTE@@@", $0aa
 	ezchat_word "CASSE@@@", $29e
 	ezchat_word "PENSE@@@", $4cc
@@ -4502,7 +4502,7 @@ ENDM
 	ezchat_word "ICI@@@@@", $4ba
 	ezchat_word "OK?@@@@@", $38e
 	ezchat_word "SI@@@@@@", $458
-	ezchat_word "PEUTETRE", $30c : (PEUT-ETRE too long)
+	ezchat_word "PEUTETRE", $30c ; (PEUT-ETRE too long)
 	ezchat_word "FAISANT@", $01c
 	ezchat_word "APPRENDS", $3a8
 	ezchat_word "TU VEUX@", $2b0
