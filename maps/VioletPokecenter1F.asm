@@ -168,26 +168,27 @@ VioletPokecenterElmsAideAskEggText:
 	done
 
 VioletPokecenterGameboyKidPreMobileText:
-	text "I've been thinking"
-	line "it'd be great to"
+	text "Je pense qu'il"
+	line "serait génial,"
 
-	para "be able to link up"
-	line "and battle with my"
+	para "pouvoir connecter"
+	line "et combattre avec"
 
-	para "friends who live"
-	line "far away."
+	para "mes amis qui hab-"
+	line "itent loin d'ici."
 	done
  
 VioletPokecenterGameboyKidMobileText:
-	text "I just battled a"
-	line "friend in CIANWOOD"
-	cont "over a link."
+	text "J'ai combattu un"
+	line "ami en IRISIA"
+	cont "par téléphone."
 
-	para "If you connect a"
-	line "MOBILE ADAPTER,"
+	para "Si vous connectez"
+	line "un ADAPTATEUR"
 
-	para "you can link with"
-	line "a friend far away."
+	para "MOBILE, vous pouvez"
+	line "connecter aux amis"
+	cont "très loins."
 	done
 
 VioletPokecenter1FGameboyKidText: ; unreferenced

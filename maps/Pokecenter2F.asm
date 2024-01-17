@@ -1010,23 +1010,23 @@ Text_LikeTheLook:
 	done
 
 Text_BrokeStadiumRules:
-	text "Excuse me!"
+	text "Excusez-moi!"
 
-	para "For STADIUM rules,"
-	line "please bring six"
+	para "Pour les règles"
+	line "STADE, prenez six"
 
-	para "different #MON,"
-	line "excluding EGGS."
+	para "#MON différents,"
+	line "sauf les OEUFs."
 
-	para "The six #MON"
-	line "must be different."
+	para "Les #MON doit"
+	line "être différents."
 
-	para "Also, they must"
-	line "not be holding"
-	cont "identical items."
+	para "De plus, ils ne"
+	line "peut pas porter"
+	cont "les mêmes objets."
 
-	para "Please come back"
-	line "when you're ready."
+	para "Revenir quand vous"
+	line "êtes prêt(e)."
 	done
 
 Pokecenter2F_MapEvents:
