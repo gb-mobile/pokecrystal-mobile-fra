@@ -1025,7 +1025,7 @@ Text_BrokeStadiumRules:
 	line "peuvent pas porter"
 	cont "les mêmes objets."
 
-	para "Revenir quand vous"
+	para "Revenez quand vous"
 	line "êtes prêt(e)."
 	done
 
