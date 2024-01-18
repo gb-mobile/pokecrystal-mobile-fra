@@ -2491,16 +2491,16 @@ Function11cdaa:
 EZChatString_SortByCategory:
 ; Words will be displayed by category
 	db   "Mots listés";"ことば¯しゅるいべつに"
-	next "par catégorie@";"えらべます@"
+	next "par catégorie.@";"えらべます@"
 
 EZChatString_SortByAlphabetical:
 ; Words will be displayed in alphabetical order
 	db   "Mots listés";"ことば¯アイウエオ　の"
-	next "alphabétiquement@";"じゅんばんで　ひょうじ　します@"
+	next "alphabétiquement.@";"じゅんばんで　ひょうじ　します@"
 
 EZChatString_SortByMenu:
 	db   "MODE GROUPE";"しゅるいべつ　モード"  ; Category mode
-	next "MODE ABC@";"アイウエオ　　モード@" ; ABC mode
+	next "MODE A à Z@";"アイウエオ　　モード@" ; ABC mode
 
 EZChatDraw_SortByCharacter: ; Sort by Character Menu
 	call EZChat_ClearBottom12Rows
@@ -3820,7 +3820,7 @@ ENDM
 	ezchat_word "ON Y VA!", $2da
 	ezchat_word "VAS-Y!@@", $1f2
 	ezchat_word "FAIS-LE!", $136
-	ezchat_word "OUAI@@@@", $5be
+	ezchat_word "YAAAH@@@", $5be
 	ezchat_word "COMMENT@", $278 ; fall back on the english, (SECOUE-MOI too long)
 	ezchat_word "COUCOU!@", $27a
 	ezchat_word "BRAVO@@@", $0ee

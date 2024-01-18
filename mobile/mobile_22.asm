@@ -9,7 +9,7 @@ String_8911c:
 	next "de téléphone.@";"はいって　いません！@"   ; entered correctly!
 
 String_89135:
-	db   "Ecartez les";"データが　かわって　いますが"  ; The data has changed.
+	db   "Annuler les";"データが　かわって　いますが"  ; The data has changed.
 	next "modifications?@";"かきかえないで　やめますか？@" ; Quit anyway?
 
 String_89153:
@@ -3936,8 +3936,8 @@ Function8aab6:
 	ret
 
 String_8aaf0:
-	db 	 "Your CARD was";"あたらしい　めいし<PKMN>できまし<LF>@"
-	next "updated.@"
+	db 	 "Votre CARTE a";"あたらしい　めいし<PKMN>できまし<LF>@"
+	next "été mise à jour.@"
 
 Function8ab00:
 	ld de, String_8911c
@@ -4090,8 +4090,8 @@ Function8aba9: ; pick a friend to call
 	ret
 
 String_8ac3b:
-	db   "Call this";"こ<NO>ともだち<NI>でんわを"
-	next "friend?@";"かけますか？@"
+	db   "Appeler cet";"こ<NO>ともだち<NI>でんわを"
+	next "ami?@";"かけますか？@"
 
 Function8ac4e:
 	xor a
@@ -4271,12 +4271,12 @@ Mobile22_AskOverwriteCardEntry:
 	ret
 
 String_AskOverwriteCard:
-	db   "Overwrite";"こ<NO>めいし<WO>けして"
-	next "this data?@";"いれかえますか？@"
+	db   "Remplacer";"こ<NO>めいし<WO>けして"
+	next "ces données?@";"いれかえますか？@"
 
 String_KeepFriendsName:
-	db   "Keep the";"おともだち<NO>なまえを"
-	next "friend's name?@";"のこして　おきますか？@"
+	db   "Garder le";"おともだち<NO>なまえを"
+	next "nom de l'ami?@";"のこして　おきますか？@"
 
 Function8adb3:
 	call Mobile22_ClearScreen

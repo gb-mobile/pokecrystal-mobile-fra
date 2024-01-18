@@ -337,8 +337,8 @@ String10024d:
 	next "annulée.@"
 
 String10025e:
-	db   "The chosen rooms"	; "おともだちと　えらんだ　へやが"
-	next "differ!@"			; "ちがうようです@"
+	db   "Les salles sont"	; "おともだちと　えらんだ　へやが"
+	next "différentes!@"			; "ちがうようです@"
 
 Function100276:
 	ld a, [wcd2b]
@@ -1329,11 +1329,12 @@ Function100846:
 	ret
 
 String_10088e:
-	db   "MOBILE BATTLE TIME@" 	; "モバイルたいせん　できる"
+	db   "TEMPS DE COMBAT" 	; "モバイルたいせん　できる"
+	next "MOBILE@"
 	; "じかん@"
 
 String_10089f:
-	db "UNLIMITED@" 		; "　むせいげん@"
+	db "ILLIMITE@" 		; "　むせいげん@"
 
 MobileBattleGetRemainingTime:
 ; Calculates the difference between 10 minutes and sMobileBattleTimer
@@ -1430,9 +1431,9 @@ Function100902:
 	ret
 
 .string_10095a
-	db "Time's up!@"		;"たいせん　しゅうりょう@"
+	db "Temps écoulé!@"		;"たいせん　しゅうりょう@"
 .string_100966
-	db "min. remaining!@"	;"のこり　　　ふん！@"
+	db "min. restante!@"	;"のこり　　　ふん！@"
 
 Function100970:
 	hlcoord 0, 0
@@ -6671,8 +6672,8 @@ Function102f50:
 	ret
 
 .PleaseWait:
-	db "Einen Moment,"
-	next "bitte…@"
+	db "Veuillez patienter"
+	next "un instant…@"
 
 Function102f6d:
 	call Function102dc3
@@ -6682,7 +6683,7 @@ Function102f6d:
 	ret
 
 .Finished:
-	db "Finishing trade...@"	; "しゅうりょう　します@"
+	db "Fin de l'échange...@"	; "しゅうりょう　します@"
 
 Function102f85:
 	ld a, [wd003]
