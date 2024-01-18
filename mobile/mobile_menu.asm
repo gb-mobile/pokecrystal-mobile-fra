@@ -765,9 +765,9 @@ Function4a5b0:
 String_4a5c5:
 	db "Présentation@";"じこしょうかい@"
 String_4a5cd:
-	db "Départ Combat@";"たいせん　<GA>はじまるとき@"
+	db "Début Combat@";"たいせん　<GA>はじまるとき@"
 String_4a5da:
-	db "Combat Gangé@";"たいせん　<NI>かったとき@"
+	db "Combat Gagné@";"たいせん　<NI>かったとき@"
 String_4a5e6:
 	db "Combat Perdu@";"たいせん　<NI>まけたとき@"
 String_4a5f2:
@@ -776,7 +776,7 @@ String_4a5f2:
 Strings_4a5f6:
 	db "Vu sur votre CARTE@";"めいし　や　ニュース　<NI>のせる@"
 	db "et les INFOS.@";"あなた<NO>あいさつです@"
-	db "Vu au départ d'un@";"モバイル　たいせん<GA>はじまるとき@"
+	db "Vu au début d'un@";"モバイル　たいせん<GA>はじまるとき@"
 	db "combat mobile.@";"あいて<NI>みえる　あいさつです@"
     db "Vu si vous gagnez@";"モバイル　たいせんで　かったとき@"
     db "un combat.@";"あいて<NI>みえる　あいさつです@"

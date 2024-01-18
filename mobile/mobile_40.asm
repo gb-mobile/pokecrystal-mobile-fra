@@ -6728,10 +6728,10 @@ Function102fce:
 	ret
 
 String_102fdb:
-	db   "Your friend's"		; "あいてがわ<NO>せんたくに"
-	next "#MON appears"			; "いじょう<PKMN>あるようです！！"
-	cont "to be abnormal!"
-	done
+	db "Le #MON"
+	next "de votre ami(e) a"
+	cont "l'air bizarre!"
+done
 
 Function102ff5:
 	call Function102dc3
@@ -6741,9 +6741,10 @@ Function102ff5:
 	ret
 
 String_103002:
-	db   "If you trade that"	; "その#を　こうかんすると"
-	next "#MON, you won't"		; "せんとう　できなく　なっちゃうよ！"
-	cont "be able to battle."
+	db "Vous ne pourrez"
+	next "pas combattre si"
+	cont "vous échangez ce"
+	cont "#MON."
 	db   "@"
 
 Function103021:
@@ -6754,9 +6755,9 @@ Function103021:
 	ret
 
 String_10302e:
-	db   "Your friend"		; "あいてが　ちゅうしを　えらんだので"
-	next "chose to end"		; "こうかんを　ちゅうし　します"
-	cont "the trade."
+	db   "Votre ami(e)"		; "あいてが　ちゅうしを　えらんだので"
+	next "à choisi d'annuler"		; "こうかんを　ちゅうし　します"
+	cont "l'échange."
 	db   "@"
 
 Function10304f:

@@ -3098,7 +3098,7 @@ String_8a476:
 
 Strings_8a483:
 	db   "Les CARTES de vos";"おともだち<NO>めいしは"
-	next "amis sont ici.@";"ここ<NI>いれておきます@"
+	next "ami(e)s sont ici.@";"ここ<NI>いれておきます@"
 
 	db   "Entrez votre numé-";"でんわばんごう<WO>いれると"
 	next "ro pour échanger.@";"めいしこうかん<GA>できます@"
@@ -4090,8 +4090,8 @@ Function8aba9: ; pick a friend to call
 	ret
 
 String_8ac3b:
-	db   "Appeler cet";"こ<NO>ともだち<NI>でんわを"
-	next "ami?@";"かけますか？@"
+	db   "Appeler cet(te)";"こ<NO>ともだち<NI>でんわを"
+	next "ami(e)?@";"かけますか？@"
 
 Function8ac4e:
 	xor a
@@ -4276,7 +4276,7 @@ String_AskOverwriteCard:
 
 String_KeepFriendsName:
 	db   "Garder le";"おともだち<NO>なまえを"
-	next "nom de l'ami?@";"のこして　おきますか？@"
+	next "nom de l'ami(e)?@";"のこして　おきますか？@"
 
 Function8adb3:
 	call Mobile22_ClearScreen
