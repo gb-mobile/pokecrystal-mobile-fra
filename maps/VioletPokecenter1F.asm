@@ -171,11 +171,12 @@ VioletPokecenterGameboyKidPreMobileText:
 	text "Je pense qu'il"
 	line "serait génial,"
 
-	para "pouvoir connecter"
-	line "et combattre avec"
+	para "de pouvoir se"
+	line "connecter et"
 
-	para "mes amis qui hab-"
-	line "itent loin d'ici."
+	para "combattre avec"
+	line "mes amis qui hab-"
+	cont "itent loin d'ici."
 	done
  
 VioletPokecenterGameboyKidMobileText:
@@ -187,8 +188,8 @@ VioletPokecenterGameboyKidMobileText:
 	line "un ADAPTATEUR"
 
 	para "MOBILE, vous pouvez"
-	line "connecter aux amis"
-	cont "très loins."
+	line "vous connecter aux"
+	cont "amis éloignés."
 	done
 
 VioletPokecenter1FGameboyKidText: ; unreferenced
