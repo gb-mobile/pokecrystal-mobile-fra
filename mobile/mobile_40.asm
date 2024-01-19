@@ -1051,7 +1051,7 @@ String1006c2:
 String1006c6:
 	db " sec.@"			; "びょう@" Second
 String1006ca:
-	db "1 hour or more @" 		; "１じかんいじょう@" More than 1 hour
+	db "1 heure ou plus @" 		; "１じかんいじょう@" More than 1 hour
 
 Function1006d3:
 	call UpdateTime
@@ -1329,11 +1329,11 @@ Function100846:
 	ret
 
 String_10088e:
-	db   "MOBILE BATTLE TIME@" 	; "モバイルたいせん　できる"
+	db   "TEMPS COMBAT MOB.@" 	; "モバイルたいせん　できる"
 	; "じかん@"
 
 String_10089f:
-	db "UNLIMITED@" 		; "　むせいげん@"
+	db "ILLIMITE@" 		; "　むせいげん@"
 
 MobileBattleGetRemainingTime:
 ; Calculates the difference between 10 minutes and sMobileBattleTimer
@@ -1430,9 +1430,9 @@ Function100902:
 	ret
 
 .string_10095a
-	db "Time's up!@"		;"たいせん　しゅうりょう@"
+	db "Temps écoulé!@"		;"たいせん　しゅうりょう@"
 .string_100966
-	db "min. remaining!@"	;"のこり　　　ふん！@"
+	db "min. restantes!@"	;"のこり　　　ふん！@"
 
 Function100970:
 	hlcoord 0, 0
@@ -6682,7 +6682,7 @@ Function102f6d:
 	ret
 
 .Finished:
-	db "Finishing trade...@"	; "しゅうりょう　します@"
+	db "Fin de l'échange…@"	; "しゅうりょう　します@"
 
 Function102f85:
 	ld a, [wd003]
@@ -6740,10 +6740,11 @@ Function102ff5:
 	ret
 
 String_103002:
-	db   "If you trade that"	; "その#を　こうかんすると"
-	next "#MON, you won't"		; "せんとう　できなく　なっちゃうよ！"
-	cont "be able to battle."
-	db   "@"
+	db "Vous ne pourrez"
+	next "pas combattre si"
+	cont "vous échangez ce"
+	cont "#MON."
+	db "@"
 
 Function103021:
 	call Function102dc3
@@ -6753,10 +6754,10 @@ Function103021:
 	ret
 
 String_10302e:
-	db   "Your friend"		; "あいてが　ちゅうしを　えらんだので"
-	next "chose to end"		; "こうかんを　ちゅうし　します"
-	cont "the trade."
-	db   "@"
+	db "Votre ami(e)"
+	next "à choisi d'annuler"
+	cont "l'échange."
+	db "@"
 
 Function10304f:
 	xor a

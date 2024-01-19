@@ -248,7 +248,7 @@ Function17f6b7:
 	ret
 
 String_17f6dc:
-	db "ERROR: 　　　-@"		; "つうしんエラー　　　ー@"
+	db "ERREUR: 　　-@"		; "つうしんエラー　　　ー@"
 
 String_17f6e8:
 	db   "Unknown error." 	; "みていぎ<NO>エラーです"

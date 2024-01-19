@@ -3936,8 +3936,8 @@ Function8aab6:
 	ret
 
 String_8aaf0:
-	db 	 "Your CARD was";"あたらしい　めいし<PKMN>できまし<LF>@"
-	next "updated.@"
+	db "Votre CARTE a"
+	next "été mise à jour.@"
 
 Function8ab00:
 	ld de, String_8911c
@@ -4090,8 +4090,8 @@ Function8aba9: ; pick a friend to call
 	ret
 
 String_8ac3b:
-	db   "Call this";"こ<NO>ともだち<NI>でんわを"
-	next "friend?@";"かけますか？@"
+	db "Appeler cet(te)"
+	next "ami(e)?@"
 
 Function8ac4e:
 	xor a
@@ -4271,8 +4271,8 @@ Mobile22_AskOverwriteCardEntry:
 	ret
 
 String_AskOverwriteCard:
-	db   "Overwrite";"こ<NO>めいし<WO>けして"
-	next "this data?@";"いれかえますか？@"
+	db "Remplacer" 
+	next "ces données?@"
 
 String_KeepFriendsName:
 	db   "Keep the";"おともだち<NO>なまえを"
