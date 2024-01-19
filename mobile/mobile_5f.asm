@@ -512,14 +512,14 @@ MenuHeader_17d26a:
 MenuData_17d272:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 4
-	db "Receive News@" 	; "ニュース¯よみこむ@"
-	db "View News@" 	; "ニュース¯みる@"
-	db "Explanation@" 	; "せつめい@"
-	db "Cancel@" 		; "やめる@"
+	db "Recevoir les Infos@"
+	db "Voir les Infos@"
+	db "Règles@"
+	db "Retour@"
 
 MenuHeader_ChallengeExplanationCancel:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 9;14, 7
+	menu_coords 0, 0, 18, 9;14, 7
 	dw MenuData_ChallengeExplanationCancel
 	db 1 ; default option
 
@@ -527,13 +527,13 @@ MenuData_ChallengeExplanationCancel:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 4
 	db "Challenge@"
-	db "Honor Roll@" ; check leaders?
-	db "Explanation@"
-	db "Cancel@"
+	db "Tables de l'Honneur@"
+	db "Règles@"
+	db "Annuler@"
 
 MenuHeader_ChallengeRegisterExplanationCancel:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 11
+	menu_coords 0, 0, 18, 11
 	dw MenuData_ChallengeRegisterExplanationCancel
 	db 1 ; default option
 
@@ -541,10 +541,10 @@ MenuData_ChallengeRegisterExplanationCancel:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 5
 	db "Challenge@"
-	db "Honor Roll@" ; check leaders?
-	db "Previous Room@"
-	db "Explanation@"
-	db "Cancel@"
+	db "Tables de l'Honneur@"
+	db "Salle précédente@"
+	db "Règles@"
+	db "Annuler@"
 
 Function17d2b6:
 	call Function17d2c0

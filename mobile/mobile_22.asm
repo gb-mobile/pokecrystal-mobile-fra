@@ -2756,7 +2756,7 @@ MenuData_0x8a1a2:
 	db 3 ; items
 	db "Ouvrir@" ; "ひらく@"
 	db "Effacer@" ; "すてる@"
-	db "Retour@" ; "もどる@"
+	db "Annuler@" ; "もどる@"
 
 Function8a1b0:
 	hlcoord 0, 12
@@ -3059,7 +3059,7 @@ MenuData_0x8a417:
 	db "Cartes@" ;"めいしりスト@"
 	db "Ma Carte@" ;"じぶんの　めいし@"
 	db "Echanger@" ;"めいしこうかん@"
-	db "Retour@" ;"やめる@"
+	db "Annuler@" ;"やめる@"
 
 MenuHeader_0x8a435:
 	db MENU_BACKUP_TILES ; flags
@@ -3072,7 +3072,7 @@ MenuData_0x8a43d:
 	db 3 ; items
 	db "Cartes@" ;"めいしりスト@"
 	db "Ma Carte@" ;"じぶんの　めいし@"
-	db "Retour@" ;"やめる@"
+	db "Annuler@" ;"やめる@"
 
 Function8a453:
 	hlcoord 0, 12
@@ -4090,7 +4090,7 @@ Function8aba9: ; pick a friend to call
 	ret
 
 String_8ac3b:
-	db "Appeler cet(te)"
+	db " Appeler cet(te)"
 	next "ami(e)?@"
 
 Function8ac4e:
@@ -4275,8 +4275,8 @@ String_AskOverwriteCard:
 	next "ces données?@"
 
 String_KeepFriendsName:
-	db   "Keep the";"おともだち<NO>なまえを"
-	next "friend's name?@";"のこして　おきますか？@"
+	db "Garder le"
+	next "nom de l'ami(e)?@"
 
 Function8adb3:
 	call Mobile22_ClearScreen

@@ -6543,9 +6543,8 @@ MenuHeader_11afe8:
 	db 0 ; default option
 
 String_11aff0:
-	db   "Est-ce@"
-	next "correct?"
-	;next ""
+	db   "Est-ce"
+	next "correct?@"
 
 String_11b003:
 	db   "Annuler"

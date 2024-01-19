@@ -1018,14 +1018,14 @@ Text_BrokeStadiumRules:
 	para "#MON différents,"
 	line "sauf les OEUFs."
 
-	para "Les #MON doit"
+	para "Les #MON doivent"
 	line "être différents."
 
 	para "De plus, ils ne"
-	line "peut pas porter"
+	line "peuvent pas porter"
 	cont "les mêmes objets."
 
-	para "Revenir quand vous"
+	para "Revenez quand vous"
 	line "êtes prêt(e)."
 	done
 

@@ -107,8 +107,8 @@ CopyCurrencyString: ; I know this is ugly, I copied and pasted this function fro
 
 String_Currency_Cents: ; Note that this is unoptimized, as the string "Is this OK?@" is repeted.
 	db   " cents";"えん"
-	next "Is this OK?@";"かかります　よろしい　ですか？@"
+	next "Est-ce correct?@";"かかります　よろしい　ですか？@"
 
 String_Currency_Centime:
-	db   " centime";"えん"
-	next "Is this OK?@";"かかります　よろしい　ですか？@"	
+	db   " cent.";"えん"
+	next "Est-ce correct?@";"かかります　よろしい　ですか？@"	
