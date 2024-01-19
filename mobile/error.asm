@@ -409,7 +409,7 @@ Unknown_17f844: db 19
 	dbbw $ff, $ff, String_17fa49
 
 String_17f891: ; 18 max!
-	db "L'adaptateur Mobile"
+	db "L'Adaptateur Mobile"
 	next "n'est pas connecté"
 	next "correctement."
 	next "Vérifiez le manuel"
