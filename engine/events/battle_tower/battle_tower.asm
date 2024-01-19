@@ -677,7 +677,7 @@ Function1704e1: ; honor roll
 	hlcoord 1, 1
 	ld de, wStringBuffer3
 	call PlaceString
-	hlcoord 11, 1;1, 3
+	hlcoord 10, 1;1, 3
 	ld de, .String_Mail
 	call PlaceString
 	hlcoord 16, 1;4, 3
@@ -881,10 +881,10 @@ Function1704e1: ; honor roll
 	ret
 
 .String_Mail:
-	db "ROOM:@";"ルーム@"
+	db "SALLE:@";"ルーム@"
 
 .String_PastReaders:
-	db "HONOR ROLL@";"れきだいりーダーいちらん@"
+	db "TABLES de l'HONNEUR@";"れきだいりーダーいちらん@"
 
 BattleTowerAction:
 	jumptable .dw, wScriptVar
