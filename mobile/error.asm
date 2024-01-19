@@ -438,7 +438,7 @@ String_17f946:
 	next "Réessayez S.V.P."
 	next "Si le problème"
 	next "persiste, contact-"
-	next "-ez le support."
+	next "ez le support."
 	db "@"
 
 String_17f98e:
@@ -447,7 +447,7 @@ String_17f98e:
 	next "Réessayez S.V.P."
 	next "Si le problème"
 	next "persiste, contact-"
-	next "-ez le support."
+	next "ez le support."
 	db "@"
 
 String_17f9d0:
@@ -525,7 +525,7 @@ String_17fbb6:
 	next "Réessayez S.V.P."
 	next "Si le problème"
 	next "persiste, contact-"
-	next "-ez le support."
+	next "ez le support."
 	db "@"
 	
 String_17fbfe:
@@ -609,7 +609,7 @@ String_17fe03:
 	next "Réessayez S.V.P."
 	next "Si le problème"
 	next "persiste, contact-"
-	next "-ez le support."
+	next "ez le support."
 	db "@"
 
 String_17fe4b:
