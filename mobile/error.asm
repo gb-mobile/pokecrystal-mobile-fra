@@ -409,7 +409,7 @@ Unknown_17f844: db 19
 	dbbw $ff, $ff, String_17fa49
 
 String_17f891: ; 18 max!
-	db "L'Adaptateur Mobile"
+	db   "L'Adaptateur Mobile"
 	next "n'est pas connecté"
 	next "correctement."
 	next "Vérifiez le manuel"
@@ -417,7 +417,7 @@ String_17f891: ; 18 max!
 	db "@"
 
 String_17f8d1:
-	db "N'est pas connecté"
+	db   "N'est pas connecté"
 	next "car la ligne"
 	next "est occupée."
 	next "Réessayez plus"
@@ -425,7 +425,7 @@ String_17f8d1:
 	db "@"
 
 String_17f913:
-	db "N'est pas connecté"
+	db   "N'est pas connecté"
 	next "à cause d'un grand"
 	next "volume d'appels."
 	next "Réessayez plus"
@@ -433,7 +433,7 @@ String_17f913:
 	db "@"
 
 String_17f946:
-	db "Erreur d'Adaptateur"
+	db   "Erreur d'Adaptateur"
 	next "Mobile."
 	next "Réessayez S.V.P."
 	next "Si le problème"
@@ -442,7 +442,7 @@ String_17f946:
 	db "@"
 
 String_17f98e:
-	db "Erreur de"
+	db   "Erreur de"
 	next "communication."
 	next "Réessayez S.V.P."
 	next "Si le problème"
@@ -451,7 +451,7 @@ String_17f98e:
 	db "@"
 
 String_17f9d0:
-	db "Identifiant ou"
+	db   "Identifiant ou"
 	next "mot de passe"
 	next "invalide."
 	next "Confirmez vos"
@@ -460,7 +460,7 @@ String_17f9d0:
 	db "@"
 
 String_17fa14:
-	db "Le téléphone a été"
+	db   "Le téléphone a été"
 	next "déconnecté."
 	next "Vérifiez le manuel"
 	next "et réessayez"
@@ -468,7 +468,7 @@ String_17fa14:
 	db "@"
 
 String_17fa49:
-	db "Erreur de"
+	db   "Erreur de"
 	next "connection au"
 	next "Centre Mobile."
 	next "Réessayer"
@@ -476,7 +476,7 @@ String_17fa49:
 	db "@"
 
 String_17fa71:
-	db "L'Adaptateur Mobile"
+	db   "L'Adaptateur Mobile"
 	next "n'est pas configuré"
 	next "correctement."
 	next "S.V.P. enregistrez"
@@ -485,7 +485,7 @@ String_17fa71:
 	db "@"
 
 String_17fab0:
-	db "Le Centre Mobile"
+	db   "Le Centre Mobile"
 	next "est occupé."
 	next "Vérifiez le manuel"
 	next "et essayez de"
@@ -494,7 +494,7 @@ String_17fab0:
 	db "@" 
 
 String_17faf9:
-	db "L'adresse email"
+	db   "L'adresse email"
 	next "est incorrecte."
 	next "Re-entrez"
 	next "l'adresse email"
@@ -502,7 +502,7 @@ String_17faf9:
 	db "@"
 
 String_17fb2a:
-	db "L'adresse email "
+	db   "L'adresse email "
 	next "est incorrecte."
 	next "Verifiez le manuel"
 	next "et enregistrez-"
@@ -511,7 +511,7 @@ String_17fb2a:
 	db "@"
 
 String_17fb6e:
-	db "Identifiants/MdP"
+	db   "Identifiants/MdP"
 	next " incorrect ou"
 	next "erreur Centre" 
 	next "Mobile."
@@ -520,7 +520,7 @@ String_17fb6e:
 	db "@"
 
 String_17fbb6:
-	db "Incapable de"
+	db   "Incapable de"
 	next "lire les données."
 	next "Réessayez S.V.P."
 	next "Si le problème"
@@ -529,7 +529,7 @@ String_17fbb6:
 	db "@"
 	
 String_17fbfe:
-	db "Temps écoulé !"
+	db   "Temps écoulé !"
 	next "L'appel à pris"
 	next "fin."
 	next "Vérifiez le manuel"
@@ -538,7 +538,7 @@ String_17fbfe:
 	db "@"
 
 String_17fc3e:
-	db "Le service est"
+	db   "Le service est"
 	next "innaccessible en"
 	next "raison d'un défaut"
 	next "de paiement."
@@ -547,7 +547,7 @@ String_17fc3e:
 	db "@"
 
 String_17fc88:
-	db "Le service est"
+	db   "Le service est"
 	next "innaccessible pour"
 	next "le moment."
 	next "Verifiez le manuel"
@@ -555,7 +555,7 @@ String_17fc88:
 	db "@"
 
 String_17fcbf:
-	db "Il y a eu une" 
+	db   "Il y a eu une" 
 	next "erreur avec le"
 	next "téléphone ou le"
 	next "Centre Mobile."
@@ -564,7 +564,7 @@ String_17fcbf:
 	db "@"
 	
 String_17fcff:
-	db "Vous avez épuisé"
+	db   "Vous avez épuisé"
 	next "votre allocation" 
 	next "mensuelle."
 	next "Verifiez le manuel"
@@ -573,15 +573,15 @@ String_17fcff:
 	db "@"
 	
 String_17fd47:
-	db "Le Centre Mobile"
-	next "est en cours
+	db   "Le Centre Mobile"
+	next "est en cours"
 	next "de maintenance."
 	next "Réessayez"
 	next "plus tard S.V.P."
 	db "@"
 	
 String_17fd84:
-	db "Incapable de"
+	db   "Incapable de"
 	next "lire les données."
 	next "Vérifiez le manuel"
 	next "pour plus de"
@@ -589,7 +589,7 @@ String_17fd84:
 	db "@"
 
 String_17fdb2:
-	db "L'appel à pris fin"
+	db   "L'appel à pris fin"
 	next "suite à une"
 	next "absence de saisie"
 	next "durant plus de" 
@@ -597,14 +597,14 @@ String_17fdb2:
 	db "@"
 
 String_17fdd9:
-	db "Communication"
+	db   "Communication"
 	next "échouée."
 	next "Recommencez et"
 	next "réessayez S.V.P."
 	db "@"
 
 String_17fe03:
-	db "Incapable de"
+	db   "Incapable de"
 	next "lire les données."
 	next "Réessayez S.V.P."
 	next "Si le problème"
@@ -613,13 +613,13 @@ String_17fe03:
 	db "@"
 
 String_17fe4b:
-	db "L'appel à pris fin"
+	db   "L'appel à pris fin"
 	next "suite à une"
 	next "inactivité."
 	db "@"
 
 String_17fe63:
-	db "Votre ami(e)"
+	db   "Votre ami(e)"
 	next "utilise un Adapta-"
 	next "teur Mobile"
 	next "différent. Verifiez"
@@ -628,7 +628,7 @@ String_17fe63:
 	db "@"
 
 String_17fe9a: ; unused
-	db "L'INFO #MON'"
+	db   "L'INFO #MON'"
 	next "a été mise à jour."
 	next "Téléchargez les"
 	next "dernières INFOS"
