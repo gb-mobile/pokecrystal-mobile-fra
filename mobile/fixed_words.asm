@@ -1262,7 +1262,7 @@ EZChat_SortMenuBackground:
 	ret
 
 EZChatString_Stop_Mode_Cancel:
-	db " EFF 　MODE　　RET@";"けす　　　　モード　　　やめる@"
+	db " EFF 　MODE　　 RET@";"けす　　　　モード　　　やめる@"
 
 EZChatDraw_WordSubmenu: ; Opens/Draws Word Submenu
 	call EZChat_ClearBottom12Rows
