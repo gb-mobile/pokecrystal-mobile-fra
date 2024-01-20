@@ -2138,11 +2138,11 @@ EZChatMenu_EraseSubmenu: ; Erase submenu controls
 Function11ca01: ; Erase Yes/No Menu (?)
 	hlcoord 14, 7, wAttrmap
 	ld de, $14
-	ld a, $6
+	ld a, $5
 	ld c, a
 .asm_11ca0a
 	push hl
-	ld a, $5
+	ld a, $6
 	ld b, a
 	ld a, $7
 .asm_11ca10
