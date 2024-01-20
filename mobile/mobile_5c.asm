@@ -776,9 +776,9 @@ INCBIN "gfx/pokedex/slowpoke_mobile.2bpp.lz"
 String_172e31:
 	db " MOT DE PASSE@";"パスワード<WO>いれてください@"
 String_172e3f:
-	db "CHANG  RET  OK @";"きりかえ　やめる　　けってい@"
+	db " ECH  RET  OK @";"きりかえ　やめる　　けってい@"
 String_172e4e:
-	db "CHANG  RET  OK @";"きりかえ　やめる　　"
+	db " ECH  RET  OK @";"きりかえ　やめる　　"
 String_172e58:
 	db "OK@";"けってい@"
 String_172e5d:
