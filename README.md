@@ -44,10 +44,12 @@ https://github.com/gb-mobile/pokecrystal-mobile-en/wiki/Pok%C3%A9mon-Crystal-Mob
 
 - Pret           : Initial disassembly
 - Matze          : Mobile Restoration & Japanese Code Disassembly
+- Engezerstorung : Mobile French Translation
+- FrenchOrange   : Mobile French Translation
+- Wit            : Mobile French Translation
 - Damien         : Code
 - DS             : GFX & Code
 - Ryuzac         : Code & Japanese Translation
-- Wit            : Mobile French Translation
 - qwilvove       : FR disassembly reference https://github.com/Guigui1993/pokecrystal-fr
 - Guigui1993     : FR disassembly reference https://github.com/Guigui1993/pokecrystal-fr
 - Zumilsawhat?   : Code (Large amounts of work on the EZ Chat system)
