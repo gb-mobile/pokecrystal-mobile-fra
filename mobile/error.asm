@@ -409,7 +409,8 @@ Unknown_17f844: db 19
 	dbbw $ff, $ff, String_17fa49
 
 String_17f891: ; 18 max!
-	db   "L'Adaptateur Mobile"
+	db "L'Adaptateur"
+	next "Mobile"
 	next "n'est pas connecté"
 	next "correctement."
 	next "Vérifiez le manuel"
@@ -476,12 +477,12 @@ String_17fa49:
 	db "@"
 
 String_17fa71:
-	db   "L'Adaptateur Mobile"
-	next "n'est pas configuré"
-	next "correctement."
+	db "L'Adaptateur Mobi-"
+	next "le n'est pas confi-"
+	next "guré correctement."
 	next "S.V.P. enregistrez"
-	next "vos infos dans"
-	next "le Trainer Mobile."
+	next "vos infos dans le"
+	next "Trainer Mobile."
 	db "@"
 
 String_17fab0:
