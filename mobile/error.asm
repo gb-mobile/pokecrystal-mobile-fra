@@ -469,8 +469,8 @@ String_17fa14:
 	db "@"
 
 String_17fa49:
-	db   "Erreur de"
-	next "connection au"
+	db "Erreur de"
+	next "connexion au"
 	next "Centre Mobile."
 	next "Réessayer"
 	next "plus tard S.V.P."
@@ -481,8 +481,8 @@ String_17fa71:
 	next "le n'est pas confi-"
 	next "guré correctement."
 	next "S.V.P. enregistrez"
-	next "vos infos dans le"
-	next "Trainer Mobile."
+	next "vos infos dans"
+	next "le Trainer Mobile."
 	db "@"
 
 String_17fab0:
@@ -495,9 +495,9 @@ String_17fab0:
 	db "@" 
 
 String_17faf9:
-	db   "L'adresse email"
+	db "L'adresse email"
 	next "est incorrecte."
-	next "Re-entrez"
+	next "Ré-entrez"
 	next "l'adresse email"
 	next "S.V.P."
 	db "@"
@@ -629,12 +629,12 @@ String_17fe63:
 	db "@"
 
 String_17fe9a: ; unused
-	db   "L'INFO #MON'"
+	db "L'INFO #MON'"
 	next "a été mise à jour."
 	next "Téléchargez les"
 	next "dernières INFOS"
-	next "avant de MàJ"
-	next "le classement."
+	next "avant de mettre"
+	next "à jour l'Eval."
 	db "@"
 
 String_17fedf:
