@@ -505,17 +505,17 @@ Function17d246:
 
 MenuHeader_17d26a:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 14, 9
+	menu_coords 0, 0, 19, 9
 	dw MenuData_17d272
 	db 1 ; default option
 
 MenuData_17d272:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 4
-	db "Recevoir les Infos@"
+	db "Charger les Infos@"
 	db "Voir les Infos@"
 	db "Règles@"
-	db "Retour@"
+	db "Annuler@"
 
 MenuHeader_ChallengeExplanationCancel:
 	db MENU_BACKUP_TILES ; flags
@@ -527,7 +527,7 @@ MenuData_ChallengeExplanationCancel:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 4
 	db "Challenge@"
-	db "Tables de l'Honneur@"
+	db "Tables d'Honneur@"
 	db "Règles@"
 	db "Annuler@"
 
@@ -541,7 +541,7 @@ MenuData_ChallengeRegisterExplanationCancel:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 5
 	db "Challenge@"
-	db "Tables de l'Honneur@"
+	db "Tables d'Honneur@"
 	db "Salle précédente@"
 	db "Règles@"
 	db "Annuler@"
