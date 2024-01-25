@@ -5982,8 +5982,8 @@ Text_SaveFileWillBeSent:
 	done
 
 Text_SentSaveFileReadingNews:
-	text "Envoyée."
-	line "Lecture des INFOS…"
+	text "SAUVEGARDE reçue."
+	line "Envoi des INFOS…"
 	done
 
 Text_ReadingNews:
@@ -5991,11 +5991,11 @@ Text_ReadingNews:
 	done
 
 Text_ReceivedNews:
-	text "Reçu les INFOS!"
+	text "INFOS reçues!"
 	done
 
 Text_QuitReadingNews:
-	text "Arrêter de lire"
+	text "Ne plus lire"
 	line "les INFOS?"
 	done
 

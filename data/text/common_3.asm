@@ -79,16 +79,16 @@ _LinkAskTradeForText::
 _MobileBattleMustPickThreeMonText::
 	text "Un combat mobile,"
 	line "requiert que votre"
-	
+
 	para "équipe ne comporte"
 	line "que trois #MON."
-	
-	para "Vous comprenez?"
+
+	para "Est-ce OK?"
 	done
 
 _MobileBattleMoreInfoText::
-	text "Vous voulez tout"
-	line "savoir sur les"
+	text "Besoin de plus"
+	line "d'infos sur les"
 	cont "combats mobile?"
 	done
 
@@ -97,25 +97,27 @@ _MobileBattleRulesText::
 	line "mobile, choisissez"
 	cont "trois #MON."
 
-	para "Dix minutes sont"
-	line "réservées par jour"
-	cont "pour vous battre."
+	para "Le temps maximal"
+	line "de jeu journalier"
+
+	para "est de 10 minutes"
+	line "pour chaque joueur"
+	cont "connecté."
 
 	para "Si un combat n'est"
-	line "pas terminé avant"
+	line "pas finis dans la"
 
-	para "que cette limite"
-	line "soit atteinte,"
+	para "limite de temps,"
+	line "le joueur avec"
 
-	para "alors celui avec"
-	line "le moins de #-"
-	cont "MON K.O. gagnera."
+	para "le moins de #-"
+	line "MON K.O. gagnera."
 
 	para "Si un match est"
-	line "nul, celui qui a"
+	line "nul, l'équipe qui"
 
-	para "perdu le moins de"
-	line "PV gagnera."
+	para "a perdu le moins"
+	line "de PV gagnera."
 	done
 
 _WouldYouLikeToMobileBattleText::
@@ -147,11 +149,11 @@ _WantToRushThroughAMobileBattleText::
 	done
 
 _PleaseTryAgainTomorrowText::
-	text "Il ne reste pas 1"
-	line "min. aujourd'hui!"
+	text "Il reste moins de"
+	line "1 min. aujourd'hui."
 
 	para "Réessayez demain"
-	line "s.v.p."
+	line "S.V.P."
 	done
 
 _TryAgainUsingSameSettingsText::
@@ -774,35 +776,34 @@ _MobileOnlyThreeMonMayEnterText::
 	prompt
 
 _MobileCardFolderIntro1Text::
-	text "Le FICHIER CARTE"
-	line "est là où vous"
-	
-	cont "rangez votre CARTE"
-	
-	para "et celles de vos"
-	line "amis. Une CARTE"
-	
-	para "vous informe sur"
-	line "le nom, le numéro"
-	
-	para "de téléphone, et"
-	line "le profile d'une"
-	cont "personne."
+	text "le FICHIER CARTE"
+	line "contient votre"
+
+	para "CARTE et celles"
+	line "de vos amis."
+
+	para "Une CARTE contient"
+	line "des informations"
+
+	para "comme le nom, le"
+	line "numéro de mobile"
+	cont "et le profile"
+	cont "d'une personne."
 
 	para ""
 	done
 
 _MobileCardFolderIntro2Text::
 	text "Voici votre CARTE."
-	line "Après avoir ajouté"
-	
-	para "votre numéro de"
-	line "téléphone, vous"
-	
-	para "pouvez échanger"
-	line "votre CARTE avec"
-	cont "vos amis."
-	
+
+	para "Une fois votre"
+	line "numéro de mobile"
+
+	para "ajouté, vous pour-"
+	line "rez échanger votre"
+	cont "CARTE avec vos"
+	cont "amis."
+
 	para ""
 	done
 
