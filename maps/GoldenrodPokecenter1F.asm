@@ -835,36 +835,38 @@ GoldenrodPokecomCenterWhatToDoText:
 	done
 
 GoldenrodPokecomCenterNewsMachineExplanationText:
-	text "Les INFOS #MON"
+	text "Les INFOS POKéMON"
 	line "proviennent des"
 
 	para "SAUVEGARDES des"
-	line "dresseurs #MON."
+	line "dresseurs POKéMON."
 
-	para "Votre SAVEGARDE à"
-	line "vous peut être"
+	para "Lors de la lecture"
+	line "des INFOS, votre"
 
-	para "envoyée si vous"
-	line "le souhaitez."
+	para "SAUVEGARDE pourra"
+	line "être envoyée si"
+	cont "vous le souhaitez."
 
 	para "Votre SAUVEGARDE"
-	line "contient le récit"
+	line "contiendra le"
 
-	para "de vos aventures,"
-	line "ainsi que votre"
-	cont "profil mobile."
+	para "récit de vos"
+	line "aventures et votre"
+	cont "profile mobile."
 
 	para "Votre numéro de"
-	line "portable ne sera"
+	line "mobile ne sera pas"
+	cont "communiqué."
 
-	para "pas rendu public."
-	line "Le contenu des"
+	para "Le contenu des"
+	line "INFOS dépendra des"
 
-	para "INFOS dépends de"
-	line "vos SAUVEGARDES et"
+	para "SAUVEGARDES que"
+	line "vous et les autres"
 
-	para "de celles de vos"
-	line "amis dresseurs."
+	para "dresseurs #MON"
+	line "enverrez."
 
 	para "Vous pourriez même"
 	line "passer aux INFOS!"
