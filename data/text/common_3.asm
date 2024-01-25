@@ -153,7 +153,7 @@ _PleaseTryAgainTomorrowText::
 	line "1 min. aujourd'hui."
 
 	para "Réessayez demain"
-	line "S.V.P."
+	line "s.v.p."
 	done
 
 _TryAgainUsingSameSettingsText::

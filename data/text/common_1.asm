@@ -1265,13 +1265,13 @@ _ClosingLinkText::
 	done
 
 _ClearTimeLimitText:: ; unreferenced
-	text "Retirer la limite"
-	line "de temps?"
+	text "Rafraichir la"
+	next "limite de temps?"
 	done
 
 _TimeLimitWasClearedText:: ; unreferenced
-	text "Limite de temps"
-	line "retirée."
+	text "La limite de temps"
+	next "a été rafraichie."
 	done
 
 _PickErrorPacketText:: ; unreferenced

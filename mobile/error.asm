@@ -253,7 +253,7 @@ String_17f6dc:
 String_17f6e8:
 	db "Erreur inconnue."
 	next "Vérifiez le"
-	next "programme S.V.P."
+	next "programme s.v.p."
 	db "@"
 
 Table_17f706:
@@ -414,7 +414,7 @@ String_17f891: ; 18 max!
 	next "n'est pas connecté"
 	next "correctement."
 	next "Vérifiez le manuel"
-	next "S.V.P."
+	next "s.v.p."
 	db "@"
 
 String_17f8d1:
@@ -422,7 +422,7 @@ String_17f8d1:
 	next "car la ligne"
 	next "est occupée."
 	next "Réessayez plus"
-	next "tard S.V.P."
+	next "tard s.v.p."
 	db "@"
 
 String_17f913:
@@ -430,13 +430,13 @@ String_17f913:
 	next "à cause d'un grand"
 	next "volume d'appels."
 	next "Réessayez plus"
-	next "tard S.V.P."
+	next "tard s.v.p."
 	db "@"
 
 String_17f946:
 	db   "Erreur d'Adaptateur"
 	next "Mobile."
-	next "Réessayez S.V.P."
+	next "Réessayez s.v.p."
 	next "Si le problème"
 	next "persiste, contact-"
 	next "ez le support."
@@ -445,7 +445,7 @@ String_17f946:
 String_17f98e:
 	db   "Erreur de"
 	next "communication."
-	next "Réessayez S.V.P."
+	next "Réessayez s.v.p."
 	next "Si le problème"
 	next "persiste, contact-"
 	next "ez le support."
@@ -457,7 +457,7 @@ String_17f9d0:
 	next "invalide."
 	next "Confirmez vos"
 	next "informations et"
-	next "réessayez S.V.P."
+	next "réessayez s.v.p."
 	db "@"
 
 String_17fa14:
@@ -465,7 +465,7 @@ String_17fa14:
 	next "déconnecté."
 	next "Vérifiez le manuel"
 	next "et réessayez"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 
 String_17fa49:
@@ -473,14 +473,14 @@ String_17fa49:
 	next "connexion au"
 	next "Centre Mobile."
 	next "Réessayer"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 
 String_17fa71:
 	db "L'Adaptateur Mobi-"
 	next "le n'est pas confi-"
 	next "guré correctement."
-	next "S.V.P. enregistrez"
+	next "s.v.p. enregistrez"
 	next "vos infos dans"
 	next "le Trainer Mobile."
 	db "@"
@@ -491,7 +491,7 @@ String_17fab0:
 	next "Vérifiez le manuel"
 	next "et essayez de"
 	next "réappeler"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@" 
 
 String_17faf9:
@@ -499,7 +499,7 @@ String_17faf9:
 	next "est incorrecte."
 	next "Ré-entrez"
 	next "l'adresse email"
-	next "S.V.P."
+	next "s.v.p."
 	db "@"
 
 String_17fb2a:
@@ -517,13 +517,13 @@ String_17fb6e:
 	next "erreur Centre" 
 	next "Mobile."
 	next "Réessayez"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 
 String_17fbb6:
 	db   "Incapable de"
 	next "lire les données."
-	next "Réessayez S.V.P."
+	next "Réessayez s.v.p."
 	next "Si le problème"
 	next "persiste, contact-"
 	next "ez le support."
@@ -535,7 +535,7 @@ String_17fbfe:
 	next "fin."
 	next "Vérifiez le manuel"
 	next "et réessayez"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 
 String_17fc3e:
@@ -544,7 +544,7 @@ String_17fc3e:
 	next "raison d'un défaut"
 	next "de paiement."
 	next "Verifiez le manuel"
-	next "S.V.P."
+	next "s.v.p."
 	db "@"
 
 String_17fc88:
@@ -552,7 +552,7 @@ String_17fc88:
 	next "innaccessible pour"
 	next "le moment."
 	next "Verifiez le manuel"
-	next "S.V.P."
+	next "s.v.p."
 	db "@"
 
 String_17fcbf:
@@ -561,7 +561,7 @@ String_17fcbf:
 	next "téléphone ou le"
 	next "Centre Mobile."
 	next "Réessayez"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 	
 String_17fcff:
@@ -570,7 +570,7 @@ String_17fcff:
 	next "mensuelle."
 	next "Verifiez le manuel"
 	next "pour plus de"
-	next "détails S.V.P."
+	next "détails s.v.p."
 	db "@"
 	
 String_17fd47:
@@ -578,7 +578,7 @@ String_17fd47:
 	next "est en cours"
 	next "de maintenance."
 	next "Réessayez"
-	next "plus tard S.V.P."
+	next "plus tard s.v.p."
 	db "@"
 	
 String_17fd84:
@@ -586,7 +586,7 @@ String_17fd84:
 	next "lire les données."
 	next "Vérifiez le manuel"
 	next "pour plus de"
-	next "détails S.V.P."
+	next "détails s.v.p."
 	db "@"
 
 String_17fdb2:
@@ -601,13 +601,13 @@ String_17fdd9:
 	db   "Communication"
 	next "échouée."
 	next "Recommencez et"
-	next "réessayez S.V.P."
+	next "réessayez s.v.p."
 	db "@"
 
 String_17fe03:
 	db   "Incapable de"
 	next "lire les données."
-	next "Réessayez S.V.P."
+	next "Réessayez s.v.p."
 	next "Si le problème"
 	next "persiste, contact-"
 	next "ez le support."
@@ -642,7 +642,7 @@ String_17fedf:
 	db "ou numéro"
 	db "incorrect."
 	db "Réessayez"
-	db "plus tard S.V.P."
+	db "plus tard s.v.p."
 	db "@"
 
 Function17ff23:

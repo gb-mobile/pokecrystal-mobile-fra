@@ -880,7 +880,7 @@ GoldenrodPokecomCenterWouldYouLikeTheNewsText:
 GoldenrodPokecomCenterReadingTheLatestNewsText:
 	text "Chargement des"
 	line "dernières INFOS."
-	cont "Attendre s.v.p."
+	cont "Attendez S.V.P."
 	done
 
 GoldenrodPokecomCenterNoOldNewsText:
@@ -899,9 +899,9 @@ GoldenrodPokecomCenterCorruptedNewsDataText:
 GoldenrodPokecomCenterMakingPreparationsText:
 	text "Des réglages sont"
 	line "encore en cours."
-	
-	para "Veuillez revenir"
-	line "plus tard."
+
+	para "Revenez plus tard"
+	line "S.V.P."
 	done
 
 GoldenrodPokecomCenterSaveBeforeNewsMachineText:
