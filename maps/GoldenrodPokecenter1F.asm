@@ -835,11 +835,11 @@ GoldenrodPokecomCenterWhatToDoText:
 	done
 
 GoldenrodPokecomCenterNewsMachineExplanationText:
-	text "Les INFOS POKéMON"
+	text "Les INFOS #MON"
 	line "proviennent des"
 
 	para "SAUVEGARDES des"
-	line "dresseurs POKéMON."
+	line "dresseurs #MON."
 
 	para "Lors de la lecture"
 	line "des INFOS, votre"
@@ -880,7 +880,7 @@ GoldenrodPokecomCenterWouldYouLikeTheNewsText:
 GoldenrodPokecomCenterReadingTheLatestNewsText:
 	text "Chargement des"
 	line "dernières INFOS."
-	cont "Attendez S.V.P."
+	cont "Attendez s.v.p."
 	done
 
 GoldenrodPokecomCenterNoOldNewsText:
@@ -891,9 +891,10 @@ GoldenrodPokecomCenterNoOldNewsText:
 GoldenrodPokecomCenterCorruptedNewsDataText:
 	text "Les données INFOS"
 	line "sont corrompues."
-	
+
 	para "Téléchargez les"
-	line "INFOS à nouveau."
+	line "INFOS à nouveau"
+	cont "s.v.p."
 	done
 
 GoldenrodPokecomCenterMakingPreparationsText:
@@ -901,7 +902,7 @@ GoldenrodPokecomCenterMakingPreparationsText:
 	line "encore en cours."
 
 	para "Revenez plus tard"
-	line "S.V.P."
+	line "s.v.p."
 	done
 
 GoldenrodPokecomCenterSaveBeforeNewsMachineText:

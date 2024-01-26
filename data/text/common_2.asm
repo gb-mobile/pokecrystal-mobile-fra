@@ -1396,15 +1396,17 @@ _TrainerRankingExplanationText:: ; unreferenced
 	done
 
 _TrainerRankingNoDataText:: ; unreferenced
-	text "Aucune donnée de"
-	line "classement."
+	text "Il n'y a aucune"
+	line "données de"
+	cont "classement."
+
 	para "Connectez-vous"
-	line "pour obtenir les."
-	
-	para "données de"
-	line "classement."
+	line "pour obtenir"
+	cont "les données de"
+	cont "classement."
 
 	para ""
+	line ""
 	done
 
 _MemoryGameYeahText::

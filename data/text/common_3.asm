@@ -105,7 +105,7 @@ _MobileBattleRulesText::
 	cont "connecté."
 
 	para "Si un combat n'est"
-	line "pas finis dans la"
+	line "pas fini dans la"
 
 	para "limite de temps,"
 	line "le joueur avec"
@@ -167,8 +167,8 @@ _MobileBattleLessThanOneMinuteLeftText::
 	done
 
 _MobileBattleNoTimeLeftForLinkingText::
-	text "Pas de temps rest-"
-	line "ant pour un lien."
+	text "Plus assez de"
+	line "temps pour une co."
 	done
 
 _PickThreeMonForMobileBattleText::
@@ -864,11 +864,10 @@ _MobileCardFolderAskOpenOldText::
 	text "Le FICHIER CARTE"
 	line "de votre dernière"
 	cont "aventure existe"
-	
-	para "toujours."
-	line "Souhaitez-vous"
-	
-	para "l'ouvrir?"
+	cont "toujours."
+
+	para "Souhaitez-vous"
+	line "l'ouvrir?"
 	done
 
 _MobileCardFolderAskDeleteOldText::

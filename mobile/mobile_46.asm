@@ -5995,7 +5995,7 @@ Text_ReceivedNews:
 	done
 
 Text_QuitReadingNews:
-	text "Ne plus lire"
+	text "Arrêter de lire"
 	line "les INFOS?"
 	done
 
