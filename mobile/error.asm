@@ -629,10 +629,10 @@ String_17fe63:
 	db "@"
 
 String_17fe9a: ; unused
-	db   "NEWS #MON'"
-	next "mises à jour."
+	db   "L'INFOS #MON"
+	next "à été mise à jour."
 	next "Téléchargez les"
-	next "dernières NEWS"
+	next "dernières INFOS"
 	next "avant de MàJ"
 	next "le classement."
 	db "@"
