@@ -2304,7 +2304,7 @@ EZChatMenu_ExitSubmenu: ; Exit Message menu
 
 EZChatString_ExitPrompt: ; Exit menu string
 	db   "Voulez-vous arrê-";"あいさつ<NO>とうろく¯ちゅうし"
-	next "ter de régler?@";"しますか？@"
+	next "ter de régler?  @";"しますか？@"
 
 EZChatString_ExitConfirmation: ; Exit menu confirmation string
 	db   "Quitter sans sau-";"とうろくちゅう<NO>あいさつ<WA>ほぞん"
