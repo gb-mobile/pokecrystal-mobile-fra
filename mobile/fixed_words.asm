@@ -2785,7 +2785,7 @@ EZChatMenu_SortByCharacter: ; Sort By Character Menu Controls
 ; W
 	db EZCHAT_SORTED_N,    EZCHAT_SORTED_X,      EZCHAT_SORTED_MODE,   EZCHAT_SORTED_V
 ; X
-	db EZCHAT_SORTED_O,    EZCHAT_SORTED_Y,      EZCHAT_SORTED_CANCEL, EZCHAT_SORTED_W
+	db EZCHAT_SORTED_O,    EZCHAT_SORTED_Y,      EZCHAT_SORTED_MODE, EZCHAT_SORTED_W
 ; Y
 	db EZCHAT_SORTED_P,    EZCHAT_SORTED_Z,      EZCHAT_SORTED_CANCEL, EZCHAT_SORTED_X
 ; Z
@@ -2806,7 +2806,7 @@ EZChatScript_SortByCharacterTable:
 	db   "A B C D E F G H I"
 	next "J K L M N O P Q R"
 	next "S T U V W X Y Z"
-	next "!? <PK><MN>"
+	next "autre <PK><MN>"
 	db   "@"
 
 EZChat_IncreaseJumptable:
@@ -3342,7 +3342,7 @@ AnimateEZChatCursor: ; EZChat cursor drawing code, extends all the way down to r
 	dbpixel 14, 13 ; Y
 	dbpixel 16, 13 ; Z
 	dbpixel  2, 15 ; ETC.
-	dbpixel  5, 15 ; PKMN
+	dbpixel  8, 15 ; PKMN
 	dbpixel  1, 18, 5, 2 ; ERASE
 	dbpixel  7, 18, 5, 2 ; MODE
 	dbpixel 13, 18, 5, 2 ; CANCEL
@@ -3400,7 +3400,7 @@ AnimateEZChatCursor: ; EZChat cursor drawing code, extends all the way down to r
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_3 ; 17 (Letter selection box for the sort by menu)
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_3 ; 18 (Letter selection box for the sort by menu)
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_3 ; 19 (Letter selection box for the sort by menu)
-	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_4 ; 1a (Misc selection box for the sort by menu)
+	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_10 ; 1a (Misc selection box for the sort by menu)
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_4 ; 1b (Pkmn selection box for the sort by menu)
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_1 ; 1c (Bottom Menu Selection box?)
 	db SPRITE_ANIM_FRAMESET_EZCHAT_CURSOR_1 ; 1d (Bottom Menu Selection box?)
