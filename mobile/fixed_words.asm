@@ -2806,7 +2806,7 @@ EZChatScript_SortByCharacterTable:
 	db   "A B C D E F G H I"
 	next "J K L M N O P Q R"
 	next "S T U V W X Y Z"
-	next "autre <PK><MN>"
+	next "autres"
 	db   "@"
 
 EZChat_IncreaseJumptable:
