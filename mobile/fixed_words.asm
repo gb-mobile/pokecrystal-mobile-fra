@@ -3100,7 +3100,7 @@ PrepareEZChatCustomBox:
 	ld a, 8
 	call nz, .line_loop
 	pop bc
-	sub a, 3
+	sub a, 4
 	ld [hl], a
 	ld a, c
 	and a
