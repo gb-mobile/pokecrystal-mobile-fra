@@ -5652,7 +5652,7 @@ Function11a63c:
 	ret
 
 String_11a661:
-	db   "Appelation au"
+	db   "Appel du"
 	next "CENTRE MOBILE…@"
 
 String_11a679:
@@ -5660,12 +5660,12 @@ String_11a679:
 	next "est-il prêt?@"
 
 String_11a692:
-	db   "Un moment,"
-	next "s.v.p.…@"
+	text "Patientez un"
+	line "instant s.v.p…"
 
 String_11a6aa:
-	db   "Frais"
-	next "s'applique.@"
+	db   "Des frais"
+	next "s'appliqueront.@"
 
 String_11a6c8:
 	db   "Connecté.@";"せつぞく　しました@"
@@ -5689,24 +5689,24 @@ String_11a71e:
 	next "terminée.@"
 
 String_11a72a:
-	db   "DUREE APPEL";"つないだ　じかん"
+	db   "DUREE D'APPEL";"つないだ　じかん"
 	next "   min.    sec.@"
 
 String_11a743:
-    db   "Il n'y a aucunes";"もっていない　データが"
-    next "données!@";"あります！@"
+	db   "Aucunes"
+	next "données!@"
 	
 String_11a755:
-    db   "Lire les données?@";"データ<WO>よみこみますか？@"
-    ;next "data?@"
+	db   "Lire les@"
+	next "données?@"
 	
 String_11a762:
     db   "Lu les mêmes";"おなじ　データ<WO>よみこんだ"
     next "données.@";"こと<GA>ありますが@"
 	
 String_11a779:
-    db   "Les données sont";"そのデータ<WA>なくなっているか"
-    next "corrompues.@";"こわれて　います@"
+	db   "Données"
+	next "corrompues.@"
 	
 String_11a791:
     db   "Ces données";"もっている　データと"
@@ -5717,8 +5717,8 @@ String_11a7ac:
     next "les données?@";"ちゅうし しますか？""
 
 String_11a7c1:
-	db   "Il n'y avait"
-	next "plus des INFOS.@"
+        db   "Pas plus"
+        next "d'INFOS.@"
 
 String_11a7d7:
 	db   "Recevoir les"
@@ -6000,8 +6000,8 @@ Text_QuitReadingNews:
 	done
 
 Text_CanceledSendingSaveFile: ; unreferenced
-	text "Annulé d'envoyer"
-	line "la SAUVEGARDE."
+	text "Annulation d'envoi"
+	line "de la SAUVEGARDE."
 	done
 
 Text_ReceivedOddEgg: ; unreferenced
@@ -6056,8 +6056,8 @@ Text_WhatLevelDoYouWantToChallenge:
 	done
 
 Text_CheckBattleRoomListByMaxLevel:
-	text "Voir la liste des"
-	line "SALLES de COMBAT?"
+	text "SALLES DE COMBAT"
+	line "par niveau max."
 	done
 
 Text_EnterWhichBattleRoom: ; unreferenced
@@ -6306,7 +6306,7 @@ MenuHeader_11ae38:
 String_11ae40:
 	db   "PEU IMPORTE"
 	next "♂MALE" ; male
-	next "♀FEMEL." ; female
+	next "♀FEMELLE" ; female
 	db   "@"
 
 Function11ae4e:

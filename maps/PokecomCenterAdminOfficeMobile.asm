@@ -132,7 +132,7 @@ PokecomCenterAdminOfficeMobileScientist2Text:
 	done
 
 PokecomCenterAdminOfficeMobileScientist3Text:
-	text "Cette facilité a"
+	text "Ce bâtiment a"
 	line "pu voir le jour"
 
 	para "grâce aux avancées"
@@ -141,12 +141,12 @@ PokecomCenterAdminOfficeMobileScientist3Text:
 	done
 
 PokecomCenterAdminOfficeMobileComputer1Text:
-	text "Adaptateurs mobile"
-	line "et comment bien"
+    text "ADAPTATEUR MOBILE"
+    line "et comment bien"
 
-	para "s'en servir. Un"
-	line "guide pratique…"
-	done
+    para "s'en servir. Un"
+    line "guide pratique…"
+    done
 
 PokecomCenterAdminOfficeMobileComputer1Text_PokeComClub:
 	text "Un CLUB #COM se"
@@ -214,30 +214,30 @@ PokecomCenterAdminOfficeMobileComputer2Text_UsePhone:
 	done
 
 PokecomCenterAdminOfficeMobileComputer2Text_DontUsePhone:
-	text "Si le serveur est"
-	line "surchargé, il est"
+    text "Si le serveur est"
+    line "surchargé, il est"
 
-	para "possible que vous"
-	line "ne puissiez pas"
-	cont "vous connecter."	
+    para "possible que vous"
+    line "ne puissiez pas"
+    cont "vous connecter."        
 
-	para "Si cela arrive,"
-	line "tenez de rappeler"
-	cont "plus tard."	
+    para "Si cela arrive,"
+    line "tentez de rappeler"
+    cont "plus tard."        
 
-	para "S'il vous est"
-	line "impossible de vous"
+    para "S'il vous est"
+    line "impossible de vous"
 
-	para "connecter, ou si"
-	line "vous ne comprenez"
+    para "connecter, ou si"
+    line "vous ne comprenez"
 
-	para "pas les messages"
-	line "d'erreur, relisez"
-	
-	para "la manuel, ou"
-	line "appelez un centre"
-	cont "de support."
-	done
+    para "pas les messages"
+    line "d'erreur, relisez"
+    
+    para "la manuel, ou"
+    line "appelez un centre"
+    cont "de support."
+    done
 
 PokecomCenterAdminOfficeMobileComputer3Text:
 	text "L'ADMINISTRATION a"

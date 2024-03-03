@@ -1012,18 +1012,20 @@ Text_LikeTheLook:
 Text_BrokeStadiumRules:
 	text "Excusez-moi!"
 
-	para "Pour les règles"
-	line "STADE, prenez six"
+	para "Selon les règles"
+	line "STADE, veuillez"
 
-	para "#MON différents,"
-	line "sauf les OEUFs."
+	para "emmener six #-"
+	line "MON différents,"
+	cont "excluant les"
+	cont "les OEUFs."
 
 	para "Les #MON doivent"
 	line "être différents."
 
 	para "De plus, ils ne"
-	line "peuvent pas porter"
-	cont "les mêmes objets."
+	line "peuvent tenir d'"
+	cont "objets identiques."
 
 	para "Revenez quand vous"
 	line "êtes prêt(e)."

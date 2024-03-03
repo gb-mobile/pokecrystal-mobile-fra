@@ -77,11 +77,12 @@ _LinkAskTradeForText::
 	done
 
 _MobileBattleMustPickThreeMonText::
-	text "Un combat mobile,"
-	line "requiert que votre"
+	text "Pour lancer un"
+	line "combat mobile,"
 
-	para "équipe ne comporte"
-	line "que trois #MON."
+	para "vous devez choisir"
+	line "une équipe de"
+	cont "trois #MON."
 
 	para "Est-ce OK?"
 	done
@@ -149,12 +150,12 @@ _WantToRushThroughAMobileBattleText::
 	done
 
 _PleaseTryAgainTomorrowText::
-	text "Il reste moins de"
-	line "1 min. aujourd'hui."
+    text "Il reste moins de"
+    line "1 min. aujourd'hui!"
 
-	para "Réessayez demain"
-	line "s.v.p."
-	done
+    para "Réessayez demain"
+    line "s.v.p."
+    done
 
 _TryAgainUsingSameSettingsText::
 	text "Réessayer avec les"
@@ -162,13 +163,13 @@ _TryAgainUsingSameSettingsText::
 	done
 
 _MobileBattleLessThanOneMinuteLeftText::
-	text "Il ne reste pas 1"
-	line "min. aujourd'hui!"
+	text "Il reste moins de"
+	line "1 min. aujourd'hui!"
 	done
 
 _MobileBattleNoTimeLeftForLinkingText::
-	text "Plus assez de"
-	line "temps pour une co."
+	text "Plus de temps res-"
+	line "tant pour une co."
 	done
 
 _PickThreeMonForMobileBattleText::
@@ -713,13 +714,15 @@ _SlotsDarnText::
 	done
 
 _MobileStadiumEntryText::
-	text "Ici, les données"
-	line "du STADE MOBILE"
-	
-	para "sont envoyées vers"
-	line "le jeu Nintendo 64"
-	cont "#MON STADIUM 2."
-	
+	text "Vous pouvez lire"
+	line "ici les données"
+
+	para "utilisées par le"
+	line "STADE MOBILE du"
+
+	para "jeu NINTENDO 64"
+	line "#MON STADIUM."
+
 	para "Lire les données?"
 	done
 
@@ -808,17 +811,18 @@ _MobileCardFolderIntro2Text::
 	done
 
 _MobileCardFolderIntro3Text::
-	text "Avec la CARTE d'un"
-	line "de vos amis, vous"
-	
-	para "pouvez les appeler"
-	line "via votre portable"
-	
-	para "depuis le premier"
-	line "étage de tous les"
-	
-	cont "CENTRES #MON."
-	
+	text "Si vous possedez"
+	line "la CARTE d'un(e)"
+
+	para "ami(e), vous pou-"
+	line "vez les appeler"
+
+	para "via votre mobile"
+	line "depuis le premier"
+
+	para "étage de tous les"
+	line "CENTRES #MON."
+
 	para ""
 	done
 

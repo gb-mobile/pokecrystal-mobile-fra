@@ -116,8 +116,8 @@ String_0x49fe9:
 	next "des CARTES.@"
 
 String_0x4a004:
-	db   "Composer des sal-";"モバイルたいせんや　じぶんのめいしで"
-	next "uts pour CARTES.@";"つかう　あいさつ¯つくります@"
+	db   "Composer les salu-"
+	next "tations de CARTE.@"
 
 String_0x4a026:
 	db   "Changer votre âge";"あなた<NO>じゅうしょや　ねんれいの"

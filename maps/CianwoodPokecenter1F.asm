@@ -91,29 +91,31 @@ CianwoodGymGuideWinText:
 	done
 
 CianwoodPokecenter1FPreMobileText: ; unreferenced
-	text "Don't you get the"
-	line "urge to show off"
+	text "T'as jamais envie"
+	line "de frimer devant"
 
-	para "your #MON to"
-	line "friends?"
+	para "tes amis avec tes"
+	line "#MON?"
 
-	para "I wish I could"
-	line "show the #MON I"
+	para "J'adorerais mon-"
+	line "trer les #MON"
 
-	para "raised to my pal"
-	line "in VIOLET."
+	para "que j'ai élevé à"
+	line "mon pote de" 
+	cont "MAUVILLE."
 	done
 
 CianwoodPokecenter1FMobileText: ; unreferenced
-	text "I've been battling"
-	line "my pal in VIOLET"
+	text "J'ai combattu mon"
+	line "pote de MAUVILLE"
 
-	para "using a MOBILE"
-	line "ADAPTER link."
+	para "en me connectant"
+	line "avec l'ADAPTATEUR"
+	cont "MOBILE."
 
-	para "I'm down 5-7"
-	line "against him. I've"
-	cont "gotta crank it up!"
+	para "J'perds 5-7 contre"
+	line "contre lui. Faut"
+	cont "que j'm'entraine!"
 	done
 
 CianwoodPokecenter1FSuperNerdText:

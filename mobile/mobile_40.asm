@@ -913,7 +913,7 @@ Function1005e1:
 
 MenuHeader_1005fc:
 	db MENU_BACKUP_TILES ; flags
-	db 6, 10;14
+	db 6, 9;14
 	db 10, 19
 	dw MenuData_100604
 	db 1 ; default option
@@ -922,7 +922,7 @@ MenuData_100604:
 	db STATICMENU_CURSOR | STATICMENU_NO_TOP_SPACING ; flags
 	db 2
 	db "APPELER@"		; "かける@"
-	db "ATTEND.@"		; "まつ@"
+	db "ATTENDRE@"		; "まつ@"
 
 Mobile_CommunicationStandby:
 	hlcoord 4, 10
@@ -4541,8 +4541,8 @@ String_101f14:
 	next "un(e) ami(e)!@"	; "おともだちと　つうしんします"
 
 String_101f32:
-	db   "L'appelant(e)"	; "でんわを　かけるひとには"
-	next "sera chargé(e).@"		; "つうわりょうきんが　かかります@"
+	db   "L'appelant"
+	next "sera facturé.@"
 
 String_101f4f:
 	db   "L'ADAPT. MOBILE"	; "モバイルアダプタの　じゅんびは"
@@ -4568,13 +4568,13 @@ String_101fc5:
 	db 	"Appeler ce no.?@"	; "に　でんわを　かけます@"
 
 String_101fd2:
-	db 	"Appelation…@"			; "に　でんわを　かけています@"
+	db 	"Appel…@"			; "に　でんわを　かけています@"
 
 String_101fe1:
 	db   "Appel connecté!@"	; "でんわが　つながりました!@"
 
 String_101fef:
-	db   "Raccroche…@"	; "つうわを"
+	db   "Fin de l'appel…@"	; "つうわを"
 	;next 					; "しゅうりょう　します⋯@"
 
 String_102000:
@@ -4582,7 +4582,7 @@ String_102000:
 	next "terminée.@"
 
 String_10200c:
-	db   "DUREE APPEL@"		; "つうわ　じかん@"
+	db   "DUREE D'APPEL@"		; "つうわ　じかん@"
 
 String_102014:
 	db   "Choisir les"	; "それでは　つうしんの"

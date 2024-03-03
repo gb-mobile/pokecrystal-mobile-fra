@@ -181,15 +181,15 @@ VioletPokecenterGameboyKidPreMobileText:
  
 VioletPokecenterGameboyKidMobileText:
 	text "J'ai combattu un"
-	line "ami en IRISIA"
-	cont "par téléphone."
+	line "ami d'IRISIA par"
+	cont "téléphone."
 
-	para "Si vous connectez"
+	para "Si tu connectes"
 	line "un ADAPTATEUR"
 
-	para "MOBILE, vous pouvez"
-	line "vous connecter aux"
-	cont "amis éloignés."
+	para "MOBILE, tu peux"
+	line "te connecter à"
+	cont "un ami éloigné."
 	done
 
 VioletPokecenter1FGameboyKidText: ; unreferenced

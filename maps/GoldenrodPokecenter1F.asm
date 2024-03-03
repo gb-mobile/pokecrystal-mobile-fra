@@ -583,14 +583,12 @@ GoldenrodPokecomCenterYourMonHasBeenReceivedText:
 	text "Votre #MON a"
 	line "bien été reçu."
 
-	para "Trouver quelqu'un"
-	line "qui veut échanger"
+	para "Trouver un parte-"
+	line "naire d'échange"
 
-	para "avec vous peut"
-	line "prendre du temps."
-
-	para "Revenez plus tard"
-	line "s'il vous plaît"
+	para "prendra un peu de"
+	line "temps. Revenez"
+	cont "plus tard s.v.p."
 	done
 
 GoldenrodPokecomCenterYouHaveOnlyOneMonText:
@@ -642,18 +640,19 @@ GoldenrodPokecomCenterAlreadyHoldingMonText:
 	done
 
 GoldenrodPokecomCenterCheckingTheRoomsText:
-	text "Nous vérifions que"
-	line "tout aille bien."
-	
-	para "Attendre s.v.p."
+	text "Nous vérifions"
+	line "les salles."
+
+	para "Attendez s.v.p."
 	done
 
 GoldenrodPokecomCenterTradePartnerHasBeenFoundText:
 	text "Merci de votre"
-	line "patience. Quelqu'un"
-	
-	para "veut faire un"
-	line "échange avec vous."
+	line "patience."
+
+	para "Un partenaire"
+	line "d'échange à été"  
+	cont "trouvé."
 	done
 
 GoldenrodPokecomCenterItsYourNewPartnerText:
@@ -691,25 +690,25 @@ GoldenrodPokecomCenterNoTradePartnerFoundText:
 
 GoldenrodPokecomCenterReturnedYourMonText:
 	text "Votre #MON vous"
-	line "a été remis."
+	line "a été rendu."
 	done
 
 GoldenrodPokecomCenterYourMonIsLonelyText:
-	text "Malheureusement,"
-	line "personne ne semble"
+	text "C'est malheureux,"
+	line "mais personne ne"
 
-	para "vouloir échanger"
-	line "avec vous."
+	para "semble intéressé"
+	line "par votre #MON."
 
-	para "Votre #MON est"
+	para "Il est maintenant"
 	line "avec nous depuis"
 
 	para "longtemps, et il"
-	line "se sent très seul"
-	cont "à cause de cela."
+	line "commence à se"
+	cont "sentir très seul."
 
-	para "Désolé, mais nous"
-	line "ne pouvons que"
+	para "Désolé mais nous"
+	line "nous devons de"
 	cont "vous le rendre."
 	done
 
@@ -719,9 +718,9 @@ GoldenrodPokecenter1FWeHopeToSeeYouAgainText_2:
 	done
 
 GoldenrodPokecomCenterContinueToHoldYourMonText:
-	text "Votre #MON va"
-	line "donc rester avec"
-	cont "nous. D'accord?"
+	text "Très bien. Votre"
+	line "#MON va donc"
+	cont "rester avec nous."
 	done
 
 GoldenrodPokecomCenterRecentlyLeftYourMonText:
@@ -734,9 +733,9 @@ GoldenrodPokecomCenterRecentlyLeftYourMonText:
 	done
 
 GoldenrodPokecomCenterSaveBeforeTradeCornerText:
-	text "Votre session sera"
-	line "SAUVEE avant la"
-	
+	text "Nous allons SAUVE-"
+	line "GARDER avant la"
+
 	para "connexion avec le"
 	line "CENTRE."
 	done
@@ -755,18 +754,18 @@ GoldenrodPokecomCenterTradeCanceledText:
 GoldenrodPokecomCenterEggTicketText:
 	text "Oh!"
 
-	para "Je vois que"
-	line "vous avez sur vous"
-	cont "un TICKET OEUF!"
+	para "Je vois que vous"
+	line "avez un TICKET"
+	cont "OEUF!"
 
-	para "Grâce à ce ticket,"
-	line "vous recevez un"
+	para "C'est un coupon"
+	line "que des personnes"
 
-	para "#MON méga cool"
-	line "avec lequel vous"
-	
-	para "pourrez vous taper"
-	line "la méga frime."	
+	para "spéciales peuvent"
+	line "échanger contre"
+
+	para "un #MON tout"
+	line "aussi spécial!"
 	done
 
 GoldenrodPokecomCenterOddEggBriefingText:
@@ -799,8 +798,8 @@ GoldenrodPokecomCenterOddEggBriefingText:
 	done
 
 GoldenrodPokecomCenterPleaseWaitAMomentText:
-	text "Patientez une"
-	line "seconde..."
+	text "Patientez un" 
+	line "instant s.v.p."
 	done
 
 GoldenrodPokecomCenterHereIsYourOddEggText:
@@ -878,14 +877,14 @@ GoldenrodPokecomCenterWouldYouLikeTheNewsText:
 	done
 
 GoldenrodPokecomCenterReadingTheLatestNewsText:
-	text "Chargement des"
-	line "dernières INFOS."
-	cont "Attendez s.v.p."
-	done
+    text "Chargement des"
+    line "dernières INFOS."
+    cont "Attendre s.v.p."
+    done
 
 GoldenrodPokecomCenterNoOldNewsText:
-	text "Aucunes vieilles"
-	line "INFOS..."
+	text "Il n'y a aucunes"
+	line "anciennes INFOS…"
 	done
 
 GoldenrodPokecomCenterCorruptedNewsDataText:
@@ -906,11 +905,11 @@ GoldenrodPokecomCenterMakingPreparationsText:
 	done
 
 GoldenrodPokecomCenterSaveBeforeNewsMachineText:
-	text "Nous allons SAUVER"
-	line "votre partie avant"
-	
-	para "de nous connecter"
-	line "au TERMINAL INFOS."
+	text "Nous allons SAUVE-"
+	line "GARDER la partie"
+
+	para "avant de démarrer"
+	line "le TERMINAL INFOS."
 	done
 
 GoldenrodPokecenter1FMobileOffSuperNerdText:
@@ -990,11 +989,12 @@ GoldenrodPokecenter1FMobileOnLassText2:
 	done
 
 GoldenrodPokecenter1FMobileOffYoungsterText:
-	text "Le TERMINAL INFOS?"
-	
-	para"Est-ce qu'il reçoit"
-	line "ses infos sur un"
-	cont "rayon plus large"
+	text "C'est quoi le"
+	line "TERMINAL INFOS?"
+
+	para "Est-ce qu'il reçoit"
+	line "ses infos sur une"
+	cont "zone plus large"
 	cont "que la radio?"
 	done
 
@@ -1015,13 +1015,13 @@ GoldenrodPokecenter1FMobileOffRockerText:
 	text "Les machine que"
 	line "vous voyez ne sont"
 	cont "pas encore prêtes."
-	
-	para "Mais bon, c'est"
-	line "branché par ici,"
 
-	para "il y a de quoi"
-	line "taper la discute"
-	cont "au moins."
+	para "Mais bon, c'est"
+	line "sympa d'arriver"
+
+	para "dans un endroit"
+	line "branché avant les"
+	cont "autres."
 	done
 
 GoldenrodPokecenter1FMobileOnYoungsterText:
@@ -1084,11 +1084,11 @@ GoldenrodPokecenter1FMobileOffGrampsText:
 	done
 
 GoldenrodPokecenter1FMobileOnGrampsText:
-	text "Juste voir les"
-	line "nouveaux choses"
+	text "J'me sens rajeunir"
+	line "juste en voyant"
 
-	para "ici me fait sentir"
-	line "plus jeune!"
+	para "tous ces nouveaux"
+	line "trucs ici!"
 	done
 
 GoldenrodPokecenter1FLassText:

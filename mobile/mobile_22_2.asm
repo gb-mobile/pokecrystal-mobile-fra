@@ -1022,8 +1022,8 @@ Unknown_8b903:
 
 String_8b90b: db "Choisir une CARTE.@"        ; Please select a noun.
 String_8b919: db "Déplacer où?@"    ; OK to swap with any noun?
-String_8b92a: db "Choisir un ami.@"        ; Please select an opponent.
-String_8b938: db "Le mettre où?@" ; Please select a location.
+String_8b92a: db "Choisir un(e) ami(e).@"        ; Please select an opponent.
+String_8b938: db "La mettre où?@" ; Please select a location.
 
 Mobile22_SetCardListNavigationAction:
 	ld [wd033], a
