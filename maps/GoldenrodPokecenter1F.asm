@@ -1012,7 +1012,7 @@ GoldenrodPokecenter1FMobileOffTeacherText:
 	done
 
 GoldenrodPokecenter1FMobileOffRockerText:
-	text "Les machine que"
+	text "Les machines que"
 	line "vous voyez ne sont"
 	cont "pas encore prêtes."
 
