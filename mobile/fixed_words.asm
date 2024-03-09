@@ -2499,8 +2499,8 @@ Function11cd04:
 	ret
 
 EZChatString_EnterSomeWords:
-	db 	 "Entrez un mot ou";"なにか　ことば¯いれてください@"
-	next "un phrase s.v.p.@"
+	db   "Entrez une phrase"
+	next "ou un mot s.v.p.@"
 
 EZChatDraw_SortByMenu: ; Draws/Opens Sort By Menu
 	call EZChat_ClearBottom12Rows
