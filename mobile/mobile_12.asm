@@ -211,7 +211,7 @@ Function48187:
 	bit 0, a
 	jr nz, .asm_48201
 .asm_481f8
-	hlcoord 4, 11 ; Position of 'Tell Later' after selecting
+	hlcoord 3, 11 ; Position of 'Tell Later' after selecting
 	ld de, .String_TellLater
 	call PlaceString
 .asm_48201
@@ -1099,8 +1099,8 @@ ZipCodePressed:
 	call TellNowTellLaterMenu
 	jp c, ReturnToMobileProfileMenu
 
-	hlcoord 4, 11 ; Clearing the potential "Tell Later" text.
-	lb bc, 1, 14 - ZIPCODE_LENGTH ; Determines the size of the clearing box
+	hlcoord 3, 11 ; Clearing the potential "Tell Later" text.
+	lb bc, 1, 15 - ZIPCODE_LENGTH ; Determines the size of the clearing box
 	call ClearBox
 
 	ld hl, MenuHeader_ZipCodeEditBox
@@ -1303,7 +1303,7 @@ endr
 	call ExitMenu
 	hlcoord 18 - ZIPCODE_LENGTH, 11 ; Zip Code location
 	call DisplayZipCodeRightAlign
-	hlcoord 4, 11 ; Location of a clear box to clear any excess characters if 'Tell Now' is selected, but cannot overlap the position of the zip code itself, because otherwise it will clear that too.
+	hlcoord 3, 11 ; Location of a clear box to clear any excess characters if 'Tell Now' is selected, but cannot overlap the position of the zip code itself, because otherwise it will clear that too.
 
 	ld a, 10 - ZIPCODE_LENGTH ; Determines the size of the clearing box
 	add b ; We increase the clearbox width, in case the zipcode has been shifted to the right.
@@ -1369,15 +1369,15 @@ TellNowTellLaterMenu:
 	call SetCursorParameters_Gender
 	ld a, $a
 	ld [w2DMenuCursorInitY], a
-	ld a, $3 ; Y Placement of 'Tell Now' 'Tell Later' Cursor
+	ld a, $2 ; Y Placement of 'Tell Now' 'Tell Later' Cursor
 	ld [w2DMenuCursorInitX], a
 	ld a, $1 ; X Placement of 'Later' Cursor
 	ld [wMenuCursorY], a
-	hlcoord 2, 8 ; Placement of 'Tell Now' 'Tell Later' Box
+	hlcoord 1, 8 ; Placement of 'Tell Now' 'Tell Later' Box
 	ld b, $4
-	ld c, $10
+	ld c, $11
 	call DisplayBlankGoldenBox
-	hlcoord 4, 10 ; Placement of 'Tell Now' 'Tell Later' Text
+	hlcoord 3, 10 ; Placement of 'Tell Now' 'Tell Later' Text
 	ld de, TellNowLaterStrings
 	call PlaceString
 	call StaticMenuJoypad ; Waits for a user input from the input filter.
@@ -1411,7 +1411,7 @@ TellNowTellLaterMenu:
 
 MenuHeader_0x48a9c:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 1, 8, SCREEN_WIDTH - 1, 13 ; For clearing the 'Tell Later' 'Tell Now' Box
+	menu_coords 0, 8, SCREEN_WIDTH - 1, 13 ; For clearing the 'Tell Later' 'Tell Now' Box
 
 TellNowLaterStrings:
 	db   "Dire Maintenant"
