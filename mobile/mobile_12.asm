@@ -211,7 +211,7 @@ Function48187:
 	bit 0, a
 	jr nz, .asm_48201
 .asm_481f8
-	hlcoord 3, 11 ; Position of 'Tell Later' after selecting
+	hlcoord 4, 11 ; Position of 'Tell Later' after selecting
 	ld de, .String_TellLater
 	call PlaceString
 .asm_48201
