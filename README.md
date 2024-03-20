@@ -8,15 +8,7 @@ It is possible that some menus were missed by the find/replace script, and need 
 
 - Finalize the following strings:
 
-GoldenrodPokecomCenterEggTicketText
-GoldenrodPokecomCenterOddEggBriefingText
-PokecomCenterAdminOfficeMobileScientist2Text
-EZChatString_ExitPrompt
-EZChatString_ExitConfirmation
-EZChatString_MessageBattleStartSet
-Text_ExitGymLeaderHonorRoll
-Strings_8a483
-_WantToRushThroughAMobileBattleText
+GoldenrodPokecomCenterEggTicketText, GoldenrodPokecomCenterOddEggBriefingText, PokecomCenterAdminOfficeMobileScientist2Text, EZChatString_ExitPrompt, EZChatString_ExitConfirmation, EZChatString_MessageBattleStartSet, Text_ExitGymLeaderHonorRoll, Strings_8a483, _WantToRushThroughAMobileBattleText
 
 - Hopefully update the Zip Code System.
 
