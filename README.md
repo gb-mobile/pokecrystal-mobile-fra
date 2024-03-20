@@ -6,10 +6,19 @@ It is possible that some menus were missed by the find/replace script, and need 
 
 ## TO-DO
 
-- Translate any of mobile features. (Anything English under /mobile/ and maps/DayCare.asm).
-- Also refer to the English build for 'Text_BattleReceptionistIntro:', 'Text_TradeReceptionistIntro:' and 'Text_TimeCapsuleReceptionistIntro:' for proper mobile translations of the PokeCOM Club reception dialogue.
-- Fix the known issues.
+- Finalize the following strings:
 
+GoldenrodPokecomCenterEggTicketText
+GoldenrodPokecomCenterOddEggBriefingText
+PokecomCenterAdminOfficeMobileScientist2Text
+EZChatString_ExitPrompt
+EZChatString_ExitConfirmation
+EZChatString_MessageBattleStartSet
+Text_ExitGymLeaderHonorRoll
+Strings_8a483
+_WantToRushThroughAMobileBattleText
+
+- Hopefully update the Zip Code System.
 
 ## Setup [![Build Status][ci-badge]][ci]
 
