@@ -5660,8 +5660,8 @@ String_11a679:
 	next "est-il prêt?@"
 
 String_11a692:
-	text "Patientez un"
-	line "instant s.v.p…"
+	db "Patientez un"
+	next "instant s.v.p…@"
 
 String_11a6aa:
 	db   "Des frais"
