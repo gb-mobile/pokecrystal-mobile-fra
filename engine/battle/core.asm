@@ -8428,7 +8428,7 @@ DisplayLinkBattleResult:
 	db "  MATCH NUL   @"
 
 .Mobile_InvalidBattle:
-	hlcoord 6, 8
+	hlcoord 2, 8
 	ld de, .InvalidBattle
 	call PlaceString
 	ld c, 200
