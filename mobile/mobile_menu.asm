@@ -112,24 +112,29 @@ MobileString1:
 MobileStrings2:
 ; string 0
 String_0x49fe9:
-	db   "Créer et stocker"
-	next "des CARTES.@"
+	db   "Créer et stocker  "
+	next "des CARTES.       "
+	db   "@"
 
 String_0x4a004:
 	db   "Composer les salu-"
-	next "tations de CARTE.@"
+	next "tations de CARTE. "
+	db   "@"
 
 String_0x4a026:
-	db   "Changer votre âge";"あなた<NO>じゅうしょや　ねんれいの"
-	next "et votre addresse.@";"せ<TTE>い¯かえられます@"
+	db   "Changer votre âge "
+	next "et votre addresse."
+	db   "@"
 
 String_0x4a042:
-	db   "Choisir les opt-";"モバイルセンター<NI>せつぞくするとき"
-	next "ions de connexion.@";"ひつような　こと¯きめます@"
+	db   "Choisir les opt-  "
+	next "ions de connexion."
+	db   "@"
 
 String_0x4a062:
-	db   "Retour à l'écran";"まえ<NO>がめん　<NI>もどります"
-	next "précédent.@";"@"
+	db   "Retour à l'écran  "
+	next "précédent.        "
+	db   "@"
 
 MobileMenu_InitMenuBuffers:
 	ld hl, w2DMenuCursorInitY
