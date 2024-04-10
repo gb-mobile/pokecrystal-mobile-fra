@@ -1213,7 +1213,7 @@ asm_48972:
 	ld d, $0
 	ld b, $71; Y. Supposed to be $70 with GFX_underscore.
 	ld c, (18 - ZIPCODE_LENGTH + 1) * 8; X.
-	call Mobile12_MoveAndBlinkCursor
+	;call Mobile12_MoveAndBlinkCursor
 	;farcall Mobile22_MoveAndBlinkCursor
 	pop de
 	pop af
@@ -1728,41 +1728,41 @@ Fill_HL_with_A_C_times:
 	ret
 
 ; Input: BC: coords of the cursor under the first PIN char. D: contains the tile ID. E: index of the char.
-Mobile12_MoveAndBlinkCursor:
-	;call Mobile22_IncCursorFrameCounter
-	ld a, [wd002]
-	bit 4, a
-	jr z, .skip_cursor_hiding
-
-	push de
-	farcall Mobile22_Clear24FirstOAM
-	pop de
-	ret
-
-.skip_cursor_hiding
-	ld hl, wShadowOAMSprite00
-	push de
-	ld a, b
-	ld [hli], a ; y
-	ld d, $8
-	ld a, e
-	and a
-	ld a, c
-	jr z, .skip_offset
-
-.offset_loop
-	add d
-	dec e
-	jr nz, .offset_loop
-
-.skip_offset
-	pop de
-	ld [hli], a ; x
-	ld a, d
-	ld [hli], a ; tile id
-	xor a
-	ld [hli], a ; attributes
-	ret
+;Mobile12_MoveAndBlinkCursor:
+;	;call Mobile22_IncCursorFrameCounter
+;	ld a, [wd002]
+;	bit 4, a
+;	jr z, .skip_cursor_hiding
+;
+;	push de
+;	farcall Mobile22_Clear24FirstOAM
+;	pop de
+;	ret
+;
+;.skip_cursor_hiding
+;	ld hl, wShadowOAMSprite00
+;	push de
+;	ld a, b
+;	ld [hli], a ; y
+;	ld d, $8
+;	ld a, e
+;	and a
+;	ld a, c
+;	jr z, .skip_offset
+;
+;.offset_loop
+;	add d
+;	dec e
+;	jr nz, .offset_loop
+;
+;.skip_offset
+;	pop de
+;	ld [hli], a ; x
+;	ld a, d
+;	ld [hli], a ; tile id
+;	xor a
+;	ld [hli], a ; attributes
+;	ret
 
 ; Output: in A: the number of blank chars at the right of the zipcode.
 CountZipcodeRightBlanks:
