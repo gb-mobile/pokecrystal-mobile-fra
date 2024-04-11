@@ -2465,20 +2465,20 @@ EZChatString_MessageSet: ; message accept strings, one for each type of message.
 	dw EZChatString_MessageBattleLoseSet
 
 EZChatString_MessageIntroSet:
-	db   "Salut de pré-"		;"じこしょうかい　の"
-	next "sentation réglé!@"	;next "あいさつ¯とうろくした！@"
+	db   "Salut. de pré-"
+	next "sentation réglée!@"
 
 EZChatString_MessageBattleStartSet:
-	db   "Salut du départ"		;"たいせん　<GA>はじまるとき　の"
-	next "de combat réglé!@"	;next "あいさつ¯とうろくした！@"
+	db   "Salut. de début"		;"たいせん　<GA>はじまるとき　の"
+	next "de combat réglée!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatString_MessageBattleWinSet:
-	db   "Salut du combat"		;"たいせん　<NI>かったとき　の"
-	next "gagné réglé!@"	;next "あいさつ¯とうろくした！@"
+	db   "Salut. de combat"		;"たいせん　<NI>かったとき　の"
+	next "gagné réglée!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatString_MessageBattleLoseSet:
-	db   "Salut du combat"		;"たいせん　<NI>まけたとき　の"
-	next "perdu réglé!@"	;next "あいさつ¯とうろくした！@"
+	db   "Salut. de combat"		;"たいせん　<NI>まけたとき　の"
+	next "perdu réglée!@"	;next "あいさつ¯とうろくした！@"
 
 EZChatMenu_WarnEmptyMessage:
 	ld de, EZChatBKG_SortBy

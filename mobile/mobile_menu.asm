@@ -83,7 +83,7 @@ Function49f16:
 	ld d, h
 	ld e, l
 	hlcoord 1, 13
-	ld b, 3
+	ld b, 4
 	ld c, SCREEN_HEIGHT
 	call ClearBox
 	hlcoord 1, 14
@@ -112,29 +112,24 @@ MobileString1:
 MobileStrings2:
 ; string 0
 String_0x49fe9:
-	db   "Créer et stocker  "
-	next "des CARTES.       "
-	db   "@"
+	db   "Créer et stocker"
+	next "des CARTES.@"
 
 String_0x4a004:
-	db   "Composer les salu-"
-	next "tations de CARTE. "
-	db   "@"
+	db   "Composer les salu-";"モバイルたいせんや　じぶんのめいしで"
+	next "tations de CARTE.@";"つかう　あいさつ¯つくります@"
 
 String_0x4a026:
-	db   "Changer votre âge "
-	next "et votre addresse."
-	db   "@"
+	db   "Changer votre âge";"あなた<NO>じゅうしょや　ねんれいの"
+	next "et votre addresse.@";"せ<TTE>い¯かえられます@"
 
 String_0x4a042:
-	db   "Choisir les opt-  "
-	next "ions de connexion."
-	db   "@"
+	db   "Choisir les opt-";"モバイルセンター<NI>せつぞくするとき"
+	next "ions de connexion.@";"ひつような　こと¯きめます@"
 
 String_0x4a062:
-	db   "Retour à l'écran  "
-	next "précédent.        "
-	db   "@"
+	db   "Retour à l'écran";"まえ<NO>がめん　<NI>もどります"
+	next "précédent.@";"@"
 
 MobileMenu_InitMenuBuffers:
 	ld hl, w2DMenuCursorInitY
@@ -226,7 +221,7 @@ Function4a118:
 	ld hl, w2DMenuCursorInitY
 	ld a, $1
 	ld [hli], a
-	ld a, $b
+	ld a, $b;$d
 	ld [hli], a
 	ld a, $3
 	ld [hli], a
