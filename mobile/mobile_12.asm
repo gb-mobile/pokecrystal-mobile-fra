@@ -973,7 +973,7 @@ Function4880e:
 .asm_48898
 	hlcoord 15, 6 ; Age menu up arrow position when using D-Pad
 	ld b, $1
-	ld c, $4
+	ld c, $3
 	call DisplayBlankGoldenBox
 	hlcoord 17, 8 ; Age menu down arrow position when using D-Pad
 	ld [hl], $11
