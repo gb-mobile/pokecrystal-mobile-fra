@@ -513,7 +513,7 @@ String_17fb2a:
 
 String_17fb6e:
 	db   "Identifiants/MdP"
-	next " incorrect ou"
+	next "incorrect ou"
 	next "erreur Centre" 
 	next "Mobile."
 	next "Réessayez"
