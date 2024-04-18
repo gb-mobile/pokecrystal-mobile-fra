@@ -482,7 +482,7 @@ String_17fa71:
 	next "guré correctement."
 	next "s.v.p. enregistrez"
 	next "vos infos dans"
-	next "le Trainer Mobile."
+	next "Entraineur Mobile."
 	db "@"
 
 String_17fab0:
@@ -507,8 +507,8 @@ String_17fb2a:
 	next "est incorrecte."
 	next "Verifiez le manuel"
 	next "et enregistrez-"
-	next "vous avec le"
-	next "Trainer Mobile."
+	next "vous avec"
+	next "Entraineur Mobile."
 	db "@"
 
 String_17fb6e:
