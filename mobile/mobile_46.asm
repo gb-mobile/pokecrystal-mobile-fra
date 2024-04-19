@@ -7118,33 +7118,40 @@ Function11b31b:
 	db $30 ;  0
 	db $31 ;  1
 	db $31 ;  2
-	db $31 ;  3
-	db $31 ;  4
+	db $4C ;  3
+	
+	db $4D ;  4
 	db $31 ;  5
-	db $32 ;  6
-	db $40 ;  7
-	db $41 ;  8
+	db $31 ;  6
+	db $32 ;  7
+	
+	db $40 ;  8
 	db $41 ;  9
 	db $41 ; 10
-	db $41 ; 11
-	db $41 ; 12
-	db $42 ; 13
+	db $4E ; 11
+	
+	db $4F ; 12
+	db $41 ; 13
+	db $41 ; 14
+	db $42 ; 15
 
 .Tilemap2: ; vtiles
 	db $30 ;  0
 	db $31 ;  1
 	db $31 ;  2
-	db $39 ;  3
+	db $31 ;  3
 	db $39 ;  4
 	db $39 ;  5
 	db $39 ;  6
-	db $40 ;  7
-	db $41 ;  8
+	db $39 ;  7
+	db $40 ;  8
 	db $41 ;  9
-	db $39 ; 10
-	db $39 ; 11
+	db $41 ; 10
+	db $41 ; 11
 	db $39 ; 12
 	db $39 ; 13
+	db $39 ; 14
+	db $39 ; 15
 
 .Tilemap3: ; vtiles
 	db $39 ;  0
@@ -7161,6 +7168,8 @@ Function11b31b:
 	db $39 ; 11
 	db $39 ; 12
 	db $39 ; 13
+	db $39 ; 14
+	db $39 ; 15
 
 Function11b397:
 	ld de, wShadowOAMSprite00
