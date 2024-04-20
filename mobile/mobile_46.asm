@@ -7101,9 +7101,7 @@ Function11b31b:
 	dbpixel  9,  7,  0, 7 ;  0
 	dbpixel  9,  8,  0, 7 ;  1
 	dbpixel  9,  9,  0, 6 ;  2
-	dbpixel  9,  10,  0, 6 ; 3
 	
-	dbpixel  9, 14,  0, 9 ;  4
 	dbpixel  9, 15,  0, 9 ;  5
 	dbpixel  9, 17,  0, 0 ;  6
 	dbpixel  9, 18,  0, 0 ;  7
@@ -7111,9 +7109,7 @@ Function11b31b:
 	dbpixel 10,  7,  6, 7 ;  8
 	dbpixel 10,  8,  6, 7 ;  9
 	dbpixel 10,  9,  6, 6 ; 10
-	dbpixel 10,  10, 6, 6 ; 11
 	
-	dbpixel 10, 14,  6, 9 ; 12
 	dbpixel 10, 15,  6, 9 ; 13
 	dbpixel 10, 17,  6, 0 ; 14
 	dbpixel 10, 18,  6, 0 ; 15
@@ -7122,21 +7118,17 @@ Function11b31b:
 .Tilemap1: ; vtiles
 	db $30 ;  0
 	db $31 ;  1
-	db $31 ;  2
-	db $4C ;  3
+	db $4C ;  3	
 	
-	db $4D ;  4
-	db $31 ;  5
+	db $4D ;  4	
 	db $31 ;  6
 	db $32 ;  7
 	
 	db $40 ;  8
 	db $41 ;  9
-	db $41 ; 10
 	db $4E ; 11
-	
+
 	db $4F ; 12
-	db $41 ; 13
 	db $41 ; 14
 	db $42 ; 15
 
