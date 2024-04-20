@@ -984,32 +984,32 @@ Function11acb7: ; mobile phone animation?
 	sla c
 	rl b
 	add hl, bc
-	decoord 5, 12 ;6, 6
+	decoord 1, 12 ;6, 6
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 6 ;0, 7
+	decoord 2, 6 ;0, 7
 	;ld bc, 7
 	;call CopyBytes
 
 	; vertical
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 7
+	decoord 2, 7
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 8
+	decoord 2, 8
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 9
+	decoord 2, 9
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 10
+	decoord 2, 10
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 11
+	decoord 2, 11
 	ld a, [hli]
 	ld [de], a
-	decoord 4, 12
+	decoord 2, 12
 	ld a, [hli]
 	ld [de], a
 
@@ -1034,29 +1034,29 @@ Function11acb7: ; mobile phone animation?
 	sla c
 	rl b
 	add hl, bc
-	decoord 2, 8 ;3, 9 ; wanted pokemon animation coordinates
+	decoord 4, 8 ;3, 9 ; wanted pokemon animation coordinates
 	;ld bc, 7
 	;call CopyBytes
 
 	; vertical
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 9
+	decoord 4, 9
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 10
+	decoord 4, 10
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 11
+	decoord 4, 11
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 12
+	decoord 4, 12
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 13
+	decoord 4, 13
 	ld a, [hli]
 	ld [de], a
-	decoord 2, 14
+	decoord 4, 14
 	ld a, [hli]
 	ld [de], a
 
