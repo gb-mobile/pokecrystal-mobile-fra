@@ -5991,7 +5991,7 @@ Function1029cf:
 	call LoadStandardMenuHeader
 	hlcoord 9, 7
 	ld b, 3
-	ld c, 8
+	ld c, 9
 	ld d, h
 	ld e, l
 	farcall _LinkTextbox
@@ -6038,7 +6038,7 @@ String_102a26:
 	db   "@"
 
 MenuData3_102a33:
-	db 8, 11 ; cursor start y, x
+	db 8, 10 ; cursor start y, x
 	db 2, 1 ; rows, columns
 	db $80, $00 ; flags
 	dn 2, 0 ; cursor offset
