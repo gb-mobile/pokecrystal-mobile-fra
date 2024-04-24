@@ -5973,7 +5973,7 @@ Function1029af:
 
 MenuHeader_1029bb:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 3, 10, 15, 12
+	menu_coords 4, 10, 15, 12
 	dw NULL
 	db 1 ; default option
 
