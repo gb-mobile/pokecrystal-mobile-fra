@@ -1091,22 +1091,7 @@ ZipCodeEditMenu:
 	pop bc ; On the first loop, B contains 0 and C contains [wZipCode + 1]
 	inc b ; Converts b from 0-index to 1-index.
 	ld a, b
-	cp $5
 	push bc
-	jr c, .b_ceiled
-
-	pop bc
-	ld b, $4 ; Min(b, 4).
-	push bc
-.b_ceiled
-	pop bc
-	push bc
-	ld a, b
-	cp $4
-	jr nz, asm_48972 ; If b is within [0;3], jump to asm_48972.
-
-	ld c, 10
-	call DelayFrames
 	jr asm_48972
 
 InputZipcodeCharacters_B0:
