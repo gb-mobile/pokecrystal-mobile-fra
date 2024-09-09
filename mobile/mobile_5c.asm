@@ -782,7 +782,7 @@ String_172e4e:
 String_172e58:
 	db "OK@";"けってい@"
 String_172e5d:
-	db   "Connecter à un";"せつぞくする　モバイルセンターを"
+	db   "Se connecter à un";"せつぞくする　モバイルセンターを"
 	next "CENTRE MOBILE@";"えらんで　ください@"
 
 Function172e78:
