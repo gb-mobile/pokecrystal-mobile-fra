@@ -4025,7 +4025,7 @@ ENDM
         ezchat_word "ON Y VA!", $3ee
         ezchat_word "VAS-Y!@@", $594
         ezchat_word "ON Y VA?", $3f0
-        ezchat_word "OUAI@@@@", $3fe
+        ezchat_word "OUAIS@@@", $3fe
         ezchat_word "TOPE-LA@", $54c
         ezchat_word "SALUT!@@", $4d8
         ezchat_word "BRAVO@@@", $0c2
