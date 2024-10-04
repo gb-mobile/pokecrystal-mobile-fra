@@ -1018,7 +1018,7 @@ Text_BrokeStadiumRules:
 	para "emmener six #-"
 	line "MON différents,"
 	cont "excluant les"
-	cont "les OEUFs."
+	cont "OEUFs."
 
 	para "Les #MON doivent"
 	line "être différents."
