@@ -346,11 +346,11 @@ PlaceBattlersName:
 	jr PlaceCommandCharacter
 
 .enemy
-	ld de, EnemyText
+	ld de, wEnemyMonNickname
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, wEnemyMonNickname
+	ld de, EnemyText
 	jr PlaceCommandCharacter
 
 PlaceEnemysName::
