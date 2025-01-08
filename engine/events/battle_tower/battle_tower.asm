@@ -1114,8 +1114,10 @@ BattleTowerAction_16:
 	call OpenSRAM
 	ld a, [wCurDay]
 	ld [s5_b2f9], a
-;	xor a ; these two instructions aren't present in the japanese version
-;	ld [s5_b2fa], a
+; official bugfix: the following two instructions aren't present in the japanese version
+; depending on the arbitrary state of s5_b2fa on a new save file, the trade corner timer might expire early for the very first trade in that version
+	xor a
+	ld [s5_b2fa], a
 	call CloseSRAM
 	ret
 
