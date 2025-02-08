@@ -6081,9 +6081,9 @@ Text_ThisBattleRoomPleaseWait:
 ;	done
 
 	; less awkward
-	text "La SALLE "
+	text "SALLE "
 	text_ram wStringBuffer4
-	text " de "
+	text " "
 	text_ram wStringBuffer3
 	text "?"
 	line "Un moment…"
