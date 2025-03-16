@@ -799,7 +799,6 @@ HeavyBallMultiplier:
 	jr nz, .SkipText
 
 	call HeavyBall_GetDexEntryBank
-	push bc
 	inc hl
 	inc hl
 	call GetFarByte
