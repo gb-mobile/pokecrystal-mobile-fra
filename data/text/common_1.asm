@@ -118,6 +118,7 @@ _ConfirmPasscodeText::
 _PasscodesNotSameText::
 	text "Ce n'est pas le"
 	line "même numéro."
+	para ""
 	done
 
 _PasscodeSetText::
