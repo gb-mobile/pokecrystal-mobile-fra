@@ -3,6 +3,27 @@ A French translation of https://github.com/gb-mobile/pokecrystal-mobile-eng
 This translation was performed via text dumps and a (somewhat) sophisticated find/replace script.
 It is possible that some menus were missed by the find/replace script, and need translating manually.
 
+## Screenshots
+
+![image](https://github.com/user-attachments/assets/bde26dd9-6e74-4ad6-8780-249b5925557a)
+![image](https://github.com/user-attachments/assets/a8a720ae-8e46-41c0-8459-d311005a070b)
+![image](https://github.com/user-attachments/assets/fa4b98d7-c56b-41ae-9d86-66a223dd8398)
+![image](https://github.com/user-attachments/assets/db372ef0-f38e-4bf8-8b42-719c32603a43)
+![image](https://github.com/user-attachments/assets/b7cc7848-d40c-429a-b55d-1051c558c48c)
+![image](https://github.com/user-attachments/assets/c91d4ef5-897c-4ea8-801c-e7bb46cee588)
+![image](https://github.com/user-attachments/assets/062b32b9-9cf3-4603-8cc1-c13064b4a101)
+![image](https://github.com/user-attachments/assets/a8f55a27-1f6f-428a-b9f5-918e1d4e3347)
+![image](https://github.com/user-attachments/assets/994e4f6f-6159-4b38-b46d-9481b73d3bb0)
+![image](https://github.com/user-attachments/assets/15b63090-ef5d-4b0d-8e31-e363c8178fc5)
+![image](https://github.com/user-attachments/assets/6aeca466-a593-4abe-ae32-4ce151e07b63)
+![image](https://github.com/user-attachments/assets/06c0654b-bc3d-4232-9000-295dc5e694d2)
+![image](https://github.com/user-attachments/assets/2abde9ae-f81a-4127-88ea-5ee12f8479bf)
+![image](https://github.com/user-attachments/assets/7a66781d-de80-4fc9-a735-aed4cb8fba1a)
+![image](https://github.com/user-attachments/assets/dba4da73-8a44-4b71-bb5d-b69d163a1275)
+
+
+
+
 ## Setup [![Build Status][ci-badge]][ci]
 
 For more information, please see [INSTALL.md](INSTALL.md)
