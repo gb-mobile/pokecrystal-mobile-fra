@@ -209,7 +209,7 @@ CreditsStringsPointers:
 .ExecutiveProducer:   db "Producteur exécutif@"       ; "エグゼクティブ　プロデューサー@"
 .PokemonAnimation:    db " Animation #MON@"           ; "#　アニメーション@"
 .PokedexText:         db "   Texte #DEX@"             ; "ずかん　テキスト@"
-.MobilePrjLeader:     db "Dir. Projet Mobile@"        ; "モバイルプロジェクト　りーダー@"
+.MobilePrjLeader:     db " Dir. Projet Mobile@"        ; "モバイルプロジェクト　りーダー@"
 .MobileSystemAd:      db "Asst. Projet Mobile@"       ; "モバイル　システムアドバイザー@"
 .MobileStadiumDir:    db " Dir. STADE MOBILE@"         ; "モバイルスタジアム　ディレクター@"
 .Coordination:        db "    Coordination@"          ; "コーディネーター@"
