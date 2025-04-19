@@ -943,7 +943,7 @@ EZChatMenu_ChatWords: ; EZChat Word Menu
 	dec a
 .finish_dpad
 	ld [hl], a
-	ret
+	jp DelayFrame
 
 .down
 	ld a, [hl]
