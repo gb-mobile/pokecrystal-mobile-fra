@@ -5,7 +5,7 @@ This translation was performed via text dumps and a (somewhat) sophisticated fin
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/bde26dd9-6e74-4ad6-8780-249b5925557a)
-![image](https://github.com/user-attachments/assets/a8a720ae-8e46-41c0-8459-d311005a070b)
+![image](https://github.com/user-attachments/assets/d5bc2a8f-c9ec-420e-84ce-d5b326bcbf3a)
 ![image](https://github.com/user-attachments/assets/fa4b98d7-c56b-41ae-9d86-66a223dd8398)
 ![image](https://github.com/user-attachments/assets/db372ef0-f38e-4bf8-8b42-719c32603a43)
 ![image](https://github.com/user-attachments/assets/b7cc7848-d40c-429a-b55d-1051c558c48c)
