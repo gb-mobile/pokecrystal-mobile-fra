@@ -206,14 +206,14 @@ Mobile12_ClearBlankUserParameters:
 	jr nz, .asm_481c1
 	bit 0, d
 	jr nz, .asm_481c1
-	lb bc, 1, 8
-	hlcoord 11, 5 ; Gender position
+	lb bc, 1, 6
+	hlcoord 13, 5 ; Gender position
 	call ClearBox
 .asm_481c1
 	bit 1, d
 	jr nz, .asm_481ce
-	lb bc, 1, 8
-	hlcoord 8, 7 ; Age position ; Don't change
+	lb bc, 1, 6
+	hlcoord 13, 7 ; Age position ; Don't change
 	call ClearBox
 .asm_481ce
 	bit 2, d
@@ -227,8 +227,8 @@ Mobile12_ClearBlankUserParameters:
 	ld a, [wd479]
 	bit 0, a
 	jr nz, .asm_481f8
-	lb bc, 1, 9
-	hlcoord 9, 11 ; Zip code location
+	lb bc, 1, 6
+	hlcoord 13, 11 ; Zip code location
 	call ClearBox
 	jr .asm_48201
 .asm_481f1
@@ -236,14 +236,18 @@ Mobile12_ClearBlankUserParameters:
 	bit 0, a
 	jr nz, .asm_48201
 .asm_481f8
-	hlcoord 5, 11 ; Position of 'Tell Later' after selecting
+	hlcoord 13, 11 ; Position of 'Tell Later' after selecting
 	ld de, .String_TellLater
 	call PlaceString
+	hlcoord 12, 11 ; Placement of Zip Code Colon Text
+	ld de, Colon
+
+	call PlaceString	
 .asm_48201
 	ret
 
 .String_TellLater:
-	db "Dire Plus Tard@"
+	db "Ultér.@"
 
 MobileProfileOptionPressed:
 	call PlaceHollowCursor
@@ -355,6 +359,9 @@ GenderPressed:
 	ld e, l
 	hlcoord 13, 5 ; Gender position
 	call PlaceString
+	hlcoord 12, 5 ; Placement of Gender Colon Text
+	ld de, Colon
+	call PlaceString
 	ld a, [wMobileProfileParametersFilled]
 	set 0, a
 	ld [wMobileProfileParametersFilled], a
@@ -413,6 +420,9 @@ RegionCodePressed:
 	ld a, [wMobileProfileParametersFilled]
 	set 2, a
 	ld [wMobileProfileParametersFilled], a
+	hlcoord 12, 9 ; Placement of Address Colon Text
+	ld de, Colon
+	call PlaceString
 .asm_48377
 	call Mobile12_ClearBlankUserParameters
 	farcall Mobile_OpenAndCloseMenu_HDMATransferTilemapAndAttrmap
@@ -496,8 +506,8 @@ SavePrefectureAndDisplayIt:
 	ld d, h
 	ld e, l
 	ld b, $2
-	ld c, $8
-	hlcoord 11, 8 ; ??? Clears the surrounding tiles when prefecture is selected, needs to be moved with preferectures
+	ld c, $6
+	hlcoord 13, 8 ; ??? Clears the surrounding tiles when prefecture is selected, needs to be moved with preferectures
 	call ClearBox
 	hlcoord 19 - REGION_CODE_STRING_LENGTH, 9 ; Prefectures position when selected
 	call PlaceString
@@ -661,6 +671,15 @@ DisplayInitializedMobileProfileLayout: ; Clears the 4 top lines, displays the "M
 	ld b, $8
 	ld c, $12
 	call DisplayBlankGoldenBox
+	hlcoord 12, 7 ; Placement of Age Colon Text
+	ld de, Colon
+	call PlaceString
+	hlcoord 12, 9 ; Placement of Address Colon Text
+	ld de, Colon
+	call PlaceString
+	hlcoord 12, 11 ; Placement of Zip Code Colon Text
+	ld de, Colon
+	call PlaceString	
 	ret
 
 SetCursorParameters_MobileProfile:
@@ -860,7 +879,13 @@ AgePressed:
 	call Function487ec
 	pop af
 	ldh [hInMenu], a
+	hlcoord 12, 7 ; Placement of Age Colon Text
+	ld de, Colon
+	call PlaceString	
 	jp ReturnToMobileProfileMenu
+	
+Colon:
+	db ":@"	
 
 Function487ec:
 	push hl
@@ -1012,6 +1037,9 @@ ZipCodePressed:
 	hlcoord 4, 12 ; Clearing the potential "Tell Later" text.
 	lb bc, 1, 15 - ZIPCODE_LENGTH ; Determines the size of the clearing box
 	call ClearBox
+	hlcoord 12, 11 ; Placement of Colon Text
+	ld de, Colon
+	call PlaceString
 
 	ld hl, MenuHeader_ZipCodeEditBox
 	call LoadMenuHeader
@@ -1196,8 +1224,8 @@ endr
 	pop af
 	call ExitMenu
 	call DisplayZipCodeRightAlign
-	hlcoord 5, 11 ; Location of a clear box to clear any excess characters if 'Tell Now' is selected, but cannot overlap the position of the zip code itself, because otherwise it will clear that too.
-	ld a, 13 - ZIPCODE_LENGTH ; Determines the size of the clearing box
+	hlcoord 1, 11 ; Location of a clear box to clear any excess characters if 'Tell Now' is selected, but cannot overlap the position of the zip code itself, because otherwise it will clear that too.
+	ld a, 12 - ZIPCODE_LENGTH ; Determines the size of the clearing box
 	add b ; We increase the clearbox width, in case the zipcode has been shifted to the right.
 	ld c, a
 	ld b, 1
@@ -1279,15 +1307,15 @@ TellNowTellLaterMenu:
 	call SetCursorParameters_Gender
 	ld a, $a
 	ld [w2DMenuCursorInitY], a
-	ld a, $3 ; Y Placement of 'Tell Now' 'Tell Later' Cursor
+	ld a, $c ; Y Placement of 'Tell Now' 'Tell Later' Cursor
 	ld [w2DMenuCursorInitX], a
 	ld a, $1 ; X Placement of 'Later' Cursor
 	ld [wMenuCursorY], a
-	hlcoord 2, 8 ; Placement of 'Tell Now' 'Tell Later' Box
+	hlcoord 11, 8 ; Placement of 'Tell Now' 'Tell Later' Box
 	ld b, $4
-	ld c, $10
+	ld c, $7
 	call DisplayBlankGoldenBox
-	hlcoord 4, 10 ; Placement of 'Tell Now' 'Tell Later' Text
+	hlcoord 13, 10 ; Placement of 'Tell Now' 'Tell Later' Text
 	ld de, TellNowLaterStrings
 	call PlaceString
 	call StaticMenuJoypad ; Waits for a user input from the input filter.
@@ -1326,8 +1354,8 @@ MenuHeader_0x48a9c:
 	menu_coords 1, 8, SCREEN_WIDTH - 1, 13 ; For clearing the 'Tell Later' 'Tell Now' Box
 
 TellNowLaterStrings:
-	db   "Dire Maintenant"
-	next "Dire Plus Tard@"
+	db   "Maint."
+	next "Ultér.@"
 
 InputZipcodeCharacters: ; Function48ab5. Zip code menu controls.
 	ldh a, [hJoyPressed]
