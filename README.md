@@ -10,7 +10,7 @@ This translation was performed via text dumps and a (somewhat) sophisticated fin
 ![image](https://github.com/user-attachments/assets/db372ef0-f38e-4bf8-8b42-719c32603a43)
 ![image](https://github.com/user-attachments/assets/b7cc7848-d40c-429a-b55d-1051c558c48c)
 ![image](https://github.com/user-attachments/assets/c91d4ef5-897c-4ea8-801c-e7bb46cee588)
-![image](https://github.com/user-attachments/assets/9d2b7d0a-ace0-485a-a884-56364616932a)
+![image](https://github.com/user-attachments/assets/9fa78fdd-bdb8-4476-b470-d7e6f6dbac1e)
 ![image](https://github.com/user-attachments/assets/a8f55a27-1f6f-428a-b9f5-918e1d4e3347)
 ![image](https://github.com/user-attachments/assets/994e4f6f-6159-4b38-b46d-9481b73d3bb0)
 ![image](https://github.com/user-attachments/assets/15b63090-ef5d-4b0d-8e31-e363c8178fc5)
