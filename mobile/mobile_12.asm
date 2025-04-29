@@ -893,6 +893,9 @@ AgePressed:
 	call Function487ec
 	pop af
 	ldh [hInMenu], a
+	ld a, [wMobileProfileParametersFilled]
+ 	bit 1, a
+ 	jp z, ReturnToMobileProfileMenu
 	hlcoord 8, 7 ; Placement of Age Colon Text
 	ld de, Colon
 	call PlaceString	
