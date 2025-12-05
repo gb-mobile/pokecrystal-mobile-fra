@@ -354,7 +354,7 @@ Mobile_CopyDefaultMail:
 	ret
 
 .DefaultMessage:
-	db "Hello@"
+	db "Bonjour@"
 .DefaultMessageEnd:
 
 Mobile_CopyDefaultMailAuthor:
