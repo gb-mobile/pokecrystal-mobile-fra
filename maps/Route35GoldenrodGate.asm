@@ -73,9 +73,9 @@ GiftSpearowName:
 GiftSpearowOTName:
 	db "BOBBY@"
 
-	db 0 ; unused
+	db 0 ; filler
 
-UnusedEFText: ; unreferenced
+EuropeanFrenchNationalityText: ; Nationality bytes, so that the game loads the proper font when reading the mail.
 	db " EF@"
 
 	db 0 ; unused
