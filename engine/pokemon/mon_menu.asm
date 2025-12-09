@@ -449,30 +449,13 @@ ComposeMailMessage:
 	ld de, wTempMailAuthor
 	ld bc, NAME_LENGTH - 1
 	call CopyBytes
-	ld b, $ff
-	ld hl, wTempMailAuthor
-
-.loop:
-	inc b
-	ld a, b
-	cp $8
-	jr nc, .cont
-
-	ld a, [hli]
-	cp "@"
-	jr nz, .loop
-
-	ld a, b
-	cp $8
-	jr nc, .cont
-
-	ld hl, wTempMailNationality
+	ld hl, wTempMailNationality - 1
+	ld a, "@"
+	ld [hli], a ; Prevents player name overflow.
 	ld a, "E"
-	ld [hli], a
+	ld [hli], a ; European mail.
 	ld a, "F"
-	ld [hl], a
-
-.cont:
+	ld [hl], a ; French mail.
 	ld hl, wPlayerID
 	ld bc, 2
 	call CopyBytes
