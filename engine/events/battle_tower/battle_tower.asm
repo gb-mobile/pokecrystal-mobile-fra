@@ -405,7 +405,7 @@ ValidateBTParty: ; unreferenced
 for x, $ff, NUM_POKEMON, -1
 	jr z, .invalid
 	cp x
-endr
+ENDR
 	jr nz, .valid
 
 .invalid
@@ -1323,10 +1323,10 @@ BattleTowerAction_EggTicket:
 ; this adventurous piece of code uses a hardcoded amount of dec hl to reverse the pointer in hl to point to the second-last non-terminator character of String_MysteryJP.
 ; it then overwrites it and the last character with terminators, in order to prevent this specific odd egg from triggering this check ever again.
 ; why it was chosen to blank the last two characters specifically is a mystery.
-def String_MysteryJP_AMOUNT_CHARS equ 3 ; "ODD"
-rept (PLAYER_NAME_LENGTH - ((PLAYER_NAME_LENGTH - String_MysteryJP_AMOUNT_CHARS) + (String_MysteryJP_AMOUNT_CHARS / 2)))
+DEF String_MysteryJP_AMOUNT_CHARS equ 3 ; "ODD"
+REPT (PLAYER_NAME_LENGTH - ((PLAYER_NAME_LENGTH - String_MysteryJP_AMOUNT_CHARS) + (String_MysteryJP_AMOUNT_CHARS / 2)))
 	dec hl
-endr
+ENDR
 	ld a, "@"
 	ld [hli], a
 	ld [hli], a

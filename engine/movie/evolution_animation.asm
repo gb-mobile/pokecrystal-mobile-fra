@@ -346,9 +346,9 @@ EvolutionAnimation:
 	ld a, [hl]
 	or b
 	ld [hli], a ; attributes
-rept SPRITEOAMSTRUCT_LENGTH - 1
+REPT SPRITEOAMSTRUCT_LENGTH - 1
 	inc hl
-endr
+ENDR
 	dec c
 	jr nz, .loop6
 	pop bc

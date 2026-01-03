@@ -26,7 +26,7 @@ DEF percent EQUS "* $ff / 100"
 DEF out_of EQUS "* $100 /"
 
 MACRO assert_power_of_2
-	assert (\1) & ((\1) - 1) == 0, "\1 must be a power of 2"
+	ASSERT (\1) & ((\1) - 1) == 0, "\1 must be a power of 2"
 ENDM
 
 ; Constant data (db, dw, dl) macros
@@ -42,17 +42,17 @@ MACRO dbw
 ENDM
 
 MACRO dn ; nybbles
-	rept _NARG / 2
+	REPT _NARG / 2
 		db ((\1) << 4) | (\2)
 		shift 2
-	endr
+	ENDR
 ENDM
 
 MACRO dc ; "crumbs"
-	rept _NARG / 4
+	REPT _NARG / 4
 		db ((\1) << 6) | ((\2) << 4) | ((\3) << 2) | (\4)
 		shift 4
-	endr
+	ENDR
 ENDM
 
 MACRO dt ; three-byte (big-endian)
@@ -68,17 +68,17 @@ MACRO bigdw ; big-endian word
 ENDM
 
 MACRO dba ; dbw bank, address
-	rept _NARG
+	REPT _NARG
 		dbw BANK(\1), \1
 		shift
-	endr
+	ENDR
 ENDM
 
 MACRO dab ; dwb address, bank
-	rept _NARG
+	REPT _NARG
 		dwb \1, BANK(\1)
 		shift
-	endr
+	ENDR
 ENDM
 
 MACRO dba_pic ; dbw bank, address
@@ -87,15 +87,15 @@ MACRO dba_pic ; dbw bank, address
 ENDM
 
 MACRO bcd
-	rept _NARG
+	REPT _NARG
 		dn ((\1) % 100) / 10, (\1) % 10
 		shift
-	endr
+	ENDR
 ENDM
 
 MACRO sine_table
 ; \1 samples of sin(x) from x=0 to x<0.5 turns (pi radians)
 	for x, \1
 		dw sin(x * 0.5 / (\1))
-	endr
+	ENDR
 ENDM

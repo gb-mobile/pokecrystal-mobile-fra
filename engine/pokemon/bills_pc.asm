@@ -1394,9 +1394,9 @@ MACRO copy_box_data
 	jr .loop\@
 
 .done\@
-	if \1
+	IF \1
 		call CloseSRAM
-	endc
+	ENDC
 	ld a, -1
 	ld [de], a
 	ld a, [wBillsPCTempBoxCount]
@@ -1472,11 +1472,11 @@ BillsPC_UpdateSelectionCursor:
 	inc hl
 	ld [de], a ; y
 	inc de
-rept SPRITEOAMSTRUCT_LENGTH - 1
+REPT SPRITEOAMSTRUCT_LENGTH - 1
 	ld a, [hli]
 	ld [de], a
 	inc de
-endr
+ENDR
 	jr .loop
 
 .OAM:
@@ -1520,11 +1520,11 @@ BillsPC_UpdateInsertCursor:
 	inc hl
 	ld [de], a ; y
 	inc de
-rept SPRITEOAMSTRUCT_LENGTH - 1
+REPT SPRITEOAMSTRUCT_LENGTH - 1
 	ld a, [hli]
 	ld [de], a
 	inc de
-endr
+ENDR
 	jr .loop
 
 .OAM:
@@ -2150,7 +2150,7 @@ GetBoxPointer:
 	table_width 3, GetBoxPointer.BoxBankAddresses
 for n, 1, NUM_BOXES + 1
 	dba sBox{d:n}
-endr
+ENDR
 	assert_table_length NUM_BOXES
 
 BillsPC_ApplyPalettes:
@@ -2266,7 +2266,7 @@ _ChangeBox_MenuHeader:
 	db NUM_BOXES
 for x, NUM_BOXES
 	db x + 1
-endr
+ENDR
 	db -1
 
 .PrintBoxNames:
@@ -2357,7 +2357,7 @@ GetBoxCount:
 	table_width 3, GetBoxCount.BoxBankAddresses
 for n, 1, NUM_BOXES + 1
 	dba sBox{d:n}
-endr
+ENDR
 	assert_table_length NUM_BOXES
 
 BillsPC_PrintBoxName:

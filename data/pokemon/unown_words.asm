@@ -1,7 +1,7 @@
 MACRO unownword
 for n, CHARLEN(\1)
 	db CHARSUB(\1, n + 1) - "A" + FIRST_UNOWN_CHAR
-endr
+ENDR
 	db -1
 ENDM
 

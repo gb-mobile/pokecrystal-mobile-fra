@@ -32,10 +32,10 @@ ForceUpdateCGBPals::
 	ld c, LOW(rBGPD)
 	ld b, 8 / 2
 .bgp
-rept (1 palettes) * 2
+REPT (1 palettes) * 2
 	ld a, [hli]
 	ldh [c], a
-endr
+ENDR
 
 	dec b
 	jr nz, .bgp
@@ -48,10 +48,10 @@ endr
 	ld c, LOW(rOBPD)
 	ld b, 8 / 2
 .obp
-rept (1 palettes) * 2
+REPT (1 palettes) * 2
 	ld a, [hli]
 	ldh [c], a
-endr
+ENDR
 
 	dec b
 	jr nz, .obp
@@ -262,9 +262,9 @@ CopyPals::
 	ld [hl], d
 	inc hl
 ; next pal color
-rept PAL_COLOR_SIZE
+REPT PAL_COLOR_SIZE
 	srl b
-endr
+ENDR
 ; source
 	pop de
 ; done pal?

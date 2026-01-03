@@ -916,9 +916,9 @@ GetBoxAddress:
 	ld e, a
 	ld d, 0
 	ld hl, BoxAddresses
-rept 5
+REPT 5
 	add hl, de
-endr
+ENDR
 	ld a, [hli]
 	push af
 	ld a, [hli]
@@ -1115,7 +1115,7 @@ BoxAddresses:
 for n, 1, NUM_BOXES + 1
 	db BANK(sBox{d:n}) ; aka BANK(sBox{d:n}End)
 	dw sBox{d:n}, sBox{d:n}End
-endr
+ENDR
 	assert_table_length NUM_BOXES
 
 Checksum:

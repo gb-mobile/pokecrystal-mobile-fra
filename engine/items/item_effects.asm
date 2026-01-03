@@ -2403,9 +2403,9 @@ BattleRestorePP:
 	push hl
 	push de
 	push bc
-rept NUM_MOVES + 2 ; wBattleMonPP - wBattleMonMoves
+REPT NUM_MOVES + 2 ; wBattleMonPP - wBattleMonMoves
 	inc de
-endr
+ENDR
 	ld bc, MON_PP - MON_MOVES
 	add hl, bc
 	ld a, [hl]

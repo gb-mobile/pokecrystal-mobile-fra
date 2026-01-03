@@ -25,7 +25,7 @@ NextCallReceiveDelay:
 	ld hl, .ReceiveCallDelays
 	add hl, de
 	ld a, [hl]
-if DEF(_DEBUG)
+IF DEF(_DEBUG)
 	ld h, a
 	ld a, BANK(sDebugTimeCyclesSinceLastCall)
 	call OpenSRAM
@@ -38,7 +38,7 @@ if DEF(_DEBUG)
 	ld h, a
 .debug_ok
 	ld a, h
-endc
+ENDC
 	jp RestartReceiveCallDelay
 
 .ReceiveCallDelays:
@@ -111,17 +111,17 @@ CheckDailyResetTimer::
 	ld [hli], a ; wSwarmFlags
 	ld [hl], a  ; wSwarmFlags + 1
 	ld hl, wDailyRematchFlags
-rept 4
+REPT 4
 	ld [hli], a
-endr
+ENDR
 	ld hl, wDailyPhoneItemFlags
-rept 4
+REPT 4
 	ld [hli], a
-endr
+ENDR
 	ld hl, wDailyPhoneTimeOfDayFlags
-rept 4
+REPT 4
 	ld [hli], a
-endr
+ENDR
 	ld hl, wKenjiBreakTimer
 	ld a, [hl]
 	and a

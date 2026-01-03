@@ -104,11 +104,11 @@ InitSRAMZipcode:
 	call CloseSRAM
 	ret
 
-if DEF(_DEBUG)
+IF DEF(_DEBUG)
 DebugRoom: ; unreferenced
 	farcall _DebugRoom
 	ret
-endc
+ENDC
 
 ResetWRAM:
 	xor a
@@ -194,7 +194,7 @@ _ResetWRAM:
 	ld hl, sMysteryGiftItem
 	xor a
 	ld [hli], a
-	assert sMysteryGiftItem + 1 == sMysteryGiftUnlocked
+	ASSERT sMysteryGiftItem + 1 == sMysteryGiftUnlocked
 	dec a ; -1
 	ld [hl], a
 	call CloseSRAM
@@ -211,9 +211,9 @@ _ResetWRAM:
 	ld [wCoins], a
 	ld [wCoins + 1], a
 
-if START_MONEY >= $10000
+IF START_MONEY >= $10000
 	ld a, HIGH(START_MONEY >> 8)
-endc
+ENDC
 	ld [wMoney], a
 	ld a, HIGH(START_MONEY) ; mid
 	ld [wMoney + 1], a
@@ -627,11 +627,11 @@ Continue_DisplayPokedexNumCaught:
 	ret z
 	push hl
 	ld hl, wPokedexCaught
-if NUM_POKEMON % 8
+IF NUM_POKEMON % 8
 	ld b, NUM_POKEMON / 8 + 1
-else
+ELSE
 	ld b, NUM_POKEMON / 8
-endc
+ENDC
 	call CountSetBits
 	pop hl
 	ld de, wNumSetBits
@@ -1319,14 +1319,14 @@ UpdateTitleTrailSprite: ; unreferenced
 
 .TitleTrailCoords:
 MACRO trail_coords
-	rept _NARG / 2
+	REPT _NARG / 2
 		DEF _dx = 4
-		if \1 == 0 && \2 == 0
+		IF \1 == 0 && \2 == 0
 			DEF _dx = 0
-		endc
+		ENDC
 		dbpixel \1, \2, _dx, 0
 		shift 2
-	endr
+	ENDR
 ENDM
 	; frame 0 y, x; frame 1 y, x
 	trail_coords 11, 10,  0,  0

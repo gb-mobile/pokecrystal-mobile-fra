@@ -1,74 +1,45 @@
 #!/bin/bash
+set -euo pipefail
 
-# Install necessary tools
-dpkg -s bison  &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "bison is installed!"
-else
-    sudo apt-get install -y bison
+# Install necessary tools (idempotent; reruns safely)
+sudo apt-get update -y
+sudo apt-get install -y \
+  bison \
+  pkg-config \
+  libpng-dev \
+  g++ \
+  make \
+  gcc \
+  git \
+  curl
+
+# Get RGBDS v1.0.1 (source tarball via GitHub tarball endpoint)
+if [ -d "rgbds-src" ]; then
+  rm -rf rgbds-src
 fi
-
-dpkg -s pkg-config  &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "pkg-config is installed!"
-else
-    sudo apt-get install -y pkg-config
-fi
-
-dpkg -s libpng-dev  &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "libpng-dev is installed!"
-else
-    sudo apt-get install -y libpng-dev
-fi
-
-dpkg -s g++ &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "g++ is installed!"
-else
-    sudo apt-get install -y g++
-fi
-
-dpkg -s make  &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "make is installed!"
-else
-    sudo apt-get install -y make
-fi
-
-dpkg -s gcc  &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "gcc is installed!"
-else
-    sudo apt-get install -y gcc
-fi
-
-dpkg -s git &> /dev/null
-if [ $? -eq 0 ]; then
-    echo "git is installed!"
-else
-    sudo apt-get install -y git
-fi
-
-# Get RGBDS-0.6.1
 if [ -d "rgbds" ]; then
-  echo "rgbds already exists! Removing..."
-  sudo rm -R rgbds
+  rm -rf rgbds
 fi
-echo "Getting the latest RGBDS compatible version!"
-curl -Lo rgbds-0.6.1.tar.gz https://github.com/gbdev/rgbds/releases/download/v0.6.1/rgbds-0.6.1.tar.gz
-tar xvfz rgbds-0.6.1.tar.gz
-rm rgbds-0.6.1.tar.gz
-echo "Building rgbds..."
-cd rgbds
+
+echo "Downloading RGBDS v1.0.1 source..."
+curl -L -o rgbds.tar.gz https://github.com/gbdev/rgbds/tarball/v1.0.1  # :contentReference[oaicite:1]{index=1}
+mkdir -p rgbds-src
+tar -xzf rgbds.tar.gz -C rgbds-src --strip-components=1
+rm rgbds.tar.gz
+
+echo "Building and installing RGBDS locally..."
+pushd rgbds-src
 make clean
 make
-cd ..
+make install PREFIX="$(pwd)/../rgbds"
+popd
 
-# Build the Rom
+# Build the ROM using the locally-installed tools
 echo "Building pokecrystal..."
 make clean
-make RGBDS=rgbds/
+make RGBDS="$(pwd)/rgbds/bin/"
+
 if [ ! -f "pokecrystal.gbc" ]; then
-	echo "Something goes wrong during the process."    
+  echo "Build failed: pokecrystal.gbc not produced."
+  exit 1
 fi

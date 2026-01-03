@@ -31,7 +31,7 @@ DEF prob_total = 0
 	prob 10
 	prob 1
 	assert_table_length NUM_ODD_EGGS
-	assert prob_total == 100, "OddEggProbabilities do not sum to 100%!"
+	ASSERT prob_total == 100, "OddEggProbabilities do not sum to 100%!"
 
 OddEggs:
 	table_width NICKNAMED_MON_STRUCT_LENGTH, OddEggs

@@ -117,29 +117,29 @@ GeneratePartyMonStats:
 	and a
 	jr nz, .randomlygeneratemoves
 	ld de, wEnemyMonMoves
-rept NUM_MOVES - 1
+REPT NUM_MOVES - 1
 	ld a, [de]
 	inc de
 	ld [hli], a
-endr
+ENDR
 	ld a, [de]
 	ld [hl], a
 	jr .next
 
 .randomlygeneratemoves
 	xor a
-rept NUM_MOVES - 1
+REPT NUM_MOVES - 1
 	ld [hli], a
-endr
+ENDR
 	ld [hl], a
 	ld [wSkipMovesBeforeLevelUp], a
 	predef FillMoves
 
 .next
 	pop de
-rept NUM_MOVES
+REPT NUM_MOVES
 	inc de
-endr
+ENDR
 
 	; Initialize ID.
 	ld a, [wPlayerID]
@@ -222,9 +222,9 @@ endr
 	call FillPP
 	pop de
 	pop hl
-rept NUM_MOVES
+REPT NUM_MOVES
 	inc de
-endr
+ENDR
 
 	; Initialize happiness.
 	ld a, BASE_HAPPINESS

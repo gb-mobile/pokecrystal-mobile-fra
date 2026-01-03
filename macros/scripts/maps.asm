@@ -1,6 +1,6 @@
 MACRO map_id
 ;\1: map id
-	assert DEF(GROUP_\1) && DEF(MAP_\1), \
+	ASSERT DEF(GROUP_\1) && DEF(MAP_\1), \
 		"Missing 'map_const \1' in constants/map_constants.asm"
 	db GROUP_\1, MAP_\1
 ENDM
@@ -25,11 +25,11 @@ MACRO scene_script
 ;\2: scene id constant
 	dw \1
 	dw 0 ; filler
-	if _NARG == 2
+	IF _NARG == 2
 		scene_const \2
-	else
+	ELSE
 		const_skip
-	endc
+	ENDC
 	DEF {_NUM_SCENE_SCRIPTS} += 1
 ENDM
 
@@ -126,9 +126,9 @@ MACRO object_event
 	db \<11>
 	dw \<12>, \<13>
 	; the dummy PlayerObjectTemplate object_event has no def_object_events
-	if DEF(_NUM_OBJECT_EVENTS)
+	IF DEF(_NUM_OBJECT_EVENTS)
 		DEF {_NUM_OBJECT_EVENTS} += 1
-	endc
+	ENDC
 ENDM
 
 MACRO trainer
@@ -147,11 +147,11 @@ ENDM
 MACRO itemball
 ;\1: item: from constants/item_constants.asm
 ;\2: quantity: default 1
-	if _NARG == 1
+	IF _NARG == 1
 		itemball \1, 1
-	else
+	ELSE
 		db \1, \2
-	endc
+	ENDC
 ENDM
 
 MACRO hiddenitem

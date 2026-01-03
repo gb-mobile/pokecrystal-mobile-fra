@@ -106,17 +106,17 @@ MACRO box
 	; \1Mon1 - \1Mon20
 	for n, 1, MONS_PER_BOX + 1
 	\1Mon{d:n}:: box_struct \1Mon{d:n}
-	endr
+	ENDR
 \1MonOTs::
 	; \1Mon1OT - \1Mon20OT
 	for n, 1, MONS_PER_BOX + 1
 	\1Mon{d:n}OT:: ds NAME_LENGTH
-	endr
+	ENDR
 \1MonNicknames::
 	; \1Mon1Nickname - \1Mon20Nickname
 	for n, 1, MONS_PER_BOX + 1
 	\1Mon{d:n}Nickname:: ds MON_NAME_LENGTH
-	endr
+	ENDR
 \1MonNicknamesEnd::
 \1End::
 	ds 2 ; padding
@@ -185,7 +185,7 @@ MACRO battle_tower_struct
 	for n, 1, BATTLETOWER_PARTY_LENGTH + 1
 	\1Mon{d:n}::     party_struct \1Mon{d:n}
 	\1Mon{d:n}Name:: ds MON_NAME_LENGTH
-	endr
+	ENDR
 \1TrainerData::  ds EASY_CHAT_MESSAGE_LENGTH * 3
 \1TrainerEnd::
 ENDM
@@ -240,7 +240,7 @@ MACRO hall_of_fame
 	; \1Mon1 - \1Mon6
 	for n, 1, PARTY_LENGTH + 1
 	\1Mon{d:n}:: hof_mon \1Mon{d:n}
-	endr
+	ENDR
 \1End:: db
 ENDM
 

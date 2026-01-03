@@ -414,9 +414,9 @@ RunSceneScript:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-rept SCENE_SCRIPT_SIZE
+REPT SCENE_SCRIPT_SIZE
 	add hl, de
-endr
+ENDR
 
 	call GetMapScriptsBank
 	call GetFarWord

@@ -193,7 +193,7 @@ Serial_ExchangeByte::
 	jr nz, .non_serial_interrupts_enabled
 
 	; a == 0
-	assert LOW(SERIAL_LINK_BYTE_TIMEOUT) == 0
+	ASSERT LOW(SERIAL_LINK_BYTE_TIMEOUT) == 0
 	ld [wLinkByteTimeout], a
 	ld a, HIGH(SERIAL_LINK_BYTE_TIMEOUT)
 	ld [wLinkByteTimeout + 1], a
@@ -319,11 +319,11 @@ WaitLinkTransfer::
 	jr z, .loop
 
 	vc_patch Wireless_net_delay_1
-if DEF(_CRYSTAL11_VC)
+IF DEF(_CRYSTAL11_VC)
 	ld b, 26
-else
+ELSE
 	ld b, 10
-endc
+ENDC
 	vc_patch_end
 .receive
 	call DelayFrame
@@ -332,11 +332,11 @@ endc
 	jr nz, .receive
 
 	vc_patch Wireless_net_delay_2
-if DEF(_CRYSTAL11_VC)
+IF DEF(_CRYSTAL11_VC)
 	ld b, 26
-else
+ELSE
 	ld b, 10
-endc
+ENDC
 	vc_patch_end
 .acknowledge
 	call DelayFrame

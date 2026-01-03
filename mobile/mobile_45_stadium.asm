@@ -132,10 +132,10 @@ Call_045_767b:
 
 ; REMARK:
 ; the following code overwrites the odd egg's ot's last 2 non-terminator characters with terminators in order to prevent the code at 46:BattleTowerAction_EggTicket from deleting a second egg ticket
-def Odd_NUM_CHARS equ 3 ; "ODD"
-rept Odd_NUM_CHARS / 2
+DEF Odd_NUM_CHARS equ 3 ; "ODD"
+REPT Odd_NUM_CHARS / 2
     inc hl
-endr
+ENDR
     ld a, "@"
     ld [hl+], a
     ld [hl], a

@@ -783,9 +783,9 @@ ClearWindowData::
 
 .ClearMenuData:
 	ld bc, wMenuMetadataEnd - wMenuMetadata
-	assert wMenuMetadataEnd - wMenuMetadata == wMenuHeaderEnd - wMenuHeader
-	assert wMenuMetadataEnd - wMenuMetadata == wMenuDataEnd - wMenuData
-	assert wMenuMetadataEnd - wMenuMetadata == wMoreMenuDataEnd - wMoreMenuData
+	ASSERT wMenuMetadataEnd - wMenuMetadata == wMenuHeaderEnd - wMenuHeader
+	ASSERT wMenuMetadataEnd - wMenuMetadata == wMenuDataEnd - wMenuData
+	ASSERT wMenuMetadataEnd - wMenuMetadata == wMoreMenuDataEnd - wMoreMenuData
 	xor a
 	call ByteFill
 	ret

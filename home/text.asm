@@ -187,24 +187,24 @@ NextChar::
 
 CheckDict::
 MACRO dict
-	assert CHARLEN(\1) == 1
-	if \1 == 0
+	ASSERT CHARLEN(\1) == 1
+	IF \1 == 0
 		and a
-	else
+	ELSE
 		cp \1
-	endc
-	if ISCONST(\2)
+	ENDC
+	IF ISCONST(\2)
 		; Replace a character with another one
 		jr nz, .not\@
 		ld a, \2
 		jr .place
 	.not\@:
-	elif !STRCMP(STRSUB("\2", 1, 1), ".")
+	ELIF !STRCMP(STRSUB("\2", 1, 1), ".")
 		; Locals can use a short jump
 		jr z, \2
-	else
+	ELSE
 		jp z, \2
-	endc
+	ENDC
 ENDM
 
 	dict "<MOBILE>",  MobileScriptChar

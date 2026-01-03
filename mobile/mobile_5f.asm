@@ -1656,12 +1656,12 @@ Function17da31:
 Unknown_17da8c:
 for x, 8
 	db 1 << x
-endr
+ENDR
 
 Unknown_17da94:
 for x, 8
 	db ~(1 << x)
-endr
+ENDR
 
 Function17da9c:
 	ld a, [wcd31]
@@ -3007,10 +3007,10 @@ MACRO inc_crash_check_pointer_farcall
 	push af
 	ld a, $1
 	ldh [rSVBK], a
-	rept _NARG
+	REPT _NARG
 		farcall \1
 		shift
-	endr
+	ENDR
 	pop af
 	ldh [rSVBK], a
 	ret

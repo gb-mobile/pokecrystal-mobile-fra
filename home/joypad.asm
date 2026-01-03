@@ -58,9 +58,9 @@ UpdateJoypad::
 	ld a, R_BUTTONS
 	ldh [rJOYP], a
 ; Wait for input to stabilize.
-rept 6
+REPT 6
 	ldh a, [rJOYP]
-endr
+ENDR
 ; Buttons take the lo nybble.
 	cpl
 	and $f

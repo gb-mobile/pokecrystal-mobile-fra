@@ -102,7 +102,7 @@ LoadMartPointer:
 	ld a, d
 	ld [wMartPointer + 1], a
 	ld hl, wCurMartCount
-	assert wCurMartCount + 1 == wCurMartItems
+	ASSERT wCurMartCount + 1 == wCurMartItems
 	xor a
 	ld bc, 16
 	call ByteFill

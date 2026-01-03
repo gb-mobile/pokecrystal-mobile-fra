@@ -1,11 +1,11 @@
 MACRO channel_count
-	assert 0 < (\1) && (\1) <= NUM_MUSIC_CHANS, \
+	ASSERT 0 < (\1) && (\1) <= NUM_MUSIC_CHANS, \
 		"channel_count must be 1-{d:NUM_MUSIC_CHANS}"
 	DEF _num_channels = \1 - 1
 ENDM
 
 MACRO channel
-	assert 0 < (\1) && (\1) <= NUM_CHANNELS, \
+	ASSERT 0 < (\1) && (\1) <= NUM_CHANNELS, \
 		"channel id must be 1-{d:NUM_CHANNELS}"
 	dn (_num_channels << 2), \1 - 1 ; channel id
 	dw \2 ; address
@@ -26,21 +26,21 @@ ENDM
 
 MACRO square_note
 	db \1 ; length
-	if \3 < 0
+	IF \3 < 0
 		dn \2, %1000 | (\3 * -1) ; volume envelope
-	else
+	ELSE
 		dn \2, \3 ; volume envelope
-	endc
+	ENDC
 	dw \4 ; frequency
 ENDM
 
 MACRO noise_note
 	db \1 ; length
-	if \3 < 0
+	IF \3 < 0
 		dn \2, %1000 | (\3 * -1) ; volume envelope
-	else
+	ELSE
 		dn \2, \3 ; volume envelope
-	endc
+	ENDC
 	db \4 ; frequency
 ENDM
 
@@ -50,7 +50,7 @@ DEF FIRST_MUSIC_CMD EQU const_value
 
 	const octave_cmd ; $d0
 MACRO octave
-	assert 1 <= (\1) && (\1) <= 8, "octave must be 1-8"
+	ASSERT 1 <= (\1) && (\1) <= 8, "octave must be 1-8"
 	db octave_cmd + 8 - (\1) ; octave
 ENDM
 
@@ -60,13 +60,13 @@ ENDM
 MACRO note_type
 	db note_type_cmd
 	db \1 ; note length
-	if _NARG >= 2
-		if \3 < 0
+	IF _NARG >= 2
+		IF \3 < 0
 			dn \2, %1000 | (\3 * -1) ; volume envelope
-		else
+		ELSE
 			dn \2, \3 ; volume envelope
-		endc
-	endc
+		ENDC
+	ENDC
 ENDM
 
 ; only valid on the noise channel
@@ -95,21 +95,21 @@ ENDM
 	const volume_envelope_cmd ; $dc
 MACRO volume_envelope
 	db volume_envelope_cmd
-	if \2 < 0
+	IF \2 < 0
 		dn \1, %1000 | (\2 * -1) ; volume envelope
-	else
+	ELSE
 		dn \1, \2 ; volume envelope
-	endc
+	ENDC
 ENDM
 
 	const pitch_sweep_cmd ; $dd
 MACRO pitch_sweep
 	db pitch_sweep_cmd
-	if \2 < 0
+	IF \2 < 0
 		dn \1, %1000 | (\2 * -1) ; pitch sweep
-	else
+	ELSE
 		dn \1, \2 ; pitch sweep
-	endc
+	ENDC
 ENDM
 
 	const duty_cycle_pattern_cmd ; $de
@@ -134,11 +134,11 @@ ENDM
 MACRO vibrato
 	db vibrato_cmd
 	db \1 ; delay
-	if _NARG > 2
+	IF _NARG > 2
 		dn \2, \3 ; extent, rate
-	else
+	ELSE
 		db \2 ; LEGACY: Support for 1-arg extent
-	endc
+	ENDC
 ENDM
 
 	const unknownmusic0xe2_cmd ; $e2
@@ -150,9 +150,9 @@ ENDM
 	const toggle_noise_cmd ; $e3
 MACRO toggle_noise
 	db toggle_noise_cmd
-	if _NARG > 0
+	IF _NARG > 0
 		db \1 ; drum kit
-	endc
+	ENDC
 ENDM
 
 	const force_stereo_panning_cmd ; $e4
@@ -164,11 +164,11 @@ ENDM
 	const volume_cmd ; $e5
 MACRO volume
 	db volume_cmd
-	if _NARG > 1
+	IF _NARG > 1
 		dn \1, \2 ; left volume, right volume
-	else
+	ELSE
 		db \1 ; LEGACY: Support for 1-arg volume
-	endc
+	ENDC
 ENDM
 
 	const pitch_offset_cmd ; $e6
@@ -232,9 +232,9 @@ ENDM
 	const sfx_toggle_noise_cmd ; $f0
 MACRO sfx_toggle_noise
 	db sfx_toggle_noise_cmd
-	if _NARG > 0
+	IF _NARG > 0
 		db \1 ; drum kit
-	endc
+	ENDC
 ENDM
 
 	const music0xf1_cmd ; $f1

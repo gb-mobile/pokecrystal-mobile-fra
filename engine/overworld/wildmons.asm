@@ -363,9 +363,9 @@ CheckRepelEffect::
 
 .ok
 ; to PartyMonLevel
-rept 4
+REPT 4
 	dec hl
-endr
+ENDR
 
 	ld a, [wCurPartyLevel]
 	cp [hl]

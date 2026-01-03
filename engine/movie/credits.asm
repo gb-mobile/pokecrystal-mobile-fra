@@ -454,19 +454,19 @@ ConstructCreditsTilemap:
 	ld c, 4
 	xor a
 .inner_loop
-rept 3
+REPT 3
 	ld [hli], a
 	inc a
-endr
+ENDR
 	ld [hl], a
 	inc a
 	add hl, de
 	dec c
 	jr nz, .inner_loop
 	pop hl
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	dec b
 	jr nz, .outer_loop
 	ret
@@ -475,10 +475,10 @@ DrawCreditsBorder:
 	ld c, SCREEN_WIDTH / 4
 .loop
 	push af
-rept 3
+REPT 3
 	ld [hli], a
 	inc a
-endr
+ENDR
 	ld [hli], a
 	pop af
 	dec c

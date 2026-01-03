@@ -778,9 +778,9 @@ GetMonNormalOrShinyPalettePointer:
 	call CheckShininess
 	pop hl
 	ret nc
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	ret
 
 PushSGBPals:
@@ -1005,9 +1005,9 @@ PushSGBBorderPalsAndWait:
 	call SGBDelayCycles
 	ld a, $10
 	ldh [rJOYP], a
-rept 6
+REPT 6
 	ldh a, [rJOYP]
-endr
+ENDR
 	call SGBDelayCycles
 	call SGBDelayCycles
 	ld a, $30
@@ -1283,9 +1283,9 @@ LoadMapPals:
 	maskbits NUM_DAYTIMES
 	cp NITE_F
 	jr c, .morn_day
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 .morn_day
 	ld de, wBGPals1 palette PAL_BG_ROOF color 1
 	ld bc, 4

@@ -45,7 +45,7 @@ UpdateBGMapBuffer::
 .next
 ; Copy a pair of 16x8 blocks (one 16x16 block)
 
-rept 2
+REPT 2
 ; Get our BG Map address
 	pop bc
 
@@ -71,7 +71,7 @@ rept 2
 	ld a, [de]
 	inc de
 	ld [bc], a
-endr
+ENDR
 
 ; We've done 2 16x8 blocks
 	ldh a, [hBGMapTileCount]
@@ -241,13 +241,13 @@ DEF THIRD_HEIGHT EQU SCREEN_HEIGHT / 3
 
 .row
 ; Copy a row of 20 tiles
-rept SCREEN_WIDTH / 2 - 1
+REPT SCREEN_WIDTH / 2 - 1
 	pop de
 	ld [hl], e
 	inc l
 	ld [hl], d
 	inc l
-endr
+ENDR
 	pop de
 	ld [hl], e
 	inc l
@@ -304,7 +304,7 @@ Serve1bppRequest::
 
 .next
 
-rept 3
+REPT 3
 	pop de
 	ld [hl], e
 	inc l
@@ -314,7 +314,7 @@ rept 3
 	inc l
 	ld [hl], d
 	inc l
-endr
+ENDR
 	pop de
 	ld [hl], e
 	inc l
@@ -389,13 +389,13 @@ _Serve2bppRequest::
 
 .next
 
-rept 7
+REPT 7
 	pop de
 	ld [hl], e
 	inc l
 	ld [hl], d
 	inc l
-endr
+ENDR
 	pop de
 	ld [hl], e
 	inc l

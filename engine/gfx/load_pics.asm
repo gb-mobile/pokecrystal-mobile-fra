@@ -114,7 +114,7 @@ GetFrontpicPointer:
 	ld d, BANK(UnownPicPointers)
 .ok
 	; These are assumed to be at the same address in their respective banks.
-	assert PokemonPicPointers == UnownPicPointers
+	ASSERT PokemonPicPointers == UnownPicPointers
 	ld hl, PokemonPicPointers
 	dec a
 	ld bc, 6
@@ -208,7 +208,7 @@ GetMonBackpic:
 	push de
 
 	; These are assumed to be at the same address in their respective banks.
-	assert PokemonPicPointers == UnownPicPointers
+	ASSERT PokemonPicPointers == UnownPicPointers
 	ld hl, PokemonPicPointers
 	ld a, b
 	ld d, BANK(PokemonPicPointers)
@@ -480,10 +480,10 @@ LoadOrientedFrontpic:
 	inc de
 	ld b, a
 	xor a
-rept 8
+REPT 8
 	rr b
 	rla
-endr
+ENDR
 	ld [hli], a
 	dec c
 	jr nz, .right_loop

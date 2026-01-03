@@ -276,7 +276,7 @@ SetFacingBoulderDust:
 	ld a, FACING_BOULDER_DUST_1
 	jr z, .ok
 	inc a
-	assert FACING_BOULDER_DUST_1 + 1 == FACING_BOULDER_DUST_2
+	ASSERT FACING_BOULDER_DUST_1 + 1 == FACING_BOULDER_DUST_2
 .ok
 	ld [hl], a
 	ret

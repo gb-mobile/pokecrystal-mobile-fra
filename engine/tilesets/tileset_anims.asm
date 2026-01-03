@@ -323,11 +323,11 @@ ScrollTileLeft:
 	ld l, e
 	ld c, LEN_2BPP_TILE / 4
 .loop
-rept 4
+REPT 4
 	ld a, [hl]
 	rlca
 	ld [hli], a
-endr
+ENDR
 	dec c
 	jr nz, .loop
 	ret
@@ -337,11 +337,11 @@ ScrollTileRight:
 	ld l, e
 	ld c, LEN_2BPP_TILE / 4
 .loop
-rept 4
+REPT 4
 	ld a, [hl]
 	rrca
 	ld [hli], a
-endr
+ENDR
 	dec c
 	jr nz, .loop
 	ret
@@ -888,13 +888,13 @@ WriteTile:
 	ld [hl], e
 	inc hl
 	ld [hl], d
-rept (LEN_2BPP_TILE - 2) / 2
+REPT (LEN_2BPP_TILE - 2) / 2
 	pop de
 	inc hl
 	ld [hl], e
 	inc hl
 	ld [hl], d
-endr
+ENDR
 
 ; Restore the stack pointer from bc
 	ld h, b

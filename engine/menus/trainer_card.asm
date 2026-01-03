@@ -314,9 +314,9 @@ TrainerCard_Page2_3_InitObjectsAndStrings:
 	ld c, 4
 .loop
 	call TrainerCard_Page2_3_PlaceLeadersFaces
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	dec c
 	jr nz, .loop
 	hlcoord 2, 13
@@ -324,9 +324,9 @@ endr
 	ld c, 4
 .loop2
 	call TrainerCard_Page2_3_PlaceLeadersFaces
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	dec c
 	jr nz, .loop2
 	xor a

@@ -143,9 +143,9 @@ PlayCry::
 	ld [MBC3RomBank], a
 
 	ld hl, PokemonCries
-rept MON_CRY_LENGTH
+REPT MON_CRY_LENGTH
 	add hl, de
-endr
+ENDR
 
 	ld e, [hl]
 	inc hl

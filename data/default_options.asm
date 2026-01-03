@@ -15,4 +15,4 @@ DefaultOptions:
 	db $00
 	db $00
 .End
-	assert DefaultOptions.End - DefaultOptions == wOptionsEnd - wOptions
+	ASSERT DefaultOptions.End - DefaultOptions == wOptionsEnd - wOptions

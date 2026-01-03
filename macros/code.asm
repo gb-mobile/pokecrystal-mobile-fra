@@ -34,18 +34,18 @@ MACRO maskbits
 ; 	maskbits 26
 ; 	cp 26
 ; 	jr nc, .loop
-	assert 0 < (\1) && (\1) <= $100, "bitmask must be 8-bit"
+	ASSERT 0 < (\1) && (\1) <= $100, "bitmask must be 8-bit"
 	DEF x = 1
-	rept 8
-		if x + 1 < (\1)
+	REPT 8
+		IF x + 1 < (\1)
 			DEF x = (x << 1) | 1
-		endc
-	endr
-	if _NARG == 2
+		ENDC
+	ENDR
+	IF _NARG == 2
 		and x << (\2)
-	else
+	ELSE
 		and x
-	endc
+	ENDC
 ENDM
 
 MACRO calc_sine_wave
@@ -68,11 +68,11 @@ MACRO calc_sine_wave
 	ld e, a
 	ld a, d
 	ld d, 0
-if _NARG == 1
+IF _NARG == 1
 	ld hl, \1
-else
+ELSE
 	ld hl, .sinetable\@
-endc
+ENDC
 	add hl, de
 	add hl, de
 	ld e, [hl]
@@ -89,8 +89,8 @@ endc
 	and a
 	jr nz, .multiply\@
 	ret
-if _NARG == 0
+IF _NARG == 0
 .sinetable\@
 	sine_table 32
-endc
+ENDC
 ENDM

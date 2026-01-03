@@ -11,9 +11,9 @@ RestartClock_GetWraparoundTime:
 	ld e, a
 	ld d, 0
 	ld hl, .WrapAroundTimes
-rept 4
+REPT 4
 	add hl, de
-endr
+ENDR
 	ld e, [hl]
 	inc hl
 	ld d, [hl]

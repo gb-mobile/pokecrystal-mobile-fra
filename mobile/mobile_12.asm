@@ -653,10 +653,10 @@ MenuData_0x4851b:
 .Items:
 	db NUM_REGION_CODES - 1 ; The number of locations in the prefectures list (-1 because it starts at 0)
 DEF x = 0
-rept NUM_REGION_CODES - 1 ; The number of locations in the prefectures list (-1 because it starts at 0)
+REPT NUM_REGION_CODES - 1 ; The number of locations in the prefectures list (-1 because it starts at 0)
 	db x
 	DEF x = x + 1
-endr
+ENDR
 	db -1
 
 DisplayInitializedMobileProfileLayout: ; Clears the 4 top lines, displays the "Mobile Profile" title, and displays an empty golden box.
@@ -909,9 +909,9 @@ Function487ec:
 	ld de, wAge
 	call Function487ff
 	pop hl
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	ld de, String_4880d
 	call PlaceString
 	ret
@@ -1223,9 +1223,9 @@ asm_48972:
 
 	pop af
 
-rept 4
+REPT 4
 	pop bc ; Flush the stack that was holding the previous value of the zip code.
-endr
+ENDR
 
 .quit_zip_code_edit_menu
 	push af

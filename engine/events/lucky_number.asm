@@ -195,7 +195,7 @@ CheckForLuckyNumberWinners:
 	table_width 3, CheckForLuckyNumberWinners.BoxBankAddresses
 for n, 1, NUM_BOXES + 1
 	dba sBox{d:n}
-endr
+ENDR
 	assert_table_length NUM_BOXES
 
 .LuckyNumberMatchPartyText:

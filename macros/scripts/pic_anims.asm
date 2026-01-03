@@ -1,11 +1,11 @@
 MACRO frame
-	if _NARG <= 2
+	IF _NARG <= 2
 		db \1 ; index
 		db \2 ; duration
-	else
+	ELSE
 	; LEGACY: Support for the old name of "oamanim"
 		oamanim \#
-	endc
+	ENDC
 ENDM
 
 	const_def -1, -1

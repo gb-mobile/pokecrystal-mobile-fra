@@ -2695,9 +2695,9 @@ Function1111fe:
 	push de
 	push bc
 	push hl
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	ld a, [hli]
 	ld [wc833], a
 	ld a, [hli]
@@ -8518,9 +8518,9 @@ Function1136c1:
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-rept 4
+REPT 4
 	inc hl
-endr
+ENDR
 	ld a, h
 	ld [wMobileSDK_PacketBuffer + 198], a
 	ld a, l
@@ -9194,9 +9194,9 @@ Function113d66:
 	ld c, a
 	ld a, [wMobileSDK_PacketBuffer + 202]
 	ld b, a
-rept 4
+REPT 4
 	dec bc
-endr
+ENDR
 	ld a, b
 	or c
 	jr z, .asm_113dae

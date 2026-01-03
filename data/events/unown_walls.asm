@@ -1,18 +1,18 @@
 MACRO unownwall
 	for n, CHARLEN(\1)
 		DEF x = CHARSUB(\1, n + 1)
-		if x == "-"
+		IF x == "-"
 			db $64
-		elif x >= "Y"
+		ELIF x >= "Y"
 			db 2 * (x - "Y") + $60
-		elif x >= "Q"
+		ELIF x >= "Q"
 			db 2 * (x - "Q") + $40
-		elif x >= "I"
+		ELIF x >= "I"
 			db 2 * (x - "I") + $20
-		else
+		ELSE
 			db 2 * (x - "A")
-		endc
-	endr
+		ENDC
+	ENDR
 	db -1 ; end
 ENDM
 

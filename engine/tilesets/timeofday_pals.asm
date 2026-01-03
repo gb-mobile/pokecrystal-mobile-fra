@@ -175,9 +175,9 @@ FillWhiteBGColor:
 	ld [hli], a
 	ld a, d
 	ld [hli], a
-rept 6
+REPT 6
 	inc hl
-endr
+ENDR
 	dec c
 	jr nz, .loop
 

@@ -38,16 +38,16 @@ DoMysteryGift:
 	farcall StageDataForMysteryGift
 	call ClearMysteryGiftTrainer
 	vc_patch Infrared_stage_party_data
-if DEF(_CRYSTAL11_VC)
+IF DEF(_CRYSTAL11_VC)
 	farcall StagePartyDataForMysteryGift
 	call ClearMysteryGiftTrainer
 	nop
-else
+ELSE
 	ld a, 2
 	ld [wMysteryGiftMessageCount], a
 	ld a, wMysteryGiftPartnerDataEnd - wMysteryGiftPartnerData
 	ld [wMysteryGiftStagedDataLength], a
-endc
+ENDC
 	vc_patch_end
 
 	ldh a, [rIE]
@@ -257,11 +257,11 @@ endc
 	ld de, sMysteryGiftPartnerName
 	ld bc, NAME_LENGTH
 	call CopyBytes
-	assert sMysteryGiftPartnerName + NAME_LENGTH == sMysteryGiftUnusedFlag
+	ASSERT sMysteryGiftPartnerName + NAME_LENGTH == sMysteryGiftUnusedFlag
 	ld a, TRUE
 	ld [de], a
 	inc de
-	assert sMysteryGiftUnusedFlag + 1 == sMysteryGiftTrainer
+	ASSERT sMysteryGiftUnusedFlag + 1 == sMysteryGiftTrainer
 	ld hl, wMysteryGiftTrainer
 	ld bc, wMysteryGiftTrainerEnd - wMysteryGiftTrainer
 	call CopyBytes
@@ -270,7 +270,7 @@ endc
 ExchangeMysteryGiftData:
 	vc_hook Infrared_ExchangeMysteryGiftData_start
 	vc_patch Infrared_ExchangeMysteryGiftData_function
-if DEF(_CRYSTAL11_VC)
+IF DEF(_CRYSTAL11_VC)
 	ld d, $ef
 .loop
 	dec d
@@ -287,7 +287,7 @@ if DEF(_CRYSTAL11_VC)
 	cp MG_OKAY
 	jr nz, ExchangeMysteryGiftData
 	ret
-else
+ELSE
 	di
 	farcall ClearChannels
 	call InitializeIRCommunicationInterrupts
@@ -296,7 +296,7 @@ else
 	call BeginIRCommunication
 	call InitializeIRCommunicationRoles
 	ldh a, [hMGStatusFlags]
-endc
+ENDC
 	vc_patch_end
 	cp MG_CANCELED
 	jp z, EndOrContinueMysteryGiftIRCommunication
@@ -1278,9 +1278,9 @@ MysteryGift_UpdateJoypad:
 	ld a, R_BUTTONS
 	ldh [rJOYP], a
 ; Wait for input to stabilize.
-rept 6
+REPT 6
 	ldh a, [rJOYP]
-endr
+ENDR
 ; Buttons take the lo nybble.
 	cpl
 	and $f
@@ -1355,7 +1355,7 @@ UnlockMysteryGift:
 	inc a
 	jr nz, .ok
 	ld [hld], a
-	assert sMysteryGiftUnlocked - 1 == sMysteryGiftItem
+	ASSERT sMysteryGiftUnlocked - 1 == sMysteryGiftItem
 	ld [hl], a
 .ok
 	jp CloseSRAM
@@ -1379,8 +1379,8 @@ BackupMysteryGift:
 	ld a, [hli]
 	ld [de], a
 	inc de
-	assert sMysteryGiftItem + 1 == sMysteryGiftUnlocked
-	assert sBackupMysteryGiftItem + 1 == sNumDailyMysteryGiftPartnerIDs
+	ASSERT sMysteryGiftItem + 1 == sMysteryGiftUnlocked
+	ASSERT sBackupMysteryGiftItem + 1 == sNumDailyMysteryGiftPartnerIDs
 	ld a, [hl]
 	ld [de], a
 	jp CloseSRAM
@@ -1394,8 +1394,8 @@ RestoreMysteryGift:
 	ld a, [hli]
 	ld [de], a
 	inc de
-	assert sBackupMysteryGiftItem + 1 == sNumDailyMysteryGiftPartnerIDs
-	assert sMysteryGiftItem + 1 == sMysteryGiftUnlocked
+	ASSERT sBackupMysteryGiftItem + 1 == sNumDailyMysteryGiftPartnerIDs
+	ASSERT sMysteryGiftItem + 1 == sMysteryGiftUnlocked
 	ld a, [hl]
 	ld [de], a
 	jp CloseSRAM
@@ -1652,18 +1652,18 @@ DoNameCardSwap:
 	ld b, 8
 .dec_y_loop
 	dec [hl]
-rept SPRITEOAMSTRUCT_LENGTH
+REPT SPRITEOAMSTRUCT_LENGTH
 	inc hl
-endr
+ENDR
 	dec b
 	jr nz, .dec_y_loop
 	ld hl, wShadowOAMSprite08YCoord
 	ld b, 8
 .inc_y_loop
 	inc [hl]
-rept SPRITEOAMSTRUCT_LENGTH
+REPT SPRITEOAMSTRUCT_LENGTH
 	inc hl
-endr
+ENDR
 	dec b
 	jr nz, .inc_y_loop
 	dec c

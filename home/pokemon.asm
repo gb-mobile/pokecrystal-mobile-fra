@@ -166,9 +166,9 @@ LoadCry::
 	rst Bankswitch
 
 	ld hl, PokemonCries
-rept MON_CRY_LENGTH
+REPT MON_CRY_LENGTH
 	add hl, bc
-endr
+ENDR
 
 	ld e, [hl]
 	inc hl
