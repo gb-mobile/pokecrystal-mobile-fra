@@ -2229,10 +2229,10 @@ GetFailureResultText:
 	ld hl, wCurDamage
 	ld a, [hli]
 	ld b, [hl]
-REPT 3
+rept 3
 	srl a
 	rr b
-ENDR
+endr
 	ld [hl], b
 	dec hl
 	ld [hli], a
@@ -3388,7 +3388,7 @@ DoEnemyDamage:
 	ld [wHPBuffer2 + 1], a
 	sbc b
 	ld [wEnemyMonHP], a
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 	push af
 	ld a, BANK(sSkipBattle)
 	call OpenSRAM
@@ -3403,9 +3403,9 @@ IF DEF(_DEBUG)
 	push af
 .debug_skip
 	pop af
-ELSE
+else
 	jr nc, .no_underflow
-ENDC
+endc
 
 	ld a, [wHPBuffer2 + 1]
 	ld [hli], a

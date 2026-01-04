@@ -45,10 +45,10 @@ FlagAction::
 	and 7
 
 	; shift de right by three bits (get the index within memory)
-REPT 3
+rept 3
 	srl d
 	rr e
-ENDR
+endr
 	add hl, de
 
 	; implement a decoder

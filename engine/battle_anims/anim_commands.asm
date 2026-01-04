@@ -250,11 +250,11 @@ BattleAnim_ClearOAM:
 .loop
 	ld a, [hl]
 	and ~(PALETTE_MASK | VRAM_BANK_1) ; zeros out the palette bits
-	ASSERT PAL_BATTLE_OB_ENEMY == 0
+	assert PAL_BATTLE_OB_ENEMY == 0
 	ld [hli], a
-REPT SPRITEOAMSTRUCT_LENGTH - 1
+rept SPRITEOAMSTRUCT_LENGTH - 1
 	inc hl
-ENDR
+endr
 	dec c
 	jr nz, .loop
 	ret
@@ -687,9 +687,9 @@ BattleAnimCmd_5GFX:
 	push hl
 	ld l, a
 	ld h, 0
-REPT 4
+rept 4
 	add hl, hl
-ENDR
+endr
 	ld de, vTiles0 tile BATTLEANIM_BASE_TILE
 	add hl, de
 	ld a, [wBattleAnimByte]
@@ -1234,9 +1234,9 @@ BattleAnimCmd_Cry:
 	ld e, a
 	ld d, 0
 	ld hl, .CryData
-REPT 4
+rept 4
 	add hl, de
-ENDR
+endr
 
 	ldh a, [rSVBK]
 	push af

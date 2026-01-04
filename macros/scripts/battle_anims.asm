@@ -3,25 +3,25 @@
 DEF FIRST_BATTLE_ANIM_CMD EQU const_value
 
 MACRO anim_wait
-	ASSERT (\1) < FIRST_BATTLE_ANIM_CMD, "anim_wait argument must be less than {FIRST_BATTLE_ANIM_CMD}"
+	assert (\1) < FIRST_BATTLE_ANIM_CMD, "anim_wait argument must be less than {FIRST_BATTLE_ANIM_CMD}"
 	db \1
 ENDM
 
 	const anim_obj_command ; $d0
 MACRO anim_obj
 	db anim_obj_command
-	IF _NARG <= 4
+	if _NARG <= 4
 		db \1 ; object
 		db \2 ; x
 		db \3 ; y
 		db \4 ; param
-	ELSE
+	else
 	; LEGACY: Support the tile+offset format
 		db \1 ; object
 		db (\2) * 8 + (\3) ; x_tile, x
 		db (\4) * 8 + (\5) ; y_tile, y
 		db \6 ; param
-	ENDC
+	endc
 ENDM
 
 	const anim_1gfx_command ; $d1

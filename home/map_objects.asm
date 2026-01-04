@@ -458,9 +458,9 @@ GetSpriteMovementFunction::
 	ld hl, SpriteMovementData + SPRITEMOVEATTR_MOVEMENT
 	ld e, a
 	ld d, 0
-REPT NUM_SPRITEMOVEDATA_FIELDS
+rept NUM_SPRITEMOVEDATA_FIELDS
 	add hl, de
-ENDR
+endr
 	ld a, [hl]
 	ret
 
@@ -470,9 +470,9 @@ GetInitialFacing::
 	ld e, a
 	ld d, 0
 	ld hl, SpriteMovementData + SPRITEMOVEATTR_FACING
-REPT NUM_SPRITEMOVEDATA_FIELDS
+rept NUM_SPRITEMOVEDATA_FIELDS
 	add hl, de
-ENDR
+endr
 	ld a, BANK(SpriteMovementData)
 	call GetFarByte
 	add a
@@ -508,9 +508,9 @@ CopySpriteMovementData::
 	ld e, a
 	ld d, 0
 	ld hl, SpriteMovementData + SPRITEMOVEATTR_FACING
-REPT NUM_SPRITEMOVEDATA_FIELDS
+rept NUM_SPRITEMOVEDATA_FIELDS
 	add hl, de
-ENDR
+endr
 	ld b, h
 	ld c, l
 	pop de

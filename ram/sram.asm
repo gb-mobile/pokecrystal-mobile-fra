@@ -9,27 +9,27 @@ sPartyMail::
 ; sPartyMon1Mail - sPartyMon6Mail
 for n, 1, PARTY_LENGTH + 1
 sPartyMon{d:n}Mail:: mailmsg sPartyMon{d:n}Mail
-ENDR
+endr
 
 sPartyMailBackup::
 ; sPartyMon1MailBackup - sPartyMon6MailBackup
 for n, 1, PARTY_LENGTH + 1
 sPartyMon{d:n}MailBackup:: mailmsg sPartyMon{d:n}MailBackup
-ENDR
+endr
 
 sMailboxCount:: db
 sMailboxes::
 ; sMailbox1 - sMailbox10
 for n, 1, MAILBOX_CAPACITY + 1
 sMailbox{d:n}:: mailmsg sMailbox{d:n}
-ENDR
+endr
 
 sMailboxCountBackup:: db
 sMailboxesBackup::
 ; sMailbox1Backup - sMailbox10Backup
 for n, 1, MAILBOX_CAPACITY + 1
 sMailbox{d:n}Backup:: mailmsg sMailbox{d:n}Backup
-ENDR
+endr
 
 sMysteryGiftData::
 sMysteryGiftItem:: db
@@ -74,13 +74,13 @@ sBackupCheckValue2:: db ; loaded with SAVE_CHECK_VALUE_2, used to check save cor
 
 sStackTop:: dw
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 sRTCHaltCheckValue:: dw
 sSkipBattle:: db
 sDebugTimeCyclesSinceLastCall:: db
 sOpenedInvalidSRAM:: db
 sIsBugMon:: db
-ENDC
+endc
 
 
 SECTION "Save", SRAM
@@ -120,7 +120,7 @@ sLinkBattleRecord::
 ; sLinkBattleRecord1 - sLinkBattleRecord5
 for n, 1, NUM_LINK_BATTLE_RECORDS + 1
 sLinkBattleRecord{d:n}:: link_battle_record sLinkBattleRecord{d:n}
-ENDR
+endr
 sLinkBattleStatsEnd::
 
 
@@ -130,7 +130,7 @@ sHallOfFame::
 ; sHallOfFame1 - sHallOfFame30
 for n, 1, NUM_HOF_TEAMS + 1
 sHallOfFame{d:n}:: hall_of_fame sHallOfFame{d:n}
-ENDR
+endr
 sHallOfFameEnd::
 
 
@@ -180,10 +180,10 @@ SECTION "SRAM Battle Tower", SRAM
 ; so they use multiple SECTIONs
 DEF box_n = 0
 MACRO boxes
-	REPT \1
+	rept \1
 		DEF box_n += 1
 	sBox{d:box_n}:: box sBox{d:box_n}
-	ENDR
+	endr
 ENDM
 
 SECTION "Boxes 1-7", SRAM
@@ -197,7 +197,7 @@ SECTION "Boxes 8-14", SRAM
 	boxes 7
 
 ; All 14 boxes fit exactly within 2 SRAM banks
-	ASSERT box_n == NUM_BOXES, \
+	assert box_n == NUM_BOXES, \
 		"boxes: Expected {d:NUM_BOXES} total boxes, got {d:box_n}"
 
 

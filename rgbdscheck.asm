@@ -2,7 +2,7 @@ MAJOR EQU 0
 MINOR EQU 6
 PATCH EQU 0
 
-WRONG_RGBDS EQUS "fail \"pokecrystal requires rgbds v1.0.1 or newer.\""
+WRONG_RGBDS EQUS "fail \"pokecrystal requires rgbds v0.6.0 or newer.\""
 
 IF !DEF(__RGBDS_MAJOR__) || !DEF(__RGBDS_MINOR__) || !DEF(__RGBDS_PATCH__)
 	WRONG_RGBDS

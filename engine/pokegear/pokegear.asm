@@ -1018,7 +1018,7 @@ PokegearPhone_UpdateCursor:
 for y, PHONE_DISPLAY_HEIGHT
 	hlcoord 1, 4 + y * 2
 	ld [hl], a
-ENDR
+endr
 	hlcoord 1, 4
 	ld a, [wPokegearPhoneCursorPosition]
 	ld bc, 2 * SCREEN_WIDTH

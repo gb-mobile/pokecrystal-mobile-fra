@@ -11,9 +11,9 @@ Fish:
 	call GetFishGroupIndex
 
 	ld hl, FishGroups
-REPT FISHGROUP_DATA_LENGTH
+rept FISHGROUP_DATA_LENGTH
 	add hl, de
-ENDR
+endr
 	call .Fish
 
 	pop hl
@@ -73,9 +73,9 @@ ENDR
 	ld e, [hl]
 	ld d, 0
 	ld hl, TimeFishGroups
-REPT 4
+rept 4
 	add hl, de
-ENDR
+endr
 
 	ld a, [wTimeOfDay]
 	maskbits NUM_DAYTIMES

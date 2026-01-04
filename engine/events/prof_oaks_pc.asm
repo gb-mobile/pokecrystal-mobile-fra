@@ -83,9 +83,9 @@ FindOakRating:
 	ld a, [hli]
 	cp c
 	jr nc, .match
-REPT 4
+rept 4
 	inc hl
-ENDR
+endr
 	jr .loop
 
 .match

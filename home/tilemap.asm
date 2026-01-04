@@ -115,7 +115,7 @@ _CopyTilemapAtOnce:
 	ld c, LOW(rSTAT)
 
 .loop
-REPT SCREEN_WIDTH / 2
+rept SCREEN_WIDTH / 2
 	pop de
 ; if in v/hblank, wait until not in v/hblank
 .loop\@
@@ -127,7 +127,7 @@ REPT SCREEN_WIDTH / 2
 	inc l
 	ld [hl], d
 	inc l
-ENDR
+endr
 
 	ld de, BG_MAP_WIDTH - SCREEN_WIDTH
 	add hl, de

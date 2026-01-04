@@ -2,7 +2,7 @@ OpenSRAM::
 ; if invalid bank, sram is disabled
 	cp NUM_SRAM_BANKS
 	jr c, .valid
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 	push af
 	push bc
 	ld b, 1
@@ -17,7 +17,7 @@ IF DEF(_DEBUG)
 	ld [sOpenedInvalidSRAM], a
 	pop bc
 	pop af
-ENDC
+endc
 	jr CloseSRAM
 
 .valid:

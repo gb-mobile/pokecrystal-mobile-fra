@@ -223,7 +223,7 @@ CheckOwnMon:
 	ld hl, wPlayerName
 
 ; BUG: CheckOwnMon only checks the first five letters of OT names (see docs/bugs_and_glitches.md)
-REPT NAME_LENGTH_JAPANESE - 2
+rept NAME_LENGTH_JAPANESE - 2
 	ld a, [de]
 	cp [hl]
 	jr nz, .notfound
@@ -231,7 +231,7 @@ REPT NAME_LENGTH_JAPANESE - 2
 	jr z, .found
 	inc hl
 	inc de
-ENDR
+endr
 
 	ld a, [de]
 	cp [hl]
@@ -255,7 +255,7 @@ SearchBoxAddressTable:
 	table_width 3, SearchBoxAddressTable
 for n, 1, NUM_BOXES + 1
 	dba sBox{d:n}
-ENDR
+endr
 	assert_table_length NUM_BOXES
 
 UpdateOTPointer:

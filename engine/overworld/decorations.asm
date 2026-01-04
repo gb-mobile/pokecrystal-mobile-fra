@@ -139,7 +139,7 @@ Deco_FillTempWithMinusOne:
 	xor a
 	ld hl, wNumOwnedDecoCategories
 	ld [hli], a
-	ASSERT wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
+	assert wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
 	ld a, -1
 	ld bc, 16
 	call ByteFill
@@ -168,7 +168,7 @@ CheckAllDecorationFlags:
 AppendDecoIndex:
 	ld hl, wNumOwnedDecoCategories
 	inc [hl]
-	ASSERT wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
+	assert wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
 	ld e, [hl]
 	ld d, 0
 	add hl, de
@@ -362,7 +362,7 @@ PopulateDecoCategoryMenu:
 	ld hl, wNumOwnedDecoCategories
 	ld e, [hl]
 	dec [hl]
-	ASSERT wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
+	assert wNumOwnedDecoCategories + 1 == wOwnedDecoCategories
 	ld d, 0
 	add hl, de
 	ld [hl], -1

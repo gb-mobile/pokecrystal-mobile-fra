@@ -209,7 +209,7 @@ FindApricornsInBag:
 	ld hl, wKurtApricornCount
 	xor a
 	ld [hli], a
-	ASSERT wKurtApricornCount + 1 == wKurtApricornItems
+	assert wKurtApricornCount + 1 == wKurtApricornItems
 	dec a
 	ld bc, 10
 	call ByteFill

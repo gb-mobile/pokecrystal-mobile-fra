@@ -110,11 +110,11 @@ ENDM
 
 	const movement_step_sleep ; $3e
 MACRO step_sleep
-	IF \1 <= 8
+	if \1 <= 8
 		db movement_step_sleep + \1 - 1
-	ELSE
+	else
 		db movement_step_sleep + 8, \1
-	ENDC
+	endc
 ENDM
 
 	const_skip 8 ; all step_sleep values

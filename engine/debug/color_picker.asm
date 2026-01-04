@@ -113,13 +113,13 @@ DebugColor_InitTrainerColor:
 	ret
 
 DebugColor_InitColor:
-REPT 3
+rept 3
 	ld a, BANK(PokemonPalettes) ; aka BANK(TrainerPalettes)
 	call GetFarByte
 	ld [de], a
 	inc de
 	inc hl
-ENDR
+endr
 	ld a, BANK(PokemonPalettes) ; aka BANK(TrainerPalettes)
 	call GetFarByte
 	ld [de], a
@@ -899,11 +899,11 @@ DebugColor_LoadPalettes_White_Col1_Col2_Black:
 	ld [hli], a
 	ld a, HIGH(PALRGB_WHITE)
 	ld [hli], a
-REPT 4
+rept 4
 	ld a, [de]
 	inc de
 	ld [hli], a
-ENDR
+endr
 	xor a
 	ld [hli], a
 	ld [hli], a
@@ -1135,16 +1135,16 @@ DebugColor_DrawAttributeSwatch:
 _DebugColor_DrawSwatch:
 ; Fills a 4x3 box at de with byte a.
 	add hl, de
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
-REPT 2
+endr
+rept 2
 	ld bc, SCREEN_WIDTH - 4
 	add hl, bc
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
-ENDR
+endr
+endr
 	ret
 
 DebugTileset_LoadRGBMeter:

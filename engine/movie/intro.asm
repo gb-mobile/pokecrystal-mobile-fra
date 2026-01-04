@@ -1312,19 +1312,19 @@ CrystalIntro_UnownFade:
 ; Fade between black and white.
 for hue, 32
 	RGB hue, hue, hue
-ENDR
+endr
 
 .BlackLBlueFade:
 ; Fade between black and light blue.
 for hue, 32
 	RGB 0, hue / 2, hue
-ENDR
+endr
 
 .BlackBlueFade:
 ; Fade between black and blue.
 for hue, 32
 	RGB 0, 0, hue
-ENDR
+endr
 
 Intro_Scene20_AppearUnown:
 ; Spawn the palette for the nth Unown
@@ -1394,9 +1394,9 @@ Intro_FadeUnownWordPals:
 	ld d, 0
 	ld hl, wBGPals2
 	add hl, de
-REPT 4
+rept 4
 	inc hl
-ENDR
+endr
 	ld a, [wIntroSceneTimer]
 	add a
 	ld c, a
@@ -1439,19 +1439,19 @@ ENDR
 
 .FastFadePalettes:
 DEF hue = 31
-REPT 8
+rept 8
 	RGB hue, hue, hue
 	DEF hue -= 1
 	RGB hue, hue, hue
 	DEF hue -= 2
-ENDR
+endr
 
 .SlowFadePalettes:
 DEF hue = 31
-REPT 16
+rept 16
 	RGB hue, hue, hue
 	DEF hue -= 1
-ENDR
+endr
 
 Intro_LoadTilemap:
 	ldh a, [rSVBK]

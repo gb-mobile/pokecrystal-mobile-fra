@@ -1817,9 +1817,9 @@ AI_Smart_FlameWheel:
 	ld a, [wEnemyMonStatus]
 	bit FRZ, a
 	ret z
-REPT 5
+rept 5
 	dec [hl]
-ENDR
+endr
 	ret
 
 AI_Smart_Curse:
@@ -3213,9 +3213,9 @@ AI_Risky:
 	jr nc, .nextmove
 
 	pop hl
-REPT 5
+rept 5
 	dec [hl]
-ENDR
+endr
 	push hl
 
 .nextmove

@@ -196,9 +196,9 @@ GetItemFromMom:
 .GetFromList1:
 	ld l, a
 	ld h, 0
-REPT 3 ; multiply hl by 8
+rept 3 ; multiply hl by 8
 	add hl, hl
-ENDR
+endr
 	add hl, de
 	ret
 

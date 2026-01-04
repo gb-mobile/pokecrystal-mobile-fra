@@ -3597,9 +3597,9 @@ NewEnemyMonStatus:
 	ld [wLastEnemyCounterMove], a
 	ld [wLastEnemyMove], a
 	ld hl, wEnemySubStatus1
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
+endr
 	ld [hl], a
 	ld [wEnemyDisableCount], a
 	ld [wEnemyFuryCutterCount], a
@@ -4078,9 +4078,9 @@ NewBattleMonStatus:
 	ld [wLastEnemyCounterMove], a
 	ld [wLastPlayerMove], a
 	ld hl, wPlayerSubStatus1
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
+endr
 	ld [hl], a
 	ld hl, wPlayerUsedMoves
 	ld [hli], a
@@ -7784,7 +7784,7 @@ HandleSafariAngerEatingStatus: ; unreferenced
 
 .angry
 	dec hl
-	ASSERT wSafariMonEating - 1 == wSafariMonAngerCount
+	assert wSafariMonEating - 1 == wSafariMonAngerCount
 	ld a, [hl]
 	and a
 	ret z

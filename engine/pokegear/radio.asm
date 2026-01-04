@@ -232,9 +232,9 @@ OaksPKMNTalk4:
 
 .done
 	; Point hl to the list of morning Pokémon., skipping percentages
-REPT 4
+rept 4
 	inc hl
-ENDR
+endr
 	; Generate a number, either 0, 1, or 2, to choose a time of day.
 .loop2
 	call Random
@@ -705,9 +705,9 @@ PokedexShow2:
 	pop hl
 	pop af
 	call CopyDexEntryPart2
-REPT 3
+rept 3
 	inc hl
-ENDR
+endr
 	ld a, l
 	ld [wPokedexShowPointerAddr], a
 	ld a, h

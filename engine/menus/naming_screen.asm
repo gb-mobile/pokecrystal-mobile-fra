@@ -280,7 +280,7 @@ NamingScreen_InitText:
 NamingScreen_ApplyTextInputMode:
 	call NamingScreen_IsTargetBox
 	jr nz, .not_box
-	ASSERT BoxNameInputLower - NameInputLower == BoxNameInputUpper - NameInputUpper
+	assert BoxNameInputLower - NameInputLower == BoxNameInputUpper - NameInputUpper
 	ld hl, BoxNameInputLower - NameInputLower
 	add hl, de
 	ld d, h

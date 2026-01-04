@@ -1590,11 +1590,11 @@ _LinkBattleSendReceiveAction:
 
 	vc_hook Wireless_end_exchange
 	vc_patch Wireless_net_delay_3
-IF DEF(_CRYSTAL11_VC)
+if DEF(_CRYSTAL11_VC)
 	ld b, 26
-ELSE
+else
 	ld b, 10
-ENDC
+endc
 	vc_patch_end
 .receive
 	call DelayFrame
@@ -1604,11 +1604,11 @@ ENDC
 
 	vc_hook Wireless_start_send_zero_bytes
 	vc_patch Wireless_net_delay_4
-IF DEF(_CRYSTAL11_VC)
+if DEF(_CRYSTAL11_VC)
 	ld b, 26
-ELSE
+else
 	ld b, 10
-ENDC
+endc
 	vc_patch_end
 .acknowledge
 	call DelayFrame
@@ -2410,11 +2410,11 @@ MACRO macro_100fc0
 	; address, size[, OT address]
 	db ($80 * (\1 >= SRAM_End)) | (BANK(\1) * (\1 < SRAM_End))
 	dw \1, \2
-	IF _NARG == 3
+	if _NARG == 3
 		dw \3
-	ELSE
+	else
 		dw NULL
-	ENDC
+	endc
 ENDM
 
 Unknown_100fc0:
@@ -2452,9 +2452,9 @@ Unknown_10102c:
 Function101050:
 	call Function10107d
 	ld a, [wOTPartyCount]
-REPT 2 ; ???
+rept 2 ; ???
 	ld hl, wc608
-ENDR
+endr
 	ld bc, wc7bb - wc608
 	call Function1010de
 	ld hl, wc7bb

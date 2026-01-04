@@ -385,9 +385,9 @@ StartTrainerBattle_SpinToBlack:
 	ld e, a
 	ld d, 0
 	ld hl, .spin_quadrants
-REPT 5
+rept 5
 	add hl, de
-ENDR
+endr
 	ld a, [hli]
 	cp -1
 	jr z, .end

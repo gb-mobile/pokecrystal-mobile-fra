@@ -47,10 +47,10 @@ AnimateMon_HOF:
 	ret
 
 MACRO pokeanim
-	REPT _NARG
+	rept _NARG
 		db (PokeAnim_\1_SetupCommand - PokeAnim_SetupCommands) / 2
 		shift
-	ENDR
+	endr
 	db (PokeAnim_Finish_SetupCommand - PokeAnim_SetupCommands) / 2
 ENDM
 
@@ -537,8 +537,8 @@ MACRO poke_anim_box
 	for y, 1, \1 + 1
 		for x, 7 - \1, 7
 			db y * 7 + x
-		ENDR
-	ENDR
+		endr
+	endr
 ENDM
 
 PokeAnim_ConvertAndApplyBitmask:

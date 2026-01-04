@@ -15,7 +15,7 @@ wAudio::
 ; wChannel1 - wChannel8
 for n, 1, NUM_CHANNELS + 1
 wChannel{d:n}:: channel_struct wChannel{d:n}
-ENDR
+endr
 
 	ds 1
 
@@ -213,7 +213,7 @@ for n, 1, NUM_SPRITE_ANIM_STRUCTS + 1
 ; field  0:   index
 ; fields 1-3: loaded from SpriteAnimSeqData
 wSpriteAnim{d:n}:: sprite_anim_struct wSpriteAnim{d:n}
-ENDR
+endr
 wSpriteAnimationStructsEnd::
 
 NEXTU
@@ -304,7 +304,7 @@ wShadowOAM::
 ; wShadowOAMSprite00 - wShadowOAMSprite39
 for n, NUM_SPRITE_OAM_STRUCTS
 wShadowOAMSprite{02d:n}:: sprite_oam_struct wShadowOAMSprite{02d:n}
-ENDR
+endr
 wShadowOAMEnd::
 
 
@@ -752,12 +752,12 @@ wDexListingCursorBackup:: db
 wBackupDexListingCursor:: db
 wBackupDexListingPage:: db
 wDexCurLocation:: db
-IF DEF(_CRYSTAL11)
+if DEF(_CRYSTAL11)
 wPokedexStatus:: db
 wPokedexDataEnd::
-ELSE
+else
 wPokedexDataEnd:: ds 1
-ENDC
+endc
 	ds 2
 
 NEXTU
@@ -984,19 +984,19 @@ wLinkPlayerData::
 ; wLinkPlayerPartyMon1 - wLinkPlayerPartyMon6
 for n, 1, PARTY_LENGTH + 1
 wLinkPlayerPartyMon{d:n}:: party_struct wLinkPlayerPartyMon{d:n}
-ENDR
+endr
 
 wLinkPlayerPartyMonOTs::
 ; wLinkPlayerPartyMon1OT - wLinkPlayerPartyMon6OT
 for n, 1, PARTY_LENGTH + 1
 wLinkPlayerPartyMon{d:n}OT:: ds NAME_LENGTH
-ENDR
+endr
 
 wLinkPlayerPartyMonNicknames::
 ; wLinkPlayerPartyMon1Nickname - wLinkPlayerPartyMon6Nickname
 for n, 1, PARTY_LENGTH + 1
 wLinkPlayerPartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
-ENDR
+endr
 
 NEXTU
 ; time capsule party data
@@ -1004,19 +1004,19 @@ wTimeCapsulePlayerData::
 ; wTimeCapsulePartyMon1 - wTimeCapsulePartyMon6
 for n, 1, PARTY_LENGTH + 1
 wTimeCapsulePartyMon{d:n}:: red_party_struct wTimeCapsulePartyMon{d:n}
-ENDR
+endr
 
 wTimeCapsulePartyMonOTs::
 ; wTimeCapsulePartyMon1OT - wTimeCapsulePartyMon6OT
 for n, 1, PARTY_LENGTH + 1
 wTimeCapsulePartyMon{d:n}OT:: ds NAME_LENGTH
-ENDR
+endr
 
 wTimeCapsulePartyMonNicknames::
 ; wTimeCapsulePartyMon1Nickname - wTimeCapsulePartyMon6Nickname
 for n, 1, PARTY_LENGTH + 1
 wTimeCapsulePartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
-ENDR
+endr
 
 NEXTU
 ; link patch lists
@@ -1035,7 +1035,7 @@ wLinkOTPartyMonTypes::
 ; wLinkOTPartyMon1Type - wLinkOTPartyMon6Type
 for n, 1, PARTY_LENGTH + 1
 wLinkOTPartyMon{d:n}Type:: dw
-ENDR
+endr
 
 
 SECTION UNION "Overworld Map", WRAM0
@@ -1299,7 +1299,7 @@ wccb9:: ds 1
 wccba:: ds 90
 
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 SECTION UNION "Overworld Map", WRAM0
 
 ; debug room RTC values
@@ -1338,7 +1338,7 @@ NEXTU
 wDebugRoomGBID:: dw
 ENDU
 
-ENDC
+endc
 
 
 SECTION "Video", WRAM0
@@ -1614,12 +1614,12 @@ wCreditsLYOverride:: db
 NEXTU
 ; pokedex
 wPrevDexEntryJumptableIndex:: db
-IF DEF(_CRYSTAL11)
+if DEF(_CRYSTAL11)
 wPrevDexEntryBackup:: db
-ELSE
+else
 wPrevDexEntryBackup::
 wPokedexStatus:: db
-ENDC
+endc
 wUnusedPokedexByte:: db
 
 NEXTU
@@ -2543,7 +2543,7 @@ wTilesetAnim:: dw ; bank 3f
 	ds 2 ; unused
 wTilesetPalettes:: dw ; bank 3f
 wTilesetEnd::
-	ASSERT wTilesetEnd - wTileset == TILESET_LENGTH
+	assert wTilesetEnd - wTileset == TILESET_LENGTH
 
 wEvolvableFlags:: flag_array PARTY_LENGTH
 
@@ -2779,7 +2779,7 @@ wBaseGrowthRate:: db
 wBaseEggGroups:: db
 wBaseTMHM:: flag_array NUM_TM_HM_TUTOR
 wCurBaseDataEnd::
-	ASSERT wCurBaseDataEnd - wCurBaseData == BASE_DATA_SIZE
+	assert wCurBaseDataEnd - wCurBaseData == BASE_DATA_SIZE
 
 wCurDamage:: dw
 
@@ -2850,19 +2850,19 @@ wOTPartyMons::
 ; wOTPartyMon1 - wOTPartyMon6
 for n, 1, PARTY_LENGTH + 1
 wOTPartyMon{d:n}:: party_struct wOTPartyMon{d:n}
-ENDR
+endr
 
 wOTPartyMonOTs::
 ; wOTPartyMon1OT - wOTPartyMon6OT
 for n, 1, PARTY_LENGTH + 1
 wOTPartyMon{d:n}OT:: ds NAME_LENGTH
-ENDR
+endr
 
 wOTPartyMonNicknames::
 ; wOTPartyMon1Nickname - wOTPartyMon6Nickname
 for n, 1, PARTY_LENGTH + 1
 wOTPartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
-ENDR
+endr
 wOTPartyDataEnd::
 
 NEXTU
@@ -3027,7 +3027,7 @@ wPlayerStruct:: object_struct wPlayer ; player is object struct 0
 ; wObjectStruct1 - wObjectStruct12
 for n, 1, NUM_OBJECT_STRUCTS
 wObject{d:n}Struct:: object_struct wObject{d:n}
-ENDR
+endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
@@ -3038,7 +3038,7 @@ wPlayerObject:: map_object wPlayer ; player is map object 0
 ; wMap1Object - wMap15Object
 for n, 1, NUM_OBJECTS
 wMap{d:n}Object:: map_object wMap{d:n}
-ENDR
+endr
 
 wObjectMasks:: ds NUM_OBJECTS
 
@@ -3404,19 +3404,19 @@ wPartyMons::
 ; wPartyMon1 - wPartyMon6
 for n, 1, PARTY_LENGTH + 1
 wPartyMon{d:n}:: party_struct wPartyMon{d:n}
-ENDR
+endr
 
 wPartyMonOTs::
 ; wPartyMon1OT - wPartyMon6OT
 for n, 1, PARTY_LENGTH + 1
 wPartyMon{d:n}OT:: ds NAME_LENGTH
-ENDR
+endr
 
 wPartyMonNicknames::
 ; wPartyMon1Nickname - wPartyMon6Nickname
 for n, 1, PARTY_LENGTH + 1
 wPartyMon{d:n}Nickname:: ds MON_NAME_LENGTH
-ENDR
+endr
 wPartyMonNicknamesEnd::
 
 	ds 22
@@ -3641,13 +3641,13 @@ wActiveAnimObjects::
 ; wAnimObject1 - wAnimObject10
 for n, 1, NUM_ANIM_OBJECTS + 1
 wAnimObject{d:n}:: battle_anim_struct wAnimObject{d:n}
-ENDR
+endr
 
 wActiveBGEffects::
 ; wBGEffect1 - wBGEffect5
 for n, 1, NUM_BG_EFFECTS + 1
 wBGEffect{d:n}:: battle_bg_effect wBGEffect{d:n}
-ENDR
+endr
 
 wLastAnimObjectIndex:: db
 

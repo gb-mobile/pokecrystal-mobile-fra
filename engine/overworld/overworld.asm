@@ -571,9 +571,9 @@ GetUsedSprite:
 	pop bc
 	ld l, c
 	ld h, $0
-REPT 4
+rept 4
 	add hl, hl
-ENDR
+endr
 	pop de
 	add hl, de
 	ld d, h
@@ -603,9 +603,9 @@ ENDR
 	and $7f
 	ld l, a
 	ld h, 0
-REPT 4
+rept 4
 	add hl, hl
-ENDR
+endr
 	ld a, l
 	add LOW(vTiles0)
 	ld l, a

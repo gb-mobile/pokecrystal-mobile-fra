@@ -75,11 +75,11 @@ _UnownPrinter:
 
 	ldh a, [hJoyPressed]
 	vc_patch Forbid_printing_Unown
-IF DEF(_CRYSTAL11_VC)
+if DEF(_CRYSTAL11_VC)
 	and 0
-ELSE
+else
 	and A_BUTTON
-ENDC
+endc
 	vc_patch_end
 	jr nz, .pressed_a
 

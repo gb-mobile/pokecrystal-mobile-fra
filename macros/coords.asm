@@ -6,11 +6,11 @@ DEF decoord EQUS "coord de,"
 
 MACRO coord
 ; register, x, y[, origin]
-	IF _NARG < 4
+	if _NARG < 4
 		ld \1, (\3) * SCREEN_WIDTH + (\2) + wTilemap
-	ELSE
+	else
 		ld \1, (\3) * SCREEN_WIDTH + (\2) + \4
-	ENDC
+	endc
 ENDM
 
 DEF hlbgcoord EQUS "bgcoord hl,"
@@ -19,37 +19,37 @@ DEF debgcoord EQUS "bgcoord de,"
 
 MACRO bgcoord
 ; register, x, y[, origin]
-	IF _NARG < 4
+	if _NARG < 4
 		ld \1, (\3) * BG_MAP_WIDTH + (\2) + vBGMap0
-	ELSE
+	else
 		ld \1, (\3) * BG_MAP_WIDTH + (\2) + \4
-	ENDC
+	endc
 ENDM
 
 MACRO dwcoord
 ; x, y
-	REPT _NARG / 2
+	rept _NARG / 2
 		dw (\2) * SCREEN_WIDTH + (\1) + wTilemap
 		shift 2
-	ENDR
+	endr
 ENDM
 
 MACRO ldcoord_a
 ; x, y[, origin]
-	IF _NARG < 3
+	if _NARG < 3
 		ld [(\2) * SCREEN_WIDTH + (\1) + wTilemap], a
-	ELSE
+	else
 		ld [(\2) * SCREEN_WIDTH + (\1) + \3], a
-	ENDC
+	endc
 ENDM
 
 MACRO lda_coord
 ; x, y[, origin]
-	IF _NARG < 3
+	if _NARG < 3
 		ld a, [(\2) * SCREEN_WIDTH + (\1) + wTilemap]
-	ELSE
+	else
 		ld a, [(\2) * SCREEN_WIDTH + (\1) + \3]
-	ENDC
+	endc
 ENDM
 
 MACRO menu_coords

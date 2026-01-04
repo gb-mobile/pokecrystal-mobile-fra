@@ -3,22 +3,22 @@ MACRO tmhm
 	; initialize bytes to 0
 	for n, (NUM_TM_HM_TUTOR + 7) / 8
 		DEF _tm{d:n} = 0
-	ENDR
+	endr
 	; set bits of bytes
-	REPT _NARG
-		IF DEF(\1_TMNUM)
+	rept _NARG
+		if DEF(\1_TMNUM)
 		DEF n = (\1_TMNUM - 1) / 8
 		DEF i = (\1_TMNUM - 1) % 8
 		DEF _tm{d:n} |= 1 << i
-		ELSE
-			FAIL "\1 is not a TM, HM, or tutor move"
-		ENDC
+		else
+			fail "\1 is not a TM, HM, or tutor move"
+		endc
 		shift
-	ENDR
+	endr
 	; output bytes
 	for n, (NUM_TM_HM_TUTOR + 7) / 8
 		db _tm{d:n}
-	ENDR
+	endr
 ENDM
 
 BaseData::

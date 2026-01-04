@@ -2,7 +2,7 @@ EmptyAllSRAMBanks:
 for x, NUM_SRAM_BANKS
 	ld a, x
 	call .EmptyBank
-ENDR
+endr
 	ret
 
 .EmptyBank:

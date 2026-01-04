@@ -27,15 +27,15 @@ LoadOpponentTrainerAndPokemon:
 	ldh a, [hRandomAdd]
 	add b
 	ld b, a ; b contains the nr of the trainer
-IF DEF(_CRYSTAL11)
+if DEF(_CRYSTAL11)
 	maskbits BATTLETOWER_NUM_UNIQUE_TRAINERS
 	cp BATTLETOWER_NUM_UNIQUE_TRAINERS
-ELSE
+else
 ; Crystal 1.0 used the wrong constant here, so only the first 21
 ; trainers in BattleTowerTrainers can be sampled.
 	maskbits BATTLETOWER_NUM_UNIQUE_MON
 	cp BATTLETOWER_NUM_UNIQUE_MON
-ENDC
+endc
 	jr nc, .resample
 	ld b, a
 

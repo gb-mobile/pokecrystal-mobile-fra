@@ -22,7 +22,7 @@ Sfx_ReadText:
 Sfx_ReadText2:
 	channel_count 1
 	channel 5, Sfx_ReadText_Ch5
-	ASSERT Sfx_ReadText_Ch5 == Sfx_ReadText2_Ch5
+	assert Sfx_ReadText_Ch5 == Sfx_ReadText2_Ch5
 
 Sfx_Poison:
 	channel_count 1
@@ -468,7 +468,7 @@ Sfx_Unknown5F:
 	channel 6, Sfx_Unknown5F_Ch6
 Sfx_Sandstorm:
 	channel 8, Sfx_Sandstorm_Ch8
-	ASSERT Sfx_Sandstorm_Ch8 == Sfx_Unknown5F_Ch8
+	assert Sfx_Sandstorm_Ch8 == Sfx_Unknown5F_Ch8
 
 Sfx_HangUp:
 	channel_count 1
@@ -492,10 +492,10 @@ Sfx_DexFanfare5079:
 	channel 6, Sfx_LevelUp_Ch6
 	channel 7, Sfx_LevelUp_Ch7
 	channel 8, Sfx_LevelUp_Ch8
-	ASSERT Sfx_LevelUp_Ch5 == Sfx_DexFanfare5079_Ch5
-	ASSERT Sfx_LevelUp_Ch6 == Sfx_DexFanfare5079_Ch6
-	ASSERT Sfx_LevelUp_Ch7 == Sfx_DexFanfare5079_Ch7
-	ASSERT Sfx_LevelUp_Ch8 == Sfx_DexFanfare5079_Ch8
+	assert Sfx_LevelUp_Ch5 == Sfx_DexFanfare5079_Ch5
+	assert Sfx_LevelUp_Ch6 == Sfx_DexFanfare5079_Ch6
+	assert Sfx_LevelUp_Ch7 == Sfx_DexFanfare5079_Ch7
+	assert Sfx_LevelUp_Ch8 == Sfx_DexFanfare5079_Ch8
 
 Sfx_LevelUp_Ch5:
 Sfx_DexFanfare5079_Ch5:

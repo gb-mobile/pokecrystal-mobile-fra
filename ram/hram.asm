@@ -170,9 +170,9 @@ hDMATransfer:: db
 hMobile:: db
 hSystemBooted:: db
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 hDebugRoomMenuPage::
-ENDC
+endc
 hClockResetTrigger:: db
 
 	ds 19

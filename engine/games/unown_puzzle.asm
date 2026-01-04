@@ -113,10 +113,10 @@ InitUnownPuzzlePiecePositions:
 
 .PuzzlePieceInitialPositions:
 MACRO initpuzcoord
-	REPT _NARG / 2
+	rept _NARG / 2
 		db \1 puzcoord \2
 		shift 2
-	ENDR
+	endr
 ENDM
 	initpuzcoord 0,0, 0,1, 0,2, 0,3, 0,4, 0,5
 	initpuzcoord 1,0,                     1,5
@@ -440,9 +440,9 @@ GetUnownPuzzleCoordData:
 	add hl, de
 	ld a, [wUnownPuzzleCursorPosition]
 	ld e, a
-REPT 6
+rept 6
 	add hl, de
-ENDR
+endr
 	ret
 
 UnownPuzzle_CheckCurrentTileOccupancy:
@@ -723,7 +723,7 @@ ConvertLoadedPuzzlePieces:
 .EnlargedTiles:
 for x, 16
 	db ((x & %1000) * %11000) + ((x & %0100) * %1100) + ((x & %0010) * %110) + ((x & %0001) * %11)
-ENDR
+endr
 
 UnownPuzzle_AddPuzzlePieceBorders:
 	ld hl, PuzzlePieceBorderData
@@ -740,9 +740,9 @@ UnownPuzzle_AddPuzzlePieceBorders:
 	ld l, a
 	call .LoadGFX
 	pop hl
-REPT 4
+rept 4
 	inc hl
-ENDR
+endr
 	pop af
 	dec a
 	jr nz, .loop

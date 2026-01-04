@@ -68,11 +68,11 @@ ReadAnyMail:
 	and A_BUTTON | B_BUTTON | START
 	jr z, .loop
 	vc_patch Forbid_printing_mail
-IF DEF(_CRYSTAL11_VC)
+if DEF(_CRYSTAL11_VC)
 	and 0
-ELSE
+else
 	and START
-ENDC
+endc
 	vc_patch_end
 	jr nz, .pressed_start
 	ret

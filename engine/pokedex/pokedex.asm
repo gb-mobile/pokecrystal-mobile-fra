@@ -896,9 +896,9 @@ Pokedex_UnownModeUpdateCursorGfx:
 	ld e, a
 	ld d, 0
 	ld hl, UnownModeLetterAndCursorCoords + 2
-REPT 4
+rept 4
 	add hl, de
-ENDR
+endr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -1329,9 +1329,9 @@ Pokedex_DrawUnownModeBG:
 	jr z, .done
 	push af
 	ld hl, UnownModeLetterAndCursorCoords
-REPT 4
+rept 4
 	add hl, de
-ENDR
+endr
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -1496,7 +1496,7 @@ Pokedex_PrintListing:
 	push af
 	ld a, [de]
 	ld [wTempSpecies], a ; also sets wNamedObjectIndex
-	ASSERT wTempSpecies == wNamedObjectIndex
+	assert wTempSpecies == wNamedObjectIndex
 	push de
 	push hl
 	call .PrintEntry
@@ -1864,9 +1864,9 @@ Pokedex_PlaceTypeString:
 	ld e, a
 	ld d, 0
 	ld hl, PokedexTypeSearchStrings
-REPT POKEDEX_TYPE_STRING_LENGTH
+rept POKEDEX_TYPE_STRING_LENGTH
 	add hl, de
-ENDR
+endr
 	ld e, l
 	ld d, h
 	pop hl

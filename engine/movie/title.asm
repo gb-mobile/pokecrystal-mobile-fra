@@ -353,9 +353,9 @@ AnimateTitleCrystal:
 	ld a, [hl]
 	add 2
 	ld [hli], a ; y
-REPT SPRITEOAMSTRUCT_LENGTH - 1
+rept SPRITEOAMSTRUCT_LENGTH - 1
 	inc hl
-ENDR
+endr
 	dec c
 	jr nz, .loop
 

@@ -253,9 +253,9 @@ GetDexEntryPagePointer:
 	cp "@"
 	jr nz, .loop1
 ; skip height and weight
-REPT 3
+rept 3
 	inc hl
-ENDR
+endr
 ; if c != 1: skip entry
 	dec c
 	jr z, .done

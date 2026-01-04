@@ -694,9 +694,9 @@ _MobilePrintNum::
 	push af
 	call .Function1062b2
 	call .Function1062ff
-REPT 4
+rept 4
 	inc de
-ENDR
+endr
 	pop af
 	dec a
 	jr nz, .digit_loop

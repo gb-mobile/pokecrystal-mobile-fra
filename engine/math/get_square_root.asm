@@ -27,4 +27,4 @@ GetSquareRoot:
 .Squares:
 for x, 1, NUM_SQUARE_ROOTS + 1
 	dw x**2
-ENDR
+endr

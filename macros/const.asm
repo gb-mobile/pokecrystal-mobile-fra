@@ -1,16 +1,16 @@
 ; Enumerate constants
 
 MACRO const_def
-	IF _NARG >= 1
+	if _NARG >= 1
 		DEF const_value = \1
-	ELSE
+	else
 		DEF const_value = 0
-	ENDC
-	IF _NARG >= 2
+	endc
+	if _NARG >= 2
 		DEF const_inc = \2
-	ELSE
+	else
 		DEF const_inc = 1
-	ENDC
+	endc
 ENDM
 
 MACRO const
@@ -24,25 +24,25 @@ MACRO shift_const
 ENDM
 
 MACRO const_skip
-	IF _NARG >= 1
+	if _NARG >= 1
 		DEF const_value += const_inc * (\1)
-	ELSE
+	else
 		DEF const_value += const_inc
-	ENDC
+	endc
 ENDM
 
 MACRO const_next
-	IF (const_value > 0 && \1 < const_value) || (const_value < 0 && \1 > const_value)
-		FAIL "const_next cannot go backwards from {const_value} to \1"
-	ELSE
+	if (const_value > 0 && \1 < const_value) || (const_value < 0 && \1 > const_value)
+		fail "const_next cannot go backwards from {const_value} to \1"
+	else
 		DEF const_value = \1
-	ENDC
+	endc
 ENDM
 
 MACRO rb_skip
-	IF _NARG == 1
+	if _NARG == 1
 		rsset _RS + \1
-	ELSE
+	else
 		rsset _RS + 1
-	ENDC
+	endc
 ENDM

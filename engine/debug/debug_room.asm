@@ -1358,7 +1358,7 @@ DebugRoom_BoxAddresses:
 	table_width 3, DebugRoom_BoxAddresses
 for n, 1, NUM_BOXES + 1
 	dba sBox{d:n}
-ENDR
+endr
 	assert_table_length NUM_BOXES
 
 DebugRoomMenu_RTCEdit:

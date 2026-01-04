@@ -1,8 +1,8 @@
 MACRO unown_set
-REPT _NARG
+rept _NARG
 	db UNOWN_\1
 	shift
-ENDR
+endr
 	db -1
 ENDM
 

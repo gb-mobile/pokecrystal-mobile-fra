@@ -853,8 +853,8 @@ MobileMenu_FillBGArea:
 	jr nz, MobileMenu_FillBGArea
 	ret
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 MainMenu_DebugRoom:
 	farcall _DebugRoom
 	ret
-ENDC
+endc

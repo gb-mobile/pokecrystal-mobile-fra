@@ -315,9 +315,9 @@ GetIcon:
 ; Load icon graphics into VRAM starting from tile hl.
 
 ; One tile is 16 bytes long.
-REPT 4
+rept 4
 	add hl, hl
-ENDR
+endr
 
 	ld de, vTiles0
 	add hl, de

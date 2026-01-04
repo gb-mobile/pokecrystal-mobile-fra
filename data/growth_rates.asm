@@ -1,11 +1,11 @@
 MACRO growth_rate
 ; [1]/[2]*n**3 + [3]*n**2 + [4]*n - [5]
 	dn \1, \2
-	IF \3 < 0
+	if \3 < 0
 		db -\3 | $80 ; signed magnitude
-	ELSE
+	else
 		db \3
-	ENDC
+	endc
 	db \4, \5
 ENDM
 

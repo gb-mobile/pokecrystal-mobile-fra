@@ -187,36 +187,36 @@ ENDM
 
 	const loadvar_command ; $1e
 MACRO loadvar
-	IF STRIN("\1", "VAR_") != 1
+	if STRIN("\1", "VAR_") != 1
 	; LEGACY: Support for the old name of "loadmem"
 		loadmem \1, \2
-	ELSE
+	else
 		db loadvar_command
 		db \1 ; variable_id
 		db \2 ; value
-	ENDC
+	endc
 ENDM
 
 	const giveitem_command ; $1f
 MACRO giveitem
-	IF _NARG == 1
+	if _NARG == 1
 		giveitem \1, 1
-	ELSE
+	else
 		db giveitem_command
 		db \1 ; item
 		db \2 ; quantity
-	ENDC
+	endc
 ENDM
 
 	const takeitem_command ; $20
 MACRO takeitem
-	IF _NARG == 1
+	if _NARG == 1
 		takeitem \1, 1
-	ELSE
+	else
 		db takeitem_command
 		db \1 ; item
 		db \2 ; quantity
-	ENDC
+	endc
 ENDM
 
 	const checkitem_command ; $21
@@ -296,23 +296,23 @@ ENDM
 
 	const givepoke_command ; $2d
 MACRO givepoke
-	IF _NARG == 2
+	if _NARG == 2
 		givepoke \1, \2, NO_ITEM, FALSE
-	ELIF _NARG == 3
+	elif _NARG == 3
 		givepoke \1, \2, \3, FALSE
-	ELIF _NARG == 5
+	elif _NARG == 5
 		givepoke \1, \2, \3, TRUE, \4, \5
-	ELSE
+	else
 		db givepoke_command
 		db \1 ; pokemon
 		db \2 ; level
 		db \3 ; item
 		db \4 ; trainer
-		IF \4
+		if \4
 			dw \5 ; nickname_pointer
 			dw \6 ; ot_name_pointer
-		ENDC
-	ENDC
+		endc
+	endc
 ENDM
 
 	const giveegg_command ; $2e
@@ -478,12 +478,12 @@ ENDM
 
 	const refreshscreen_command ; $48
 MACRO refreshscreen
-	IF _NARG == 0
+	if _NARG == 0
 		refreshscreen 0
-	ELSE
+	else
 		db refreshscreen_command
 		db \1 ; dummy
-	ENDC
+	endc
 ENDM
 
 	const closetext_command ; $49
@@ -984,13 +984,13 @@ ENDM
 
 	const verbosegiveitem_command ; $9e
 MACRO verbosegiveitem
-	IF _NARG == 1
+	if _NARG == 1
 		verbosegiveitem \1, 1
-	ELSE
+	else
 		db verbosegiveitem_command
 		db \1 ; item
 		db \2 ; quantity
-	ENDC
+	endc
 ENDM
 
 	const verbosegiveitemvar_command ; $9f

@@ -3,14 +3,14 @@
 MACRO oamframe
 	db \1 ; duration
 	DEF x = \2
-	ASSERT !(x & (1 << (OAM_X_FLIP + 1) | 1 << (OAM_Y_FLIP + 1))), \
+	assert !(x & (1 << (OAM_X_FLIP + 1) | 1 << (OAM_Y_FLIP + 1))), \
 		"oamframe duration overflows into X/Y flip bits"
-	IF _NARG > 2
-		REPT _NARG - 2
+	if _NARG > 2
+		rept _NARG - 2
 			DEF x |= 1 << (\3 + 1)
 			shift
-		ENDR
-	ENDC
+		endr
+	endc
 	db x ; flags
 ENDM
 

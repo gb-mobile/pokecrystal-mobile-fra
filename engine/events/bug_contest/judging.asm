@@ -68,7 +68,7 @@ ContestJudging_ThirdPlaceScoreText:
 
 LoadContestantName:
 ; If a = 1, get your name.
-	ASSERT BUG_CONTEST_PLAYER == 1
+	assert BUG_CONTEST_PLAYER == 1
 	dec a
 	jr z, .player
 ; Find the pointer for the trainer class of the Bug Catching Contestant whose ID is in a.
@@ -212,11 +212,11 @@ DetermineContestWinners:
 CopyTempContestant:
 ; Could've just called CopyBytes.
 	ld de, wBugContestTempWinnerID
-REPT BUG_CONTESTANT_SIZE - 1
+rept BUG_CONTESTANT_SIZE - 1
 	ld a, [de]
 	inc de
 	ld [hli], a
-ENDR
+endr
 	ld a, [de]
 	inc de
 	ld [hl], a

@@ -1824,9 +1824,9 @@ Function114b55:
 .asm_114b8c
 	pop hl
 	xor a
-REPT NAME_LENGTH_JAPANESE
+rept NAME_LENGTH_JAPANESE
 	ld [hli], a
-ENDR
+endr
 	jr .asm_114b82
 
 .asm_114b96
@@ -2096,9 +2096,9 @@ Function114cd9:
 	call Function114d99
 	pop hl
 	push hl
-REPT 4
+rept 4
 	inc hl
-ENDR
+endr
 	ld a, [hld]
 	cp b
 	jr c, .asm_114d2d
@@ -4321,9 +4321,9 @@ Function1158c2:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-REPT 4
+rept 4
 	inc de
-ENDR
+endr
 	ld [hl], d
 	dec hl
 	ld [hl], e
@@ -4936,9 +4936,9 @@ Function115c49:
 	ld c, a
 	ld a, [$dc1a]
 	ld b, a
-REPT 4
+rept 4
 	dec bc
-ENDR
+endr
 .asm_115c8c
 	ld a, [de]
 	cp $d

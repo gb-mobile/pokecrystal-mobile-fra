@@ -99,5 +99,5 @@ UnownPrinter_GBPrinterRectangle:
 for y, 7
 for x, 7 - 1, -1, -1
 	dw wGameboyPrinter2bppSource tile (x * 7 + y)
-ENDR
-ENDR
+endr
+endr

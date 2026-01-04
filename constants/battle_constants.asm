@@ -150,7 +150,7 @@ DEF NUM_BATTLE_VARS EQU const_value
 	const ENEMY_COUNTER_MOVE
 	const PLAYER_LAST_MOVE
 	const ENEMY_LAST_MOVE
-ASSERT const_value % 2 == 0
+assert const_value % 2 == 0
 DEF NUM_BATTLE_VAR_LOCATION_PAIRS EQU const_value / 2
 
 ; status condition bit flags

@@ -323,7 +323,7 @@ InitMail:
 ; initialize wMailboxCount from sMailboxCount
 	ld hl, wMailboxCount
 	ld [hli], a
-	ASSERT wMailboxCount + 1 == wMailboxItems
+	assert wMailboxCount + 1 == wMailboxItems
 	and a
 	jr z, .done ; if no mail, we're done
 

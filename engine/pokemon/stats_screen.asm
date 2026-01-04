@@ -185,10 +185,10 @@ EggStatsJoypad:
 .check
 	bit A_BUTTON_F, a
 	jr nz, .quit
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 	cp START
 	jr z, .hatch
-ENDC
+endc
 	and D_DOWN | D_UP | A_BUTTON | B_BUTTON
 	jp StatsScreen_JoypadAction
 
@@ -197,7 +197,7 @@ ENDC
 	call StatsScreen_SetJumptableIndex
 	ret
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 .hatch
 	ld a, [wMonType]
 	or a
@@ -228,7 +228,7 @@ IF DEF(_DEBUG)
 
 .HatchSoonString:
 	db "▶HATCH SOON!@"
-ENDC
+endc
 
 StatsScreen_LoadPage:
 	call StatsScreen_LoadGFX
@@ -1010,7 +1010,7 @@ EggStatsScreen:
 	ld de, FiveQMarkString
 	hlcoord 11, 5
 	call PlaceString
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 	ld de, .PushStartString
 	hlcoord 8, 17
 	call PlaceString
@@ -1020,7 +1020,7 @@ IF DEF(_DEBUG)
 	db "▶PUSH START.@"
 
 .placed_push_start
-ENDC
+endc
 	ld a, [wTempMonHappiness] ; egg status
 	ld de, EggSoonString
 	cp $6

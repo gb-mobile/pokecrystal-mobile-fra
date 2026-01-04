@@ -38,7 +38,7 @@ Elevator::
 	inc hl
 	ld [de], a
 	inc de
-	ASSERT wCurElevatorCount + 1 == wCurElevatorFloors
+	assert wCurElevatorCount + 1 == wCurElevatorFloors
 .loop
 	ld a, [wElevatorPointerBank]
 	call GetFarByte

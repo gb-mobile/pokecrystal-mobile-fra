@@ -1,29 +1,29 @@
 ; Virtual Console macros
 
 MACRO vc_hook
-	IF DEF(_CRYSTAL11_VC)
+	if DEF(_CRYSTAL11_VC)
 	.VC_\1::
-	ENDC
+	endc
 ENDM
 
 MACRO vc_patch
-	IF DEF(_CRYSTAL11_VC)
-		ASSERT !DEF(CURRENT_VC_PATCH), "Already started a vc_patch"
+	if DEF(_CRYSTAL11_VC)
+		assert !DEF(CURRENT_VC_PATCH), "Already started a vc_patch"
 		DEF CURRENT_VC_PATCH EQUS "\1"
 	.VC_{CURRENT_VC_PATCH}::
-	ENDC
+	endc
 ENDM
 
 MACRO vc_patch_end
-	IF DEF(_CRYSTAL11_VC)
-		ASSERT DEF(CURRENT_VC_PATCH), "No vc_patch started"
+	if DEF(_CRYSTAL11_VC)
+		assert DEF(CURRENT_VC_PATCH), "No vc_patch started"
 	.VC_{CURRENT_VC_PATCH}_End::
 		PURGE CURRENT_VC_PATCH
-	ENDC
+	endc
 ENDM
 
 MACRO vc_assert
-	IF DEF(_CRYSTAL11_VC)
-		ASSERT \#
-	ENDC
+	if DEF(_CRYSTAL11_VC)
+		assert \#
+	endc
 ENDM

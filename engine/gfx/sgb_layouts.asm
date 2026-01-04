@@ -299,9 +299,9 @@ SGBLayoutJumptable:
 .SGB_GSIntro:
 	ld b, 0
 	ld hl, .BlkPacketTable_GSIntro
-REPT 4
+rept 4
 	add hl, bc
-ENDR
+endr
 	ld e, [hl]
 	inc hl
 	ld d, [hl]

@@ -60,10 +60,10 @@ HealMachineAnim:
 	dw .HallOfFame
 
 MACRO healmachineanimseq
-	REPT _NARG
+	rept _NARG
 		db HEALMACHINESTATE_\1
 		shift
-	ENDR
+	endr
 ENDM
 
 .Pokecenter:

@@ -161,24 +161,24 @@ LoadMetatiles::
 	ld h, a
 
 	; copy the 4x4 metatile
-REPT METATILE_WIDTH - 1
-REPT METATILE_WIDTH
+rept METATILE_WIDTH - 1
+rept METATILE_WIDTH
 	ld a, [hli]
 	ld [de], a
 	inc de
-ENDR
+endr
 	ld a, e
 	add SURROUNDING_WIDTH - METATILE_WIDTH
 	ld e, a
 	jr nc, .next\@
 	inc d
 .next\@
-ENDR
-REPT METATILE_WIDTH
+endr
+rept METATILE_WIDTH
 	ld a, [hli]
 	ld [de], a
 	inc de
-ENDR
+endr
 	; Next metatile
 	pop hl
 	ld de, METATILE_WIDTH
@@ -659,9 +659,9 @@ GetWarpDestCoords::
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-REPT 3 ; get to the warp coords
+rept 3 ; get to the warp coords
 	inc hl
-ENDR
+endr
 	ld a, [wWarpNumber]
 	dec a
 	ld c, a
@@ -1146,7 +1146,7 @@ UnmaskObject::
 	ld [hl], 0 ; unmasked
 	ret
 
-IF DEF(_DEBUG)
+if DEF(_DEBUG)
 ComputeROMXChecksum::
 	ldh a, [hROMBank]
 	push af
@@ -1166,7 +1166,7 @@ ComputeROMXChecksum::
 	pop af
 	rst Bankswitch
 	ret
-ENDC
+endc
 
 ScrollMapUp::
 	hlcoord 0, 0
@@ -2297,7 +2297,7 @@ LoadMapTileset::
 
 DummyEndPredef::
 ; Unused function at the end of PredefPointers.
-REPT 16
+rept 16
 	nop
-ENDR
+endr
 	ret

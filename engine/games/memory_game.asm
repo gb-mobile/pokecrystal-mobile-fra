@@ -90,9 +90,9 @@ _MemoryGame:
 	xor a
 	ld [wMemoryGameCounter], a
 	ld hl, wMemoryGameLastMatches
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
+endr
 	ld [hl], a
 	ld [wMemoryGameNumCardsMatched], a
 .InitBoardTilemapAndCursorObject:

@@ -11,10 +11,10 @@
 	const PARTYMENUQUALITY_MOBILE_SELECTION
 
 MACRO partymenuqualities
-	REPT _NARG
+	rept _NARG
 		db PARTYMENUQUALITY_\1
 		shift
-	ENDR
+	endr
 	db -1 ; end
 ENDM
 

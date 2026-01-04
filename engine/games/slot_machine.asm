@@ -266,9 +266,9 @@ AnimateSlotReelIcons: ; unreferenced
 	ld a, [hl]
 	xor $20 ; alternate between $00-$1f and $20-$3f
 	ld [hli], a ; tile id
-REPT SPRITEOAMSTRUCT_LENGTH - 1
+rept SPRITEOAMSTRUCT_LENGTH - 1
 	inc hl
-ENDR
+endr
 	dec c
 	jr nz, .loop
 	ret
@@ -1916,9 +1916,9 @@ Slots_PayoutText:
 	hlcoord 18, 17
 	ld [hl], "▼"
 	ld hl, .SlotsLinedUpText
-REPT 4
+rept 4
 	inc bc
-ENDR
+endr
 	ret
 
 .SlotsLinedUpText:

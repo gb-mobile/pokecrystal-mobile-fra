@@ -2344,9 +2344,9 @@ Function89efd:
 	ld a, $ff
 	ld [hli], a
 	xor a
-REPT 4
+rept 4
 	ld [hli], a
-ENDR
+endr
 	ld [hl], a
 .asm_89f09
 	ld hl, wd012

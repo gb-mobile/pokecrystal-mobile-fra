@@ -427,9 +427,9 @@ UpdateChannels:
 	; hl << 4
 	; each wavepattern is $f bytes long
 	; so seeking is done in $10s
-REPT 4
+rept 4
 	add hl, hl
-ENDR
+endr
 	ld de, WaveSamples
 	add hl, de
 	; load wavepattern into rWave_0-rWave_f
