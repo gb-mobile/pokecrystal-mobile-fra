@@ -1782,9 +1782,7 @@ DepositPokemon:
 	farcall RemoveMonFromPartyOrBox
 	ld a, [wCurPartySpecies]
 	call PlayMonCry
-	hlcoord 0, 0
-	lb bc, 15, 8
-	call ClearBox
+	call BillsPCClearThreeBoxes
 	hlcoord 8, 14
 	lb bc, 1, 3
 	call ClearBox
@@ -1835,9 +1833,7 @@ TryWithdrawPokemon:
 	farcall RemoveMonFromPartyOrBox
 	ld a, [wCurPartySpecies]
 	call PlayMonCry
-	hlcoord 0, 0
-	lb bc, 15, 8
-	call ClearBox
+	call BillsPCClearThreeBoxes
 	hlcoord 8, 14
 	lb bc, 1, 3
 	call ClearBox
