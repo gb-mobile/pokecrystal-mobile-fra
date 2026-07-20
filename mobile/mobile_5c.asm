@@ -48,7 +48,7 @@ Function17005a:
 	ld [de], a
 	ld hl, sOfferMonOT
 	ld de, wOTTrademonOTName
-	ld bc, MON_NAME_LENGTH - 1
+	ld bc, PLAYER_NAME_LENGTH - 1
 	call CopyBytes
 	ld a, "@"
 	ld [de], a
