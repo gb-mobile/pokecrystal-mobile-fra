@@ -39,15 +39,16 @@ AzaleaPokecenter1FGentlemanText:
 	done
 
 AzaleaPokecenter1FUnusedText: 
-	text "This BILL guy"
-	line "created the system"
+	text "Ce gars, là, LEO."
+	line "C'est lui qui a""
 
-	para "for storing"
-	line "#MON in a PC."
+	para "conçu le système"
+	line "de stockage de"
+	cont "POKéMON sur PC."
 
-	para "BILL's PC can"
-	line "store up to 20"
-	cont "#MON per BOX."
+	para "Le PC de LEO peut"
+	line "garder jusqu'à 20"
+	cont "#MON par BOITE."
 	done
 
 AzaleaPokecenter1FFishingGuruText: ; Unused, English version replacement for above dialog.
