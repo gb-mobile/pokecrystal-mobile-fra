@@ -217,12 +217,12 @@ MainMenu_GetWhichMenu:
 ;	jr .ok
 
 	hlcoord 1, 14
-    farcall Mobile_AlwaysReturnNotCarry
+    farcall CheckMobileAdapterStatus
     jr nc, .ok
 
     ld a, $7
     call OpenSRAM
-    ld a, [$a000]
+    ld a, [sMobileStadiumFlag]
     call CloseSRAM
     and a
     ld a, $3
@@ -234,12 +234,12 @@ MainMenu_GetWhichMenu:
 .ok
 ;	jr .ok2
     hlcoord 1, 14
-    farcall Mobile_AlwaysReturnNotCarry
+    farcall CheckMobileAdapterStatus
     jr nc, .ok2
 
     ld a, $7
     call OpenSRAM
-    ld a, [$a000]
+    ld a, [sMobileStadiumFlag]
     call CloseSRAM
     and a
     ld a, $1
@@ -259,12 +259,12 @@ MainMenu_GetWhichMenu:
 ;	jr .ok3
 
 	hlcoord 1, 14
-    farcall Mobile_AlwaysReturnNotCarry
+    farcall CheckMobileAdapterStatus
     jr nc, .ok3
 
     ld a, $7
     call OpenSRAM
-    ld a, [$a000]
+    ld a, [sMobileStadiumFlag]
     call CloseSRAM
     and a
     ld a, $2
@@ -275,12 +275,12 @@ MainMenu_GetWhichMenu:
 
 .ok3
 	hlcoord 1, 14
-    farcall Mobile_AlwaysReturnNotCarry
+    farcall CheckMobileAdapterStatus
     jr nc, .ok4
 
     ld a, $7
     call OpenSRAM
-    ld a, [$a000]
+    ld a, [sMobileStadiumFlag]
     call CloseSRAM
     and a
     ld a, $6

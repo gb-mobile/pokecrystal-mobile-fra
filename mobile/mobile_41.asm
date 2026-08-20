@@ -834,35 +834,36 @@ Mobile_DummyReturnFalse:
 
 Stubbed_Function106314:
 ;	ret
-	ld a, BANK(s4_b000)
+	ld a, BANK(sMobileAdapterStatus)
 	call OpenSRAM
 	ld a, c
 	cpl
-	ld [s4_b000], a
+	ld [sMobileAdapterStatus], a
 	call CloseSRAM
 	ld a, BANK(s7_a800)
 	call OpenSRAM
 	ld a, c
-	ld [s7_a800], a
+	ld [sMobileAdapterStatus2], a
 	call CloseSRAM
 	ret
 
-Mobile_AlwaysReturnNotCarry:
+Mobile_AlwaysReturnNotCarry::
+CheckMobileAdapterStatus:
 ;	or a
 ;	ret
 
 Function106331:
 ; called by Mobile_DummyReturnFalse in Crystal-J
 	; check ~[4:b000] == [7:a800]
-	ld a, BANK(s4_b000)
+	ld a, BANK(sMobileAdapterStatus)
 	call OpenSRAM
-	ld a, [s4_b000]
+	ld a, [sMobileAdapterStatus]
 	cpl
 	ld b, a
 	call CloseSRAM
-	ld a, BANK(s7_a800)
+	ld a, BANK(sMobileAdapterStatus2)
 	call OpenSRAM
-	ld a, [s7_a800]
+	ld a, [sMobileAdapterStatus2]
 	ld c, a
 	call CloseSRAM
 	ld a, c
@@ -929,7 +930,7 @@ Function106392:
 	ret
 
 .asm_1063a2
-	call Mobile_AlwaysReturnNotCarry
+	call CheckMobileAdapterStatus
 	ld a, c
 	and a
 	jr nz, .asm_1063b4
@@ -1011,7 +1012,7 @@ Function106403:
 	ret
 
 .asm_106426
-	call Mobile_AlwaysReturnNotCarry
+	call CheckMobileAdapterStatus
 	ld a, c
 	and a
 	jr z, .asm_106435

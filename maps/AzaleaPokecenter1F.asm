@@ -40,7 +40,7 @@ AzaleaPokecenter1FGentlemanText:
 
 AzaleaPokecenter1FUnusedText: 
 	text "Ce gars, là, LEO."
-	line "C'est lui qui a""
+	line "C'est lui qui a"
 
 	para "conçu le système"
 	line "de stockage de"
